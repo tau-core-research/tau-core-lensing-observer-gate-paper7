@@ -1,0 +1,195 @@
+{
+  "verdict": "HE0435_PUBLIC_REPRO_MODEL_LEVEL_PSF_CORRECTION_FIT_FLAGS_REVIEW",
+  "carried_forward_verdict": "HE0435_PUBLIC_REPRO_PSF_POLICY_EDGE_SEEKING_OR_RESIDUAL_FAILS",
+  "t2_status": "BLOCKED",
+  "sampling_status": "BLOCKED",
+  "policy_schema": "he0435_public_repro_psf_policy_v0",
+  "policy_product_count": 6,
+  "pixel_mask_contract_complete": true,
+  "sigma_grid": [
+    0.0,
+    0.375,
+    0.75
+  ],
+  "dx_grid": [
+    -0.5,
+    0.0,
+    0.5
+  ],
+  "dy_grid": [
+    -0.5,
+    0.0,
+    0.5
+  ],
+  "trial_count": 162,
+  "selected_exposure_count": 6,
+  "baseline_grid_ring_median_rms": 14.4715078608,
+  "previous_per_exposure_best_ring_median_rms": 14.4505423335,
+  "selected_ring_median_rms": 14.4505423335,
+  "improvement_vs_baseline": 0.020965527299999565,
+  "improvement_vs_previous_per_exposure_gate": 0.0,
+  "selected_hard_bound_solution_count": 6,
+  "max_selected_ring_five_sigma_fraction": 0.2173664667,
+  "max_filter_ring_rms_spread": 3.1192858536,
+  "selected_rows": [
+    {
+      "psf_broadening_sigma_pix": 0.75,
+      "product_filename": "j8oi12l9q_flc.fits",
+      "filter": "F555W",
+      "jitter_dx_pix": 0.5,
+      "jitter_dy_pix": 0.5,
+      "physical_nonnegative_amplitudes": true,
+      "lens_center_rms": 2.0413625068,
+      "lens_center_five_sigma": 0.0234899329,
+      "image_arc_ring_rms": 13.0970457757,
+      "image_arc_ring_five_sigma": 0.1202060675,
+      "outer_control_rms": 1.2475681714,
+      "outer_control_five_sigma": 0.0019331281,
+      "psf_sigma_at_hard_bound": true,
+      "jitter_dx_at_hard_bound": true,
+      "jitter_dy_at_hard_bound": true
+    },
+    {
+      "psf_broadening_sigma_pix": 0.75,
+      "product_filename": "j8oi12laq_flc.fits",
+      "filter": "F555W",
+      "jitter_dx_pix": 0.5,
+      "jitter_dy_pix": 0.5,
+      "physical_nonnegative_amplitudes": true,
+      "lens_center_rms": 2.0509038974,
+      "lens_center_five_sigma": 0.0310344828,
+      "image_arc_ring_rms": 13.1463704757,
+      "image_arc_ring_five_sigma": 0.1219512195,
+      "outer_control_rms": 1.1919628837,
+      "outer_control_five_sigma": 0.0014975398,
+      "psf_sigma_at_hard_bound": true,
+      "jitter_dx_at_hard_bound": true,
+      "jitter_dy_at_hard_bound": true
+    },
+    {
+      "psf_broadening_sigma_pix": 0.75,
+      "product_filename": "j8oi12lgq_flc.fits",
+      "filter": "F555W",
+      "jitter_dx_pix": 0.5,
+      "jitter_dy_pix": 0.5,
+      "physical_nonnegative_amplitudes": true,
+      "lens_center_rms": 2.4991205258,
+      "lens_center_five_sigma": 0.05,
+      "image_arc_ring_rms": 15.7547141913,
+      "image_arc_ring_five_sigma": 0.1556442417,
+      "outer_control_rms": 2.8480938859,
+      "outer_control_five_sigma": 0.0115186206,
+      "psf_sigma_at_hard_bound": true,
+      "jitter_dx_at_hard_bound": true,
+      "jitter_dy_at_hard_bound": true
+    },
+    {
+      "psf_broadening_sigma_pix": 0.75,
+      "product_filename": "j8oi12ljq_flc.fits",
+      "filter": "F814W",
+      "jitter_dx_pix": 0.5,
+      "jitter_dy_pix": 0.5,
+      "physical_nonnegative_amplitudes": true,
+      "lens_center_rms": 5.0801612764,
+      "lens_center_five_sigma": 0.1914191419,
+      "image_arc_ring_rms": 13.0972605774,
+      "image_arc_ring_five_sigma": 0.1568683682,
+      "outer_control_rms": 1.1931871412,
+      "outer_control_five_sigma": 0.0024824456,
+      "psf_sigma_at_hard_bound": true,
+      "jitter_dx_at_hard_bound": true,
+      "jitter_dy_at_hard_bound": true
+    },
+    {
+      "psf_broadening_sigma_pix": 0.75,
+      "product_filename": "j8oi12lkq_flc.fits",
+      "filter": "F814W",
+      "jitter_dx_pix": 0.5,
+      "jitter_dy_pix": 0.5,
+      "physical_nonnegative_amplitudes": true,
+      "lens_center_rms": 6.3299313609,
+      "lens_center_five_sigma": 0.2541254125,
+      "image_arc_ring_rms": 15.9020862632,
+      "image_arc_ring_five_sigma": 0.2011412268,
+      "outer_control_rms": 1.24146812,
+      "outer_control_five_sigma": 0.0029111048,
+      "psf_sigma_at_hard_bound": true,
+      "jitter_dx_at_hard_bound": true,
+      "jitter_dy_at_hard_bound": true
+    },
+    {
+      "psf_broadening_sigma_pix": 0.75,
+      "product_filename": "j8oi12loq_flc.fits",
+      "filter": "F814W",
+      "jitter_dx_pix": 0.5,
+      "jitter_dy_pix": 0.5,
+      "physical_nonnegative_amplitudes": true,
+      "lens_center_rms": 6.8615100778,
+      "lens_center_five_sigma": 0.28,
+      "image_arc_ring_rms": 16.216546431,
+      "image_arc_ring_five_sigma": 0.2173664667,
+      "outer_control_rms": 1.2348565625,
+      "outer_control_five_sigma": 0.0029920923,
+      "psf_sigma_at_hard_bound": true,
+      "jitter_dx_at_hard_bound": true,
+      "jitter_dy_at_hard_bound": true
+    }
+  ],
+  "filter_rows": [
+    {
+      "filter": "F555W",
+      "exposure_count": 3,
+      "median_selected_ring_rms": 13.1463704757,
+      "selected_ring_rms_spread": 2.6576684156,
+      "max_selected_ring_five_sigma_fraction": 0.1556442417,
+      "all_physical_nonnegative_amplitudes": true
+    },
+    {
+      "filter": "F814W",
+      "exposure_count": 3,
+      "median_selected_ring_rms": 15.9020862632,
+      "selected_ring_rms_spread": 3.1192858536,
+      "max_selected_ring_five_sigma_fraction": 0.2173664667,
+      "all_physical_nonnegative_amplitudes": true
+    }
+  ],
+  "validation_rows": [
+    {
+      "check": "pixel_mask_contract_complete",
+      "passed": true,
+      "value": "True"
+    },
+    {
+      "check": "all_selected_amplitudes_nonnegative",
+      "passed": true,
+      "value": "True"
+    },
+    {
+      "check": "no_selected_hard_bound_nuisance",
+      "passed": false,
+      "value": 6
+    },
+    {
+      "check": "ring_rms_improves_vs_baseline_gt_0p5",
+      "passed": false,
+      "value": 0.0209655273
+    },
+    {
+      "check": "ring_rms_improves_vs_previous_gt_0p05",
+      "passed": false,
+      "value": 0.0
+    },
+    {
+      "check": "max_filter_spread_lt_2",
+      "passed": false,
+      "value": 3.1192858536
+    },
+    {
+      "check": "max_ring_five_sigma_fraction_lt_0p10",
+      "passed": false,
+      "value": 0.2173664667
+    }
+  ],
+  "hard_stop": "This is a policy-bound public-repro PSF correction validation gate. It is not a published HE0435 Ddt/null posterior reproduction and cannot enable T2 evaluation or sampling while validation fails.",
+  "next_gate": "HE0435_PUBLIC_REPRO_FULL_PSF_MODEL_REDESIGN_OR_ORIGINAL_PRODUCTS_REQUIRED"
+}

@@ -1,0 +1,73 @@
+{
+  "verdict": "STATIC_CONTROL_NULL_STRESS_SWEEP_READY",
+  "carried_forward_verdict": "STATIC_CONTROL_FALSE_POSITIVE_BOUNDARY_BRACKETED",
+  "evidence_status": "NULL_STRESS_CONTROL_NOT_REAL_DATA_T2_EVIDENCE",
+  "t2_status": "REAL_DATA_T2_BLOCKED_STATIC_NULL_STRESS_BRACKETED",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER",
+  "cluster_count": 4,
+  "observed_null_epsilon_hat": 0.004678323836468474,
+  "noise_grid": [
+    0.0,
+    0.005,
+    0.01,
+    0.015,
+    0.02,
+    0.03,
+    0.04,
+    0.06
+  ],
+  "threshold_grid": [
+    0.03,
+    0.05,
+    0.08
+  ],
+  "replicates_per_row": 4096,
+  "row_count": 24,
+  "stable_count": 14,
+  "transition_count": 4,
+  "fail_count": 6,
+  "reference_threshold": 0.05,
+  "reference_threshold_stable_max_noise": 0.02,
+  "reference_threshold_first_transition": {
+    "noise_sigma": 0.03,
+    "false_positive_threshold": 0.05,
+    "replicates": 4096,
+    "seed": 8144,
+    "false_positive_count": 206,
+    "false_positive_rate": 0.05029296875,
+    "max_allowed_false_positive_rate": 0.01,
+    "mean_epsilon_hat": 0.0048266053037177795,
+    "q95_abs_epsilon_hat": 0.050127316916649955,
+    "q99_abs_epsilon_hat": 0.06714084162060997,
+    "stability_band": "transition"
+  },
+  "first_transition": {
+    "noise_sigma": 0.015,
+    "false_positive_threshold": 0.03,
+    "replicates": 4096,
+    "seed": 8137,
+    "false_positive_count": 106,
+    "false_positive_rate": 0.02587890625,
+    "max_allowed_false_positive_rate": 0.01,
+    "mean_epsilon_hat": 0.005154084220180101,
+    "q95_abs_epsilon_hat": 0.025976538604120615,
+    "q99_abs_epsilon_hat": 0.03285521001199158,
+    "stability_band": "transition"
+  },
+  "first_fail": {
+    "noise_sigma": 0.03,
+    "false_positive_threshold": 0.03,
+    "replicates": 4096,
+    "seed": 8143,
+    "false_positive_count": 917,
+    "false_positive_rate": 0.223876953125,
+    "max_allowed_false_positive_rate": 0.01,
+    "mean_epsilon_hat": 0.0046061885541581185,
+    "q95_abs_epsilon_hat": 0.048454052843504285,
+    "q99_abs_epsilon_hat": 0.06438467232671971,
+    "stability_band": "fails"
+  },
+  "hard_stop": "This stress sweep brackets static-control false positives only. It does not authorize Ddt/time-delay T2 evidence or real-data sampling.",
+  "next_gate": "STATIC_CONTROL_SYSTEMATIC_TEMPLATE_SWEEP"
+}

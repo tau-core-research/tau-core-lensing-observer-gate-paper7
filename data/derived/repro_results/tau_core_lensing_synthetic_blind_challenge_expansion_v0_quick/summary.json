@@ -1,0 +1,16 @@
+{
+  "verdict": "SYNTHETIC_BLIND_CHALLENGE_T2_ROBUSTNESS_MAP_READY",
+  "carried_forward_verdict": "T2_IDENTIFIABILITY_SURVIVES_CORE_SYNTHETIC_STRESSORS",
+  "evidence_status": "METHOD_ONLY_NOT_REAL_DATA_EVIDENCE",
+  "previous_method_verdict": "PUBLIC_ONLY_METHOD_VALIDATION_READY",
+  "t2_status": "METHOD_VALIDATED_REAL_DATA_BLOCKED",
+  "sampling_status": "BLOCKED",
+  "scenario_count": 4,
+  "quick_mode": true,
+  "strict_identified_count": 4,
+  "recovered_count": 4,
+  "weak_or_fail_count": 0,
+  "max_abs_epsilon_error": 0.00038902503227167956,
+  "hard_stop": "Synthetic robustness does not authorize real-data T2 claims. It only maps method identifiability under controlled stressors.",
+  "next_gate": "STATIC_LENS_CONTROL_BRANCH_OR_NOISE_FAILURE_BOUNDARY_SWEEP"
+}

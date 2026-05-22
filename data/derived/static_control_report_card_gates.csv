@@ -1,0 +1,6 @@
+gate,verdict,carried_forward_verdict,status,interpretation
+static_control_branch,STATIC_LENS_CONTROL_BRANCH_READY,HFF_CLUSTER_MORPHOLOGY_CONTROL_SELECTED_NOT_T2_EVIDENCE,pass,"HFF cluster morphology controls are selected as a control layer, not T2 evidence."
+hff_static_control_scorecard,HFF_STATIC_CONTROL_SCORECARD_READY,STATIC_CONTROL_OVERFIT_GUARDRAIL_PASSES,pass,"The control set is heterogeneous: strong, mixed, and weak/negative cases all appear."
+static_control_null_injection,STATIC_CONTROL_NULL_INJECTION_READY,STATIC_CONTROL_FALSE_POSITIVE_GUARDRAIL_PASSES,pass,Zero injected T2 does not produce a false positive in the baseline null gate.
+static_control_null_stress_sweep,STATIC_CONTROL_NULL_STRESS_SWEEP_READY,STATIC_CONTROL_FALSE_POSITIVE_BOUNDARY_BRACKETED,boundary_bracketed,False-positive boundary is mapped; reference threshold is stable through noise sigma 0.020.
+static_control_systematic_template_sweep,STATIC_CONTROL_SYSTEMATIC_TEMPLATE_SWEEP_READY,STATIC_CONTROL_NOMINAL_TEMPLATES_STABLE_SYSTEMATIC_TEMPLATES_FLAG,nominal_pass_systematic_flags,Nominal templates are stable; inverted/adversarial templates correctly flag sensitivity.

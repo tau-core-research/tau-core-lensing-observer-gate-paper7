@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite it as below."
+title: "Observer-Gated Tau-Core Lensing: A Public-Data Feasibility Study, Synthetic Identifiability Test, and Static-Control Falsification Protocol"
+authors:
+  - family-names: "Olcsak"
+    given-names: "Jozsef"
+date-released: "2026-05-21"
+version: "v0.1"
+repository-code: "https://github.com/tau-core-research/tau-core-lensing-observer-gate-paper7"
+license: "MIT"

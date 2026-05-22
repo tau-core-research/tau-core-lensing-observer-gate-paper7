@@ -1,0 +1,16 @@
+{
+  "verdict": "STATIC_CONTROL_BRANCH_CLOSED",
+  "carried_forward_verdict": "RETURN_TO_PUBLIC_TIME_DELAY_PRODUCTS",
+  "evidence_status": "STATIC_CONTROL_COMPLETE_NOT_REAL_DATA_T2_EVIDENCE",
+  "t2_status": "REAL_DATA_T2_BLOCKED_STATIC_BRANCH_CLOSED",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER",
+  "closed_branch": "HFF_STATIC_CONTROL",
+  "closure_reason": "Static controls completed their role as falsification and false-positive guardrails. They are not promoted to evidence and should not absorb the main time-delay search.",
+  "ready_gate_count": 5,
+  "gate_count": 5,
+  "selected_static_control": "macs0717",
+  "selected_negative_control": "abells1063",
+  "next_gate": "RETURN_TO_PUBLIC_TIME_DELAY_PRODUCTS",
+  "hard_stop": "No real-data T2 claim or sampling is allowed from this branch. Return to evidence-grade time-delay model products before any real-data T2 test."
+}

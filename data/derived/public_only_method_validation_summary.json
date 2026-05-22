@@ -1,0 +1,20 @@
+{
+  "verdict": "PUBLIC_ONLY_METHOD_VALIDATION_READY",
+  "carried_forward_verdict": "TAU_CORE_T2_METHOD_SURVIVES_SYNTHETIC_NUISANCE_TESTS",
+  "evidence_status": "METHOD_ONLY_NOT_REAL_DATA_EVIDENCE",
+  "t2_status": "METHOD_VALIDATED_REAL_DATA_BLOCKED",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER",
+  "hierarchical_lens_count": 28,
+  "hierarchical_position_constraint_rows": 224,
+  "t2_best_epsilon_hat": 0.0499193089,
+  "t2_best_epsilon_error": -8.06911e-05,
+  "t2_unconstrained_verdict": "GLOBAL_EPSILON_IDENTIFIED",
+  "hook_sweep_pass_count": 6,
+  "hook_sweep_count": 6,
+  "hook_min_delta_chi2": 3.3271380609004524,
+  "check_count": 5,
+  "pass_count": 5,
+  "hard_stop": "This is a method-validation gate only. It does not authorize real-data T2 evidence claims or sampling while public time-delay targets lack evidence-grade image/model products.",
+  "next_gate": "STATIC_LENS_CONTROL_BRANCH_OR_SYNTHETIC_BLIND_CHALLENGE_EXPANSION"
+}

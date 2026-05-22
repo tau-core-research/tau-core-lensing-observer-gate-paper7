@@ -1,0 +1,20 @@
+{
+  "verdict": "STATIC_LENS_CONTROL_BRANCH_READY",
+  "carried_forward_verdict": "HFF_CLUSTER_MORPHOLOGY_CONTROL_SELECTED_NOT_T2_EVIDENCE",
+  "evidence_status": "CONTROL_LAYER_NOT_REAL_DATA_T2_EVIDENCE",
+  "t2_status": "REAL_DATA_T2_BLOCKED_STATIC_CONTROL_AVAILABLE",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER",
+  "cluster_count": 4,
+  "strong_static_control_count": 1,
+  "weak_or_negative_control_count": 1,
+  "chandra_cluster_count": 4,
+  "chandra_median_centroid_separation_kpc": 389.338561872281,
+  "member_centroid_pass_fraction": 0.6,
+  "member_peak_pass_fraction": 0.4,
+  "substructure_total_matched_pass_fraction": 0.5164869029275809,
+  "selected_static_control": "macs0717",
+  "selected_negative_control": "abells1063",
+  "hard_stop": "Static lenses and HFF cluster morphology controls are allowed as control layers only. They must not be promoted to a Ddt/time-delay T2 claim without an evidence-grade no-T2 reproduction chain.",
+  "next_gate": "HFF_CLUSTER_CONTROL_READOUT_AS_STATIC_LENS_CONTROL"
+}

@@ -1,0 +1,17 @@
+{
+  "verdict": "CACHED_NOISE_FAILURE_MONTE_CARLO_READY",
+  "carried_forward_verdict": "T2_NOISE_FAILURE_BOUNDARY_MONTE_CARLO_BRACKETED",
+  "evidence_status": "METHOD_ONLY_NOT_REAL_DATA_EVIDENCE",
+  "t2_status": "METHOD_VALIDATED_REAL_DATA_BLOCKED",
+  "sampling_status": "BLOCKED",
+  "cache_sha256": "00ba1d2a5520bb4c235642caaead94286a0cd3e47723ccd06be688a18a8c12a2",
+  "lens_count": 8,
+  "replicates_per_noise": 64,
+  "noise_level_count": 10,
+  "strict_design_identifiable": true,
+  "stable_noise_max": 0.008,
+  "transition_noise_min": 0.01,
+  "fail_noise_min": null,
+  "hard_stop": "Monte Carlo noise robustness remains synthetic method validation only.",
+  "next_gate": "NOISE_POSITION_PRIOR_JOINT_STRESS_GRID_OR_STATIC_CONTROL_BRANCH"
+}

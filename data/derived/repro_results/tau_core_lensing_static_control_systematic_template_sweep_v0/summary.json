@@ -1,0 +1,33 @@
+{
+  "verdict": "STATIC_CONTROL_SYSTEMATIC_TEMPLATE_SWEEP_READY",
+  "carried_forward_verdict": "STATIC_CONTROL_NOMINAL_TEMPLATES_STABLE_SYSTEMATIC_TEMPLATES_FLAG",
+  "evidence_status": "SYSTEMATIC_TEMPLATE_CONTROL_NOT_REAL_DATA_T2_EVIDENCE",
+  "t2_status": "REAL_DATA_T2_BLOCKED_STATIC_TEMPLATE_SWEEP_COMPLETE",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER",
+  "cluster_count": 4,
+  "template_count": 7,
+  "noise_sigma": 0.02,
+  "false_positive_threshold": 0.05,
+  "replicates_per_template": 4096,
+  "stable_templates": [
+    "balanced_nominal",
+    "centroid_dominant",
+    "substructure_dominant",
+    "peak_dominant",
+    "morphology_score"
+  ],
+  "transition_templates": [
+    "inverted_morphology"
+  ],
+  "fail_templates": [
+    "residual_aligned_adversarial"
+  ],
+  "nominal_templates_all_stable": true,
+  "inverted_template_band": "transition",
+  "inverted_false_positive_rate": 0.010498046875,
+  "adversarial_template_band": "fails",
+  "adversarial_false_positive_rate": 0.70947265625,
+  "hard_stop": "This template sweep tests static-control false-positive sensitivity only. It does not authorize Ddt/time-delay T2 evidence or real-data sampling.",
+  "next_gate": "STATIC_CONTROL_REPORT_CARD_OR_RETURN_TO_PUBLIC_TIME_DELAY_PRODUCTS"
+}

@@ -1,0 +1,5 @@
+cluster,control_role,centroid_fraction,peak_fraction,substructure_fraction,chandra_centroid_separation_kpc,morphology_control_score,control_grade,t2_evidence_allowed,suspicious_if
+macs0717,strong_substructure_control,1.0,0.3333333333333333,0.9111111111111111,758.4823352229438,0.8066666666666665,strong_control,False,"should remain a morphology stress target, not an evidence claim"
+macs0416,centroid_control_positive_peak_mixed,0.75,0.75,0.29,635.3099671682149,0.6369999999999999,mixed_control,False,would become suspicious if a time-delay-style T2 readout became strong without time-delay data
+abell2744,team_statistic_sensitive_control,0.5,0.5,0.6666666666666666,110.34463462519236,0.5220689269250385,mixed_control,False,would become suspicious if a time-delay-style T2 readout became strong without time-delay data
+abells1063,weak_or_relaxed_negative_control,0.25,0.0,0.2891566265060241,143.36715657634704,0.20292041926707663,weak_negative_control,False,would become suspicious if a time-delay-style T2 readout became strong without time-delay data

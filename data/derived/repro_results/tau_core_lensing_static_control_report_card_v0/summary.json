@@ -1,0 +1,26 @@
+{
+  "verdict": "STATIC_CONTROL_REPORT_CARD_READY",
+  "carried_forward_verdict": "STATIC_CONTROL_BRANCH_COMPLETE_AS_CONTROL_NOT_EVIDENCE",
+  "evidence_status": "STATIC_CONTROL_COMPLETE_NOT_REAL_DATA_T2_EVIDENCE",
+  "t2_status": "REAL_DATA_T2_BLOCKED_STATIC_CONTROL_COMPLETE",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER",
+  "gate_count": 5,
+  "ready_gate_count": 5,
+  "cluster_count": 4,
+  "selected_static_control": "macs0717",
+  "selected_negative_control": "abells1063",
+  "scorecard_grade_counts": {
+    "strong_control": 1,
+    "mixed_control": 2,
+    "weak_negative_control": 1
+  },
+  "baseline_null_false_positive_rate": 0.0,
+  "baseline_null_observed_epsilon_hat": 0.004678323836468474,
+  "reference_threshold_stable_max_noise": 0.02,
+  "nominal_templates_all_stable": true,
+  "adversarial_false_positive_rate": 0.70947265625,
+  "plain_language_readout": "The static branch is a useful safety check: it distinguishes strong, mixed, and weak controls; it does not manufacture T2 under baseline null injection; and it exposes the noise/template regimes that can create false positives. It does not measure T2 in time-delay lenses.",
+  "hard_stop": "No real-data T2 claim or sampling is allowed from this branch. Return to evidence-grade time-delay model products before any real-data T2 test.",
+  "next_gate": "RETURN_TO_PUBLIC_TIME_DELAY_PRODUCTS_OR_CLOSE_STATIC_BRANCH"
+}

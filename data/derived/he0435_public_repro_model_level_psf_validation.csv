@@ -1,0 +1,8 @@
+check,passed,value
+pixel_mask_contract_complete,True,True
+all_selected_amplitudes_nonnegative,True,True
+no_selected_hard_bound_nuisance,False,6
+ring_rms_improves_vs_baseline_gt_0p5,False,0.0209655273
+ring_rms_improves_vs_previous_gt_0p05,False,0.0
+max_filter_spread_lt_2,False,3.1192858536
+max_ring_five_sigma_fraction_lt_0p10,False,0.2173664667

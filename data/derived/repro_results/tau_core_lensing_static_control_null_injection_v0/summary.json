@@ -1,0 +1,23 @@
+{
+  "verdict": "STATIC_CONTROL_NULL_INJECTION_READY",
+  "carried_forward_verdict": "STATIC_CONTROL_FALSE_POSITIVE_GUARDRAIL_PASSES",
+  "evidence_status": "NULL_CONTROL_NOT_REAL_DATA_T2_EVIDENCE",
+  "t2_status": "REAL_DATA_T2_BLOCKED_STATIC_NULL_CONTROL_PASSES",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER",
+  "cluster_count": 4,
+  "injected_epsilon_tau": 0.0,
+  "observed_null_epsilon_hat": 0.004678323836468474,
+  "false_positive_threshold": 0.05,
+  "replicates": 2048,
+  "noise_sigma": 0.015,
+  "seed": 1729,
+  "false_positive_count": 0,
+  "false_positive_rate": 0.0,
+  "max_allowed_false_positive_rate": 0.01,
+  "mean_epsilon_hat": 0.004559340127984798,
+  "q95_abs_epsilon_hat": 0.025898004704218946,
+  "q99_abs_epsilon_hat": 0.033865130043108864,
+  "hard_stop": "This is a static-control false-positive test only. It does not authorize Ddt/time-delay T2 evidence or real-data sampling.",
+  "next_gate": "STATIC_CONTROL_NULL_STRESS_SWEEP"
+}

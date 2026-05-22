@@ -1,0 +1,6 @@
+target,current_status,reason
+HE0435-1223,blocked_public_fallback,public PSF gate failed; contact disabled
+RXJ1131-1231,compressed_products_only,no public image-level model posterior/config or Fermat/parity mapping confirmed
+WFI2033-4723,compressed_or_paper_products_only,no public image-level model posterior/config or Fermat/parity mapping confirmed
+WGD2038-4008,paper_products_only,no target-specific public image-level posterior/config sufficient for no-T2 Ddt/null reproduction
+DES J0408-5354,paper_products_only,no target-specific public image-level posterior/config sufficient for no-T2 Ddt/null reproduction

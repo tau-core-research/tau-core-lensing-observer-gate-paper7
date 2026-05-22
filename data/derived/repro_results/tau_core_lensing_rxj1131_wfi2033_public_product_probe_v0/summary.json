@@ -1,0 +1,16 @@
+{
+  "verdict": "RXJ1131_WFI2033_PUBLIC_PRODUCT_PROBES_COMPLETE",
+  "carried_forward_verdict": "RXJ1131_WFI2033_COMPRESSED_PRODUCTS_ONLY_NO_T2_REPRO_BLOCKED",
+  "t2_status": "BLOCKED",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER_FOR_HE0435",
+  "target_count": 2,
+  "pass_targets": [],
+  "fail_targets": [
+    "RXJ1131-1231",
+    "WFI2033-4723"
+  ],
+  "primary_blocker": "no public image-level model posterior/config or Fermat/parity mapping confirmed",
+  "hard_stop": "RXJ1131 and WFI2033 have useful public distance and paper-level products, but this quick no-contact probe does not find enough image-level/model-level public material to start a no-T2 Ddt/null reproduction gate.",
+  "next_gate": "WGD2038_DESJ0408_PUBLIC_PRODUCT_PROBES_OR_DEEP_REPOSITORY_SEARCH"
+}

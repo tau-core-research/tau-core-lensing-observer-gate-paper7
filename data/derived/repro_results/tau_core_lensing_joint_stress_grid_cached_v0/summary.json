@@ -1,0 +1,16 @@
+{
+  "verdict": "CACHED_JOINT_STRESS_GRID_READY",
+  "carried_forward_verdict": "T2_IDENTIFIABILITY_DEGRADES_UNDER_COMBINED_STRESSORS",
+  "evidence_status": "METHOD_ONLY_NOT_REAL_DATA_EVIDENCE",
+  "t2_status": "METHOD_VALIDATED_REAL_DATA_BLOCKED",
+  "sampling_status": "BLOCKED",
+  "previous_noise_mc_verdict": "CACHED_NOISE_FAILURE_MONTE_CARLO_READY",
+  "cache_sha256": "00ba1d2a5520bb4c235642caaead94286a0cd3e47723ccd06be688a18a8c12a2",
+  "scenario_count": 8,
+  "replicates_per_scenario": 48,
+  "stable_count": 6,
+  "transition_count": 2,
+  "fail_count": 0,
+  "hard_stop": "Joint stress grid is synthetic method validation only.",
+  "next_gate": "STATIC_LENS_CONTROL_BRANCH_OR_JOINT_STRESS_REFINEMENT"
+}

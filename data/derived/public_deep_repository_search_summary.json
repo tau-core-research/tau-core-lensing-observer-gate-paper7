@@ -1,0 +1,13 @@
+{
+  "verdict": "PUBLIC_LENS_DEEP_REPOSITORY_SEARCH_COMPLETE",
+  "carried_forward_verdict": "NO_PUBLIC_EVIDENCE_GRADE_TIME_DELAY_MODEL_PRODUCTS_FOUND",
+  "t2_status": "BLOCKED",
+  "sampling_status": "BLOCKED",
+  "contact_route_status": "DISABLED_BY_USER",
+  "routes_checked": 6,
+  "targets_reviewed": 5,
+  "evidence_grade_target_found": false,
+  "primary_blocker": "public products are compressed, paper-only, or software-only rather than target-specific posterior/config/Fermat-parity releases",
+  "hard_stop": "No public-only time-delay target in this audit has enough confirmed image/model product depth to authorize no-T2 sampling or T2 evaluation.",
+  "next_gate": "PUBLIC_ONLY_METHOD_VALIDATION_OR_STATIC_CONTROL_BRANCH_DECISION"
+}

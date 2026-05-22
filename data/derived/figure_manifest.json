@@ -1,0 +1,14 @@
+{
+  "figures": [
+    "fig01_observer_principle_lensing_schematic.svg",
+    "fig02_proof_gate_flow.svg",
+    "fig02_theory_completion_gap.svg",
+    "fig03_public_product_status_matrix.svg",
+    "fig04_static_control_guardrails.svg",
+    "fig05_synthetic_identifiability_summary.svg"
+  ],
+  "formats": [
+    "svg",
+    "png"
+  ]
+}

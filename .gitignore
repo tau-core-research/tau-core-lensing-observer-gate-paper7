@@ -1,0 +1,10 @@
+.DS_Store
+.pytest_cache/
+__pycache__/
+*.aux
+*.log
+*.out
+*.toc
+*.blg
+*.bbl
+*.synctex.gz

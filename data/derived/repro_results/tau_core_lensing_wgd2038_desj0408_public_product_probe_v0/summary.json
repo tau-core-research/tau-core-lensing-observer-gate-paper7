@@ -1,0 +1,16 @@
+{
+  "verdict": "WGD2038_DESJ0408_PUBLIC_PRODUCT_PROBES_COMPLETE",
+  "carried_forward_verdict": "WGD2038_DESJ0408_PAPER_PRODUCTS_ONLY_NO_T2_REPRO_BLOCKED",
+  "t2_status": "BLOCKED",
+  "sampling_status": "BLOCKED",
+  "previous_probe_verdict": "RXJ1131_WFI2033_PUBLIC_PRODUCT_PROBES_COMPLETE",
+  "target_count": 2,
+  "pass_targets": [],
+  "fail_targets": [
+    "WGD2038-4008",
+    "DES J0408-5354"
+  ],
+  "primary_blocker": "no target-specific public image-level posterior/config sufficient for no-T2 Ddt/null reproduction",
+  "hard_stop": "WGD2038 and DES J0408 have useful paper-level cosmography products, and DES J0408 explicitly uses public lenstronomy software, but this probe does not confirm target-specific public posterior/config products or full Fermat/parity mappings.",
+  "next_gate": "PUBLIC_LENS_DEEP_REPOSITORY_SEARCH_OR_LOWER_PRIORITY_TARGETS"
+}
