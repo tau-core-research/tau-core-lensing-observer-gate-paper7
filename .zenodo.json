@@ -1,0 +1,29 @@
+{
+  "title": "Observer-Gated Tau-Core Lensing: Feasibility, Identifiability, and Static-Control Protocol",
+  "upload_type": "software",
+  "description": "Public reproducibility package for Paper 7, a claim-bounded observer-gated Tau-Core lensing feasibility and falsification-protocol study. The package contains manuscript source, rendered PDF, arXiv source package, derived artifacts, scripts, and tests. It is a theory-method feasibility package and does not claim a real-lensing detection, a completed Tau Core theory, or a derived parent action.",
+  "creators": [
+    {
+      "name": "Olcsak, Jozsef"
+    }
+  ],
+  "license": "MIT",
+  "version": "v0.1.0",
+  "access_right": "open",
+  "keywords": [
+    "Tau Core",
+    "lensing",
+    "observer gate",
+    "weak-field lensing",
+    "falsification protocol",
+    "reproducibility package"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/tau-core-research/tau-core-lensing-observer-gate-paper7",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "The paper-level result is a falsifiable weak-field candidate/protocol with explicit blockers, not an empirical validation claim."
+}

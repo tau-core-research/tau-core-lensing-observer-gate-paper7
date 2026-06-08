@@ -4,7 +4,7 @@ title: "Observer-Gated Tau-Core Lensing: A Public-Data Feasibility Study, Synthe
 authors:
   - family-names: "Olcsak"
     given-names: "Jozsef"
-date-released: "2026-05-21"
-version: "v0.1"
+date-released: "2026-06-08"
+version: "v0.1.0"
 repository-code: "https://github.com/tau-core-research/tau-core-lensing-observer-gate-paper7"
 license: "MIT"
