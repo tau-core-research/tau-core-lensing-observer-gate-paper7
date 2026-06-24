@@ -1,0 +1,3 @@
+source_id,classification,followup_ready_for_bounded_no_t2_reproduction,real_data_T2_sampling_authorized,source_url,local_path,next_step
+DESJ0408_time_delay_cosmography,REAL_TARGET_NOTEBOOK_AND_POSTERIOR_CANDIDATE,True,False,https://github.com/ajshajib/DESJ0408_time_delay_cosmography,data/external/source_candidate_repos/DESJ0408_time_delay_cosmography,Build a compatibility extractor for the DES J0408 notebooks/posterior files and run a bounded no-T2 baseline reproduction before any T2 path.
+TD_data_public,METHOD_CONTROL_OR_MOCK_VALIDATION_CANDIDATE,False,False,https://github.com/TDCOSMO/TD_data_public,data/external/source_candidate_repos/TD_data_public,Use only as a method-control source unless a target-specific real-data image/model posterior payload is identified.

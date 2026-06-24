@@ -1,0 +1,350 @@
+{
+  "claim_boundary": [
+    "The observed-delay vector and covariance are source-backed from TDCOSMO XVI Fig. 2.",
+    "The Fermat inputs are local bounded diagnostics, not the converged/published WGD posterior.",
+    "The residual vector is therefore a convention-checked smoke test, not a DES-frozen holdout score.",
+    "No T2 parameter is fitted or sampled."
+  ],
+  "counts": {
+    "delay_pair_row_count": 9,
+    "score_ready_row_count": 0,
+    "successful_local_fermat_job_count": 3
+  },
+  "dimension_check": {
+    "days_per_mpc_arcsec2": 0.02800050301226257,
+    "ddt_weighted_mean_mpc": 1493.3921073503702,
+    "ddt_weighted_q16_mpc": 1169.4884518181098,
+    "ddt_weighted_q50_mpc": 1493.6893108659317,
+    "ddt_weighted_q84_mpc": 1816.7354161030025,
+    "formula": "Delta_t_AX_days = Ddt_Mpc * days_per_mpc_arcsec2 * Delta_phi_AX_arcsec2",
+    "weighted_mean_days_per_arcsec2": 41.81573020035319
+  },
+  "external_literature_sources": [
+    {
+      "arxiv_url": "https://arxiv.org/abs/2406.02683",
+      "id": "TDCOSMO_XVI_WGD2038_FIG2",
+      "journal_url": "https://www.aanda.org/articles/aa/full_html/2024/09/aa50979-24/aa50979-24.html",
+      "source_location": "Fig. 2 upper-left delay and covariance panel",
+      "title": "TDCOSMO. XVI. Measurement of the Hubble Constant from the Lensed Quasar WGD 2038-4008",
+      "transcription_basis": "manual transcription from rendered arXiv/A&A figure and source PDF"
+    }
+  ],
+  "input_artifacts": {
+    "fermat_preflight": "data/derived/repro_results/tau_core_lensing_wgd2038_bounded_local_fermat_preflight_v1/summary.json",
+    "partial_materialization": "data/derived/repro_results/tau_core_lensing_wgd2038_partial_holdout_materialization_v1/summary.json"
+  },
+  "job_summaries": [
+    {
+      "chi2_against_published_delay_covariance": 36.70767870611243,
+      "claim_level": "bounded_profile_freeze_v2_not_converged_posterior",
+      "job_name": "tau_core_profile_freeze_v2_pemd_fastell_backend",
+      "model_no_t2_delay_days": {
+        "AB": 0.25184803143710605,
+        "AC": 1.2300092835117833,
+        "AD": 3.3837002096344597
+      },
+      "normalized_rmse_sigma_units": 3.497984119752043,
+      "notebook_basis_dphi_phi_X_minus_phi_A": {
+        "AB": -0.006022806016549698,
+        "AC": -0.029414989948002734,
+        "AD": -0.08091931417727294
+      },
+      "observed_minus_model_no_t2_residual_days": {
+        "AB": -12.651848031437106,
+        "AC": -6.530009283511783,
+        "AD": -36.68370020963446
+      },
+      "publication_basis_dphi_phi_A_minus_phi_X": {
+        "AB": 0.006022806016549698,
+        "AC": 0.029414989948002734,
+        "AD": 0.08091931417727294
+      },
+      "score_interpretation": "diagnostic residual smoke only; the local Fermat table is bounded and non-converged, so this is not a holdout score."
+    },
+    {
+      "chi2_against_published_delay_covariance": 37.13604234605528,
+      "claim_level": "bounded_profile_freeze_v1_not_converged_posterior",
+      "job_name": "tau_core_profile_freeze_v1_pemd_fastell_backend",
+      "model_no_t2_delay_days": {
+        "AB": 0.19314351179567527,
+        "AC": 1.2399514926849933,
+        "AD": 3.6702861821535415
+      },
+      "normalized_rmse_sigma_units": 3.5183349445466994,
+      "notebook_basis_dphi_phi_X_minus_phi_A": {
+        "AB": -0.0046189199822712634,
+        "AC": -0.029652752367206547,
+        "AD": -0.08777285879184626
+      },
+      "observed_minus_model_no_t2_residual_days": {
+        "AB": -12.593143511795676,
+        "AC": -6.5399514926849935,
+        "AD": -36.97028618215354
+      },
+      "publication_basis_dphi_phi_A_minus_phi_X": {
+        "AB": 0.0046189199822712634,
+        "AC": 0.029652752367206547,
+        "AD": 0.08777285879184626
+      },
+      "score_interpretation": "diagnostic residual smoke only; the local Fermat table is bounded and non-converged, so this is not a holdout score."
+    },
+    {
+      "chi2_against_published_delay_covariance": 36.82587716132973,
+      "claim_level": "bounded_diag120_cont3_cold_not_converged_posterior",
+      "job_name": "tau_core_mcmc_diag120_cont3_cold_pemd_fastell_backend",
+      "model_no_t2_delay_days": {
+        "AB": 0.29393922715607257,
+        "AC": 1.248161006152443,
+        "AD": 3.431138694572887
+      },
+      "normalized_rmse_sigma_units": 3.503611335052721,
+      "notebook_basis_dphi_phi_X_minus_phi_A": {
+        "AB": -0.00702939362167565,
+        "AC": -0.02984907832942496,
+        "AD": -0.0820537792388929
+      },
+      "observed_minus_model_no_t2_residual_days": {
+        "AB": -12.693939227156072,
+        "AC": -6.5481610061524425,
+        "AD": -36.731138694572884
+      },
+      "publication_basis_dphi_phi_A_minus_phi_X": {
+        "AB": 0.00702939362167565,
+        "AC": 0.02984907832942496,
+        "AD": 0.0820537792388929
+      },
+      "score_interpretation": "diagnostic residual smoke only; the local Fermat table is bounded and non-converged, so this is not a holdout score."
+    }
+  ],
+  "next_finite_action": "Replace the local bounded Fermat table with a converged or published WGD Fermat/posterior table in the same A-centered convention, then re-run this smoke as the first score-ready holdout residual.",
+  "primary_job_summary": {
+    "chi2_against_published_delay_covariance": 36.70767870611243,
+    "claim_level": "bounded_profile_freeze_v2_not_converged_posterior",
+    "job_name": "tau_core_profile_freeze_v2_pemd_fastell_backend",
+    "model_no_t2_delay_days": {
+      "AB": 0.25184803143710605,
+      "AC": 1.2300092835117833,
+      "AD": 3.3837002096344597
+    },
+    "normalized_rmse_sigma_units": 3.497984119752043,
+    "notebook_basis_dphi_phi_X_minus_phi_A": {
+      "AB": -0.006022806016549698,
+      "AC": -0.029414989948002734,
+      "AD": -0.08091931417727294
+    },
+    "observed_minus_model_no_t2_residual_days": {
+      "AB": -12.651848031437106,
+      "AC": -6.530009283511783,
+      "AD": -36.68370020963446
+    },
+    "publication_basis_dphi_phi_A_minus_phi_X": {
+      "AB": 0.006022806016549698,
+      "AC": 0.029414989948002734,
+      "AD": 0.08091931417727294
+    },
+    "score_interpretation": "diagnostic residual smoke only; the local Fermat table is bounded and non-converged, so this is not a holdout score."
+  },
+  "published_time_delay_covariance": {
+    "matrix": [
+      [
+        14.2,
+        6.1,
+        7.5
+      ],
+      [
+        6.1,
+        14.8,
+        7.1
+      ],
+      [
+        7.5,
+        7.1,
+        39.9
+      ]
+    ],
+    "pair_order": [
+      "AB",
+      "AC",
+      "AD"
+    ],
+    "units": "days^2"
+  },
+  "published_time_delay_vector": {
+    "convention": "Delta_t_AX=t_A-t_X",
+    "selected_solution": "negative_AC_solution",
+    "units": "days",
+    "values": {
+      "AB": -12.4,
+      "AC": -5.3,
+      "AD": -33.3
+    }
+  },
+  "purpose": "Materialize the published WGD2038 observed-delay vector/covariance and compute a bounded no-T2 residual smoke in the same A-centered delay convention.",
+  "rows": [
+    {
+      "claim_level": "bounded_profile_freeze_v2_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AB",
+      "job_name": "tau_core_profile_freeze_v2_pemd_fastell_backend",
+      "model_no_t2_delay_days": 0.25184803143710605,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.006022806016549698,
+      "observed_delay_days": -12.4,
+      "observed_minus_model_no_t2_residual_days": -12.651848031437106,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.006022806016549698,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    },
+    {
+      "claim_level": "bounded_profile_freeze_v2_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AC",
+      "job_name": "tau_core_profile_freeze_v2_pemd_fastell_backend",
+      "model_no_t2_delay_days": 1.2300092835117833,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.029414989948002734,
+      "observed_delay_days": -5.3,
+      "observed_minus_model_no_t2_residual_days": -6.530009283511783,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.029414989948002734,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    },
+    {
+      "claim_level": "bounded_profile_freeze_v2_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AD",
+      "job_name": "tau_core_profile_freeze_v2_pemd_fastell_backend",
+      "model_no_t2_delay_days": 3.3837002096344597,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.08091931417727294,
+      "observed_delay_days": -33.3,
+      "observed_minus_model_no_t2_residual_days": -36.68370020963446,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.08091931417727294,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    },
+    {
+      "claim_level": "bounded_profile_freeze_v1_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AB",
+      "job_name": "tau_core_profile_freeze_v1_pemd_fastell_backend",
+      "model_no_t2_delay_days": 0.19314351179567527,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.0046189199822712634,
+      "observed_delay_days": -12.4,
+      "observed_minus_model_no_t2_residual_days": -12.593143511795676,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.0046189199822712634,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    },
+    {
+      "claim_level": "bounded_profile_freeze_v1_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AC",
+      "job_name": "tau_core_profile_freeze_v1_pemd_fastell_backend",
+      "model_no_t2_delay_days": 1.2399514926849933,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.029652752367206547,
+      "observed_delay_days": -5.3,
+      "observed_minus_model_no_t2_residual_days": -6.5399514926849935,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.029652752367206547,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    },
+    {
+      "claim_level": "bounded_profile_freeze_v1_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AD",
+      "job_name": "tau_core_profile_freeze_v1_pemd_fastell_backend",
+      "model_no_t2_delay_days": 3.6702861821535415,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.08777285879184626,
+      "observed_delay_days": -33.3,
+      "observed_minus_model_no_t2_residual_days": -36.97028618215354,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.08777285879184626,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    },
+    {
+      "claim_level": "bounded_diag120_cont3_cold_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AB",
+      "job_name": "tau_core_mcmc_diag120_cont3_cold_pemd_fastell_backend",
+      "model_no_t2_delay_days": 0.29393922715607257,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.00702939362167565,
+      "observed_delay_days": -12.4,
+      "observed_minus_model_no_t2_residual_days": -12.693939227156072,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.00702939362167565,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    },
+    {
+      "claim_level": "bounded_diag120_cont3_cold_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AC",
+      "job_name": "tau_core_mcmc_diag120_cont3_cold_pemd_fastell_backend",
+      "model_no_t2_delay_days": 1.248161006152443,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.02984907832942496,
+      "observed_delay_days": -5.3,
+      "observed_minus_model_no_t2_residual_days": -6.5481610061524425,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.02984907832942496,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    },
+    {
+      "claim_level": "bounded_diag120_cont3_cold_not_converged_posterior",
+      "days_per_mpc_arcsec2": 0.02800050301226257,
+      "ddt_weighted_mean_mpc": 1493.3921073503702,
+      "delay_pair": "AD",
+      "job_name": "tau_core_mcmc_diag120_cont3_cold_pemd_fastell_backend",
+      "model_no_t2_delay_days": 3.431138694572887,
+      "notebook_basis_dphi_phi_X_minus_phi_A": -0.0820537792388929,
+      "observed_delay_days": -33.3,
+      "observed_minus_model_no_t2_residual_days": -36.731138694572884,
+      "publication_basis_dphi_phi_A_minus_phi_X": 0.0820537792388929,
+      "published_delay_convention": "Delta_t_AX=t_A-t_X",
+      "t2_parameter_fit_or_sampled": false,
+      "target_id": "WGD2038-4008",
+      "usable_for_des_frozen_score": false,
+      "uses_converged_or_published_wgd_posterior": false
+    }
+  ],
+  "schema": "paper7 WGD2038 observed-delay no-T2 smoke v1",
+  "verdict": {
+    "can_apply_des_frozen_score_now": false,
+    "claim_level": "published_delay_vector_plus_local_nonconverged_no_t2_smoke_not_T2_evidence",
+    "real_data_T2_sampling_authorized": false,
+    "t2_specific_time_shift_evidence": false,
+    "uses_converged_or_published_wgd_posterior": false,
+    "uses_published_observed_delay_measurement": true,
+    "wgd2038_no_t2_residual_smoke_computed": true,
+    "wgd2038_observed_delay_covariance_materialized": true,
+    "wgd2038_observed_delay_vector_materialized": true
+  }
+}

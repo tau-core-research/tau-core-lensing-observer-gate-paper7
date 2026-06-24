@@ -1,0 +1,50 @@
+{
+  "band_count": 3,
+  "claim_level": "bounded_sampler_sensitivity_diagnostic_not_converged_posterior",
+  "content_hash": "dee04fb2885f071e7fd9050d0ac6fdff0737e26236e7afef73c4baf5d835a1dc",
+  "converged_no_T2_posterior_reproduced": false,
+  "created_at_unix": 1782245390.78458,
+  "diagnostic_verdict": "FINITE_COLD_CONTINUATION_CHAIN_HEALTH_CHECK_NOT_CONVERGED_POSTERIOR",
+  "emcee_log_prob_shape": [
+    25440
+  ],
+  "emcee_sample_shape": [
+    25440,
+    53
+  ],
+  "executed_notebook_path": "/tmp/wgd2038_Multiband_Image_Modeling_tau_core_mcmc_diag120_cont3_cold_fastell_backend_executed.ipynb",
+  "executed_notebook_sha256": "b547fb9b8a0d04a2667f0dde84e42347adc115e27d3c8d745284770dc39fe84e",
+  "finite_logp": true,
+  "finite_samples": true,
+  "first_five_parameters": [
+    "gamma_lens0",
+    "gamma1_lens1",
+    "gamma2_lens1",
+    "R_sersic_source_light0",
+    "n_sersic_source_light0"
+  ],
+  "fit_output_types": [
+    "emcee"
+  ],
+  "interpretation": "Cold endpoint continuation with smaller sigma_scale; finite-chain sampler sensitivity diagnostic only, not a posterior convergence claim.",
+  "job_name": "tau_core_mcmc_diag120_cont3_cold_pemd_fastell_backend",
+  "lens_result_count": 2,
+  "logp_max": -11149437.536366077,
+  "logp_median": -11342975.303662691,
+  "logp_min": -22829177.59891215,
+  "mcmc_sigma_scale": 0.02,
+  "output_path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_mcmc_diag120_cont3_cold_pemd_fastell_backend_out.txt",
+  "output_sha256": "0016f970a728d5d2b6e866b2970fca598698d0ea0c80f2d3ab122f2b15980f7b",
+  "param_count": 53,
+  "previous_job_name": "tau_core_mcmc_diag120_cont2_pemd_fastell_backend",
+  "real_data_T2_sampling_authorized": false,
+  "schema": "paper7 WGD2038 fastell-backed MCMC diag120 continuation-3 cold payload summary v1",
+  "split_half_abs_mean_shift_sigma_quantiles": {
+    "p100": 1.5186164752103657,
+    "p50": 0.9830444084035003,
+    "p90": 1.408641270470426,
+    "p95": 1.470018361378658,
+    "p99": 1.5181002319205397
+  },
+  "uses_previous_chain_endpoint_start": true
+}

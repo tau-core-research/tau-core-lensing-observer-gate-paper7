@@ -1,0 +1,128 @@
+{
+  "aggregate": {
+    "coherent_no_t2_residual_direction_present": true,
+    "logz_weighted_model_minus_observed_dt1_days": -2.8131375586248595,
+    "logz_weighted_model_minus_observed_dt2_days": 19.951737823937464,
+    "logz_weighted_observed_minus_model_dt1_days": 2.8131375586248595,
+    "logz_weighted_observed_minus_model_dt2_days": -19.951737823937464,
+    "min_pairwise_residual_cosine": 0.9980974784235199,
+    "same_sign_dt1_residual": true,
+    "same_sign_dt2_residual": true,
+    "strict_clean_model_count": 2,
+    "unweighted_model_minus_observed_dt1_days": -3.42512010294044,
+    "unweighted_model_minus_observed_dt2_days": 19.844028900219328,
+    "unweighted_observed_minus_model_dt1_days": 3.42512010294044,
+    "unweighted_observed_minus_model_dt2_days": -19.844028900219328
+  },
+  "criteria": {
+    "coherence_alone_is_specific_enough_for_t2_claim": false,
+    "coherent_residual_required_for_candidate": true,
+    "fits_or_samples_t2": false,
+    "independent_lens_system_confirmation_available": false,
+    "negative_control_rows_checked": true,
+    "physical_tau_time_law_available": false,
+    "real_data_T2_sampling_authorized": false,
+    "uses_endpoint_retuning": false,
+    "uses_failed_desj0408_models": false,
+    "uses_only_strict_clean_no_t2_models": true
+  },
+  "negative_controls": {
+    "all_feature_rows": {
+      "coherent_residual_direction_present": true,
+      "count": 5,
+      "min_pairwise_residual_cosine": 0.9895712614684374,
+      "model_ids": [
+        "0408_run1001_0_0_0_0_0_1_1_0",
+        "0408_run905_0_1_0_0_0_1_1_0",
+        "0408_run1006_0_1_1_0_0_1_1_0",
+        "0408_run909_0_2_0_0_0_1_1_0",
+        "0408_run910_0_2_1_0_0_1_1_0"
+      ],
+      "same_sign_dt1_residual": true,
+      "same_sign_dt2_residual": true,
+      "unweighted_model_minus_observed_dt1_days": -3.5864564150538114,
+      "unweighted_model_minus_observed_dt2_days": 19.794349074438706
+    },
+    "coherence_not_unique_to_clean_core": true,
+    "nonclean_feature_rows": {
+      "coherent_residual_direction_present": true,
+      "count": 3,
+      "min_pairwise_residual_cosine": 0.9895712614684374,
+      "model_ids": [
+        "0408_run905_0_1_0_0_0_1_1_0",
+        "0408_run1006_0_1_1_0_0_1_1_0",
+        "0408_run909_0_2_0_0_0_1_1_0"
+      ],
+      "same_sign_dt1_residual": true,
+      "same_sign_dt2_residual": true,
+      "unweighted_model_minus_observed_dt1_days": -3.694013956462726,
+      "unweighted_model_minus_observed_dt2_days": 19.76122919058496
+    }
+  },
+  "purpose": "Search the strict clean DES J0408 no-T2 baseline for a coherent time-delay residual direction that could motivate a later bounded T2 design, without fitting or sampling T2.",
+  "rows": [
+    {
+      "clean_no_t2_row": true,
+      "combined_pull_dt1": -1.2308018513263919,
+      "combined_pull_dt2": 1.5536556268575759,
+      "combined_sigma_dt1_days": 2.2856136880142324,
+      "combined_sigma_dt2_days": 12.841801927684484,
+      "model_dt1_mean_days": -114.91313755862485,
+      "model_dt2_mean_days": -135.54826217606254,
+      "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+      "model_minus_observed_dt1_days": -2.8131375586248595,
+      "model_minus_observed_dt2_days": 19.951737823937464,
+      "observed_dt1_days": -112.1,
+      "observed_dt2_days": -155.5,
+      "observed_minus_model_dt1_days": 2.8131375586248595,
+      "observed_minus_model_dt2_days": -19.951737823937464,
+      "published_fraction_within_2sigma_box": 0.965,
+      "published_mean_chi2_vs_observed": 4.415247627349636,
+      "relative_core_logZ_weight": 1.0
+    },
+    {
+      "clean_no_t2_row": true,
+      "combined_pull_dt1": -1.7325065319658068,
+      "combined_pull_dt2": 1.5354193448629128,
+      "combined_sigma_dt1_days": 2.330209192732612,
+      "combined_sigma_dt2_days": 12.85402586761294,
+      "model_dt1_mean_days": -116.13710264725601,
+      "model_dt2_mean_days": -135.7636800234988,
+      "model_id": "0408_run910_0_2_1_0_0_1_1_0",
+      "model_minus_observed_dt1_days": -4.03710264725602,
+      "model_minus_observed_dt2_days": 19.736319976501193,
+      "observed_dt1_days": -112.1,
+      "observed_dt2_days": -155.5,
+      "observed_minus_model_dt1_days": 4.03710264725602,
+      "observed_minus_model_dt2_days": -19.736319976501193,
+      "published_fraction_within_2sigma_box": 0.5837,
+      "published_mean_chi2_vs_observed": 6.312891593330599,
+      "relative_core_logZ_weight": 3.602962029248673e-158
+    }
+  ],
+  "schema": "paper7 DES J0408 no-T2 time-residual candidate pretest v1",
+  "source": {
+    "clean_model_ids": [
+      "0408_run1001_0_0_0_0_0_1_1_0",
+      "0408_run910_0_2_1_0_0_1_1_0"
+    ],
+    "feature_csv": "data/derived/desj0408_powerlaw_57_core_feature_table_v1.csv",
+    "observed_delays_days": [
+      -112.1,
+      -155.5
+    ],
+    "observed_sigma_days": [
+      2.1,
+      12.8
+    ]
+  },
+  "verdict": {
+    "bounded_t2_design_motivated": true,
+    "coherence_alone_supports_t2_claim": false,
+    "coherent_no_t2_time_residual_direction_observed": true,
+    "coherent_residual_is_clean_core_unique": false,
+    "desj0408_no_t2_time_residual_candidate_audit_created": true,
+    "real_data_T2_sampling_authorized": false,
+    "tau_specific_time_shift_evidence": false
+  }
+}

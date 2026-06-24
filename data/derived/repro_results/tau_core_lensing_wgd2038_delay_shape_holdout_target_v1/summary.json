@@ -1,0 +1,139 @@
+{
+  "claim_boundary": [
+    "The target is defined from WGD2038 published observed delays and published model predictions, so it is not endpoint-blind.",
+    "It is a predeclared future comparison target, not an evidence-grade no-T2 reproduction.",
+    "It does not fit or sample a T2 parameter.",
+    "A posterior-level WGD Fermat/delay table is still required before a real holdout score can be run."
+  ],
+  "external_literature_sources": [
+    {
+      "arxiv_url": "https://arxiv.org/abs/2202.11101",
+      "id": "TDCOSMO_IX_WGD2038",
+      "journal_url": "https://www.aanda.org/articles/aa/full_html/2022/11/aa43401-22/aa43401-22.html",
+      "title": "TDCOSMO. IX. Systematic comparison between lens modelling software programs: Time-delay prediction for WGD 2038-4008",
+      "used_for": [
+        "published combined GLEE delay prediction at H0=70",
+        "published combined lenstronomy delay prediction at H0=70",
+        "delay-pair convention and model-prediction claim boundary"
+      ]
+    },
+    {
+      "arxiv_url": "https://arxiv.org/abs/2406.02683",
+      "id": "TDCOSMO_XVI_WGD2038_FIG2",
+      "title": "TDCOSMO. XVI. Measurement of the Hubble Constant from the Lensed Quasar WGD 2038-4008",
+      "used_for": [
+        "published observed delay vector",
+        "published observed delay covariance"
+      ]
+    }
+  ],
+  "next_finite_action": "Obtain or reconstruct a posterior-level WGD delay/Fermat table and evaluate its no-T2 residual vector against this frozen covariance-metric shape target.",
+  "purpose": "Freeze the published-model WGD2038 residual direction before any posterior-level WGD score is available.  Future posterior/Fermat products can be tested against this predeclared delay-shape target.",
+  "rows": [
+    {
+      "basis": "publication_A_centered_Delta_t_AX_days",
+      "covariance_metric_norm_sigma_units": 3.237831613447079,
+      "delay_pair": "AB",
+      "fits_or_samples_t2": false,
+      "observed_delay_days": -12.4,
+      "posterior_level_score": false,
+      "scaled_published_model_delay_days": -5.507549039961406,
+      "source_claim_level": "published_model_level_delay_shape_crosscheck_not_T2_evidence",
+      "source_model_id": "lenstronomy_combined_h0_70_flat_lcdm",
+      "target_euclidean_unit_component": -0.618203476848736,
+      "target_id": "wgd2038_published_model_delay_shape_target_v1",
+      "target_residual_days": -6.892450960038595
+    },
+    {
+      "basis": "publication_A_centered_Delta_t_AX_days",
+      "covariance_metric_norm_sigma_units": 3.237831613447079,
+      "delay_pair": "AC",
+      "fits_or_samples_t2": false,
+      "observed_delay_days": -5.3,
+      "posterior_level_score": false,
+      "scaled_published_model_delay_days": -11.015098079922812,
+      "source_claim_level": "published_model_level_delay_shape_crosscheck_not_T2_evidence",
+      "source_model_id": "lenstronomy_combined_h0_70_flat_lcdm",
+      "target_euclidean_unit_component": 0.5126033575028923,
+      "target_id": "wgd2038_published_model_delay_shape_target_v1",
+      "target_residual_days": 5.715098079922812
+    },
+    {
+      "basis": "publication_A_centered_Delta_t_AX_days",
+      "covariance_metric_norm_sigma_units": 3.237831613447079,
+      "delay_pair": "AD",
+      "fits_or_samples_t2": false,
+      "observed_delay_days": -33.3,
+      "posterior_level_score": false,
+      "scaled_published_model_delay_days": -26.656537353413203,
+      "source_claim_level": "published_model_level_delay_shape_crosscheck_not_T2_evidence",
+      "source_model_id": "lenstronomy_combined_h0_70_flat_lcdm",
+      "target_euclidean_unit_component": -0.595871008766911,
+      "target_id": "wgd2038_published_model_delay_shape_target_v1",
+      "target_residual_days": -6.643462646586794
+    }
+  ],
+  "schema": "paper7 WGD2038 delay-shape holdout target v1",
+  "source_artifacts": {
+    "observed_delay_vector_and_covariance": "data/derived/repro_results/tau_core_lensing_wgd2038_observed_delay_no_t2_smoke_v1/summary.json",
+    "published_model_delay_shape_crosscheck": "data/derived/repro_results/tau_core_lensing_wgd2038_published_model_delay_shape_crosscheck_v1/summary.json"
+  },
+  "target_definition": {
+    "basis": "publication_A_centered_Delta_t_AX_days",
+    "delay_pair_order": [
+      "AB",
+      "AC",
+      "AD"
+    ],
+    "future_score_allowed_only_if": [
+      "a posterior-level or published WGD Fermat/delay table is available",
+      "the table uses or is converted into the same A-centered delay convention",
+      "model-prediction uncertainty handling is explicitly declared",
+      "the comparison is run without changing this target direction"
+    ],
+    "future_shape_cosine_formula": "cos_C(r, r_target) = (r^T C^{-1} r_target) / sqrt((r^T C^{-1} r)(r_target^T C^{-1} r_target))",
+    "scalar_match_formula": "s = (m^T C^{-1} d_obs) / (m^T C^{-1} m), r_target = d_obs - s m",
+    "selected_published_model_id": "lenstronomy_combined_h0_70_flat_lcdm",
+    "selection_rule": "Choose the published TDCOSMO IX model with the lowest chi2 after one covariance-weighted scalar match to the TDCOSMO XVI observed delay vector.",
+    "target_id": "wgd2038_published_model_delay_shape_target_v1"
+  },
+  "target_values": {
+    "best_scalar_scale": 1.1015098079922812,
+    "covariance_metric_norm_sigma_units": 3.237831613447079,
+    "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+    "normalized_shape_rmse_sigma_units": 2.28949269020861,
+    "observed_delay_days": {
+      "AB": -12.4,
+      "AC": -5.3,
+      "AD": -33.3
+    },
+    "scaled_published_model_delay_days": {
+      "AB": -5.507549039961406,
+      "AC": -11.015098079922812,
+      "AD": -26.656537353413203
+    },
+    "target_euclidean_unit_direction": {
+      "AB": -0.618203476848736,
+      "AC": 0.5126033575028923,
+      "AD": -0.595871008766911
+    },
+    "target_residual_days": {
+      "AB": -6.892450960038595,
+      "AC": 5.715098079922812,
+      "AD": -6.643462646586794
+    }
+  },
+  "verdict": {
+    "can_apply_des_frozen_score_now": false,
+    "claim_level": "predeclared_published_model_shape_target_not_T2_evidence",
+    "endpoint_blind": false,
+    "posterior_level_score": false,
+    "real_data_T2_sampling_authorized": false,
+    "t2_specific_time_shift_evidence": false,
+    "target_frozen_before_posterior_level_wgd_score": true,
+    "uses_missing_posterior_payload": false,
+    "uses_published_model_predictions": true,
+    "uses_published_observed_delay_measurement": true,
+    "wgd2038_delay_shape_holdout_target_created": true
+  }
+}

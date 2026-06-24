@@ -1,0 +1,250 @@
+{
+  "contract_counts": {
+    "blocked_field_count": 8,
+    "currently_derivable_or_hook_available_count": 3,
+    "expected_joblib_target_count": 36,
+    "required_field_count": 15
+  },
+  "notebook_hooks": {
+    "expected_joblib_target_count": 36,
+    "expected_joblib_target_preview": [
+      {
+        "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_0_0_0_0_shortened_out.txt",
+        "model_family": "powerlaw",
+        "model_id": "2038_run145_0_0_0_0_0_shortened"
+      },
+      {
+        "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_0_1_0_0_shortened_out.txt",
+        "model_family": "powerlaw",
+        "model_id": "2038_run145_0_0_1_0_0_shortened"
+      },
+      {
+        "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_0_2_0_0_shortened_out.txt",
+        "model_family": "powerlaw",
+        "model_id": "2038_run145_0_0_2_0_0_shortened"
+      },
+      {
+        "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_1_0_0_0_shortened_out.txt",
+        "model_family": "powerlaw",
+        "model_id": "2038_run145_0_1_0_0_0_shortened"
+      },
+      {
+        "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_1_1_0_0_shortened_out.txt",
+        "model_family": "powerlaw",
+        "model_id": "2038_run145_0_1_1_0_0_shortened"
+      }
+    ],
+    "fermat_notebook_present": true,
+    "mentions_dphi_ab_ac_ad": true,
+    "mentions_joblib_load": true,
+    "mentions_model_image_positions": true
+  },
+  "purpose": "Specify the exact per-sample WGD2038 image/model table required to test the DES-frozen one-amplitude score on an independent lens.",
+  "readiness_inputs": {
+    "holdout_verdict": {
+      "best_current_holdout_readiness_score_0_to_6": 3,
+      "best_current_holdout_target": "WGD2038-4008",
+      "des_one_amplitude_score_remains_design_only": true,
+      "desj0408_t2_holdout_readiness_audit_created": true,
+      "independent_holdout_score_ready_now": false,
+      "real_data_T2_sampling_authorized": false,
+      "wgd2038_is_best_next_holdout_route": true
+    },
+    "wgd2038_field_criteria": {
+      "ddt_samples_available": true,
+      "ddt_weight_csv_available": true,
+      "fermat_notebook_available": true,
+      "image_parity_available": false,
+      "image_wise_fermat_samples_available": false,
+      "kappa_environment_available": true,
+      "no_t2_image_model_reproduction_authorized": false,
+      "notebook_defines_t2_design_vector_fields": true,
+      "notebook_requires_external_model_payload": true,
+      "processed_pickle_available": true
+    },
+    "wgd2038_hst_criteria_subset": {
+      "converged_no_T2_posterior_reproduced": false,
+      "multiband_data_setup_preflight_executed": true,
+      "posterior_joblib_outputs_reproduced": false
+    },
+    "wgd2038_public_payload_criteria": {
+      "ddt_weight_csv_present": true,
+      "fermat_notebook_present": true,
+      "google_drive_payload_acquired": false,
+      "image_wise_t2_table_acquired": false,
+      "local_public_partial_payload_acquired": true,
+      "model_posterior_joblib_payload_acquired": false,
+      "processed_pickle_present": true,
+      "real_data_T2_sampling_authorized": false
+    }
+  },
+  "rows": [
+    {
+      "blocker_if_missing": "cannot identify independent holdout target",
+      "current_status": "derivable",
+      "dtype": "string",
+      "field_name": "target_id",
+      "pass_condition": "all rows equal WGD2038-4008",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_01",
+      "source_hook": "constant WGD2038-4008"
+    },
+    {
+      "blocker_if_missing": "cannot stratify holdout by model family",
+      "current_status": "notebook_hook_available",
+      "dtype": "string enum",
+      "field_name": "model_family",
+      "pass_condition": "one of powerlaw, composite, composite_previous",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_02",
+      "source_hook": "powerlaw_files/composite_files/composite_files_prev"
+    },
+    {
+      "blocker_if_missing": "cannot link rows to source model posterior",
+      "current_status": "notebook_hook_available",
+      "dtype": "string",
+      "field_name": "model_id",
+      "pass_condition": "matches expected *_out.txt model target",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_03",
+      "source_hook": "notebook model file lists"
+    },
+    {
+      "blocker_if_missing": "cannot form per-sample holdout residuals",
+      "current_status": "blocked_missing_joblib_payload",
+      "dtype": "integer",
+      "field_name": "sample_id",
+      "pass_condition": "unique within model_id",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_04",
+      "source_hook": "joblib fit_output sample index"
+    },
+    {
+      "blocker_if_missing": "cannot define comparable branch/readout channels",
+      "current_status": "blocked_missing_extracted_image_order",
+      "dtype": "string enum",
+      "field_name": "image_label",
+      "pass_condition": "labels A,B,C,D are present or mapped",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_05",
+      "source_hook": "model_image_positions/image ordering"
+    },
+    {
+      "blocker_if_missing": "cannot map dphi_AB/dphi_AC/dphi_AD to image branches",
+      "current_status": "blocked_missing_extracted_image_order",
+      "dtype": "integer",
+      "field_name": "image_order_index",
+      "pass_condition": "four-image order is stable per sample",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_06",
+      "source_hook": "model_image_positions order"
+    },
+    {
+      "blocker_if_missing": "cannot evaluate parity-weighted T2 controls",
+      "current_status": "blocked_not_materialized",
+      "dtype": "string or integer",
+      "field_name": "parity_or_morse_type",
+      "pass_condition": "parity/Morse role available for each image",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_07",
+      "source_hook": "lens-model Hessian/Morse classification"
+    },
+    {
+      "blocker_if_missing": "cannot audit image ordering or geometry",
+      "current_status": "notebook_hook_available_but_not_extracted",
+      "dtype": "float array or scalar",
+      "field_name": "ra_image",
+      "pass_condition": "finite image RA coordinate",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_08",
+      "source_hook": "model_image_positions"
+    },
+    {
+      "blocker_if_missing": "cannot audit image ordering or geometry",
+      "current_status": "notebook_hook_available_but_not_extracted",
+      "dtype": "float array or scalar",
+      "field_name": "dec_image",
+      "pass_condition": "finite image Dec coordinate",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_09",
+      "source_hook": "model_image_positions"
+    },
+    {
+      "blocker_if_missing": "cannot project WGD into DES-like time-residual basis",
+      "current_status": "notebook_formula_available_but_samples_blocked",
+      "dtype": "float",
+      "field_name": "dphi_AB",
+      "pass_condition": "finite per-sample AB Fermat difference",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_10",
+      "source_hook": "notebook dphi_AB = fermat_potential[1] - fermat_potential[3]"
+    },
+    {
+      "blocker_if_missing": "cannot project WGD into DES-like time-residual basis",
+      "current_status": "notebook_formula_available_but_samples_blocked",
+      "dtype": "float",
+      "field_name": "dphi_AC",
+      "pass_condition": "finite per-sample AC Fermat difference",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_11",
+      "source_hook": "notebook dphi_AC = fermat_potential[1] - fermat_potential[2]"
+    },
+    {
+      "blocker_if_missing": "cannot project WGD into DES-like time-residual basis",
+      "current_status": "notebook_formula_available_but_samples_blocked",
+      "dtype": "float",
+      "field_name": "dphi_AD",
+      "pass_condition": "finite per-sample AD Fermat difference",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_12",
+      "source_hook": "notebook dphi_AD = fermat_potential[1] - fermat_potential[0]"
+    },
+    {
+      "blocker_if_missing": "cannot score observed-vs-model time residual",
+      "current_status": "compressed_support_available_not_image_wise",
+      "dtype": "float",
+      "field_name": "ddt_or_time_delay_observable",
+      "pass_condition": "linked to model/sample or declared as external likelihood",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_13",
+      "source_hook": "TDCOSMO2025 WGD2038 Ddt/weight support"
+    },
+    {
+      "blocker_if_missing": "cannot aggregate holdout score reproducibly",
+      "current_status": "compressed_support_available_not_image_wise",
+      "dtype": "float",
+      "field_name": "ddt_weight_or_sample_weight",
+      "pass_condition": "nonnegative finite weight with documented normalization",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_14",
+      "source_hook": "desj2038_pl_nokext_nokin_dt_weight.csv or posterior weights"
+    },
+    {
+      "blocker_if_missing": "cannot apply DES-frozen one-amplitude score",
+      "current_status": "blocked_until_image_model_table_exists",
+      "dtype": "float array",
+      "field_name": "no_t2_model_residual_vector",
+      "pass_condition": "finite vector comparable to frozen DES score basis",
+      "required": true,
+      "row_id": "WGD_HOLDOUT_FIELD_15",
+      "source_hook": "derived from model dphi/time predictions and observed delay linkage"
+    }
+  ],
+  "schema": "paper7 WGD2038 holdout extraction contract v1",
+  "source": {
+    "fermat_notebook": "data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Fermat potentials and lens model comparisons.ipynb",
+    "field_payload_audit": "data/derived/repro_results/tau_core_lensing_wgd2038_field_level_payload_audit_v1/summary.json",
+    "holdout_readiness": "data/derived/repro_results/tau_core_lensing_desj0408_t2_holdout_readiness_v1/summary.json",
+    "hst_reproduction": "data/derived/repro_results/tau_core_lensing_wgd2038_lenstronomy_hst_reproduction_v1/summary.json",
+    "public_payload_acquisition": "data/derived/repro_results/tau_core_lensing_wgd2038_public_payload_acquisition_v1/summary.json"
+  },
+  "verdict": {
+    "can_apply_des_frozen_score_now": false,
+    "can_extract_holdout_table_now": false,
+    "expected_joblib_targets_identified": true,
+    "per_sample_contract_defined": true,
+    "real_data_T2_sampling_authorized": false,
+    "remaining_primary_blocker": "missing joblib/posterior payload and non-materialized image-wise Fermat/parity/arrival table",
+    "wgd2038_holdout_extraction_contract_created": true
+  }
+}

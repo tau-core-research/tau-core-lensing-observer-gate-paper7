@@ -1,0 +1,102 @@
+{
+  "best_model_by_rmse": "0408_run905_0_1_0_0_0_1_1_0",
+  "best_rmse_days": 622.0080269758463,
+  "clean_model_count": 0,
+  "model_count": 6,
+  "probe_is_optional": true,
+  "probe_runtime": {
+    "astropy": "5.0.8",
+    "compatibility_shim": "scipy._lib._version.NumpyVersion",
+    "dill": "0.4.1",
+    "lenstronomy": "0.9.2",
+    "numpy": "1.23.5",
+    "python": "3.9.6",
+    "scipy": "1.9.3"
+  },
+  "rows": [
+    {
+      "legacy092_param_count": 57,
+      "max_abs_delta_days": 913.0723658701324,
+      "median_abs_delta_days": 712.9745175007969,
+      "missing_params": "",
+      "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+      "old_param_count": 57,
+      "rmse_days": 681.646635954188,
+      "rowwise_clean_under_legacy092_py39_probe": false,
+      "runtime_warning_count": 128,
+      "sample_limit": 128,
+      "worst_row_index": 116
+    },
+    {
+      "legacy092_param_count": 57,
+      "max_abs_delta_days": 863.0733788020452,
+      "median_abs_delta_days": 689.3156988925309,
+      "missing_params": "",
+      "model_id": "0408_run902_0_0_1_0_0_1_1_0",
+      "old_param_count": 57,
+      "rmse_days": 681.1633382863242,
+      "rowwise_clean_under_legacy092_py39_probe": false,
+      "runtime_warning_count": 128,
+      "sample_limit": 128,
+      "worst_row_index": 105
+    },
+    {
+      "legacy092_param_count": 57,
+      "max_abs_delta_days": 830.7764296222313,
+      "median_abs_delta_days": 621.5558181848858,
+      "missing_params": "",
+      "model_id": "0408_run905_0_1_0_0_0_1_1_0",
+      "old_param_count": 57,
+      "rmse_days": 622.0080269758463,
+      "rowwise_clean_under_legacy092_py39_probe": false,
+      "runtime_warning_count": 128,
+      "sample_limit": 128,
+      "worst_row_index": 96
+    },
+    {
+      "legacy092_param_count": 57,
+      "max_abs_delta_days": 915.6259361015664,
+      "median_abs_delta_days": 697.084320434762,
+      "missing_params": "",
+      "model_id": "0408_run1006_0_1_1_0_0_1_1_0",
+      "old_param_count": 57,
+      "rmse_days": 694.4023976741046,
+      "rowwise_clean_under_legacy092_py39_probe": false,
+      "runtime_warning_count": 128,
+      "sample_limit": 128,
+      "worst_row_index": 117
+    },
+    {
+      "legacy092_param_count": 57,
+      "max_abs_delta_days": 863.9433417316807,
+      "median_abs_delta_days": 644.6293875364003,
+      "missing_params": "",
+      "model_id": "0408_run909_0_2_0_0_0_1_1_0",
+      "old_param_count": 57,
+      "rmse_days": 648.0647058489724,
+      "rowwise_clean_under_legacy092_py39_probe": false,
+      "runtime_warning_count": 128,
+      "sample_limit": 128,
+      "worst_row_index": 68
+    },
+    {
+      "legacy092_param_count": 57,
+      "max_abs_delta_days": 870.6610074925272,
+      "median_abs_delta_days": 632.4557784332521,
+      "missing_params": "",
+      "model_id": "0408_run910_0_2_1_0_0_1_1_0",
+      "old_param_count": 57,
+      "rmse_days": 650.5038869089576,
+      "rowwise_clean_under_legacy092_py39_probe": false,
+      "runtime_warning_count": 128,
+      "sample_limit": 128,
+      "worst_row_index": 117
+    }
+  ],
+  "sample_limit": 128,
+  "status": "completed",
+  "stderr_tail": "WARNING: AstropyDeprecationWarning: `astropy.cosmology.core.FlatLambdaCDM` has been moved (since v5.0) and should be imported as ``from astropy.cosmology import FlatLambdaCDM``. In future this will raise an exception. [astropy.cosmology.core]\nWARNING: AstropyDeprecationWarning: `astropy.cosmology.core.FlatLambdaCDM` has been moved (since v5.0) and should be imported as ``from astropy.cosmology import FlatLambdaCDM``. In future this will raise an exception. [astropy.cosmology.core]\nWARNING: AstropyDeprecationWarning: `astropy.cosmology.core.FlatLambdaCDM` has been moved (since v5.0) and should be imported as ``from astropy.cosmology import FlatLambdaCDM``. In future this will raise an exception. [astropy.cosmology.core]\nWARNING: AstropyDeprecationWarning: `astropy.cosmology.core.FlatLambdaCDM` has been moved (since v5.0) and should be imported as ``from astropy.cosmology import FlatLambdaCDM``. In future this will raise an exception. [astropy.cosmology.core]\nWARNING: AstropyDeprecationWarning: `astropy.cosmology.core.FlatLambdaCDM` has been moved (since v5.0) and should be imported as ``from astropy.cosmology import FlatLambdaCDM``. In future this will raise an exception. [astropy.cosmology.core]\nWARNING: AstropyDeprecationWarning: `astropy.cosmology.core.FlatLambdaCDM` has been moved (since v5.0) and should be imported as ``from astropy.cosmology import FlatLambdaCDM``. In future this will raise an exception. [astropy.cosmology.core]\n",
+  "strict_current_baseline_promoted_by_legacy092_probe": false,
+  "venv_path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/.venv_desj0408_lenstronomy092_py39_probe/bin/python",
+  "verdict": "The Python-3.9 lenstronomy-0.9.2 compatibility probe imports and runs, but it does not recover the public DES J0408 time-delay rows.  It is therefore not evidence for promoting the four failed 57-parameter models or for replacing the existing two-model strict no-T2 baseline."
+}

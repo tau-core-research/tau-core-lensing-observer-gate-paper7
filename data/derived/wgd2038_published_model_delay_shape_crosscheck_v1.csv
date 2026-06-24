@@ -1,0 +1,7 @@
+model_id,delay_pair,published_model_prediction_days_at_h0_70,observed_delay_days,best_scalar_scale,scaled_model_delay_days,shape_residual_observed_minus_scaled_model_days,implied_h0_if_pure_scale_from_h0_70,uses_missing_posterior_payload,fits_or_samples_t2
+glee_combined_h0_70_flat_lcdm,AB,-4.4,-12.4,1.146971698560331,-5.0466754736654575,-7.353324526334543,61.03027658647846,False,False
+glee_combined_h0_70_flat_lcdm,AC,-9.4,-5.3,1.146971698560331,-10.781533966467112,5.481533966467112,61.03027658647846,False,False
+glee_combined_h0_70_flat_lcdm,AD,-23.0,-33.3,1.146971698560331,-26.380349066887614,-6.919650933112383,61.03027658647846,False,False
+lenstronomy_combined_h0_70_flat_lcdm,AB,-5.0,-12.4,1.1015098079922812,-5.507549039961406,-6.892450960038595,63.549139092632146,False,False
+lenstronomy_combined_h0_70_flat_lcdm,AC,-10.0,-5.3,1.1015098079922812,-11.015098079922812,5.715098079922812,63.549139092632146,False,False
+lenstronomy_combined_h0_70_flat_lcdm,AD,-24.2,-33.3,1.1015098079922812,-26.656537353413203,-6.643462646586794,63.549139092632146,False,False

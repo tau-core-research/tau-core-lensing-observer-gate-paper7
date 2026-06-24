@@ -1,0 +1,92 @@
+{
+  "best_current_holdout_target": {
+    "blocking_reason": "WGD2038 has public support payload and local HST/model-plumbing progress, but lacks the extracted image-wise Fermat/arrival table, image parity/order, original joblib posterior payload, and a converged no-T2 posterior.",
+    "can_apply_des_frozen_score_now": false,
+    "readiness_score_0_to_6": 3,
+    "recommended_next_action": "Extract or reconstruct the WGD2038 per-sample image/model table with image labels, parity/order, dphi_AB/dphi_AC/dphi_AD, model sample IDs, and observed-delay/Ddt linkage.",
+    "target_id": "WGD2038-4008"
+  },
+  "purpose": "Determine whether the DES-frozen one-amplitude T2 score can be tested on an independent lens target using existing public/reconstructed artifacts.",
+  "required_holdout_fields": [
+    "independent_from_des",
+    "time_delay_observations_or_ddt",
+    "image_model_products_present",
+    "image_parity_order_available",
+    "image_wise_fermat_or_arrival_samples",
+    "converged_no_t2_posterior"
+  ],
+  "rows": [
+    {
+      "blocking_reason": "WGD2038 has public support payload and local HST/model-plumbing progress, but lacks the extracted image-wise Fermat/arrival table, image parity/order, original joblib posterior payload, and a converged no-T2 posterior.",
+      "can_apply_des_frozen_score_now": false,
+      "converged_no_t2_posterior": false,
+      "image_model_products_present": true,
+      "image_parity_order_available": false,
+      "image_wise_fermat_or_arrival_samples": false,
+      "independent_from_des": true,
+      "posterior_joblib_payload_available": false,
+      "readiness_score_0_to_6": 3,
+      "recommended_next_action": "Extract or reconstruct the WGD2038 per-sample image/model table with image labels, parity/order, dphi_AB/dphi_AC/dphi_AD, model sample IDs, and observed-delay/Ddt linkage.",
+      "source_artifacts": "wgd2038_field_level_payload_audit_v1;wgd2038_public_payload_acquisition_v1;wgd2038_lenstronomy_hst_reproduction_v1",
+      "target_id": "WGD2038-4008",
+      "time_delay_observations_or_ddt": true
+    },
+    {
+      "blocking_reason": "HE0435 remains useful as a public fallback, but the current artifact is a model-level PSF/reproduction edge diagnostic, not the image-wise time-delay residual table needed for the DES-frozen operator.",
+      "can_apply_des_frozen_score_now": false,
+      "converged_no_t2_posterior": false,
+      "image_model_products_present": true,
+      "image_parity_order_available": false,
+      "image_wise_fermat_or_arrival_samples": false,
+      "independent_from_des": true,
+      "posterior_joblib_payload_available": false,
+      "readiness_score_0_to_6": 3,
+      "recommended_next_action": "Only use after extracting image-wise Fermat/parity/arrival-time fields and a no-T2 residual vector comparable to the DES basis.",
+      "source_artifacts": "he0435_public_repro_model_level_psf_correction_fit_v0",
+      "target_id": "HE0435-1223",
+      "time_delay_observations_or_ddt": true
+    },
+    {
+      "blocking_reason": "The public probe found useful products, but they are too compressed for an image-level T2 holdout test.",
+      "can_apply_des_frozen_score_now": false,
+      "converged_no_t2_posterior": false,
+      "image_model_products_present": false,
+      "image_parity_order_available": false,
+      "image_wise_fermat_or_arrival_samples": false,
+      "independent_from_des": true,
+      "posterior_joblib_payload_available": false,
+      "readiness_score_0_to_6": 2,
+      "recommended_next_action": "Use only if target-specific image/model posterior products become available.",
+      "source_artifacts": "rxj1131_wfi2033_public_product_probe_v0",
+      "target_id": "RXJ1131-1231_or_WFI2033-4723",
+      "time_delay_observations_or_ddt": true
+    }
+  ],
+  "schema": "paper7 DES-frozen T2 independent holdout readiness v1",
+  "source": {
+    "des_score_summary": "data/derived/repro_results/tau_core_lensing_desj0408_one_amplitude_t2_operator_pretest_v1/summary.json",
+    "des_score_verdict": {
+      "bounded_t2_fit_ready": false,
+      "desj0408_one_amplitude_t2_operator_pretest_created": true,
+      "directional_score_supports_design_followup": true,
+      "frozen_direction_beats_scramble_controls": true,
+      "frozen_direction_reduces_clean_residual": true,
+      "minimal_one_amplitude_operator_defined": true,
+      "nonclean_control_also_improves": true,
+      "real_data_T2_sampling_authorized": false,
+      "t2_specific_time_shift_evidence": false
+    },
+    "he0435_verdict": "HE0435_PUBLIC_REPRO_MODEL_LEVEL_PSF_CORRECTION_FIT_FLAGS_REVIEW",
+    "rxj_wfi_verdict": "RXJ1131_WFI2033_PUBLIC_PRODUCT_PROBES_COMPLETE",
+    "wgd2038_probe_verdict": "WGD2038_DESJ0408_PUBLIC_PRODUCT_PROBES_COMPLETE"
+  },
+  "verdict": {
+    "best_current_holdout_readiness_score_0_to_6": 3,
+    "best_current_holdout_target": "WGD2038-4008",
+    "des_one_amplitude_score_remains_design_only": true,
+    "desj0408_t2_holdout_readiness_audit_created": true,
+    "independent_holdout_score_ready_now": false,
+    "real_data_T2_sampling_authorized": false,
+    "wgd2038_is_best_next_holdout_route": true
+  }
+}

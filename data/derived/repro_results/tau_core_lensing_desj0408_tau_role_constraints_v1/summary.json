@@ -1,0 +1,94 @@
+{
+  "aggregate": {
+    "blocked_constraint_count": 1,
+    "constraint_count": 7,
+    "forced_constraint_count": 6,
+    "max_clean_recomputed_vs_public_prefix_max_abs_days": 0.026477971282020007,
+    "max_clean_recomputed_vs_public_prefix_rmse_days": 0.01465511118152682,
+    "max_clean_runtime_warning_count": 0,
+    "strict_clean_model_count": 2
+  },
+  "criteria": {
+    "constrains_common_morphology_candidate": true,
+    "derives_physical_tau_lensing_response_law": false,
+    "introduces_t2_parameter": false,
+    "promotes_failed_models": false,
+    "real_data_T2_sampling_authorized": false,
+    "uses_only_strict_clean_desj0408_no_t2_rows": true
+  },
+  "purpose": "Convert strict DES J0408 no-T2 feature rows into weak Tau morphology role constraints for the common morphology candidate.",
+  "rows": [
+    {
+      "constraint_id": "LENS_ROLE_01_PROVENANCE",
+      "constraint_statement": "A usable lensing readout must be sourced from public posterior rows and public time-delay tables before any T2 perturbation is introduced.",
+      "data_side_witness": "0408_run1001_0_0_0_0_0_1_1_0|0408_run910_0_2_1_0_0_1_1_0",
+      "evidence_level": "diagnostic_data_constraint",
+      "status": "forced_for_strict_desj0408_core",
+      "tau_role": "endpoint_blind_source_provenance"
+    },
+    {
+      "constraint_id": "LENS_ROLE_02_MID_MASS",
+      "constraint_statement": "The clean DES readout requires an internal lens-mass geometry carrier; in the strict rows this is the SPEMD component.",
+      "data_side_witness": "SPEMD|SHEAR_GAMMA_PSI|SIS|SIS|SIS|SIS|SIS|SIS",
+      "evidence_level": "diagnostic_data_constraint",
+      "status": "forced_for_strict_desj0408_core",
+      "tau_role": "rho_mid_mass_geometry"
+    },
+    {
+      "constraint_id": "LENS_ROLE_03_ENVIRONMENT",
+      "constraint_statement": "The clean DES readout includes shear and perturber carriers, so the Tau morphology candidate cannot be a pure isolated-object role.",
+      "data_side_witness": "SPEMD|SHEAR_GAMMA_PSI|SIS|SIS|SIS|SIS|SIS|SIS",
+      "evidence_level": "diagnostic_data_constraint",
+      "status": "forced_for_strict_desj0408_core",
+      "tau_role": "rho_env_line_of_sight"
+    },
+    {
+      "constraint_id": "LENS_ROLE_04_SOURCE_STRUCTURE",
+      "constraint_statement": "The clean DES readout is anchored by structured source-light carriers; source morphology cannot be dropped from the lensing role cover.",
+      "data_side_witness": "SERSIC_ELLIPSE|SHAPELETS|SERSIC_ELLIPSE|SHAPELETS|SERSIC_ELLIPSE|SHAPELETS|SERSIC_ELLIPSE|SHAPELETS|SERSIC_ELLIPSE|SERSIC_ELLIPSE|SHAPELETS|SERSIC_ELLIPSE|SERSIC_ELLIPSE|SHAPELETS|SERSIC_ELLIPSE",
+      "evidence_level": "diagnostic_data_constraint",
+      "status": "forced_for_strict_desj0408_core",
+      "tau_role": "rho_source_readout_anchor"
+    },
+    {
+      "constraint_id": "LENS_ROLE_05_CLOSURE_STABILITY",
+      "constraint_statement": "The strict rows reproduce the public arrival-time table rowwise and distributionally; a candidate morphology must preserve this closure.",
+      "data_side_witness": "max_rmse_days=0.0146551;max_abs_days=0.026478",
+      "evidence_level": "diagnostic_data_constraint",
+      "status": "forced_for_strict_desj0408_core",
+      "tau_role": "rho_closure_rowwise_stability"
+    },
+    {
+      "constraint_id": "LENS_ROLE_06_OBSERVED_DELAY_SCALE",
+      "constraint_statement": "The lensing readout must remain compatible with observed DES delays under the declared observed-delay uncertainties.",
+      "data_side_witness": "best_public_mean_chi2=4.41525",
+      "evidence_level": "diagnostic_data_constraint",
+      "status": "forced_for_strict_desj0408_core",
+      "tau_role": "rho_scale_observed_delay_compatibility"
+    },
+    {
+      "constraint_id": "LENS_ROLE_07_NEGATIVE_ROW_POLICY",
+      "constraint_statement": "Outlier-dominated failed models cannot be promoted without an independent row-recovery or null-policy proof.",
+      "data_side_witness": "0408_run902_0_0_1_0_0_1_1_0|0408_run905_0_1_0_0_0_1_1_0|0408_run1006_0_1_1_0_0_1_1_0|0408_run909_0_2_0_0_0_1_1_0",
+      "evidence_level": "negative_diagnostic_constraint",
+      "status": "blocked_not_promoted",
+      "tau_role": "rho_null_policy_blocker"
+    }
+  ],
+  "schema": "paper7 DES J0408 lensing-feature to Tau-role constraints v1",
+  "source": {
+    "clean_model_ids": [
+      "0408_run1001_0_0_0_0_0_1_1_0",
+      "0408_run910_0_2_1_0_0_1_1_0"
+    ],
+    "failure_summary": "data/derived/repro_results/tau_core_lensing_desj0408_powerlaw_57_core_failure_diagnostic_v1/summary.json",
+    "feature_summary": "data/derived/repro_results/tau_core_lensing_desj0408_powerlaw_57_core_feature_table_v1/summary.json"
+  },
+  "verdict": {
+    "common_morphology_lensing_role_cover_narrowed": true,
+    "desj0408_tau_role_constraints_created": true,
+    "failed_desj0408_models_remain_blocked": true,
+    "physical_response_tau_lens_derived": false,
+    "real_data_T2_sampling_authorized": false
+  }
+}

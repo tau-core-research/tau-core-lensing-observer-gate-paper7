@@ -1,0 +1,330 @@
+{
+  "claim_boundary": [
+    "The acquired source tables are official arXiv source products for published Ddt/H0 summaries.",
+    "They do not include image-wise Fermat differences, sample IDs, parity/order, or model posterior rows.",
+    "They cannot by themselves authorize the DES-frozen WGD score or any real-data T2 sampling."
+  ],
+  "external_source": {
+    "arxiv": "2406.02683",
+    "eprint_url": "https://arxiv.org/e-print/2406.02683",
+    "title": "TDCOSMO. XVI. Measurement of the Hubble Constant from the Lensed Quasar WGD 2038-4008"
+  },
+  "materialized_files": [
+    "data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_ddt.tex",
+    "data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_ddtmodel_nokext_nokin.tex",
+    "data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_lcdm_h0.tex"
+  ],
+  "next_finite_action": "Use the source-table payload as a published summary reference, while continuing to seek the per-sample WGD Fermat/posterior payload.",
+  "purpose": "Materialize official arXiv source-table values for WGD2038 Ddt/H0 constraints. This narrows what is publicly available, but does not supply the missing per-sample Fermat/posterior table.",
+  "row_count": 27,
+  "rows": [
+    {
+      "median": 1.47,
+      "minus_16": 0.32,
+      "model": "glee power-law",
+      "plus_84": 0.31,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddtmodel_nokext_nokin.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.64,
+      "minus_16": 0.35,
+      "model": "glee composite",
+      "plus_84": 0.35,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddtmodel_nokext_nokin.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.52,
+      "minus_16": 0.33,
+      "model": "lenstronomy power-law",
+      "plus_84": 0.34,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddtmodel_nokext_nokin.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.86,
+      "minus_16": 0.41,
+      "model": "lenstronomy composite",
+      "plus_84": 0.41,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddtmodel_nokext_nokin.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.49,
+      "minus_16": 0.33,
+      "model": "glee+ lenstronomy power-law",
+      "plus_84": 0.32,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddtmodel_nokext_nokin.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.74,
+      "minus_16": 0.39,
+      "model": "glee+ lenstronomy composite",
+      "plus_84": 0.4,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddtmodel_nokext_nokin.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.6,
+      "minus_16": 0.35,
+      "model": "glee power-law",
+      "plus_84": 0.36,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddt.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.86,
+      "minus_16": 0.4,
+      "model": "glee composite",
+      "plus_84": 0.41,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddt.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.72,
+      "minus_16": 0.39,
+      "model": "glee combined",
+      "plus_84": 0.42,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddt.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.64,
+      "minus_16": 0.36,
+      "model": "lenstronomy power-law",
+      "plus_84": 0.37,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddt.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 2.13,
+      "minus_16": 0.47,
+      "model": "lenstronomy composite",
+      "plus_84": 0.48,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddt.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.65,
+      "minus_16": 0.36,
+      "model": "lenstronomy combined",
+      "plus_84": 0.37,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddt.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 1.68,
+      "minus_16": 0.38,
+      "model": "glee+ lenstronomy final",
+      "plus_84": 0.4,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_ddt.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 69.0,
+      "minus_16": 14.0,
+      "model": "glee power-law",
+      "plus_84": 23.0,
+      "posterior_level_fermat_payload": false,
+      "quantity": "H0_km_s_Mpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "median": 1.43,
+      "minus_16": 0.36,
+      "model": "glee power-law",
+      "plus_84": 0.36,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 59.0,
+      "minus_16": 12.0,
+      "model": "glee composite",
+      "plus_84": 21.0,
+      "posterior_level_fermat_payload": false,
+      "quantity": "H0_km_s_Mpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "median": 1.66,
+      "minus_16": 0.43,
+      "model": "glee composite",
+      "plus_84": 0.43,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 64.0,
+      "minus_16": 14.0,
+      "model": "glee combined",
+      "plus_84": 22.0,
+      "posterior_level_fermat_payload": false,
+      "quantity": "H0_km_s_Mpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "median": 1.53,
+      "minus_16": 0.4,
+      "model": "glee combined",
+      "plus_84": 0.43,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 67.0,
+      "minus_16": 14.0,
+      "model": "lenstronomy power-law",
+      "plus_84": 23.0,
+      "posterior_level_fermat_payload": false,
+      "quantity": "H0_km_s_Mpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "median": 1.46,
+      "minus_16": 0.37,
+      "model": "lenstronomy power-law",
+      "plus_84": 0.38,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 52.0,
+      "minus_16": 11.0,
+      "model": "lenstronomy composite",
+      "plus_84": 18.0,
+      "posterior_level_fermat_payload": false,
+      "quantity": "H0_km_s_Mpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "median": 1.88,
+      "minus_16": 0.49,
+      "model": "lenstronomy composite",
+      "plus_84": 0.5,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 67.0,
+      "minus_16": 14.0,
+      "model": "lenstronomy combined",
+      "plus_84": 23.0,
+      "posterior_level_fermat_payload": false,
+      "quantity": "H0_km_s_Mpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "median": 1.47,
+      "minus_16": 0.38,
+      "model": "lenstronomy combined",
+      "plus_84": 0.38,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "Gpc"
+    },
+    {
+      "median": 65.0,
+      "minus_16": 14.0,
+      "model": "glee+ lenstronomy final",
+      "plus_84": 23.0,
+      "posterior_level_fermat_payload": false,
+      "quantity": "H0_km_s_Mpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "km/s/Mpc"
+    },
+    {
+      "median": 1.5,
+      "minus_16": 0.39,
+      "model": "glee+ lenstronomy final",
+      "plus_84": 0.4,
+      "posterior_level_fermat_payload": false,
+      "quantity": "Ddt_Gpc",
+      "source": "arXiv:2406.02683 source bundle",
+      "source_table": "tab_2038_lcdm_h0.tex",
+      "unit": "Gpc"
+    }
+  ],
+  "schema": "paper7 WGD2038 arXiv source-table payload v1",
+  "verdict": {
+    "can_apply_des_frozen_score_now": false,
+    "claim_level": "published_source_table_payload_not_posterior_score",
+    "posterior_level_fermat_payload_acquired": false,
+    "published_ddt_h0_summary_materialized": true,
+    "real_data_T2_sampling_authorized": false,
+    "score_ready_wgd_fermat_table_acquired": false,
+    "t2_specific_time_shift_evidence": false,
+    "wgd2038_arxiv_source_tables_acquired": true
+  }
+}

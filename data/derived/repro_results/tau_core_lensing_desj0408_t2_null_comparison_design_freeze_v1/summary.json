@@ -1,0 +1,118 @@
+{
+  "controls": {
+    "coherence_alone_supports_t2_claim": false,
+    "coherent_residual_is_clean_core_unique": false,
+    "negative_control_rows_checked": true,
+    "nonclean_feature_rows": {
+      "coherent_residual_direction_present": true,
+      "count": 3,
+      "min_pairwise_residual_cosine": 0.9895712614684374,
+      "model_ids": [
+        "0408_run905_0_1_0_0_0_1_1_0",
+        "0408_run1006_0_1_1_0_0_1_1_0",
+        "0408_run909_0_2_0_0_0_1_1_0"
+      ],
+      "same_sign_dt1_residual": true,
+      "same_sign_dt2_residual": true,
+      "unweighted_model_minus_observed_dt1_days": -3.694013956462726,
+      "unweighted_model_minus_observed_dt2_days": 19.76122919058496
+    }
+  },
+  "decision_policy": {
+    "claim_boundary": "This artifact freezes a candidate direction and null competitors. It does not provide a Tau-specific time-shift detection.",
+    "minimum_before_fit": [
+      "freeze no-T2 nuisance policy",
+      "freeze score/likelihood comparison",
+      "define one-amplitude T2 operator on image-level features",
+      "run null-family and scramble controls",
+      "preferably confirm the design vector on an independent lens target"
+    ],
+    "real_data_T2_sampling_authorized": false,
+    "t2_fit_allowed_by_this_artifact": false
+  },
+  "frozen_design_vector": {
+    "basis": [
+      "dt1_days",
+      "dt2_days"
+    ],
+    "clean_pairwise_residual_cosine": 0.9980974784235199,
+    "interpretation": "correction_to_add_to_no_t2_model_before_any_t2_fit",
+    "logz_weighted_observed_minus_model_days": [
+      2.8131375586248595,
+      -19.951737823937464
+    ],
+    "nonclean_control_pairwise_residual_cosine": 0.9895712614684374,
+    "unweighted_observed_minus_model_days": [
+      3.42512010294044,
+      -19.844028900219328
+    ],
+    "unweighted_unit_direction": [
+      0.17008707366496628,
+      -0.9854290372076968
+    ]
+  },
+  "purpose": "Pre-register the residual direction and null competitors for a later bounded DES J0408 T2 comparison without fitting or sampling T2.",
+  "rows": [
+    {
+      "current_status": "open",
+      "description": "A sufficiently flexible no-T2 lens/source/nuisance model explains the DES residual without a T2 correction.",
+      "frozen_before_t2_fit": true,
+      "role": "primary_null",
+      "row_id": "H0_NULL_NO_T2_BASELINE",
+      "success_condition": "Residual projection along the frozen design vector is consistent with zero after the no-T2 baseline and nuisance policy are fixed."
+    },
+    {
+      "current_status": "design_only_not_fitted",
+      "description": "A one-amplitude T2 correction is tested only along the frozen observed-minus-model residual direction.",
+      "frozen_before_t2_fit": true,
+      "role": "candidate_t2",
+      "row_id": "H1_BOUNDED_T2_DIRECTIONAL",
+      "success_condition": "A shared-amplitude correction improves the held-out likelihood or predefined residual score against all listed null controls."
+    },
+    {
+      "current_status": "open",
+      "description": "The residual direction is an ordinary lens-family or source-model mismatch, not a time-distortion operator.",
+      "frozen_before_t2_fit": true,
+      "role": "competing_null",
+      "row_id": "N1_LENS_FAMILY_MISMATCH",
+      "success_condition": "Alternative no-T2 lens/source families reduce the frozen residual as well as or better than the T2 candidate."
+    },
+    {
+      "current_status": "open",
+      "description": "The residual direction is induced by public-row linkage, legacy runtime semantics, or DES-specific posterior handling.",
+      "frozen_before_t2_fit": true,
+      "role": "competing_null",
+      "row_id": "N2_DES_ROW_OR_RUNTIME_SYSTEMATIC",
+      "success_condition": "The effect disappears or materially changes after independent row recovery, legacy-runtime reconstruction, or a second target."
+    },
+    {
+      "current_status": "active_control_blocks_coherence_only_claim",
+      "description": "The non-clean DES feature rows show a similar residual direction, so coherence alone is not a T2-specific discriminator.",
+      "frozen_before_t2_fit": true,
+      "role": "negative_control",
+      "row_id": "N3_CLEAN_CORE_NONUNIQUE_CONTROL",
+      "success_condition": "A future T2 claim must pass a stronger holdout or independent lens test; coherence alone cannot be counted as evidence."
+    }
+  ],
+  "schema": "paper7 DES J0408 null-vs-T2 comparison design freeze v1",
+  "source": {
+    "clean_model_ids": [
+      "0408_run1001_0_0_0_0_0_1_1_0",
+      "0408_run910_0_2_1_0_0_1_1_0"
+    ],
+    "observed_delays_days": [
+      -112.1,
+      -155.5
+    ],
+    "residual_summary": "data/derived/repro_results/tau_core_lensing_desj0408_no_t2_time_residual_candidate_v1/summary.json"
+  },
+  "verdict": {
+    "bounded_t2_fit_ready": false,
+    "coherence_only_claim_blocked": true,
+    "desj0408_t2_null_comparison_design_freeze_created": true,
+    "null_competitors_frozen_before_t2_fit": true,
+    "real_data_T2_sampling_authorized": false,
+    "residual_direction_frozen_before_t2_fit": true,
+    "tau_specific_time_shift_evidence": false
+  }
+}

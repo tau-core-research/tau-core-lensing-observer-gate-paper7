@@ -1,0 +1,65 @@
+{
+  "schema": "paper7 DES J0408 no-T2 baseline smoke v1",
+  "purpose": "Verify that the public DES J0408 time-delay posterior files can be read and compared to declared observed delays without introducing T2.",
+  "source": {
+    "source_id": "DESJ0408_time_delay_cosmography",
+    "source_url": "https://github.com/ajshajib/DESJ0408_time_delay_cosmography",
+    "local_time_delay_dir": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/model_posteriors/time_delays",
+    "observed_delays_days": [
+      -112.1,
+      -155.5
+    ],
+    "observed_sigma_days": [
+      2.1,
+      12.8
+    ]
+  },
+  "aggregate": {
+    "model_count": 24,
+    "sample_count_per_model_min": 10000,
+    "sample_count_per_model_max": 10000,
+    "best_model_id_by_mean_chi2": "0408_run917_1_1_0_0_0_1_1_0",
+    "best_model_family_by_mean_chi2": "composite",
+    "best_mean_chi2_vs_observed": 3.6573089934151923,
+    "best_fraction_within_2sigma_box": 0.9928,
+    "median_mean_chi2_vs_observed": 6.2835183498193885,
+    "max_fraction_within_2sigma_box": 0.9928,
+    "families": {
+      "composite": {
+        "model_count": 12,
+        "mean_chi2_min": 3.6573089934151923,
+        "mean_chi2_median": 5.425815127580862,
+        "fraction_within_2sigma_box_max": 0.9928,
+        "best_model_id": "0408_run917_1_1_0_0_0_1_1_0"
+      },
+      "powerlaw": {
+        "model_count": 12,
+        "mean_chi2_min": 4.415247627349636,
+        "mean_chi2_median": 7.0364180411349055,
+        "fraction_within_2sigma_box_max": 0.9858,
+        "best_model_id": "0408_run1001_0_0_0_0_0_1_1_0"
+      }
+    }
+  },
+  "criteria": {
+    "public_time_delay_posterior_files_read": true,
+    "all_models_have_10000_samples": true,
+    "two_delay_columns_confirmed": true,
+    "no_t2_parameters_introduced": true,
+    "full_lens_posterior_decoded": false,
+    "model_weights_or_logZ_applied": false,
+    "evidence_grade_no_t2_reproduction": false,
+    "real_data_T2_sampling_authorized": false
+  },
+  "verdict": {
+    "desj0408_no_t2_time_delay_extraction_smoke_passed": true,
+    "bounded_no_t2_baseline_reproduction_completed": false,
+    "real_data_T2_sampling_authorized": false
+  },
+  "claim_boundary": [
+    "This is a time-delay posterior extraction smoke test, not a full lens-model reproduction.",
+    "The full lens posterior pickle and model weights/logZ still require a compatibility extractor.",
+    "No T2 term, T2 posterior, Bayes factor, or operator-necessity claim is introduced."
+  ],
+  "next_finite_action": "Implement a DES J0408 full-posterior compatibility reader or notebook runner that recovers model weights/logZ and image/model quantities."
+}

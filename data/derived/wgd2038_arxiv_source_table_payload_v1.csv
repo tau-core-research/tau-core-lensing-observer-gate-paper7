@@ -1,0 +1,28 @@
+source_table,model,quantity,median,minus_16,plus_84,unit,source,posterior_level_fermat_payload
+tab_2038_ddtmodel_nokext_nokin.tex,glee power-law,Ddt_Gpc,1.47,0.32,0.31,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddtmodel_nokext_nokin.tex,glee composite,Ddt_Gpc,1.64,0.35,0.35,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddtmodel_nokext_nokin.tex,lenstronomy power-law,Ddt_Gpc,1.52,0.33,0.34,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddtmodel_nokext_nokin.tex,lenstronomy composite,Ddt_Gpc,1.86,0.41,0.41,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddtmodel_nokext_nokin.tex,glee+ lenstronomy power-law,Ddt_Gpc,1.49,0.33,0.32,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddtmodel_nokext_nokin.tex,glee+ lenstronomy composite,Ddt_Gpc,1.74,0.39,0.4,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddt.tex,glee power-law,Ddt_Gpc,1.6,0.35,0.36,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddt.tex,glee composite,Ddt_Gpc,1.86,0.4,0.41,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddt.tex,glee combined,Ddt_Gpc,1.72,0.39,0.42,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddt.tex,lenstronomy power-law,Ddt_Gpc,1.64,0.36,0.37,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddt.tex,lenstronomy composite,Ddt_Gpc,2.13,0.47,0.48,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddt.tex,lenstronomy combined,Ddt_Gpc,1.65,0.36,0.37,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_ddt.tex,glee+ lenstronomy final,Ddt_Gpc,1.68,0.38,0.4,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,glee power-law,H0_km_s_Mpc,69.0,14.0,23.0,km/s/Mpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,glee power-law,Ddt_Gpc,1.43,0.36,0.36,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,glee composite,H0_km_s_Mpc,59.0,12.0,21.0,km/s/Mpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,glee composite,Ddt_Gpc,1.66,0.43,0.43,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,glee combined,H0_km_s_Mpc,64.0,14.0,22.0,km/s/Mpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,glee combined,Ddt_Gpc,1.53,0.4,0.43,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,lenstronomy power-law,H0_km_s_Mpc,67.0,14.0,23.0,km/s/Mpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,lenstronomy power-law,Ddt_Gpc,1.46,0.37,0.38,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,lenstronomy composite,H0_km_s_Mpc,52.0,11.0,18.0,km/s/Mpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,lenstronomy composite,Ddt_Gpc,1.88,0.49,0.5,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,lenstronomy combined,H0_km_s_Mpc,67.0,14.0,23.0,km/s/Mpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,lenstronomy combined,Ddt_Gpc,1.47,0.38,0.38,Gpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,glee+ lenstronomy final,H0_km_s_Mpc,65.0,14.0,23.0,km/s/Mpc,arXiv:2406.02683 source bundle,False
+tab_2038_lcdm_h0.tex,glee+ lenstronomy final,Ddt_Gpc,1.5,0.39,0.4,Gpc,arXiv:2406.02683 source bundle,False

@@ -1936,17 +1936,443 @@ This is not a criticism of the published HE0435 analysis. It says only
 that our public-only reconstruction is not evidence-grade enough to
 support a tau-core perturbation.
 
-\subsubsection{19.2 Other Targets}\label{other-targets}
+\subsubsection{19.2 WGD2038-4008}\label{wgd2038-4008}
+
+WGD2038-4008 became the most concrete public follow-up route after the
+TDCOSMO2025 and target-repository audit. The public support payload
+contains Ddt samples, Ddt weights, kappa/environment support, and
+notebook-level hooks for Fermat-potential comparisons. We therefore ran
+a bounded HST-to-lenstronomy reproduction pass.
+
+We also acquired the WGD2038 arXiv source-table payload from the
+official arXiv \(2406.02683\) source bundle. The materialized tables
+contain the published \(D_{\Delta t}\) and flat-\(\Lambda\)CDM \(H_0\)
+summary constraints, including the final
+\(D_{\Delta t}=1.68^{+0.40}_{-0.38}\) Gpc and
+\(H_0=65^{+23}_{-14}\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\) entries. This is a
+source-backed published summary payload, not the missing posterior/Fermat
+payload: it contains no image-wise Fermat differences, sample identifiers,
+parity/order, or model posterior rows.
+
+The result is a partial positive and a continued blocker. Public HST
+products were reduced into the three-band lenstronomy input format:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{data\_f160w.hdf5, psf\_f160w.hdf5, psf\_f160w\_hires.hdf5}
+\NormalTok{data\_f475x.hdf5, psf\_f475x.hdf5}
+\NormalTok{data\_f814w.hdf5, psf\_f814w.hdf5}
+\end{Highlighting}
+\end{Shaded}
+
+The multiband notebook data/setup path then passed a local preflight.
+One reproducibility detail was also identified: in the public F160W
+preprocessing notebook, the standard data and PSF save cells are raw
+cells, so a documented compatibility copy was used to execute only those
+unchanged save cells.
+
+Finally, a bounded local model-plumbing smoke run was executed from the
+reconstructed three-band inputs. The smoke copy ran a PEMD/SHEAR
+configuration with one tiny PSO step and no PSF iteration, image
+alignment, MCMC, or posterior analysis. Because the local environment did
+not provide a buildable \texttt{fastell4py} backend, the smoke copy used
+\texttt{suppress\_fastell=True}; this is a dependency bypass for model-plumbing
+only and is not a physical PEMD posterior.
+
+After repairing the local build toolchain and installing \texttt{fastell4py}
+from the public source tree, the same bounded one-step PEMD/SHEAR smoke
+route was rerun without \texttt{suppress\_fastell}. This verifies that the
+physical PEMD backend is available for local model-plumbing. It still does
+not constitute posterior reproduction, convergence, or physical validation.
+
+We also added a WGD2038 holdout extraction contract for the DES-frozen
+one-amplitude score. The contract does not run a score and does not sample a
+T2 posterior; it specifies the required independent-holdout table before such a
+test would be admissible. The required fields are target/model/sample
+identifiers, image labels and ordering, parity or Morse type, image
+coordinates, \(\Delta\phi_{AB}\), \(\Delta\phi_{AC}\), \(\Delta\phi_{AD}\),
+observed-delay or \(D_{\Delta t}\) linkage, weights, and the no-T2 residual
+vector. The public Fermat-potential notebook exposes 36 expected
+joblib/posterior targets, but the posterior outputs and image-wise
+Fermat/parity/arrival table are not materialized in the current public package.
+Thus the WGD2038 route is now contract-defined, not score-complete.
+
+The WGD2038 partial holdout materialization then materialized the public part
+of this contract into a 36-row model-level manifest. This records the expected
+WGD2038 model targets together with the public \(D_{\Delta t}\),
+kappa/environment, redshift, velocity-dispersion, and lens-property support.
+The processed public payload contains 567880 \(D_{\Delta t}\) samples, with
+weighted median \(D_{\Delta t}\approx1493.69\). This is a source-backed partial
+materialization, not a score table: zero rows currently contain the per-sample
+image labels, parity/order, Fermat differences, and no-T2 residual vector
+needed to apply the DES-frozen score.
+
+The WGD2038 bounded local Fermat preflight then tested whether the local,
+explicitly non-converged diagnostic outputs can at least support the image-level
+extraction machinery. Three bounded local jobs expose four-image best-fit
+tables, giving 12 image rows with image coordinates, Fermat potentials,
+Jacobian determinant/trace, and Morse/parity labels. For the primary
+profile-freeze v2 diagnostic, the notebook-basis Fermat differences are
+approximately \(\Delta\phi_{AB}=-0.0060\),
+\(\Delta\phi_{AC}=-0.0294\), and \(\Delta\phi_{AD}=-0.0809\). This is a
+technical extraction preflight only: it does not use a published or converged
+WGD posterior, does not produce a no-T2 residual vector, and still leaves zero
+score-ready rows.
+
+The WGD2038 observed-delay linkage audit then closes the next question after
+the Fermat preflight. The TDCOSMO XVI publication reports new WGD2038
+time-delay measurements, uses delays relative to image A, and uses the
+corresponding covariance matrix in the cosmographic inference. We therefore
+added a WGD2038 observed-delay no-T2 smoke artifact that transcribes the
+Fig.~2 delay vector and covariance into a local machine-readable record. In
+the publication convention \(\Delta t_{AX}=t_A-t_X\), the transcribed delays
+are \(AB=-12.4\), \(AC=-5.3\), and \(AD=-33.3\) days, with the covariance
+matrix recorded in the \(AB,AC,AD\) order. The artifact also records the
+sign-convention bridge from the WGD notebook basis, where
+\(\Delta\phi_{AB}\) denotes \(\phi_B-\phi_A\), to the A-centered publication
+basis. Combining this vector with the local bounded Fermat preflight gives a
+no-T2 residual smoke. This is not a WGD holdout score: the Fermat input is a
+local explicitly non-converged diagnostic, not a published or converged WGD
+posterior. The remaining blocker is therefore narrower but still decisive: a
+score-ready WGD Fermat/posterior table in the same image convention is still
+needed before the DES-frozen score can be applied.
+
+We also added a WGD2038 published-model delay-shape crosscheck. This uses the
+TDCOSMO IX combined GLEE and lenstronomy no-T2 delay predictions at
+\(H_0=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\), together with the TDCOSMO XVI
+observed-delay vector and covariance. Fitting a single global delay scale to
+the published predictions gives the best scalar match for the lenstronomy
+combined prediction, with scale \(1.1015\), an implied pure-scale
+\(H_0\simeq 63.55\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\), and a remaining normalized
+delay-shape residual of approximately \(2.29\) sigma units against the
+observed-delay covariance. This is a published-model-level crosscheck, not a
+posterior-level WGD score: the model-prediction uncertainties and posterior
+covariance are not fully propagated because the score-ready posterior/Fermat
+table is still missing. No T2 parameter is fitted or sampled.
+
+We then freeze a WGD2038 delay-shape holdout target from this crosscheck. In
+the A-centered \(AB,AC,AD\) delay basis, the predeclared target residual is
+\((-6.8925,\ 5.7151,\ -6.6435)\) days, with covariance-metric norm
+\(3.2378\) sigma units. Future WGD posterior/Fermat products can be compared
+against this fixed direction using the recorded covariance-metric cosine,
+rather than choosing a direction after seeing the posterior-level result. This
+target is deliberately conservative: it is not endpoint-blind, because it is
+defined from the WGD2038 observed-delay vector and published model predictions;
+it is not a posterior-level score; and it is not T2 evidence.
+
+The next bounded pilot added a deliberately tiny \texttt{emcee} path after
+one PSO step. This verifies that the local fastell-backed posterior-plumbing
+route can execute and write an output artifact. It is not a converged
+posterior, evidence-grade no-T2 reproduction, or authorization for T2
+sampling.
+
+A short diagnostic pilot then used one PSO step followed by a 20-step
+\texttt{emcee} path. In the lenstronomy environment this produced a finite
+\((4240,53)\) sample payload with finite log-probabilities. A simple
+split-half mean-shift check gave median and maximum shifts of approximately
+0.093 and 0.426 standard deviations, respectively. This is a bounded
+chain-health diagnostic only, not a convergence certificate.
+
+A longer bounded diagnostic used one PSO step followed by a 60-step
+\texttt{emcee} path. The derived diagnostic summary records a finite
+\((12720,53)\) sample payload with finite log-probabilities. The split-half
+mean-shift quantiles are approximately 0.377 standard deviations at the
+median, 0.833 at the 90th percentile, and 0.943 at the maximum. This is
+stronger evidence that the local posterior route is operational, but the
+visible drift means it is still not a converged posterior.
+
+A 120-step diagnostic produced a finite \((25440,53)\) sample payload.
+However, the split-half mean-shift quantiles increased to approximately
+0.820 standard deviations at the median, 1.398 at the 90th percentile, and
+1.493 at the maximum. We treat this as a useful negative convergence
+diagnostic: the physical MCMC route runs, but simple lengthening from this
+initialization does not yet produce a stable no-T2 posterior.
+
+A diagnostic120 continuation run was then started from the previous chain
+endpoint rather than from a fresh PSO initialization. It again produced a
+finite \((25440,53)\) payload with finite log-probabilities. The split-half
+mean-shift quantiles were approximately 0.817 standard deviations at the
+median, 1.261 at the 90th percentile, and 1.412 at the maximum. This confirms
+that the continuation path is operational, but it is still a bounded
+chain-health diagnostic rather than a converged no-T2 posterior.
+
+A second continuation from that endpoint also completed and produced a finite
+\((25440,53)\) payload. Its split-half mean-shift quantiles were approximately
+0.873 standard deviations at the median, 1.375 at the 90th percentile, and
+1.526 at the maximum. This is a useful negative diagnostic: repeated endpoint
+continuation alone does not remove the no-T2 posterior convergence blocker.
+
+Finally, a cold continuation from the second endpoint lowered the MCMC
+proposal scale to \(\sigma_{\rm scale}=0.02\). It also produced a finite
+\((25440,53)\) payload, but the split-half mean-shift quantiles worsened to
+approximately 0.983 standard deviations at the median, 1.409 at the 90th
+percentile, and 1.519 at the maximum. Thus simple proposal-scale reduction
+does not clear the convergence blocker either.
+
+We therefore inspected the parameter-level split-half drift across the bounded
+diagnostic120 and continuation payloads. The largest persistent drifts are
+concentrated in nuisance-heavy lens/source-light profile and image-position
+directions, including indexed image positions and Sersic radius/index
+parameters in the lens and source light models.
+This diagnoses the remaining reproduction blocker more sharply: the local route
+is operational, but the nuisance posterior has not stabilized.
+The derived nuisance-stabilization plan therefore selects a bounded
+\texttt{profile\_freeze\_v1} follow-up: stabilize the highest-drift lens/source
+light-profile nuisance directions first, keep image positions under audit, and
+keep mass/shear and T2 claims protected.
+That follow-up was then run as a bounded diagnostic. Since fixing nuisance
+parameters changes the active parameter set, it used previous best-fit
+initialization but did not reuse old MCMC samples. It produced finite
+\((20160,42)\) samples with finite log-probabilities. The split-half
+mean-shift quantiles improved to approximately 0.633 standard deviations at
+the median, 1.206 at the 90th percentile, and 1.422 at the maximum. This is a
+positive nuisance-stabilization diagnostic, but it is not a converged no-T2
+posterior.
+An aggressive \texttt{profile\_freeze\_v2} follow-up then fixed additional
+Chameleon and light-profile nuisance directions while still leaving image
+positions under audit and mass/shear unfrozen. It remained finite with
+\((16800,35)\) samples, but the split-half mean-shift quantiles worsened to
+approximately 1.038 standard deviations at the median, 1.454 at the 90th
+percentile, and 1.516 at the maximum. We therefore treat v2 as a useful
+negative diagnostic: after v1, simply freezing more light-profile directions
+is not the next clean route.
+
+This improves the practical status of the WGD2038 route, but it does
+not satisfy the no-T2 proof gate. The original cluster/MCMC joblib outputs,
+or an equivalent bounded local physical posterior reproduction with
+convergence diagnostics, are still missing. Therefore no WGD2038 real-data
+T2 sampling is authorized.
+
+\subsubsection{19.3 Other Targets}\label{other-targets}
 
 RXJ1131-1231 and WFI2033-4723 were found to have useful public material,
 but the available products were too compressed for the image-level T2
-reproduction required here. WGD2038-4008 and DES J0408-5354 were
-similarly limited by paper-level or non-target-specific products for
-this particular test.
+reproduction required here.
+
+After the WGD2038 nuisance-stability blocker was isolated, we performed an
+alternate-source audit rather than continuing to freeze nuisance directions.
+This changes the status of DES J0408-5354.  The public
+\texttt{DESJ0408\_time\_delay\_cosmography} repository contains five
+lenstronomy-oriented notebooks, six processed data/PSF HDF5 files, 24
+lens-model posterior files, 24 time-delay posterior files, and a
+velocity-dispersion grid.  DES J0408 is promoted to bounded no-T2 follow-up,
+not to evidence.  The next required step is a compatibility extractor and a
+bounded no-T2 baseline reproduction from those public products.  No DES J0408
+real-data T2 posterior was sampled, and no T2 sampling is authorized by this
+audit.
+
+We then ran the first DES J0408 no-T2 time-delay extraction smoke.  This reads
+the 24 public time-delay posterior files directly, without adding any T2
+parameter, and compares their two delay columns to the observed delay constants
+declared by the public post-processing class:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{observed\_delays = [-112.1, -155.5] days}
+\NormalTok{observed\_sigma  = [   2.1,   12.8] days}
+\NormalTok{model\_count = 24}
+\NormalTok{sample\_count\_per\_model = 10000}
+\end{Highlighting}
+\end{Shaded}
+
+The best unweighted smoke diagnostic is the run917 composite model, whose full
+identifier is recorded in the derived audit table.  Its mean chi-square is
+approximately \(3.657\) against the two observed delays, and \(0.9928\) of its
+samples fall inside the two-dimensional 2-sigma box.  This is a useful
+compatibility result: it shows that DES J0408 contains a directly readable
+no-T2 time-delay posterior layer.  It is not yet an evidence-grade no-T2
+reproduction because the full lens posterior, model weights/logZ, and
+image/model quantities have not yet been decoded or rerun locally.
+
+We therefore added a DES J0408 full posterior compatibility smoke.  The public
+posterior files require only import-compatibility patches for older Astropy and
+dill serialization.  With those patches, all 24 lens-model posterior files load
+successfully.  Each contains 10,000 samples, 57--62 active parameters, a matched
+public time-delay posterior file, point-source image-position records, logZ-like
+sampler fields, and model-configuration metadata.  The highest logZ-like record
+in this smoke is a composite model, while the best unweighted time-delay
+diagnostic above is also in the composite family.  This strengthens DES J0408
+as the next no-T2 reproduction target, but it still stops before the proof
+gate: image-level Fermat or arrival-time quantities have not yet been
+recomputed from the decoded posterior samples.
+
+The next DES J0408 arrival-time recomputation smoke was deliberately bounded to
+a compatible power-law model.  It successfully turns decoded posterior samples
+into finite image-level arrival-time differences under the current lenstronomy
+reader.  However, those recomputed differences do not reproduce the public
+time-delay table for the same model.  For the first 128 samples, the mean
+absolute discrepancies are about 87 and 136 days in the two delay columns.  We
+therefore first treated this as a negative compatibility result, not as physics
+evidence.  A pair audit also shows that simple image-pair relabeling does not
+resolve the raw-reader mismatch: the best direct pair choice still has an RMSE
+of about 90 days.
+
+The same audit then identifies the compatibility recovery.  The old posterior
+stores 57 parameters, while modern lenstronomy expects 58 because it inserts
+\texttt{s\_scale\_lens0} after \texttt{gamma\_lens0}; duplicate
+\texttt{ra\_image} and \texttt{dec\_image} entries must also be matched by
+occurrence rather than by a plain dictionary key.  With occurrence-aware
+old-to-modern alignment, \texttt{tau0 -> tau0\_list} aliasing, and
+\texttt{s\_scale\_lens0=0}, the recomputed arrival-time differences reproduce
+the public DES time-delay table with RMSE about 0.0145 days on the first 128
+samples.  This is still not a T2 result, but it materially improves the DES
+J0408 route: the immediate blocker becomes promotion of this alignment to a
+reusable extractor across the compatible model family.
+
+The DES J0408 power-law family alignment smoke applies that recovery to all 12
+public power-law posterior files.  It confirms that the raw modern reader is
+not reliable for these legacy files.  The 57-parameter core subset is largely
+recovered: 5 of 6 models pass the strict public-table match criterion, with
+median aligned RMSE about 0.017 days.  The 60-parameter legacy subset remains
+blocked: 0 of 6 models pass under the current rule, with median aligned RMSE
+about 8.22 days.  This is not yet a complete no-T2 baseline.  It is, however,
+a sharper operational split: the 57-parameter power-law path can now support a
+bounded feature-table extraction, while the 60-parameter and composite paths
+require separate legacy compatibility handling.
+
+We then promoted that split to a DES J0408 57-parameter core feature-table
+audit.  This longer-prefix check recomputes 1,024 arrival-time samples for the
+validated core models and compares them to the public time-delay tables without
+introducing T2.  It further narrows the usable baseline: only 2 of the 5
+previously recovered core models remain clean under both row-wise and
+distributional feature checks.  The best model by public observed-delay
+chi-square and by core-relative logZ weight is
+\texttt{0408\_run1001\_0\_0\_0\_0\_0\_1\_1\_0}, which reproduces the public
+prefix with RMSE about 0.015 days.  This creates a strict DES no-T2 feature
+artifact, but it also preserves the negative result: the full 57-parameter
+core is not yet a completed no-T2 baseline.
+
+A follow-up failure diagnostic shows that this narrowing is not caused by a
+broad ordinary-row mismatch.  The four failed 57-parameter models are
+outlier-dominated under the current alignment: most rows remain close to the
+public table, but one or two catastrophic legacy rows drive the strict RMSE
+failure.  Without an independently justified row-level provenance or outlier
+policy, those models are not promoted.  The strict DES no-T2 feature core
+therefore remains the two clean models only.
+
+A row-level provenance audit further refines this blocker.  For the top
+catastrophic rows in the four failed models, the posterior coordinates are not
+parameter outliers, the log-likelihoods are not in the lowest one percent of
+the inspected prefix, and no runtime warnings are emitted.  The rows therefore
+look like ordinary posterior samples whose public/recomputed table pairing
+breaks.  This supports a row-linkage/provenance interpretation of the
+compatibility blocker, but it does not justify row removal or promotion of the
+failed models without an independent linkage rule from the public notebooks or
+serialized sampler records.
+
+We then audited the public source for such a rule.  The public
+\texttt{output\_class.py} supports intended index-order linkage:
+\texttt{compute\_model\_time\_delays()} loops over \texttt{samples\_mcmc[i]},
+computes \(\Delta t_{AB}\) and \(\Delta t_{AD}\), and appends the corresponding
+row; \texttt{load\_time\_delays()} later loads the saved table without
+reordering and asserts that its length matches the chain.  The distance
+posterior notebook loads the public \texttt{td\_} tables through this path.
+This narrows the interpretation of the blocker, but it still does not provide
+an independent outlier-removal or row-recovery policy.  Consequently the failed
+57-parameter models remain unpromoted unless the original legacy lenstronomy
+row semantics can be reconstructed.
+
+The runtime evidence supports this as a plausible compatibility issue.  The
+public distance-posterior notebook states that it runs with
+\texttt{lenstronomy v0.9.2}, with notebook metadata indicating a Python
+\texttt{2.7.15} kernel.  The helper runtime used here is Python \texttt{3.9.6}
+with \texttt{lenstronomy 1.14.1}, Astropy \texttt{6.0.1}, and dill
+\texttt{0.4.1}.  This version gap is a plausible source of the few row-level
+legacy defects, but it is not treated as proof: no legacy environment has been
+reconstructed, and no failed model is promoted on this basis.
+
+We also ran an optional local \texttt{lenstronomy 0.9.2} compatibility probe
+under Python \texttt{3.9.6}.  The probe uses NumPy \texttt{1.23.5}, SciPy
+\texttt{1.9.3}, Astropy \texttt{5.0.8}, and a small SciPy private-API shim
+needed by the old reader.  This reconstructed reader imports and runs, but it
+does not recover the public DES J0408 time-delay rows: all six 57-parameter
+core models fail the rowwise check over the first 128 samples, with the best
+RMSE still approximately 622 days.  This does not refute the original Python
+\texttt{2.7.15} production environment, but it is negative evidence against
+using this Python-\texttt{3.9} \texttt{lenstronomy 0.9.2} workaround to promote
+the four failed 57-parameter models.  The strict DES no-T2 baseline therefore
+remains the two clean 57-parameter models.
+
+Finally, we converted the two strict clean DES rows into a lensing-feature to
+Tau-role constraint artifact.  This is not a physical
+\(\mathrm{Response}_{\tau}^{\mathrm{lens}}\) law.  It is a cautious
+data-side narrowing of the common morphology candidate.  The clean DES rows
+force six weak roles in the lensing role cover: endpoint-blind provenance,
+internal mid/mass geometry, line-of-sight/environment structure, source-readout
+anchoring, rowwise closure stability, and observed-delay scale compatibility.
+The same artifact preserves the negative constraint that the failed DES models
+cannot be promoted without an independent row-recovery or null-policy proof.
+Thus the lensing branch now constrains the shared morphology candidate, while
+the full Tau-side lensing response, amplitude calibration, and real-data T2
+claim remain unproved.
+
+We also added a DES J0408 no-T2 time-residual candidate pretest.  This returns
+to the original observer-gated question, but in a deliberately bounded form:
+before fitting any T2 parameter, ask whether the strict clean no-T2 models leave
+a coherent residual direction in the observed time delays.  For the two clean
+57-parameter DES rows, the unweighted model-minus-observed residual vector is
+approximately
+\[
+  \Delta t_{\mathrm{model}}-\Delta t_{\mathrm{obs}}
+  \simeq (-3.43,\,+19.84)\ {\rm days},
+\]
+while the logZ-weighted vector is approximately \((-2.81,\,+19.95)\) days.
+The signs agree across both clean models, and the pairwise residual-vector
+cosine is about \(0.998\).  This is not a Tau-specific time-shift detection:
+it does not fit or sample T2, it excludes the failed DES rows, and it may still
+reflect ordinary lens-family mismatch, source modeling, time-delay likelihood
+structure, or other systematics.  Its role is narrower but useful: it supplies a
+specific no-T2 residual direction for a future bounded T2 design, while leaving
+real-data T2 sampling unauthorized.
+
+As a negative control, the same audit also evaluates the non-clean DES feature
+rows rather than silently discarding them.  These rows show a similar residual
+direction.  Therefore residual-direction coherence alone is not specific enough
+to support a T2 or Tau-time claim.  The scientifically safe interpretation is
+that DES J0408 now provides a concrete pre-registered design vector for a later
+null-versus-T2 comparison, not a detected observer-centered time distortion.
+
+We therefore freeze a DES J0408 null-versus-T2 design freeze artifact.  The frozen
+correction direction is the observed-minus-model vector,
+\[
+  \Delta t_{\mathrm{obs}}-\Delta t_{\mathrm{model}}
+  \simeq (+3.43,\,-19.84)\ {\rm days},
+\]
+in the two-delay basis.  The same artifact freezes the active null competitors:
+ordinary no-T2 nuisance freedom, lens/source-family mismatch, DES row/runtime
+systematics, and the non-clean-row coherence control.  This does not authorize a
+real-data T2 fit.  It only prevents a future comparison from choosing its target
+direction after seeing the result.
+
+With this design frozen, we can define the one-amplitude T2 operator pretest
+\[
+  \Delta t_{\mathrm{corr}} =
+  \Delta t_{\mathrm{noT2}} + \alpha u_{\mathrm{frozen}},
+\]
+where \(u_{\mathrm{frozen}}\) is the pre-frozen unit direction and
+\(\alpha \geq 0\) is chosen by closed-form least squares on the two strict clean
+DES rows.  This reduces the clean-core residual RMSE from about \(20.15\) days
+to about \(0.62\) days.  Simple orthogonal, swapped-component, and opposite
+direction controls do not improve the score under the same nonnegative-amplitude
+rule.  However, the same frozen amplitude also improves the non-clean DES
+control rows.  Therefore this is a useful directional score pretest, not a T2
+discovery: the operator is endpoint-derived, not yet Tau-derived, and not
+evidence of a physical observer-centered time distortion.
+
+Finally, we add an independent holdout readiness audit for this DES-frozen score.  The
+result is negative but useful.  WGD2038-4008 is the best current holdout route,
+with readiness score \(3/6\), but it is not score-ready: the extracted
+image-wise Fermat/arrival table, image parity/order, original joblib posterior
+payload, and a converged no-T2 posterior are still missing.  Therefore the DES
+one-amplitude score remains design-only.  The next finite action is to extract
+or reconstruct the WGD2038 per-sample image/model table with image labels,
+parity/order, \(d\phi_{AB}/d\phi_{AC}/d\phi_{AD}\), model sample IDs, and
+observed-delay or Ddt linkage.
 
 These targets remain scientifically valuable. They are blocked only for
 this specific observer-gated proof gate because the required image/model
-product depth was not confirmed.
+product depth was either too compressed or, in the DES J0408 case, not yet
+converted into an evidence-grade no-T2 reproduction.
 
 \subsection{20. Static-Lens Controls}\label{static-lens-controls}
 
@@ -2223,6 +2649,17 @@ Expected:
 \item
   The HE0435 public fallback failed PSF/model validation and is not a
   published-posterior reproduction.
+\item
+  The WGD2038 public HST route now passes a lenstronomy preprocessing
+  and multiband setup preflight, and a bounded model-plumbing smoke run
+  completes under documented compatibility constraints. A second bounded
+  smoke run also completes with the physical \texttt{fastell4py} PEMD
+  backend, and a minimal \texttt{emcee} posterior-plumbing pilot writes an
+  output artifact. Short finite diagnostic pilots also complete, including a
+  60-step run with 12720 finite samples and a 120-step run with 25440 finite
+  samples. The 120-step run shows increased split-half drift, so this is still
+  not a converged physical cluster/MCMC posterior reproduction and does not
+  authorize real-data T2 sampling.
 \item
   Synthetic tests validate method behavior, not astrophysical truth.
 \item

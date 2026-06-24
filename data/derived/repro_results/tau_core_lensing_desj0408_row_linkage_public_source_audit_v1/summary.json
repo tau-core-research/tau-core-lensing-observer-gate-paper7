@@ -1,0 +1,143 @@
+{
+  "schema": "paper7 DES J0408 row-linkage public source audit v1",
+  "purpose": "Record public-source evidence for the intended row relationship between lens posterior samples and saved time-delay rows.",
+  "source": {
+    "source_id": "DESJ0408_time_delay_cosmography",
+    "source_file": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+    "notebook_file": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/Distance posterior from combining lensing, kinematics, and external convergence.ipynb"
+  },
+  "criteria": {
+    "public_source_available": true,
+    "samples_mcmc_loaded_from_fit_output": true,
+    "compute_model_time_delays_iterates_by_sample_index": true,
+    "saved_time_delays_loaded_without_reordering": true,
+    "notebook_loads_public_time_delay_files": true,
+    "notebook_mentions_compute_time_delays_first_time_path": true,
+    "independent_row_removal_policy_found": false,
+    "failed_models_promoted_to_baseline": false,
+    "real_data_T2_sampling_authorized": false
+  },
+  "verdict": {
+    "desj0408_row_linkage_public_source_audit_created": true,
+    "public_code_intends_index_order_linkage": true,
+    "public_code_contains_no_independent_outlier_removal_policy": true,
+    "row_linkage_blocker_narrowed_but_not_cleared": true,
+    "real_data_T2_sampling_authorized": false
+  },
+  "rows": [
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "self.samples_mcmc = fit_output[-1][1]",
+      "match_count": 1,
+      "first_line": 81,
+      "first_text": "self.samples_mcmc = fit_output[-1][1]",
+      "rule_id": "samples_mcmc_loaded_from_fit_output",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "for i in tnrange(num_samples,",
+      "match_count": 1,
+      "first_line": 232,
+      "first_text": "for i in tnrange(num_samples,",
+      "rule_id": "time_delay_loop_over_sample_index",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "param_array = self.samples_mcmc[i]",
+      "match_count": 1,
+      "first_line": 234,
+      "first_text": "param_array = self.samples_mcmc[i]",
+      "rule_id": "per_row_param_array_from_samples_mcmc_i",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "kwargs_result = self.param_class.args2kwargs(param_array)",
+      "match_count": 1,
+      "first_line": 236,
+      "first_text": "kwargs_result = self.param_class.args2kwargs(param_array)",
+      "rule_id": "per_row_args2kwargs",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "model_arrival_times = self.lens_model.arrival_time(",
+      "match_count": 1,
+      "first_line": 240,
+      "first_text": "model_arrival_times = self.lens_model.arrival_time(",
+      "rule_id": "arrival_time_from_row_kwargs",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "self.model_time_delays.append([dt_AB, dt_AD])",
+      "match_count": 1,
+      "first_line": 249,
+      "first_text": "self.model_time_delays.append([dt_AB, dt_AD]) #, dt_BD])",
+      "rule_id": "append_dt_ab_dt_ad_in_loop_order",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "self.model_time_delays = np.array(self.model_time_delays)",
+      "match_count": 1,
+      "first_line": 252,
+      "first_text": "self.model_time_delays = np.array(self.model_time_delays)",
+      "rule_id": "model_time_delays_array_no_shuffle",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "loaded_time_delays = np.loadtxt(file_path)",
+      "match_count": 1,
+      "first_line": 666,
+      "first_text": "loaded_time_delays = np.loadtxt(file_path)",
+      "rule_id": "load_time_delays_np_loadtxt",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "assert len(loaded_time_delays) == self.get_num_samples()",
+      "match_count": 1,
+      "first_line": 668,
+      "first_text": "assert len(loaded_time_delays) == self.get_num_samples()",
+      "rule_id": "load_time_delays_length_assert",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/process_output/output_class.py",
+      "pattern": "self.model_time_delays = loaded_time_delays",
+      "match_count": 1,
+      "first_line": 670,
+      "first_text": "self.model_time_delays = loaded_time_delays",
+      "rule_id": "loaded_time_delays_assigned",
+      "source_kind": "python_source"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/Distance posterior from combining lensing, kinematics, and external convergence.ipynb",
+      "pattern": "model.compute_model_time_delays()",
+      "match_count": 2,
+      "first_line": 418,
+      "first_text": "\"#     model.compute_model_time_delays()\"",
+      "rule_id": "compute_time_delays_first_time_comment",
+      "source_kind": "notebook_json"
+    },
+    {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/Distance posterior from combining lensing, kinematics, and external convergence.ipynb",
+      "pattern": "model.load_time_delays(model.model_id, '../model_posteriors/time_delays/td_', dir_suffix)",
+      "match_count": 2,
+      "first_line": 438,
+      "first_text": "\"    model.load_time_delays(model.model_id, '../model_posteriors/time_delays/td_', dir_suffix)\"",
+      "rule_id": "load_time_delays_from_public_td_dir",
+      "source_kind": "notebook_json"
+    }
+  ],
+  "claim_boundary": [
+    "The public code supports intended index-order linkage.",
+    "This does not prove that modern lenstronomy reproduction preserves every legacy row exactly.",
+    "No failed model is promoted without an independent row-level recovery/removal policy."
+  ],
+  "next_finite_action": "Either reconstruct the original legacy lenstronomy execution semantics for the catastrophic rows, or keep the strict two-model DES no-T2 core."
+}

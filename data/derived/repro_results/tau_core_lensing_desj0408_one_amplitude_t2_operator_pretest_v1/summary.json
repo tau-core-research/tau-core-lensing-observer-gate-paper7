@@ -1,0 +1,145 @@
+{
+  "aggregate": {
+    "candidate_fractional_rmse_reduction": 0.9691573168495125,
+    "candidate_rmse_after_days": 0.6213886439222159,
+    "candidate_rmse_before_days": 20.147035875262198,
+    "candidate_rmse_reduction_days": 19.52564723133998,
+    "frozen_direction_beats_scramble_controls": true,
+    "max_scramble_rmse_reduction_days": 0.0,
+    "nonclean_control_also_improves": true,
+    "nonclean_control_rmse_reduction_days": 18.645669434894664
+  },
+  "criteria": {
+    "endpoint_blind": false,
+    "fits_or_samples_t2_posterior": false,
+    "nonclean_rows_checked_as_controls": true,
+    "real_data_T2_sampling_authorized": false,
+    "scramble_controls_checked": true,
+    "tau_derived_operator": false,
+    "uses_closed_form_single_amplitude_score": true,
+    "uses_failed_rows_for_candidate_fit": false,
+    "uses_pre_frozen_design_vector": true
+  },
+  "operator": {
+    "alpha_days": 20.137450948725032,
+    "alpha_policy": "closed_form_nonnegative_least_squares_on_clean_core",
+    "endpoint_blind": false,
+    "formula": "Delta_t_corrected = Delta_t_noT2 + alpha * u_frozen",
+    "name": "T2_one_amplitude_frozen_direction_pretest",
+    "tau_derived": false,
+    "u_frozen": [
+      0.17008707366496628,
+      -0.9854290372076968
+    ],
+    "u_frozen_basis": [
+      "dt1_days",
+      "dt2_days"
+    ]
+  },
+  "purpose": "Define and score the minimal one-amplitude correction along the pre-frozen DES J0408 residual direction, with scramble and non-clean controls. This is not a posterior fit or physical detection.",
+  "rows": [
+    {
+      "alpha_days": 20.137450948725032,
+      "alpha_source": "closed_form_nonnegative",
+      "direction_dt1": 0.17008707366496628,
+      "direction_dt2": -0.9854290372076968,
+      "fractional_rmse_reduction": 0.9691573168495125,
+      "rmse_after_days": 0.6213886439222159,
+      "rmse_before_days": 20.147035875262198,
+      "rmse_reduction_days": 19.52564723133998,
+      "role": "candidate_operator",
+      "row_id": "T2_FROZEN_DIRECTION_CLEAN_CORE",
+      "sample_count": 2
+    },
+    {
+      "alpha_days": 4.440892098500626e-16,
+      "alpha_source": "closed_form_nonnegative",
+      "direction_dt1": 0.9854290372076968,
+      "direction_dt2": 0.17008707366496628,
+      "fractional_rmse_reduction": 0.0,
+      "rmse_after_days": 20.147035875262198,
+      "rmse_before_days": 20.147035875262198,
+      "rmse_reduction_days": 0.0,
+      "role": "scramble_control",
+      "row_id": "SCRAMBLE_ORTHOGONAL_CLEAN_CORE",
+      "sample_count": 2
+    },
+    {
+      "alpha_days": 0.0,
+      "alpha_source": "closed_form_nonnegative",
+      "direction_dt1": -0.9854290372076968,
+      "direction_dt2": 0.17008707366496628,
+      "fractional_rmse_reduction": 0.0,
+      "rmse_after_days": 20.147035875262198,
+      "rmse_before_days": 20.147035875262198,
+      "rmse_reduction_days": 0.0,
+      "role": "scramble_control",
+      "row_id": "SCRAMBLE_SWAPPED_COMPONENTS_CLEAN_CORE",
+      "sample_count": 2
+    },
+    {
+      "alpha_days": 0.0,
+      "alpha_source": "closed_form_nonnegative",
+      "direction_dt1": -0.17008707366496628,
+      "direction_dt2": 0.9854290372076968,
+      "fractional_rmse_reduction": 0.0,
+      "rmse_after_days": 20.147035875262198,
+      "rmse_before_days": 20.147035875262198,
+      "rmse_reduction_days": 0.0,
+      "role": "sign_control",
+      "row_id": "OPPOSITE_DIRECTION_CLEAN_CORE",
+      "sample_count": 2
+    },
+    {
+      "alpha_days": 20.137450948725032,
+      "alpha_source": "clean_core_alpha_reused",
+      "direction_dt1": 0.17008707366496628,
+      "direction_dt2": -0.9854290372076968,
+      "fractional_rmse_reduction": 0.9249577791727231,
+      "rmse_after_days": 1.5127311480716668,
+      "rmse_before_days": 20.15840058296633,
+      "rmse_reduction_days": 18.645669434894664,
+      "role": "negative_control",
+      "row_id": "T2_FROZEN_DIRECTION_NONCLEAN_CONTROL",
+      "sample_count": 3
+    },
+    {
+      "alpha_days": 20.137450948725032,
+      "alpha_source": "clean_core_alpha_reused",
+      "direction_dt1": 0.17008707366496628,
+      "direction_dt2": -0.9854290372076968,
+      "fractional_rmse_reduction": 0.9386764639750531,
+      "rmse_after_days": 1.2359056818891683,
+      "rmse_before_days": 20.15385546890825,
+      "rmse_reduction_days": 18.917949787019083,
+      "role": "sensitivity_control",
+      "row_id": "T2_FROZEN_DIRECTION_ALL_FEATURE_ROWS_CONTROL",
+      "sample_count": 5
+    }
+  ],
+  "schema": "paper7 DES J0408 one-amplitude T2 operator pretest v1",
+  "source": {
+    "clean_model_ids": [
+      "0408_run1001_0_0_0_0_0_1_1_0",
+      "0408_run910_0_2_1_0_0_1_1_0"
+    ],
+    "design_summary": "data/derived/repro_results/tau_core_lensing_desj0408_t2_null_comparison_design_freeze_v1/summary.json",
+    "feature_csv": "data/derived/desj0408_powerlaw_57_core_feature_table_v1.csv",
+    "nonclean_control_model_ids": [
+      "0408_run905_0_1_0_0_0_1_1_0",
+      "0408_run1006_0_1_1_0_0_1_1_0",
+      "0408_run909_0_2_0_0_0_1_1_0"
+    ]
+  },
+  "verdict": {
+    "bounded_t2_fit_ready": false,
+    "desj0408_one_amplitude_t2_operator_pretest_created": true,
+    "directional_score_supports_design_followup": true,
+    "frozen_direction_beats_scramble_controls": true,
+    "frozen_direction_reduces_clean_residual": true,
+    "minimal_one_amplitude_operator_defined": true,
+    "nonclean_control_also_improves": true,
+    "real_data_T2_sampling_authorized": false,
+    "t2_specific_time_shift_evidence": false
+  }
+}

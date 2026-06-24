@@ -1,0 +1,49 @@
+{
+  "band_count": 3,
+  "claim_level": "bounded_continuation_diagnostic_not_converged_posterior",
+  "content_hash": "b00f97372827bdbc81199217e1faebb4a4caed5fab666d7cb821355b5a0fd2bf",
+  "converged_no_T2_posterior_reproduced": false,
+  "created_at_unix": 1782241731.226495,
+  "diagnostic_verdict": "FINITE_CONTINUATION_CHAIN_HEALTH_CHECK_NOT_CONVERGED_POSTERIOR",
+  "emcee_log_prob_shape": [
+    25440
+  ],
+  "emcee_sample_shape": [
+    25440,
+    53
+  ],
+  "executed_notebook_path": "/tmp/wgd2038_Multiband_Image_Modeling_tau_core_mcmc_diag120_cont2_fastell_backend_executed.ipynb",
+  "executed_notebook_sha256": "04524481b318803fcaf3cbf9725bdddf2a5463f1bb05999d25661d2cfedde051",
+  "finite_logp": true,
+  "finite_samples": true,
+  "first_five_parameters": [
+    "gamma_lens0",
+    "gamma1_lens1",
+    "gamma2_lens1",
+    "R_sersic_source_light0",
+    "n_sersic_source_light0"
+  ],
+  "fit_output_types": [
+    "emcee"
+  ],
+  "interpretation": "Second successful continuation from previous chain endpoint; finite-chain diagnostic only, not a posterior convergence claim.",
+  "job_name": "tau_core_mcmc_diag120_cont2_pemd_fastell_backend",
+  "lens_result_count": 2,
+  "logp_max": -11534828.854037467,
+  "logp_median": -13036874.1141406,
+  "logp_min": -125408274.52105391,
+  "output_path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_mcmc_diag120_cont2_pemd_fastell_backend_out.txt",
+  "output_sha256": "d1a69b6ca45100b957a9a09049507b3b7b88788ce9136790b29e44bb07d1dd65",
+  "param_count": 53,
+  "previous_job_name": "tau_core_mcmc_diag120_cont_pemd_fastell_backend",
+  "real_data_T2_sampling_authorized": false,
+  "schema": "paper7 WGD2038 fastell-backed MCMC diag120 continuation-2 payload summary v1",
+  "split_half_abs_mean_shift_sigma_quantiles": {
+    "p100": 1.5257019310017186,
+    "p50": 0.8727824785254309,
+    "p90": 1.3750660382040227,
+    "p95": 1.4989521557871173,
+    "p99": 1.5212472411060942
+  },
+  "uses_previous_chain_endpoint_start": true
+}

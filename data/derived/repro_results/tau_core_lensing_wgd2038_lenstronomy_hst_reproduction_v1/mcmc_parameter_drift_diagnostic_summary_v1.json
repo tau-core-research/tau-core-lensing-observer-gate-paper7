@@ -1,0 +1,668 @@
+{
+  "claim_level": "chain_health_diagnostic_not_posterior_convergence",
+  "content_hash": "0c82db9f18cdf0ae7da5c458ca0f9a18394a022b9bdeb431bb7e46a2401ec8b5",
+  "converged_no_T2_posterior_reproduced": false,
+  "csv_path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/derived/wgd2038_mcmc_parameter_drift_diagnostic_v1.csv",
+  "jobs": [
+    {
+      "finite_logp": true,
+      "finite_samples": true,
+      "job_name": "diagnostic120",
+      "logp_max": -22493308.80779682,
+      "logp_median": -238304967.7872904,
+      "logp_min": -246639704.3998552,
+      "logp_shape": [
+        25440
+      ],
+      "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_mcmc_diag120_pemd_fastell_backend_out.txt",
+      "sample_shape": [
+        25440,
+        53
+      ],
+      "sha256": "1968be58c66ca4b110a71d1301822fff0090d1badfd8a54ac5ad2d9ad692c498",
+      "split_half_abs_mean_shift_sigma_quantiles": {
+        "p100": 1.492907396097003,
+        "p50": 0.8197228871458808,
+        "p90": 1.3983512273764716,
+        "p95": 1.4576351355078974,
+        "p99": 1.4777958349460603
+      },
+      "top_drift_parameters": [
+        {
+          "first_half_mean": 0.15733698769037302,
+          "job_name": "diagnostic120",
+          "mean": 0.16743312804898192,
+          "param_index": 13,
+          "param_key": "13:beta_source_light5",
+          "param_name": "beta_source_light5",
+          "second_half_mean": 0.17752926840759098,
+          "split_half_abs_mean_shift_sigma": 1.492907396097003,
+          "std": 0.01352547436533233
+        },
+        {
+          "first_half_mean": -1.4848575623639881,
+          "job_name": "diagnostic120",
+          "mean": -1.5137059507289863,
+          "param_index": 46,
+          "param_key": "46:ra_image",
+          "param_name": "ra_image",
+          "second_half_mean": -1.5425543390939733,
+          "split_half_abs_mean_shift_sigma": 1.4638467015759593,
+          "std": 0.03941449378982492
+        },
+        {
+          "first_half_mean": 5.853919286296275,
+          "job_name": "diagnostic120",
+          "mean": 5.884472982151065,
+          "param_index": 30,
+          "param_key": "30:R_sersic_lens_light5",
+          "param_name": "R_sersic_lens_light5",
+          "second_half_mean": 5.915026678005662,
+          "split_half_abs_mean_shift_sigma": 1.460904459804523,
+          "std": 0.04182846543989809
+        },
+        {
+          "first_half_mean": -0.7124447357479162,
+          "job_name": "diagnostic120",
+          "mean": -0.7461509120224912,
+          "param_index": 47,
+          "param_key": "47:ra_image",
+          "param_name": "ra_image",
+          "second_half_mean": -0.7798570882970998,
+          "split_half_abs_mean_shift_sigma": 1.4554555859768137,
+          "std": 0.046317011111324975
+        },
+        {
+          "first_half_mean": -0.04807133730738501,
+          "job_name": "diagnostic120",
+          "mean": -0.05055655629317511,
+          "param_index": 19,
+          "param_key": "19:center_y_lens_light0",
+          "param_name": "center_y_lens_light0",
+          "second_half_mean": -0.053041775278964635,
+          "split_half_abs_mean_shift_sigma": 1.4055646781524544,
+          "std": 0.0035362570271098835
+        },
+        {
+          "first_half_mean": -1.1995432795741197,
+          "job_name": "diagnostic120",
+          "mean": -1.2249493612379705,
+          "param_index": 51,
+          "param_key": "51:dec_image",
+          "param_name": "dec_image",
+          "second_half_mean": -1.2503554429018608,
+          "split_half_abs_mean_shift_sigma": 1.400630359229109,
+          "std": 0.03627806793671601
+        },
+        {
+          "first_half_mean": 2.074540296706011,
+          "job_name": "diagnostic120",
+          "mean": 2.4054939014794616,
+          "param_index": 21,
+          "param_key": "21:n_sersic_lens_light1",
+          "param_name": "n_sersic_lens_light1",
+          "second_half_mean": 2.7364475062528912,
+          "split_half_abs_mean_shift_sigma": 1.3892346999659217,
+          "std": 0.4764545613219477
+        },
+        {
+          "first_half_mean": 2.835758680029395,
+          "job_name": "diagnostic120",
+          "mean": 3.254765504542097,
+          "param_index": 4,
+          "param_key": "04:n_sersic_source_light0",
+          "param_name": "n_sersic_source_light0",
+          "second_half_mean": 3.6737723290548434,
+          "split_half_abs_mean_shift_sigma": 1.3806369031242711,
+          "std": 0.6069761333538963
+        },
+        {
+          "first_half_mean": 0.48227946757112644,
+          "job_name": "diagnostic120",
+          "mean": 0.44652518293179944,
+          "param_index": 50,
+          "param_key": "50:dec_image",
+          "param_name": "dec_image",
+          "second_half_mean": 0.4107708982924634,
+          "split_half_abs_mean_shift_sigma": 1.3676090761526223,
+          "std": 0.05228728773756342
+        },
+        {
+          "first_half_mean": 2.0800697282657343,
+          "job_name": "diagnostic120",
+          "mean": 2.345638945965597,
+          "param_index": 15,
+          "param_key": "15:n_sersic_lens_light0",
+          "param_name": "n_sersic_lens_light0",
+          "second_half_mean": 2.611208163665453,
+          "split_half_abs_mean_shift_sigma": 1.3638144590076031,
+          "std": 0.3894506557621076
+        }
+      ]
+    },
+    {
+      "finite_logp": true,
+      "finite_samples": true,
+      "job_name": "cont1",
+      "logp_max": -13714275.908221805,
+      "logp_median": -18998083.464272298,
+      "logp_min": -422951629.71700764,
+      "logp_shape": [
+        25440
+      ],
+      "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_mcmc_diag120_cont_pemd_fastell_backend_out.txt",
+      "sample_shape": [
+        25440,
+        53
+      ],
+      "sha256": "f8a5f5d053cdab5b5b7da1ae205e8cf33e37bb24543b36cd7aad31647c369fd2",
+      "split_half_abs_mean_shift_sigma_quantiles": {
+        "p100": 1.4115196604209383,
+        "p50": 0.8172018177720481,
+        "p90": 1.2607046389650298,
+        "p95": 1.28556313370569,
+        "p99": 1.3598135585653162
+      },
+      "top_drift_parameters": [
+        {
+          "first_half_mean": 0.8024091870175224,
+          "job_name": "cont1",
+          "mean": 0.7744862058237634,
+          "param_index": 48,
+          "param_key": "48:ra_image",
+          "param_name": "ra_image",
+          "second_half_mean": 0.7465632246299538,
+          "split_half_abs_mean_shift_sigma": 1.4115196604209383,
+          "std": 0.0395644240403303
+        },
+        {
+          "first_half_mean": 5.963028213212126,
+          "job_name": "cont1",
+          "mean": 5.98972598655592,
+          "param_index": 30,
+          "param_key": "30:R_sersic_lens_light5",
+          "param_name": "R_sersic_lens_light5",
+          "second_half_mean": 6.016423759899698,
+          "split_half_abs_mean_shift_sigma": 1.312084849160127,
+          "std": 0.04069519339426817
+        },
+        {
+          "first_half_mean": -1.2961966853556124,
+          "job_name": "cont1",
+          "mean": -1.3122649656573084,
+          "param_index": 51,
+          "param_key": "51:dec_image",
+          "param_name": "dec_image",
+          "second_half_mean": -1.3283332459590347,
+          "split_half_abs_mean_shift_sigma": 1.2943283365183524,
+          "std": 0.024828754571326883
+        },
+        {
+          "first_half_mean": 0.9360966360762596,
+          "job_name": "cont1",
+          "mean": 0.9752908235958365,
+          "param_index": 28,
+          "param_key": "28:R_sersic_lens_light3",
+          "param_name": "R_sersic_lens_light3",
+          "second_half_mean": 1.0144850111154224,
+          "split_half_abs_mean_shift_sigma": 1.279719665163915,
+          "std": 0.06125433340734247
+        },
+        {
+          "first_half_mean": -1.3024206645768859,
+          "job_name": "cont1",
+          "mean": -1.3310375046045504,
+          "param_index": 52,
+          "param_key": "52:dec_image",
+          "param_name": "dec_image",
+          "second_half_mean": -1.3596543446321872,
+          "split_half_abs_mean_shift_sigma": 1.278853087564148,
+          "std": 0.0447539131825035
+        },
+        {
+          "first_half_mean": 3.4493450130640677,
+          "job_name": "cont1",
+          "mean": 3.472643935217329,
+          "param_index": 29,
+          "param_key": "29:R_sersic_lens_light4",
+          "param_name": "R_sersic_lens_light4",
+          "second_half_mean": 3.4959428573708236,
+          "split_half_abs_mean_shift_sigma": 1.2711911683802097,
+          "std": 0.03665683452227019
+        },
+        {
+          "first_half_mean": 1.1221965195306713,
+          "job_name": "cont1",
+          "mean": 1.2584267214778069,
+          "param_index": 25,
+          "param_key": "25:n_sersic_lens_light2",
+          "param_name": "n_sersic_lens_light2",
+          "second_half_mean": 1.3946569234249302,
+          "split_half_abs_mean_shift_sigma": 1.2187585213043088,
+          "std": 0.22355569141084192
+        },
+        {
+          "first_half_mean": 2.454386940871395,
+          "job_name": "cont1",
+          "mean": 2.6989792248917004,
+          "param_index": 42,
+          "param_key": "42:w_t3_lens_light6",
+          "param_name": "w_t3_lens_light6",
+          "second_half_mean": 2.943571508912067,
+          "split_half_abs_mean_shift_sigma": 1.2145752127136613,
+          "std": 0.4027618569182705
+        },
+        {
+          "first_half_mean": -0.03873392016705567,
+          "job_name": "cont1",
+          "mean": -0.17310138994124136,
+          "param_index": 44,
+          "param_key": "44:e23_lens_light6",
+          "param_name": "e23_lens_light6",
+          "second_half_mean": -0.3074688597154267,
+          "split_half_abs_mean_shift_sigma": 1.2123330221054396,
+          "std": 0.22166759021415663
+        },
+        {
+          "first_half_mean": 1.8541573964179976,
+          "job_name": "cont1",
+          "mean": 1.6190910742725173,
+          "param_index": 9,
+          "param_key": "09:n_sersic_source_light2",
+          "param_name": "n_sersic_source_light2",
+          "second_half_mean": 1.3840247521270783,
+          "split_half_abs_mean_shift_sigma": 1.2058483557352597,
+          "std": 0.38987708699329154
+        }
+      ]
+    },
+    {
+      "finite_logp": true,
+      "finite_samples": true,
+      "job_name": "cont2",
+      "logp_max": -11534828.854037467,
+      "logp_median": -13036874.1141406,
+      "logp_min": -125408274.52105391,
+      "logp_shape": [
+        25440
+      ],
+      "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_mcmc_diag120_cont2_pemd_fastell_backend_out.txt",
+      "sample_shape": [
+        25440,
+        53
+      ],
+      "sha256": "d1a69b6ca45100b957a9a09049507b3b7b88788ce9136790b29e44bb07d1dd65",
+      "split_half_abs_mean_shift_sigma_quantiles": {
+        "p100": 1.5257019310017186,
+        "p50": 0.8727824785254309,
+        "p90": 1.3750660382040227,
+        "p95": 1.4989521557871173,
+        "p99": 1.5212472411060942
+      },
+      "top_drift_parameters": [
+        {
+          "first_half_mean": -0.0530438751727958,
+          "job_name": "cont2",
+          "mean": -0.050248679628099376,
+          "param_index": 19,
+          "param_key": "19:center_y_lens_light0",
+          "param_name": "center_y_lens_light0",
+          "second_half_mean": -0.04745348408340362,
+          "split_half_abs_mean_shift_sigma": 1.5257019310017186,
+          "std": 0.003664143679883815
+        },
+        {
+          "first_half_mean": -0.10975703861507892,
+          "job_name": "cont2",
+          "mean": -0.17783010426845827,
+          "param_index": 35,
+          "param_key": "35:e11_lens_light6",
+          "param_name": "e11_lens_light6",
+          "second_half_mean": -0.2459031699218382,
+          "split_half_abs_mean_shift_sigma": 1.5171352196639794,
+          "std": 0.08973895638346349
+        },
+        {
+          "first_half_mean": 0.7936038734937992,
+          "job_name": "cont2",
+          "mean": 0.7729586197065647,
+          "param_index": 49,
+          "param_key": "49:dec_image",
+          "param_name": "dec_image",
+          "second_half_mean": 0.7523133659193401,
+          "split_half_abs_mean_shift_sigma": 1.5108374169035363,
+          "std": 0.027329550559830124
+        },
+        {
+          "first_half_mean": 0.39442606028841815,
+          "job_name": "cont2",
+          "mean": 0.4687543551305115,
+          "param_index": 27,
+          "param_key": "27:e2_lens_light2",
+          "param_name": "e2_lens_light2",
+          "second_half_mean": 0.5430826499726114,
+          "split_half_abs_mean_shift_sigma": 1.4910286483761712,
+          "std": 0.09970069310512512
+        },
+        {
+          "first_half_mean": 1.0201855103344002,
+          "job_name": "cont2",
+          "mean": 0.9918122655352218,
+          "param_index": 28,
+          "param_key": "28:R_sersic_lens_light3",
+          "param_name": "R_sersic_lens_light3",
+          "second_half_mean": 0.9634390207360121,
+          "split_half_abs_mean_shift_sigma": 1.4005167389317035,
+          "std": 0.04051825159924409
+        },
+        {
+          "first_half_mean": 18.669017880280418,
+          "job_name": "cont2",
+          "mean": 18.463782491821693,
+          "param_index": 32,
+          "param_key": "32:ratio13_lens_light6",
+          "param_name": "ratio13_lens_light6",
+          "second_half_mean": 18.258547103363274,
+          "split_half_abs_mean_shift_sigma": 1.379965675396689,
+          "std": 0.29744999041209413
+        },
+        {
+          "first_half_mean": 0.015057180584293174,
+          "job_name": "cont2",
+          "mean": -0.018834468369050394,
+          "param_index": 26,
+          "param_key": "26:e1_lens_light2",
+          "param_name": "e1_lens_light2",
+          "second_half_mean": -0.05272611732239397,
+          "split_half_abs_mean_shift_sigma": 1.3554674894333572,
+          "std": 0.050007321041442294
+        },
+        {
+          "first_half_mean": 0.24306463916806126,
+          "job_name": "cont2",
+          "mean": 0.19193733161998988,
+          "param_index": 39,
+          "param_key": "39:e12_lens_light6",
+          "param_name": "e12_lens_light6",
+          "second_half_mean": 0.14081002407191792,
+          "split_half_abs_mean_shift_sigma": 1.3326996660816348,
+          "std": 0.07672742606401088
+        },
+        {
+          "first_half_mean": 3.135101677174988,
+          "job_name": "cont2",
+          "mean": 3.2374626766440238,
+          "param_index": 42,
+          "param_key": "42:w_t3_lens_light6",
+          "param_name": "w_t3_lens_light6",
+          "second_half_mean": 3.339823676113136,
+          "split_half_abs_mean_shift_sigma": 1.313244190357456,
+          "std": 0.15589027573090633
+        },
+        {
+          "first_half_mean": 0.1810595238927735,
+          "job_name": "cont2",
+          "mean": 0.18459973898308693,
+          "param_index": 8,
+          "param_key": "08:R_sersic_source_light2",
+          "param_name": "R_sersic_source_light2",
+          "second_half_mean": 0.18813995407340225,
+          "split_half_abs_mean_shift_sigma": 1.3112328585854138,
+          "std": 0.0053998266844502716
+        }
+      ]
+    },
+    {
+      "finite_logp": true,
+      "finite_samples": true,
+      "job_name": "cont3_cold",
+      "logp_max": -11149437.536366077,
+      "logp_median": -11342975.303662691,
+      "logp_min": -22829177.59891215,
+      "logp_shape": [
+        25440
+      ],
+      "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_mcmc_diag120_cont3_cold_pemd_fastell_backend_out.txt",
+      "sample_shape": [
+        25440,
+        53
+      ],
+      "sha256": "0016f970a728d5d2b6e866b2970fca598698d0ea0c80f2d3ab122f2b15980f7b",
+      "split_half_abs_mean_shift_sigma_quantiles": {
+        "p100": 1.5186164752103657,
+        "p50": 0.9830444084035003,
+        "p90": 1.408641270470426,
+        "p95": 1.470018361378658,
+        "p99": 1.5181002319205397
+      },
+      "top_drift_parameters": [
+        {
+          "first_half_mean": -0.14341064079651267,
+          "job_name": "cont3_cold",
+          "mean": -0.18731500226668044,
+          "param_index": 26,
+          "param_key": "26:e1_lens_light2",
+          "param_name": "e1_lens_light2",
+          "second_half_mean": -0.23121936373684457,
+          "split_half_abs_mean_shift_sigma": 1.5186164752103657,
+          "std": 0.057821526614644174
+        },
+        {
+          "first_half_mean": 3.4891265002905882,
+          "job_name": "cont3_cold",
+          "mean": 3.255882320086682,
+          "param_index": 15,
+          "param_key": "15:n_sersic_lens_light0",
+          "param_name": "n_sersic_lens_light0",
+          "second_half_mean": 3.022638139882655,
+          "split_half_abs_mean_shift_sigma": 1.517623699653008,
+          "std": 0.3073807825438377
+        },
+        {
+          "first_half_mean": -0.15208415754256777,
+          "job_name": "cont3_cold",
+          "mean": -0.16605980940404547,
+          "param_index": 5,
+          "param_key": "05:e1_source_light0",
+          "param_name": "e1_source_light0",
+          "second_half_mean": -0.1800354612655232,
+          "split_half_abs_mean_shift_sigma": 1.473781633096973,
+          "std": 0.018965702308791417
+        },
+        {
+          "first_half_mean": 3.554134678004614,
+          "job_name": "cont3_cold",
+          "mean": 3.5327033779359036,
+          "param_index": 29,
+          "param_key": "29:R_sersic_lens_light4",
+          "param_name": "R_sersic_lens_light4",
+          "second_half_mean": 3.5112720778672375,
+          "split_half_abs_mean_shift_sigma": 1.4675095135664478,
+          "std": 0.029207715343351568
+        },
+        {
+          "first_half_mean": 4.311429169125212,
+          "job_name": "cont3_cold",
+          "mean": 4.518415990261687,
+          "param_index": 21,
+          "param_key": "21:n_sersic_lens_light1",
+          "param_name": "n_sersic_lens_light1",
+          "second_half_mean": 4.725402811398105,
+          "split_half_abs_mean_shift_sigma": 1.442638706754331,
+          "std": 0.286955867975298
+        },
+        {
+          "first_half_mean": 1.9961617572499784,
+          "job_name": "cont3_cold",
+          "mean": 1.9886042034307476,
+          "param_index": 0,
+          "param_key": "00:gamma_lens0",
+          "param_name": "gamma_lens0",
+          "second_half_mean": 1.9810466496115298,
+          "split_half_abs_mean_shift_sigma": 1.4110311093012438,
+          "std": 0.01071210091499875
+        },
+        {
+          "first_half_mean": 0.1915183297890996,
+          "job_name": "cont3_cold",
+          "mean": 0.18893376785490013,
+          "param_index": 11,
+          "param_key": "11:R_sersic_source_light4",
+          "param_name": "R_sersic_source_light4",
+          "second_half_mean": 0.18634920592069742,
+          "split_half_abs_mean_shift_sigma": 1.3990819151471554,
+          "std": 0.003694654195040046
+        },
+        {
+          "first_half_mean": 0.13016267111993138,
+          "job_name": "cont3_cold",
+          "mean": 0.10523434293150848,
+          "param_index": 33,
+          "param_key": "33:w_c1_lens_light6",
+          "param_name": "w_c1_lens_light6",
+          "second_half_mean": 0.08030601474308856,
+          "split_half_abs_mean_shift_sigma": 1.381763362954277,
+          "std": 0.0360819064335771
+        },
+        {
+          "first_half_mean": 0.020478206622453206,
+          "job_name": "cont3_cold",
+          "mean": 0.019603540883838946,
+          "param_index": 18,
+          "param_key": "18:center_x_lens_light0",
+          "param_name": "center_x_lens_light0",
+          "second_half_mean": 0.018728875145224828,
+          "split_half_abs_mean_shift_sigma": 1.3682903872432486,
+          "std": 0.0012784796942003946
+        },
+        {
+          "first_half_mean": 6.781959667192125,
+          "job_name": "cont3_cold",
+          "mean": 6.575860997309464,
+          "param_index": 38,
+          "param_key": "38:w_t2_lens_light6",
+          "param_name": "w_t2_lens_light6",
+          "second_half_mean": 6.369762327426975,
+          "split_half_abs_mean_shift_sigma": 1.3678871561438293,
+          "std": 0.3013387017433483
+        }
+      ]
+    }
+  ],
+  "missing_jobs": [],
+  "persistent_top_drift_parameters": [
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.400630359229109,
+      "mean_split_half_abs_shift_sigma": 1.218801445837713,
+      "param_key": "51:dec_image",
+      "param_name": "dec_image"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.4005167389317035,
+      "mean_split_half_abs_shift_sigma": 1.2119078716938907,
+      "param_key": "28:R_sersic_lens_light3",
+      "param_name": "R_sersic_lens_light3"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.442638706754331,
+      "mean_split_half_abs_shift_sigma": 1.2089932636644696,
+      "param_key": "21:n_sersic_lens_light1",
+      "param_name": "n_sersic_lens_light1"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.3806369031242711,
+      "mean_split_half_abs_shift_sigma": 1.178027614955196,
+      "param_key": "04:n_sersic_source_light0",
+      "param_name": "n_sersic_source_light0"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.517623699653008,
+      "mean_split_half_abs_shift_sigma": 1.173770961995424,
+      "param_key": "15:n_sersic_lens_light0",
+      "param_name": "n_sersic_lens_light0"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.3056027996326447,
+      "mean_split_half_abs_shift_sigma": 1.149864172591367,
+      "param_key": "09:n_sersic_source_light2",
+      "param_name": "n_sersic_source_light2"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.5186164752103657,
+      "mean_split_half_abs_shift_sigma": 1.1268470451091657,
+      "param_key": "26:e1_lens_light2",
+      "param_name": "e1_lens_light2"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.460904459804523,
+      "mean_split_half_abs_shift_sigma": 1.1157525493712543,
+      "param_key": "30:R_sersic_lens_light5",
+      "param_name": "R_sersic_lens_light5"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.4675095135664478,
+      "mean_split_half_abs_shift_sigma": 1.1085830050094125,
+      "param_key": "29:R_sersic_lens_light4",
+      "param_name": "R_sersic_lens_light4"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.473781633096973,
+      "mean_split_half_abs_shift_sigma": 1.086860371721583,
+      "param_key": "05:e1_source_light0",
+      "param_name": "e1_source_light0"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.381763362954277,
+      "mean_split_half_abs_shift_sigma": 1.0660656956266203,
+      "param_key": "33:w_c1_lens_light6",
+      "param_name": "w_c1_lens_light6"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.3676090761526223,
+      "mean_split_half_abs_shift_sigma": 1.0655255027881505,
+      "param_key": "50:dec_image",
+      "param_name": "dec_image"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.3990819151471554,
+      "mean_split_half_abs_shift_sigma": 1.0483541030668617,
+      "param_key": "11:R_sersic_source_light4",
+      "param_name": "R_sersic_source_light4"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.313776984243869,
+      "mean_split_half_abs_shift_sigma": 0.9933560611210182,
+      "param_key": "37:w_c2_lens_light6",
+      "param_name": "w_c2_lens_light6"
+    },
+    {
+      "job_count": 4,
+      "max_split_half_abs_shift_sigma": 1.304143726947145,
+      "mean_split_half_abs_shift_sigma": 0.9903784061909175,
+      "param_key": "34:w_t1_lens_light6",
+      "param_name": "w_t1_lens_light6"
+    }
+  ],
+  "real_data_T2_sampling_authorized": false,
+  "schema": "paper7 WGD2038 bounded MCMC parameter drift diagnostic v1",
+  "verdict": {
+    "all_available_jobs_finite": true,
+    "interpretation": "The bounded chains are finite, but drift concentrates in specific parameters and remains visible across continuation variants. This diagnoses the blocker; it is not a posterior convergence claim.",
+    "parameter_drift_diagnostic_created": true,
+    "simple_endpoint_or_cold_continuation_clears_blocker": false
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "band_count": 3,
+  "claim_level": "bounded_nuisance_stabilization_diagnostic_not_converged_posterior",
+  "content_hash": "7b8261768f7b97a728a8fa32de37157a49dd03c2dcbe6f6ef8ae97de0f5ea758",
+  "converged_no_T2_posterior_reproduced": false,
+  "created_at_unix": 1782246851.434936,
+  "diagnostic_verdict": "FINITE_PROFILE_FREEZE_CHAIN_HEALTH_CHECK_NOT_CONVERGED_POSTERIOR",
+  "emcee_log_prob_shape": [
+    20160
+  ],
+  "emcee_sample_shape": [
+    20160,
+    42
+  ],
+  "executed_notebook_path": "/tmp/wgd2038_Multiband_Image_Modeling_tau_core_profile_freeze_v1_fastell_backend_executed.ipynb",
+  "executed_notebook_sha256": "ec27104e8165bccbce272ad3102d119410af7922bb5b2bfafb002ea86ccdac34",
+  "finite_logp": true,
+  "finite_samples": true,
+  "first_five_parameters": [
+    "gamma_lens0",
+    "gamma1_lens1",
+    "gamma2_lens1",
+    "R_sersic_source_light0",
+    "e2_source_light0"
+  ],
+  "fit_output_types": [
+    "emcee"
+  ],
+  "interpretation": "Profile-freeze v1 bounded diagnostic; finite-chain nuisance stabilization test only, not a posterior convergence claim.",
+  "job_name": "tau_core_profile_freeze_v1_pemd_fastell_backend",
+  "lens_result_count": 2,
+  "logp_max": -11107695.58467419,
+  "logp_median": -11285742.065393241,
+  "logp_min": -111480088.80256358,
+  "output_path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_profile_freeze_v1_pemd_fastell_backend_out.txt",
+  "output_sha256": "a1c20d82980f09606fb311c5029bd585aace830a5a8c23b11c6fb9ef8311f063",
+  "param_count": 42,
+  "previous_job_name": "tau_core_mcmc_diag120_cont2_pemd_fastell_backend",
+  "profile_freeze_v1_fixed_parameters": [
+    "lens_light[3].R_sersic",
+    "lens_light[1].n_sersic",
+    "source[0].n_sersic",
+    "lens_light[0].n_sersic",
+    "source[2].n_sersic",
+    "lens_light[2].e1",
+    "lens_light[5].R_sersic",
+    "lens_light[4].R_sersic",
+    "source[0].e1",
+    "lens_light[6].w_c1",
+    "source[4].R_sersic"
+  ],
+  "real_data_T2_sampling_authorized": false,
+  "reuses_previous_mcmc_samples": false,
+  "schema": "paper7 WGD2038 fastell-backed profile-freeze v1 payload summary v1",
+  "split_half_abs_mean_shift_sigma_quantiles": {
+    "p100": 1.4220846943770185,
+    "p50": 0.6331513571862053,
+    "p90": 1.205668526448707,
+    "p95": 1.3827252993261743,
+    "p99": 1.4172645703527431
+  },
+  "top_drift_parameters": [
+    {
+      "param_index": 22,
+      "param_name": "ratio13_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.4220846943770185
+    },
+    {
+      "param_index": 25,
+      "param_name": "e21_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.4103282943178106
+    },
+    {
+      "param_index": 38,
+      "param_name": "dec_image",
+      "split_half_abs_mean_shift_sigma": 1.3886364876204744
+    },
+    {
+      "param_index": 10,
+      "param_name": "R_sersic_lens_light0",
+      "split_half_abs_mean_shift_sigma": 1.2704127217344798
+    },
+    {
+      "param_index": 36,
+      "param_name": "ra_image",
+      "split_half_abs_mean_shift_sigma": 1.210962542542356
+    },
+    {
+      "param_index": 39,
+      "param_name": "dec_image",
+      "split_half_abs_mean_shift_sigma": 1.1580223816058672
+    },
+    {
+      "param_index": 28,
+      "param_name": "e12_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.1215222208917037
+    },
+    {
+      "param_index": 24,
+      "param_name": "e11_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.1085866678180654
+    },
+    {
+      "param_index": 8,
+      "param_name": "n_sersic_source_light4",
+      "split_half_abs_mean_shift_sigma": 1.1015145547591383
+    },
+    {
+      "param_index": 21,
+      "param_name": "ratio12_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.0907409137601862
+    }
+  ],
+  "uses_previous_best_fit_start": true
+}

@@ -1,0 +1,319 @@
+{
+  "artifact_rows": [
+    {
+      "artifact": "TDCOSMO2025 WGD2038 processed pickle",
+      "available": true,
+      "blocking_gap": "No explicit image parity/order or image-wise Fermat samples found in pickle keys.",
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/WGD2038-4008_const_processed.pkl",
+      "t2_relevance": "Ddt/kappa/nuisance context"
+    },
+    {
+      "artifact": "TDCOSMO2025 WGD2038 Ddt-weight CSV",
+      "available": true,
+      "blocking_gap": "Columns are Ddt and weight only; no image-wise Fermat/parity columns.",
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/desj2038_pl_nokext_nokin_dt_weight.csv",
+      "t2_relevance": "compressed Ddt posterior support"
+    },
+    {
+      "artifact": "WGD2038 Fermat notebook",
+      "available": true,
+      "blocking_gap": "Notebook defines dphi_AB/dphi_AC/dphi_AD and model image-position paths, but the joblib/model-posterior payload is not present as an extracted audit table.",
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Fermat potentials and lens model comparisons.ipynb",
+      "t2_relevance": "potential route to image/model Fermat reconstruction"
+    },
+    {
+      "artifact": "WGD2038 convergence/model-chain notebook",
+      "available": true,
+      "blocking_gap": "Useful for model audit, not sufficient alone for T2 image-wise perturbation.",
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Check models and MCMC chain convergence.ipynb",
+      "t2_relevance": "model-chain/nuisance context"
+    }
+  ],
+  "claim_boundary": {
+    "allowed": [
+      "WGD2038 is now a concrete best single-target route for Paper 7 real-data follow-up.",
+      "Current public products provide Ddt/kappa/model-notebook support.",
+      "Current public products still do not authorize T2 sampling."
+    ],
+    "forbidden": [
+      "Claiming real-data T2 evidence from Ddt-weight samples alone.",
+      "Treating a Fermat notebook name as an extracted image-wise Fermat/parity posterior.",
+      "Claiming the observer-time distortion is detected."
+    ]
+  },
+  "content_hash": "54226d6455a08c38f1100efc74b3d5f95b6af8ac7f3c43e0e3bdd5e0d2779418",
+  "criteria": {
+    "ddt_samples_available": true,
+    "ddt_weight_csv_available": true,
+    "fermat_notebook_available": true,
+    "image_parity_available": false,
+    "image_wise_fermat_samples_available": false,
+    "kappa_environment_available": true,
+    "no_t2_image_model_reproduction_authorized": false,
+    "notebook_defines_t2_design_vector_fields": true,
+    "notebook_requires_external_model_payload": true,
+    "processed_pickle_available": true
+  },
+  "inspections": {
+    "convergence_notebook": {
+      "available": true,
+      "mentions_arrival_time": false,
+      "mentions_dphi_ab_ac_ad": false,
+      "mentions_fermat": false,
+      "mentions_image_labels": true,
+      "mentions_joblib_load": true,
+      "mentions_lenstronomy": true,
+      "mentions_model_image_positions": false,
+      "mentions_parity": false,
+      "mentions_saved_lenstronomy_posteriors": false,
+      "mentions_temp_outputs": true,
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Check models and MCMC chain convergence.ipynb",
+      "sha256": "0444453d5b8e62daf261993b84ec52cdf798aa0cda8d5907f33ae9c5cf595456"
+    },
+    "dt_weight_csv": {
+      "available": true,
+      "has_ddt_column": true,
+      "has_fermat_column": false,
+      "has_image_parity_column": false,
+      "has_weight_column": true,
+      "header": [
+        "Ddt",
+        "weight"
+      ],
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/desj2038_pl_nokext_nokin_dt_weight.csv",
+      "sample_rows": [
+        [
+          "2551.867596070516",
+          "8.384502445002292e-09"
+        ],
+        [
+          "493.2885355618506",
+          "3.6044338839948996e-08"
+        ],
+        [
+          "2008.615404197842",
+          "1.1309852420374197e-06"
+        ],
+        [
+          "647.3150308694437",
+          "1.2806189710798558e-07"
+        ],
+        [
+          "1892.8911617019485",
+          "1.6797078577589563e-06"
+        ]
+      ],
+      "sha256": "ac816f55de9b4b1d41635c80a4d1a6db3acf1f0bc2bc6c74772a912796931d53"
+    },
+    "fermat_notebook": {
+      "available": true,
+      "mentions_arrival_time": true,
+      "mentions_dphi_ab_ac_ad": true,
+      "mentions_fermat": true,
+      "mentions_image_labels": true,
+      "mentions_joblib_load": true,
+      "mentions_lenstronomy": true,
+      "mentions_model_image_positions": true,
+      "mentions_parity": false,
+      "mentions_saved_lenstronomy_posteriors": true,
+      "mentions_temp_outputs": true,
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Fermat potentials and lens model comparisons.ipynb",
+      "sha256": "bc7cec209f0c942f078eac39ba61d1d59986d4bedb5a2d89002b900b6129150a"
+    },
+    "missing_payload_hooks": {
+      "data_dir": {
+        "exists": true,
+        "file_count": 1,
+        "has_only_readme_or_lfs_pointer": true,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/data"
+      },
+      "model_posteriors_dir": {
+        "exists": true,
+        "file_count": 2,
+        "has_only_readme_or_lfs_pointer": true,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/model_posteriors"
+      },
+      "temp_joblib_dir": {
+        "exists": false,
+        "file_count": 0,
+        "has_only_readme_or_lfs_pointer": false,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp"
+      }
+    },
+    "processed_pickle": {
+      "available": true,
+      "ddt_samples_shape": "567880",
+      "fields": {
+        "anisotropy_model": {
+          "present": true,
+          "shape": null,
+          "type": "str"
+        },
+        "bandwidth": {
+          "present": true,
+          "shape": null,
+          "type": "int"
+        },
+        "ddt_samples": {
+          "present": true,
+          "shape": "567880",
+          "type": "ndarray"
+        },
+        "ddt_weights": {
+          "present": true,
+          "shape": "567880",
+          "type": "ndarray"
+        },
+        "error_cov_j_sqrt": {
+          "present": true,
+          "shape": "",
+          "type": "ndarray"
+        },
+        "error_cov_measurement": {
+          "present": true,
+          "shape": "1x1",
+          "type": "ndarray"
+        },
+        "j_kin_scaling_grid_list": {
+          "present": true,
+          "shape": null,
+          "type": "list"
+        },
+        "j_kin_scaling_param_axes": {
+          "present": true,
+          "shape": null,
+          "type": "list"
+        },
+        "j_model": {
+          "present": true,
+          "shape": "1",
+          "type": "ndarray"
+        },
+        "kappa_bin_edges": {
+          "present": true,
+          "shape": "2001",
+          "type": "ndarray"
+        },
+        "kappa_pdf": {
+          "present": true,
+          "shape": "2000",
+          "type": "ndarray"
+        },
+        "kde_kernel": {
+          "present": true,
+          "shape": null,
+          "type": "str"
+        },
+        "kin_scaling_param_list": {
+          "present": true,
+          "shape": null,
+          "type": "list"
+        },
+        "kwargs_lens_properties": {
+          "present": true,
+          "shape": null,
+          "type": "dict"
+        },
+        "likelihood_type": {
+          "present": true,
+          "shape": null,
+          "type": "str"
+        },
+        "name": {
+          "present": true,
+          "shape": null,
+          "type": "str"
+        },
+        "nbins_hist": {
+          "present": true,
+          "shape": null,
+          "type": "int"
+        },
+        "prior_list": {
+          "present": true,
+          "shape": null,
+          "type": "list"
+        },
+        "sigma_v_measurement": {
+          "present": true,
+          "shape": "1",
+          "type": "ndarray"
+        },
+        "z_lens": {
+          "present": true,
+          "shape": null,
+          "type": "float"
+        },
+        "z_source": {
+          "present": true,
+          "shape": null,
+          "type": "float"
+        }
+      },
+      "has_ddt_samples": true,
+      "has_ddt_weights": true,
+      "has_fermat_field": false,
+      "has_image_order": false,
+      "has_image_parity": false,
+      "has_kappa_pdf": true,
+      "has_lens_properties": true,
+      "keys": [
+        "anisotropy_model",
+        "bandwidth",
+        "ddt_samples",
+        "ddt_weights",
+        "error_cov_j_sqrt",
+        "error_cov_measurement",
+        "j_kin_scaling_grid_list",
+        "j_kin_scaling_param_axes",
+        "j_model",
+        "kappa_bin_edges",
+        "kappa_pdf",
+        "kde_kernel",
+        "kin_scaling_param_list",
+        "kwargs_lens_properties",
+        "likelihood_type",
+        "name",
+        "nbins_hist",
+        "prior_list",
+        "sigma_v_measurement",
+        "z_lens",
+        "z_source"
+      ],
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/WGD2038-4008_const_processed.pkl",
+      "sha256": "7b847b4ef9cae72bd2e1f7707171921ebe2592820e4667385b0cfc67518828b9"
+    }
+  },
+  "purpose": "Decide whether currently inspected WGD2038/TDCOSMO2025 public products can authorize the Paper 7 no-T2 image/model reproduction gate.",
+  "schema": "paper7 WGD2038 field-level payload audit v1",
+  "source_roots": {
+    "local_public_payload": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload",
+    "tdcosmo2025_sample": "/tmp/paper7_tdc_sources/TDCOSMO2025_public/TDCOSMO_sample",
+    "wgd2038_repo": "/tmp/paper7_tdc_sources/WGD2038-4008"
+  },
+  "verdict": {
+    "WGD2038_field_level_payload_audited": true,
+    "best_current_real_data_route": "WGD2038-4008 via TDCOSMO2025 + target-specific WGD repo",
+    "blocking_fields_missing_or_unproven": [
+      "image parity/order table",
+      "extracted image-wise Fermat-potential difference samples",
+      "per-sample mapping from lens-model posterior to T2 design vector",
+      "local model posterior/joblib payload needed by the Fermat notebook",
+      "validated no-T2 Ddt/null reproduction from those image/model fields"
+    ],
+    "claim_level": "source_backed_partial_payload_audit_not_real_data_detection",
+    "field_level_interpretation": "The obstacle is no longer that the WGD route lacks a Fermat design concept. The public notebook contains the relevant dphi_AB/dphi_AC/dphi_AD construction hooks. The remaining blocker is payload-level: the model posterior/joblib products must be acquired or extracted before a reproducible no-T2 image/model table can be built.",
+    "next_finite_action": "Acquire the WGD2038 Google Drive/LFS model-posterior payload named by the repository, or otherwise reconstruct the joblib temp outputs, then run an extractor that materializes per-sample dphi_AB/dphi_AC/dphi_AD, image positions, image labels, parity/order, Ddt contribution, and model-sample ID. Without that table Paper 7 remains real-data blocked.",
+    "no_T2_image_model_reproduction_authorized": false,
+    "real_data_T2_sampling_authorized": false,
+    "useful_fields_found": [
+      "Ddt posterior samples",
+      "Ddt weights",
+      "kappa/environment distribution",
+      "Fermat-potential notebook hook",
+      "notebook-level dphi_AB/dphi_AC/dphi_AD design-vector variables",
+      "notebook-level model image-position variables",
+      "model-chain/convergence notebook hook"
+    ]
+  }
+}

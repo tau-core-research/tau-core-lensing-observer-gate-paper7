@@ -1,0 +1,16 @@
+field_name,dtype,required,source_hook,current_status,pass_condition,blocker_if_missing,row_id
+target_id,string,True,constant WGD2038-4008,derivable,all rows equal WGD2038-4008,cannot identify independent holdout target,WGD_HOLDOUT_FIELD_01
+model_family,string enum,True,powerlaw_files/composite_files/composite_files_prev,notebook_hook_available,"one of powerlaw, composite, composite_previous",cannot stratify holdout by model family,WGD_HOLDOUT_FIELD_02
+model_id,string,True,notebook model file lists,notebook_hook_available,matches expected *_out.txt model target,cannot link rows to source model posterior,WGD_HOLDOUT_FIELD_03
+sample_id,integer,True,joblib fit_output sample index,blocked_missing_joblib_payload,unique within model_id,cannot form per-sample holdout residuals,WGD_HOLDOUT_FIELD_04
+image_label,string enum,True,model_image_positions/image ordering,blocked_missing_extracted_image_order,"labels A,B,C,D are present or mapped",cannot define comparable branch/readout channels,WGD_HOLDOUT_FIELD_05
+image_order_index,integer,True,model_image_positions order,blocked_missing_extracted_image_order,four-image order is stable per sample,cannot map dphi_AB/dphi_AC/dphi_AD to image branches,WGD_HOLDOUT_FIELD_06
+parity_or_morse_type,string or integer,True,lens-model Hessian/Morse classification,blocked_not_materialized,parity/Morse role available for each image,cannot evaluate parity-weighted T2 controls,WGD_HOLDOUT_FIELD_07
+ra_image,float array or scalar,True,model_image_positions,notebook_hook_available_but_not_extracted,finite image RA coordinate,cannot audit image ordering or geometry,WGD_HOLDOUT_FIELD_08
+dec_image,float array or scalar,True,model_image_positions,notebook_hook_available_but_not_extracted,finite image Dec coordinate,cannot audit image ordering or geometry,WGD_HOLDOUT_FIELD_09
+dphi_AB,float,True,notebook dphi_AB = fermat_potential[1] - fermat_potential[3],notebook_formula_available_but_samples_blocked,finite per-sample AB Fermat difference,cannot project WGD into DES-like time-residual basis,WGD_HOLDOUT_FIELD_10
+dphi_AC,float,True,notebook dphi_AC = fermat_potential[1] - fermat_potential[2],notebook_formula_available_but_samples_blocked,finite per-sample AC Fermat difference,cannot project WGD into DES-like time-residual basis,WGD_HOLDOUT_FIELD_11
+dphi_AD,float,True,notebook dphi_AD = fermat_potential[1] - fermat_potential[0],notebook_formula_available_but_samples_blocked,finite per-sample AD Fermat difference,cannot project WGD into DES-like time-residual basis,WGD_HOLDOUT_FIELD_12
+ddt_or_time_delay_observable,float,True,TDCOSMO2025 WGD2038 Ddt/weight support,compressed_support_available_not_image_wise,linked to model/sample or declared as external likelihood,cannot score observed-vs-model time residual,WGD_HOLDOUT_FIELD_13
+ddt_weight_or_sample_weight,float,True,desj2038_pl_nokext_nokin_dt_weight.csv or posterior weights,compressed_support_available_not_image_wise,nonnegative finite weight with documented normalization,cannot aggregate holdout score reproducibly,WGD_HOLDOUT_FIELD_14
+no_t2_model_residual_vector,float array,True,derived from model dphi/time predictions and observed delay linkage,blocked_until_image_model_table_exists,finite vector comparable to frozen DES score basis,cannot apply DES-frozen one-amplitude score,WGD_HOLDOUT_FIELD_15

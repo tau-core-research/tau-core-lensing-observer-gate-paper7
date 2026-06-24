@@ -1,0 +1,136 @@
+{
+  "external_literature_sources": [
+    {
+      "arxiv": "2406.02683v2",
+      "id": "TDCOSMO_XVI_WGD2038",
+      "title": "TDCOSMO. XVI. Measurement of the Hubble Constant from the Lensed Quasar WGD 2038-4008",
+      "url": "https://arxiv.org/abs/2406.02683",
+      "used_for": [
+        "WGD2038 has new time-delay measurements",
+        "delays are used relative to image A",
+        "full covariance of the three independent delay degrees is required",
+        "negative A-C solution is selected using model-predicted ordering"
+      ]
+    }
+  ],
+  "inputs": {
+    "contract_counts": {
+      "blocked_field_count": 8,
+      "currently_derivable_or_hook_available_count": 3,
+      "expected_joblib_target_count": 36,
+      "required_field_count": 15
+    },
+    "fermat_preflight_counts": {
+      "candidate_job_count": 3,
+      "image_row_count": 12,
+      "score_ready_row_count": 0,
+      "successful_job_count": 3
+    },
+    "observed_delay_smoke_counts": {
+      "delay_pair_row_count": 9,
+      "score_ready_row_count": 0,
+      "successful_local_fermat_job_count": 3
+    },
+    "partial_materialization_counts": {
+      "expected_joblib_present_count": 0,
+      "expected_model_target_count": 36,
+      "materialized_model_manifest_rows": 36,
+      "per_sample_image_table_present_count": 0,
+      "score_ready_model_rows": 0
+    },
+    "shape_target_values": {
+      "best_scalar_scale": 1.1015098079922812,
+      "covariance_metric_norm_sigma_units": 3.237831613447079,
+      "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+      "normalized_shape_rmse_sigma_units": 2.28949269020861,
+      "observed_delay_days": {
+        "AB": -12.4,
+        "AC": -5.3,
+        "AD": -33.3
+      },
+      "scaled_published_model_delay_days": {
+        "AB": -5.507549039961406,
+        "AC": -11.015098079922812,
+        "AD": -26.656537353413203
+      },
+      "target_euclidean_unit_direction": {
+        "AB": -0.618203476848736,
+        "AC": 0.5126033575028923,
+        "AD": -0.595871008766911
+      },
+      "target_residual_days": {
+        "AB": -6.892450960038595,
+        "AC": 5.715098079922812,
+        "AD": -6.643462646586794
+      }
+    }
+  },
+  "next_finite_action": "Replace the local bounded Fermat preflight with a converged or published WGD Fermat/posterior table in the same image convention; then evaluate its no-T2 residual against the frozen delay-shape target and only then decide whether a DES-frozen comparison is meaningful.",
+  "purpose": "Identify the exact remaining bridge between local WGD Fermat/parity extraction and a DES-frozen no-T2 residual score.",
+  "rows": [
+    {
+      "component": "published_time_delay_measurement_statement",
+      "detail": "The paper states that WGD2038 has new time-delay measurements, uses delays relative to image A, and uses the corresponding covariance matrix in the cosmographic inference.",
+      "row_id": "WGD_DELAY_LINKAGE_001",
+      "score_blocker": false,
+      "source": "TDCOSMO XVI arXiv:2406.02683v2 / A&A 2024",
+      "status": "literature_support_present"
+    },
+    {
+      "component": "machine_readable_observed_delay_vector",
+      "detail": "The published AB/AC/AD delay vector and covariance are now materialized in a local artifact with the publication convention Delta_t_AX=t_A-t_X. This removes the observed-delay-vector blocker, but does not supply a converged/published WGD Fermat posterior.",
+      "row_id": "WGD_DELAY_LINKAGE_002",
+      "score_blocker": false,
+      "source": "TDCOSMO XVI Fig. 2 transcription artifact",
+      "status": "present_transcribed_from_publication"
+    },
+    {
+      "component": "Ddt_weight_support",
+      "detail": "567880 Ddt samples and weights are materialized, but these are compressed cosmographic support rather than the observed image-delay vector itself.",
+      "row_id": "WGD_DELAY_LINKAGE_003",
+      "score_blocker": false,
+      "source": "TDCOSMO2025 WGD2038 processed pickle and Ddt CSV",
+      "status": "present"
+    },
+    {
+      "component": "local_bounded_fermat_parity_table",
+      "detail": "12 image rows across 3 bounded local jobs contain image coordinates, Fermat potentials, and Morse/parity labels.",
+      "row_id": "WGD_DELAY_LINKAGE_004",
+      "score_blocker": false,
+      "source": "local bounded WGD diagnostic outputs",
+      "status": "diagnostic_only_present"
+    },
+    {
+      "component": "no_T2_residual_vector",
+      "detail": "A bounded no-T2 residual smoke is now derivable after sign-convention alignment. It is not score-ready because the Fermat basis is a local non-converged preflight rather than a converged or published WGD posterior.",
+      "row_id": "WGD_DELAY_LINKAGE_005",
+      "score_blocker": true,
+      "source": "derived from observed delays minus model delays",
+      "status": "diagnostic_smoke_only_not_score_ready"
+    },
+    {
+      "component": "predeclared_delay_shape_holdout_target",
+      "detail": "A published-model delay-shape target is frozen before any posterior-level WGD score. It can constrain a future comparison, but it is not endpoint-blind and is not itself a posterior-level score.",
+      "row_id": "WGD_DELAY_LINKAGE_006",
+      "score_blocker": false,
+      "source": "TDCOSMO IX published model predictions plus TDCOSMO XVI observed delays",
+      "status": "present_not_endpoint_blind"
+    }
+  ],
+  "schema": "paper7 WGD2038 observed-delay linkage audit v1",
+  "verdict": {
+    "bounded_no_t2_residual_smoke_present": true,
+    "can_apply_des_frozen_score_now": false,
+    "can_compute_wgd_no_t2_residual_vector_now": true,
+    "claim_level": "source_backed_delay_vector_plus_local_smoke_not_time_shift_evidence",
+    "local_bounded_fermat_parity_preflight_present": true,
+    "local_machine_readable_observed_delay_vector_present": true,
+    "missing_score_ready_component": "converged_or_published_wgd_fermat_posterior_table",
+    "predeclared_delay_shape_holdout_target_endpoint_blind": false,
+    "predeclared_delay_shape_holdout_target_posterior_level_score": false,
+    "predeclared_delay_shape_holdout_target_present": true,
+    "published_observed_delay_measurement_exists": true,
+    "real_data_T2_sampling_authorized": false,
+    "wgd2038_observed_delay_linkage_audit_created": true
+  }
+}

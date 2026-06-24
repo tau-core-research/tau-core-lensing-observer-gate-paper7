@@ -1,0 +1,370 @@
+{
+  "acquisition_attempts": [
+    {
+      "evidence": "folder contents could not be retrieved; direct folder URL returned 404 from current environment",
+      "method": "gdown folder download and direct unauthenticated browser/API checks",
+      "result": "failed",
+      "route": "Google Drive folder declared by TDCOSMO/WGD2038-4008 README",
+      "target": "https://drive.google.com/drive/folders/1CHfFN1O9mbTdnWpOabOcA4Ztu2AWi2Ko"
+    },
+    {
+      "evidence": "Git tree contains README/notebook hooks but not the temp/joblib model-posterior outputs",
+      "method": "recursive GitHub tree inspection",
+      "result": "support_only",
+      "route": "TDCOSMO/WGD2038-4008 GitHub tree",
+      "target": "https://github.com/TDCOSMO/WGD2038-4008"
+    },
+    {
+      "evidence": "Git tree contains WGD2038 processed Ddt/kappa products but not image-wise Fermat/parity joblib outputs",
+      "method": "recursive GitHub tree inspection",
+      "result": "support_only",
+      "route": "TDCOSMO2025_public GitHub tree",
+      "target": "https://github.com/TDCOSMO/TDCOSMO2025_public"
+    },
+    {
+      "evidence": "arXiv:2406.02683 source includes Ddt/H0 TeX tables now materialized locally; it does not include the per-sample joblib/Fermat posterior payload",
+      "method": "source-package and public-page inspection for data links",
+      "result": "summary_source_tables_found_no_joblib_payload",
+      "route": "paper/source supplementary route",
+      "target": "arXiv:2202.11101 and arXiv:2406.02683 source/public pages"
+    },
+    {
+      "evidence": "no relevant WGD2038 model-posterior record found in the queried public records",
+      "method": "keyword search for WGD2038/TDCOSMO IX/model-posterior payload",
+      "result": "no_payload_found",
+      "route": "Zenodo public record search",
+      "target": "Zenodo API"
+    },
+    {
+      "evidence": "model IDs occur in additional notebooks such as radial-profile, velocity-dispersion, PSF-test, and parameter-comparison notebooks, but no corresponding joblib/temp payload file is tracked",
+      "method": "search concrete model IDs and posterior filenames",
+      "result": "notebook_hooks_only",
+      "route": "GitHub authenticated code search for model IDs",
+      "target": "TDCOSMO/WGD2038-4008 notebooks"
+    },
+    {
+      "evidence": "no alternative public archive containing the target WGD2038 joblib/model-posterior payload was found",
+      "method": "keyword search for WGD2038/TDCOSMO/model-posterior payload",
+      "result": "no_public_payload_found",
+      "route": "generic public data repositories",
+      "target": "Dataverse, OSF, Figshare-style searches"
+    }
+  ],
+  "claim_boundary": {
+    "allowed": [
+      "The WGD2038 public support payload has been locally acquired and hashed.",
+      "The acquired payload supports a concrete follow-up route.",
+      "The route remains blocked for real-data T2 sampling pending image-wise model products."
+    ],
+    "forbidden": [
+      "Claiming a real-data T2 signal.",
+      "Inferring image parity/order from Ddt-weight samples alone.",
+      "Treating the notebook hook as a materialized image-wise Fermat posterior."
+    ]
+  },
+  "content_hash": "beaa4d43e9885c1c88d770f3882b20bce54fd58b07e9ed66791ce837afe6d01f",
+  "counts": {
+    "expected_files": 9,
+    "expected_joblib_targets_from_fermat_notebook": 36,
+    "missing_expected_files": 0,
+    "present_files": 9,
+    "total_present_size_bytes": 52347157
+  },
+  "criteria": {
+    "arxiv_2406_02683_source_tables_acquired": true,
+    "ddt_weight_csv_present": true,
+    "fermat_notebook_present": true,
+    "google_drive_payload_acquired": false,
+    "image_wise_t2_table_acquired": false,
+    "local_public_partial_payload_acquired": true,
+    "model_posterior_joblib_payload_acquired": false,
+    "processed_pickle_present": true,
+    "real_data_T2_sampling_authorized": false
+  },
+  "files": [
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/WGD2038-4008_const_processed.pkl",
+      "present": true,
+      "relative_path": "tdcosmo2025_wgd2038/WGD2038-4008_const_processed.pkl",
+      "role": "processed WGD2038 Ddt/kappa/nuisance support",
+      "sha256": "7b847b4ef9cae72bd2e1f7707171921ebe2592820e4667385b0cfc67518828b9",
+      "size_bytes": 9119250,
+      "source_family": "TDCOSMO2025_public",
+      "t2_status": "support_only"
+    },
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/desj2038_pl_nokext_nokin_dt_weight.csv",
+      "present": true,
+      "relative_path": "tdcosmo2025_wgd2038/desj2038_pl_nokext_nokin_dt_weight.csv",
+      "role": "compressed Ddt posterior with weights",
+      "sha256": "ac816f55de9b4b1d41635c80a4d1a6db3acf1f0bc2bc6c74772a912796931d53",
+      "size_bytes": 23111757,
+      "source_family": "TDCOSMO2025_public",
+      "t2_status": "support_only_no_image_wise_fermat_or_parity"
+    },
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/kappahist_2038_measured_3innermask_nobeta_removehandpicked_zgap-1.0_-1.0_fiducial_120_gal_120_oneoverr_22.5_med_increments2_2_emptymsk.cat",
+      "present": true,
+      "relative_path": "tdcosmo2025_wgd2038/kappahist_2038_measured_3innermask_nobeta_removehandpicked_zgap-1.0_-1.0_fiducial_120_gal_120_oneoverr_22.5_med_increments2_2_emptymsk.cat",
+      "role": "external-convergence/environment support",
+      "sha256": "f1aedfc19fce5cd06ad4e8e680f9e6515bfadbfc63bf3721f53db8afe05f3b9f",
+      "size_bytes": 24153,
+      "source_family": "TDCOSMO2025_public",
+      "t2_status": "support_only"
+    },
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_metadata/README.md",
+      "present": true,
+      "relative_path": "wgd2038_repo_metadata/README.md",
+      "role": "target repository metadata and Google Drive pointer",
+      "sha256": "5b610c1eb27f4b2a602c0d02318396c025f5b0cb76c8805b228ea84ac00aa75c",
+      "size_bytes": 408,
+      "source_family": "TDCOSMO/WGD2038-4008",
+      "t2_status": "provenance_support"
+    },
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Fermat potentials and lens model comparisons.ipynb",
+      "present": true,
+      "relative_path": "wgd2038_repo_notebooks/Fermat potentials and lens model comparisons.ipynb",
+      "role": "Fermat-potential design-vector notebook hook",
+      "sha256": "bc7cec209f0c942f078eac39ba61d1d59986d4bedb5a2d89002b900b6129150a",
+      "size_bytes": 2921859,
+      "source_family": "TDCOSMO/WGD2038-4008",
+      "t2_status": "requires_missing_model_posterior_joblib_payload"
+    },
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Check models and MCMC chain convergence.ipynb",
+      "present": true,
+      "relative_path": "wgd2038_repo_notebooks/Check models and MCMC chain convergence.ipynb",
+      "role": "model-chain/convergence notebook hook",
+      "sha256": "0444453d5b8e62daf261993b84ec52cdf798aa0cda8d5907f33ae9c5cf595456",
+      "size_bytes": 17166536,
+      "source_family": "TDCOSMO/WGD2038-4008",
+      "t2_status": "requires_missing_model_posterior_joblib_payload"
+    },
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_ddt.tex",
+      "present": true,
+      "relative_path": "arxiv_2406_02683_source_tables/tab_2038_ddt.tex",
+      "role": "published WGD2038 Ddt constraints by model family",
+      "sha256": "cd8a5e68d1a90e97935abef124a4d96f6a77a35af12715e768dfb401be7ecc3c",
+      "size_bytes": 866,
+      "source_family": "arXiv:2406.02683 source bundle",
+      "t2_status": "published_summary_only_no_image_wise_fermat_or_parity"
+    },
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_ddtmodel_nokext_nokin.tex",
+      "present": true,
+      "relative_path": "arxiv_2406_02683_source_tables/tab_2038_ddtmodel_nokext_nokin.tex",
+      "role": "published WGD2038 Ddt constraints without kext or kinematics",
+      "sha256": "e6fabc6f0859a83b81b2ffafe0b2260249b41ccdb9315cb9f9daa3fefaeb1c15",
+      "size_bytes": 1176,
+      "source_family": "arXiv:2406.02683 source bundle",
+      "t2_status": "published_summary_only_no_image_wise_fermat_or_parity"
+    },
+    {
+      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_lcdm_h0.tex",
+      "present": true,
+      "relative_path": "arxiv_2406_02683_source_tables/tab_2038_lcdm_h0.tex",
+      "role": "published WGD2038 flat LCDM H0 and Ddt constraints",
+      "sha256": "7d588f7ac12e9b9810a3d96dfda651bdfcf5f348c6ecf900da7084d59a738f5f",
+      "size_bytes": 1152,
+      "source_family": "arXiv:2406.02683 source bundle",
+      "t2_status": "published_summary_only_no_image_wise_fermat_or_parity"
+    }
+  ],
+  "google_drive_acquisition_status": "blocked_inaccessible_or_unretrievable_from_current_environment",
+  "google_drive_folder_declared_by_wgd_repo": "https://drive.google.com/drive/folders/1CHfFN1O9mbTdnWpOabOcA4Ztu2AWi2Ko",
+  "missing_model_posterior_joblib_targets": [
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_0_0_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run145_0_0_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_0_1_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run145_0_0_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_0_2_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run145_0_0_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_1_0_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run145_0_1_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_1_1_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run145_0_1_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run145_0_1_2_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run145_0_1_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run146_0_0_0_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run146_0_0_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run146_0_0_1_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run146_0_0_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run146_0_0_2_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run146_0_0_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run146_0_1_0_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run146_0_1_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run146_0_1_1_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run146_0_1_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run146_0_1_2_0_0_shortened_out.txt",
+      "model_family": "powerlaw",
+      "model_id": "2038_run146_0_1_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run205_1_0_0_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run205_1_0_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run205_1_0_1_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run205_1_0_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run205_1_0_2_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run205_1_0_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run205_1_1_0_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run205_1_1_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run205_1_1_1_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run205_1_1_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run205_1_1_2_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run205_1_1_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run206_1_0_0_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run206_1_0_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run206_1_0_1_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run206_1_0_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run206_1_0_2_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run206_1_0_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run206_1_1_0_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run206_1_1_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run206_1_1_1_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run206_1_1_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run206_1_1_2_0_0_shortened_out.txt",
+      "model_family": "composite",
+      "model_id": "2038_run206_1_1_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run215_1_0_0_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run215_1_0_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run215_1_0_1_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run215_1_0_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run215_1_0_2_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run215_1_0_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run215_1_1_0_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run215_1_1_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run215_1_1_1_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run215_1_1_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run215_1_1_2_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run215_1_1_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run214_1_0_0_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run214_1_0_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run214_1_0_1_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run214_1_0_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run214_1_0_2_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run214_1_0_2_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run214_1_1_0_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run214_1_1_0_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run214_1_1_1_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run214_1_1_1_0_0_shortened"
+    },
+    {
+      "expected_joblib_path": "lenstronomy_modeling/temp/2038_run214_1_1_2_0_0_shortened_out.txt",
+      "model_family": "composite_previous",
+      "model_id": "2038_run214_1_1_2_0_0_shortened"
+    }
+  ],
+  "payload_root": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload",
+  "purpose": "Record the locally acquired public WGD2038 support payload and preserve the remaining model-posterior/joblib blocker without promoting it to a real-data T2 result.",
+  "schema": "paper7 WGD2038 public payload acquisition manifest v1",
+  "verdict": {
+    "WGD2038_public_support_payload_acquired": true,
+    "claim_level": "source_backed_partial_payload_acquisition_not_real_data_detection",
+    "next_finite_action": "Obtain access to the WGD2038 Google Drive payload or reconstruct the notebook's joblib/temp outputs from reproducible model products, then extract image labels, parity/order, dphi_AB/dphi_AC/dphi_AD, Ddt contributions, and model-sample IDs into a frozen audit table.",
+    "real_data_T2_sampling_authorized": false,
+    "remaining_blocker": "The public support files are present locally, but the target-specific model-posterior/joblib payload that drives the Fermat notebook is not publicly retrievable from the checked routes. Therefore Paper 7 still lacks the per-sample image/model table needed for a no-T2 reproduction and T2 perturbation test."
+  }
+}

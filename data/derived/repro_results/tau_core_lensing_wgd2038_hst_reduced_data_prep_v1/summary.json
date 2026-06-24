@@ -1,0 +1,80 @@
+{
+  "claim_boundary": {
+    "allowed": [
+      "Public HST image inputs were acquired and converted to notebook-expected SCI/WHT filenames.",
+      "This prepares the image-preprocessing stage only."
+    ],
+    "forbidden": [
+      "Claiming the lenstronomy posterior has been reproduced.",
+      "Claiming image-wise Fermat/parity samples exist before the modelling chain is run and validated."
+    ]
+  },
+  "content_hash": "fec89f2dc1c395d425224ab64231dcf350a0d3b60e15a1a763b4e56eaf71ca35",
+  "criteria": {
+    "all_mast_sources_present": true,
+    "all_sci_wht_outputs_present": true,
+    "lenstronomy_model_posterior_reproduced": false,
+    "real_data_T2_sampling_authorized": false
+  },
+  "mast_dir": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/hst_wgd2038_mast",
+  "purpose": "Prepare public MAST HST products into the split SCI/WHT filenames expected by the WGD2038 lenstronomy preprocessing notebooks.",
+  "reduced_dir": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/data/reduced_data",
+  "rows": [
+    {
+      "filter": "F160W",
+      "sci_output": {
+        "exists": true,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/data/reduced_data/DESJ2038-4008_F160W_drz_sci.fits",
+        "sha256": "cc76c26dcd0a5c18a549549904dacb1126f14ae354ef2e5a130338d76e253527",
+        "size_bytes": 5002560
+      },
+      "source": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/hst_wgd2038_mast/hst_15320_08_wfc3_ir_f160w_idgc08_drz.fits",
+      "source_exists": true,
+      "source_sha256": "0946e5592461b4ec31778139943d0ded678666f2777f4e9fc4152bcb80bc01a0",
+      "wht_output": {
+        "exists": true,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/data/reduced_data/DESJ2038-4008_F160W_drz_wht.fits",
+        "sha256": "c215145d651f6cc9654528d5c40678d24e80c66186d63a0bee42929bf2b46ac9",
+        "size_bytes": 4996800
+      }
+    },
+    {
+      "filter": "F475X",
+      "sci_output": {
+        "exists": true,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/data/reduced_data/DESJ2038-4008_F475X_drc_sci.fits",
+        "sha256": "746358706401b2d6c7e7ddb98abdcc25db659db4428cbd3704a91e6b08178113",
+        "size_bytes": 77760000
+      },
+      "source": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/hst_wgd2038_mast/hst_15320_08_wfc3_uvis_f475x_idgc08_drc.fits",
+      "source_exists": true,
+      "source_sha256": "cce0623d6a8551bacb7922aeaa1f674b5d033bb916f160bf945caf4ecfd99572",
+      "wht_output": {
+        "exists": true,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/data/reduced_data/DESJ2038-4008_F475X_drc_wht.fits",
+        "sha256": "d426484bd02b1de426f9d1ef2074524d90f835ec91f74210e32239115c3ae007",
+        "size_bytes": 77754240
+      }
+    },
+    {
+      "filter": "F814W",
+      "sci_output": {
+        "exists": true,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/data/reduced_data/DESJ2038-4008_F814W_drc_sci.fits",
+        "sha256": "e40908eef6bb53cdc6eb616d9919aa893ca987d8a2b5c636b5e4ed5df2990d32",
+        "size_bytes": 77760000
+      },
+      "source": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/hst_wgd2038_mast/hst_15320_08_wfc3_uvis_f814w_idgc08_drc.fits",
+      "source_exists": true,
+      "source_sha256": "5c1d9b5e759836f877f347169cf1b0b491517d1217e624e558ab40165ce83d5d",
+      "wht_output": {
+        "exists": true,
+        "path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/data/reduced_data/DESJ2038-4008_F814W_drc_wht.fits",
+        "sha256": "52f48064da64f25667698ae7f1c17bfa0c1a819efffbb35f475253b7c540002f",
+        "size_bytes": 77754240
+      }
+    }
+  ],
+  "schema": "paper7 WGD2038 HST reduced-data prep v1",
+  "wgd_repo": "/tmp/paper7_tdc_sources/WGD2038-4008"
+}

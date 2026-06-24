@@ -1,0 +1,47 @@
+{
+  "band_count": 3,
+  "claim_level": "bounded_short_chain_diagnostic_not_converged_posterior",
+  "content_hash": "d97252af777cfd5fce5a86cd188054a8a6cf73550c1a2189bd92b9ac390a2fa6",
+  "converged_no_T2_posterior_reproduced": false,
+  "created_at_unix": 1782237685.776035,
+  "diagnostic_verdict": "FINITE_SHORT_CHAIN_HEALTHY_BUT_NOT_CONVERGED_POSTERIOR",
+  "emcee_log_prob_shape": [
+    12720
+  ],
+  "emcee_sample_shape": [
+    12720,
+    53
+  ],
+  "executed_notebook_path": "/tmp/wgd2038_Multiband_Image_Modeling_tau_core_mcmc_diagnostic60_fastell_backend_executed.ipynb",
+  "executed_notebook_sha256": "1a52e413b302db944583071068d7bf58b88e399710b3d0f2208908cc50e4ddf3",
+  "finite_logp": true,
+  "finite_samples": true,
+  "first_five_parameters": [
+    "gamma_lens0",
+    "gamma1_lens1",
+    "gamma2_lens1",
+    "R_sersic_source_light0",
+    "n_sersic_source_light0"
+  ],
+  "fit_output_types": [
+    "PSO",
+    "emcee"
+  ],
+  "job_name": "tau_core_mcmc_diag60_pemd_fastell_backend",
+  "lens_result_count": 2,
+  "logp_max": -138540530.97823578,
+  "logp_median": -242305460.34337774,
+  "logp_min": -246250768.0714315,
+  "output_path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_mcmc_diag60_pemd_fastell_backend_out.txt",
+  "output_sha256": "683ce5c6b6af69a86b031ab2ae9421fdaf3256ac9136a4f4b8d4ba5353db3b43",
+  "param_count": 53,
+  "real_data_T2_sampling_authorized": false,
+  "schema": "paper7 WGD2038 fastell-backed MCMC diagnostic60 payload summary v1",
+  "split_half_abs_mean_shift_sigma_quantiles": {
+    "p100": 0.9431059871709911,
+    "p50": 0.3768109928839733,
+    "p90": 0.8325907131110767,
+    "p95": 0.899375951156471,
+    "p99": 0.9419684573836626
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "band_count": 3,
+  "claim_level": "bounded_nuisance_stabilization_diagnostic_not_converged_posterior",
+  "content_hash": "804f4403f31e969bd28eac41f61dc5d2ec90d4b10c93b891df047a9721cd94ec",
+  "converged_no_T2_posterior_reproduced": false,
+  "created_at_unix": 1782247943.599932,
+  "diagnostic_verdict": "FINITE_PROFILE_FREEZE_V2_CHAIN_HEALTH_CHECK_NOT_CONVERGED_POSTERIOR",
+  "emcee_log_prob_shape": [
+    16800
+  ],
+  "emcee_sample_shape": [
+    16800,
+    35
+  ],
+  "executed_notebook_path": "/tmp/wgd2038_Multiband_Image_Modeling_tau_core_profile_freeze_v2_fastell_backend_executed.ipynb",
+  "executed_notebook_sha256": "666dba233235be23067946301e4a13aa3921e8fc9a95e2dd7968fe43f455e7fa",
+  "finite_logp": true,
+  "finite_samples": true,
+  "first_five_parameters": [
+    "gamma_lens0",
+    "gamma1_lens1",
+    "gamma2_lens1",
+    "R_sersic_source_light0",
+    "e2_source_light0"
+  ],
+  "fit_output_types": [
+    "emcee"
+  ],
+  "interpretation": "Profile-freeze v2 bounded diagnostic; finite-chain nuisance stabilization test only, not a posterior convergence claim.",
+  "job_name": "tau_core_profile_freeze_v2_pemd_fastell_backend",
+  "lens_result_count": 2,
+  "logp_max": -10921870.983637955,
+  "logp_median": -11043644.04877298,
+  "logp_min": -111139108.5666138,
+  "output_path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_profile_freeze_v2_pemd_fastell_backend_out.txt",
+  "output_sha256": "e8362a2afcd7512c9be1b07701be069683c470c1fe7a686377c3c9800b6c256d",
+  "param_count": 35,
+  "previous_job_name": "tau_core_profile_freeze_v1_pemd_fastell_backend",
+  "profile_freeze_v2_added_fixed_parameters": [
+    "lens_light[6].ratio13",
+    "lens_light[6].e21",
+    "lens_light[0].R_sersic",
+    "lens_light[6].e12",
+    "lens_light[6].e11",
+    "source[4].n_sersic",
+    "lens_light[6].ratio12"
+  ],
+  "real_data_T2_sampling_authorized": false,
+  "reuses_previous_mcmc_samples": false,
+  "schema": "paper7 WGD2038 fastell-backed profile-freeze v2 payload summary v1",
+  "split_half_abs_mean_shift_sigma_quantiles": {
+    "p100": 1.5159291640758688,
+    "p50": 1.0376420187628146,
+    "p90": 1.4536854664533434,
+    "p95": 1.4981992597893017,
+    "p99": 1.5122125107095585
+  },
+  "top_drift_parameters": [
+    {
+      "param_index": 21,
+      "param_name": "w_t2_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.5159291640758688
+    },
+    {
+      "param_index": 9,
+      "param_name": "e1_lens_light0",
+      "split_half_abs_mean_shift_sigma": 1.5049978306455447
+    },
+    {
+      "param_index": 10,
+      "param_name": "e2_lens_light0",
+      "split_half_abs_mean_shift_sigma": 1.4952855865651975
+    },
+    {
+      "param_index": 19,
+      "param_name": "w_t1_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.4619017157415382
+    },
+    {
+      "param_index": 28,
+      "param_name": "ra_image",
+      "split_half_abs_mean_shift_sigma": 1.441361092521051
+    },
+    {
+      "param_index": 25,
+      "param_name": "e13_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.4155524336724055
+    },
+    {
+      "param_index": 11,
+      "param_name": "center_x_lens_light0",
+      "split_half_abs_mean_shift_sigma": 1.3898519324834795
+    },
+    {
+      "param_index": 14,
+      "param_name": "e1_lens_light1",
+      "split_half_abs_mean_shift_sigma": 1.3860102208789826
+    },
+    {
+      "param_index": 26,
+      "param_name": "e23_lens_light6",
+      "split_half_abs_mean_shift_sigma": 1.3618081787495475
+    },
+    {
+      "param_index": 3,
+      "param_name": "R_sersic_source_light0",
+      "split_half_abs_mean_shift_sigma": 1.3575797862622438
+    }
+  ],
+  "uses_previous_best_fit_start": true
+}

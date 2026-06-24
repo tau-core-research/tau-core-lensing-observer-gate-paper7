@@ -1,0 +1,150 @@
+{
+  "schema": "paper7 alternate real-data source candidate audit v1",
+  "purpose": "Search for a better public Paper 7 real-data no-T2 follow-up source after the WGD2038 nuisance-stability blocker.",
+  "sources": [
+    {
+      "source_id": "DESJ0408_time_delay_cosmography",
+      "source_url": "https://github.com/ajshajib/DESJ0408_time_delay_cosmography",
+      "classification": "REAL_TARGET_NOTEBOOK_AND_POSTERIOR_CANDIDATE",
+      "local_path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography",
+      "criteria": {
+        "repository_cached": true,
+        "real_lens_not_mock": true,
+        "processed_multiband_imaging_available": true,
+        "known_solution_pickle_available": true,
+        "lens_model_posterior_files_available": true,
+        "time_delay_posterior_files_available": true,
+        "velocity_dispersion_grid_available": true,
+        "lenstronomy_notebooks_available": true,
+        "fermat_keyword_found": false,
+        "image_position_keyword_found": true,
+        "direct_t2_sampling_authorized": false
+      },
+      "counts": {
+        "notebooks": 5,
+        "hdf5_data_psf_files": 6,
+        "lens_model_posterior_files": 24,
+        "time_delay_posterior_files": 24,
+        "velocity_dispersion_files": 480,
+        "representative_time_delay_rows": 10000,
+        "representative_time_delay_columns": 2
+      },
+      "representative_hashes": {
+        "known_solution_pickle_sha256": "9be8a5cc395770979638b0c887f7f33cce21d91662ab147f113d4b64d53175e6",
+        "first_time_delay_file_sha256": "f85ac21dac04e38b134691c67ce311e4f40e1096703e24355045058e30f19cec",
+        "first_lens_model_file_sha256": "786ed505710bc6891e9394d207bb8dbded3a5e2f4e4f3fdbf2f105950ff10edd"
+      },
+      "notebook_hits": {
+        "notebooks/DESJ0408 Multiband Image Modeling.ipynb": [
+          "kwargs_result",
+          "Ddt",
+          "joblib",
+          "pickle",
+          "fit_sequence",
+          "MCMC",
+          "emcee",
+          "lenstronomy",
+          "image_position",
+          "ra_image",
+          "dec_image"
+        ],
+        "notebooks/Distance posterior from combining lensing, kinematics, and external convergence.ipynb": [
+          "D_dt",
+          "Ddt",
+          "time delay",
+          "pickle",
+          "MCMC",
+          "emcee",
+          "lenstronomy",
+          "blind"
+        ],
+        "notebooks/Image Preprocessing F160W.ipynb": [
+          "Ddt",
+          "lenstronomy"
+        ],
+        "notebooks/Image Preprocessing F475X.ipynb": [
+          "Ddt",
+          "MCMC",
+          "lenstronomy"
+        ],
+        "notebooks/Image Preprocessing F814W.ipynb": [
+          "Ddt",
+          "emcee",
+          "lenstronomy"
+        ]
+      },
+      "followup_ready_for_bounded_no_t2_reproduction": true,
+      "real_data_T2_sampling_authorized": false,
+      "claim_boundary": "DES J0408 is a stronger alternate public follow-up candidate than a compressed distance-posterior source, but this audit does not clear the no-T2 posterior gate or authorize T2 sampling.",
+      "next_step": "Build a compatibility extractor for the DES J0408 notebooks/posterior files and run a bounded no-T2 baseline reproduction before any T2 path."
+    },
+    {
+      "source_id": "TD_data_public",
+      "source_url": "https://github.com/TDCOSMO/TD_data_public",
+      "classification": "METHOD_CONTROL_OR_MOCK_VALIDATION_CANDIDATE",
+      "local_path": "data/external/source_candidate_repos/TD_data_public",
+      "criteria": {
+        "repository_cached": true,
+        "contains_tdcosmo_i_pstd_notebook": true,
+        "contains_tdcosmo_vii_multipole_notebook": true,
+        "contains_mock_or_example_fits": 4,
+        "contains_mock_or_example_mcmc_npy": 1,
+        "real_target_image_model_payload_confirmed": false,
+        "direct_t2_sampling_authorized": false
+      },
+      "counts": {
+        "notebooks": 2,
+        "fits": 5,
+        "npy": 2
+      },
+      "notebook_hits": {
+        "TDCOSMO_I/PSTD_notebook.ipynb": [
+          "potential",
+          "kwargs_result",
+          "D_dt",
+          "Ddt",
+          "time delay",
+          "pickle",
+          "fit_sequence",
+          "MCMC",
+          "lenstronomy",
+          "image_position",
+          "ra_image",
+          "dec_image"
+        ],
+        "TDCOSMO_VII/multipole_project_core_code_public.ipynb": [
+          "kwargs_result",
+          "D_dt",
+          "Ddt",
+          "time delay",
+          "pickle",
+          "fit_sequence",
+          "MCMC",
+          "lenstronomy",
+          "image_position",
+          "ra_image",
+          "dec_image",
+          "kappa_ext"
+        ]
+      },
+      "followup_ready_for_bounded_no_t2_reproduction": false,
+      "real_data_T2_sampling_authorized": false,
+      "claim_boundary": "TD_data_public is useful for method and mock/control validation; this audit does not identify it as a real-target no-T2 evidence gate.",
+      "next_step": "Use only as a method-control source unless a target-specific real-data image/model posterior payload is identified."
+    }
+  ],
+  "verdict": {
+    "alternate_source_audit_completed": true,
+    "best_current_alternate_target": "DESJ0408_time_delay_cosmography",
+    "best_current_alternate_classification": "REAL_TARGET_NOTEBOOK_AND_POSTERIOR_CANDIDATE",
+    "best_current_alternate_followup_ready": true,
+    "real_data_T2_sampling_authorized": false,
+    "wgd2038_superseded_as_only_route": true
+  },
+  "claim_boundary": [
+    "No real-data T2 posterior was sampled.",
+    "No alternate source clears the Paper 7 proof gate in this audit alone.",
+    "DES J0408 is promoted only to bounded no-T2 reproduction follow-up."
+  ],
+  "next_finite_action": "Implement a DES J0408 compatibility extractor and smoke-run the published no-T2 lensing/time-delay baseline."
+}

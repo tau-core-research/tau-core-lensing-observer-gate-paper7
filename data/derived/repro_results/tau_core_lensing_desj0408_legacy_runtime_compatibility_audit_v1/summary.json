@@ -1,0 +1,41 @@
+{
+  "schema": "paper7 DES J0408 legacy runtime compatibility audit v1",
+  "purpose": "Record whether the modern helper runtime matches the public DES notebook runtime evidence relevant to row-level time-delay reproduction.",
+  "source": {
+    "source_id": "DESJ0408_time_delay_cosmography",
+    "notebook_file": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/Distance posterior from combining lensing, kinematics, and external convergence.ipynb",
+    "helper_python": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python"
+  },
+  "public_runtime_evidence": {
+    "notebook_mentions_lenstronomy_0_9_2": true,
+    "notebook_language_info_python_version": "2.7.15"
+  },
+  "current_helper_runtime": {
+    "python": "3.9.6",
+    "lenstronomy": "1.14.1",
+    "astropy": "6.0.1",
+    "dill": "0.4.1"
+  },
+  "criteria": {
+    "public_notebook_runtime_evidence_found": true,
+    "current_helper_runtime_recorded": true,
+    "current_lenstronomy_matches_public_0_9_2": false,
+    "current_python_matches_public_kernel": false,
+    "legacy_semantics_reconstructed": false,
+    "failed_models_promoted_to_baseline": false,
+    "real_data_T2_sampling_authorized": false
+  },
+  "verdict": {
+    "desj0408_legacy_runtime_compatibility_audit_created": true,
+    "runtime_mismatch_is_plausible_row_defect_source": true,
+    "legacy_runtime_not_reconstructed": true,
+    "strict_baseline_should_remain_2_model_core": true,
+    "real_data_T2_sampling_authorized": false
+  },
+  "claim_boundary": [
+    "This audit identifies a plausible compatibility source; it does not prove the mismatch is caused by lenstronomy version drift.",
+    "No old environment is installed and no failed model is promoted.",
+    "No T2 posterior, Bayes factor, or operator-necessity claim is introduced."
+  ],
+  "next_finite_action": "Attempt a separate, isolated lenstronomy 0.9.2 compatibility probe only if dependency resolution is feasible; otherwise keep the strict two-model core."
+}

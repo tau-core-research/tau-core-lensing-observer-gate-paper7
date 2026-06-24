@@ -1,0 +1,132 @@
+{
+  "claim_boundary": {
+    "allowed": [
+      "Public source families can be ranked for Paper 7 real-data T2 eligibility.",
+      "TDCOSMO2025_public and TDCOSMO/WGD2038-4008 are concrete follow-up source candidates.",
+      "The current audit does not authorize real-data T2 sampling."
+    ],
+    "forbidden": [
+      "Claiming a real-data T2 detection.",
+      "Treating compressed distance chains as image-level Fermat/parity products.",
+      "Promoting a processed cosmology likelihood to a Tau-derived observer-time law."
+    ]
+  },
+  "content_hash": "97789aac90b1e3fb78c437860fca0add2edcc6a2237b718701771939d09af544",
+  "criteria": [
+    "public_version_pin",
+    "target_specific_lens_products",
+    "image_or_model_level_products",
+    "fermat_or_potential_information",
+    "image_parity_or_order_information",
+    "time_delay_observations_or_distance_likelihood",
+    "nuisance_or_model_ensemble",
+    "no_t2_reproduction_possible_without_extra_private_products"
+  ],
+  "purpose": "Identify whether newly inspected public time-delay lensing products can unblock the Paper 7 no-T2 image/model reproduction gate.",
+  "schema": "paper7 real-data T2 eligibility audit v1",
+  "source_rows": [
+    {
+      "criteria_count": 8,
+      "fermat_or_potential_information": "partial",
+      "image_or_model_level_products": "partial",
+      "image_parity_or_order_information": false,
+      "no_t2_reproduction_possible_without_extra_private_products": false,
+      "nuisance_or_model_ensemble": true,
+      "paper7_use": "priority_followup_source_audit",
+      "pass_count": 4,
+      "public_version_pin": true,
+      "reason": "The 2025 package is a major public update and contains processed per-lens products, but Paper 7 still needs a field-level audit for image ordering/parity, Fermat-difference samples, and no-T2 Ddt/null reproduction before T2 sampling can be authorized.",
+      "remote_head": "d7f38db341f68be1df0d9ac1fc528c45113f94cf",
+      "source_id": "TDCOSMO2025_public",
+      "source_type": "time_delay_cosmography_likelihood_and_processed_lens_posteriors",
+      "target_specific_lens_products": true,
+      "time_delay_observations_or_distance_likelihood": true,
+      "url": "https://github.com/TDCOSMO/TDCOSMO2025_public",
+      "verdict": "PROMISING_PARTIAL_NOT_YET_T2_ELIGIBLE"
+    },
+    {
+      "criteria_count": 8,
+      "fermat_or_potential_information": "notebook_present",
+      "image_or_model_level_products": "partial_external_payload_needed",
+      "image_parity_or_order_information": "undetermined",
+      "no_t2_reproduction_possible_without_extra_private_products": "maybe_after_drive_payload",
+      "nuisance_or_model_ensemble": "external_payload_needed",
+      "paper7_use": "best_single_target_acquisition_candidate",
+      "pass_count": 3,
+      "public_version_pin": true,
+      "reason": "This is the most direct Paper 7 target because it is target-specific and already names Fermat-potential/model-comparison notebooks.  It cannot yet authorize T2 sampling until the linked posterior/data payload is acquired and shown to include enough image/model products.",
+      "remote_head": "da1eda8a0c5c111cc4a59ca9d5e94f31bf3cac02",
+      "source_id": "TDCOSMO_WGD2038_4008",
+      "source_type": "target_specific_time_delay_lens_modeling_repository",
+      "target_specific_lens_products": true,
+      "time_delay_observations_or_distance_likelihood": true,
+      "url": "https://github.com/TDCOSMO/WGD2038-4008",
+      "verdict": "BEST_REAL_DATA_T2_ACQUISITION_TARGET_BUT_PAYLOAD_INCOMPLETE"
+    },
+    {
+      "criteria_count": 8,
+      "fermat_or_potential_information": "not_primary_real_data_gate",
+      "image_or_model_level_products": "mock_or_method_level",
+      "image_parity_or_order_information": "not_primary_real_data_gate",
+      "no_t2_reproduction_possible_without_extra_private_products": false,
+      "nuisance_or_model_ensemble": "method_level",
+      "paper7_use": "method_and_control_support",
+      "pass_count": 1,
+      "public_version_pin": true,
+      "reason": "Useful for method checks and mock/control design, but not enough by itself for a real-data no-T2 image/model reproduction gate.",
+      "remote_head": "e78933f7af187d548ae4e421bc548f835b1f1330",
+      "source_id": "TDCOSMO_TD_data_public",
+      "source_type": "public_tdcosmo_notebooks_and_mock_material",
+      "target_specific_lens_products": "mixed",
+      "time_delay_observations_or_distance_likelihood": "partial",
+      "url": "https://github.com/TDCOSMO/TD_data_public",
+      "verdict": "METHOD_SUPPORT_NOT_REAL_DATA_T2_ELIGIBLE"
+    },
+    {
+      "criteria_count": 8,
+      "fermat_or_potential_information": false,
+      "image_or_model_level_products": false,
+      "image_parity_or_order_information": false,
+      "no_t2_reproduction_possible_without_extra_private_products": false,
+      "nuisance_or_model_ensemble": "compressed",
+      "paper7_use": "compressed_distance_baseline_only",
+      "pass_count": 2,
+      "public_version_pin": true,
+      "reason": "Good for cosmographic distance context, but too compressed to decide how image-level Fermat/parity perturbations propagate into the Ddt/null posterior.",
+      "remote_head": "57cf97357e16a94ba0065472bd4185cfbc604aa3",
+      "source_id": "H0LiCOW_public",
+      "source_type": "distance_posterior_and_cosmology_chains",
+      "target_specific_lens_products": "distance_level",
+      "time_delay_observations_or_distance_likelihood": true,
+      "url": "https://github.com/shsuyu/H0LiCOW-public",
+      "verdict": "TOO_COMPRESSED_FOR_T2_REAL_DATA_GATE"
+    },
+    {
+      "criteria_count": 8,
+      "fermat_or_potential_information": false,
+      "image_or_model_level_products": false,
+      "image_parity_or_order_information": false,
+      "no_t2_reproduction_possible_without_extra_private_products": false,
+      "nuisance_or_model_ensemble": "processed_hierarchical_likelihood",
+      "paper7_use": "downstream_likelihood_context_after_image_gate",
+      "pass_count": 2,
+      "public_version_pin": true,
+      "reason": "Helpful after an image/model-level no-T2 gate exists, but it does not supply the image-wise Fermat/parity information needed to define the Paper 7 T2 perturbation.",
+      "remote_head": "2a214f08e836cb1aa9bb5e9cfa93868c97df5eac",
+      "source_id": "tdcosmo_ext",
+      "source_type": "cobaya_external_likelihood_wrapper",
+      "target_specific_lens_products": "processed_likelihood",
+      "time_delay_observations_or_distance_likelihood": true,
+      "url": "https://github.com/nataliehogg/tdcosmo_ext",
+      "verdict": "LIKELIHOOD_CONTEXT_NOT_T2_GATE_INPUT"
+    }
+  ],
+  "verdict": {
+    "best_followup_source": "TDCOSMO2025_public",
+    "best_followup_target": "TDCOSMO_WGD2038_4008",
+    "evidence_grade_target_found": false,
+    "new_information_since_original_paper7": "TDCOSMO2025_public provides a fresh public 2025 analysis package with processed per-lens products; WGD2038-4008 is a target-specific repository with Fermat-potential notebook hooks but still needs the linked posterior/data payload audit.",
+    "next_finite_action": "Acquire or inspect the WGD2038-4008 linked posterior/data payload and run a field-level parser for image labels, parity/order, Fermat-potential samples, time-delay observations, and nuisance ensemble membership. If any required field is absent, keep Paper 7 real-data T2 status blocked.",
+    "real_data_T2_sampling_authorized": false
+  }
+}

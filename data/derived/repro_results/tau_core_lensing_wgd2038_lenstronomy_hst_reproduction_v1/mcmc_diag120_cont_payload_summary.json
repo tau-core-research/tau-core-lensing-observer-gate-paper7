@@ -1,0 +1,49 @@
+{
+  "band_count": 3,
+  "claim_level": "bounded_continuation_diagnostic_not_converged_posterior",
+  "content_hash": "2d10fcab046587cfd5ea5a16a44aa26ce5ae60a204707cc29a80e53c83f119c5",
+  "converged_no_T2_posterior_reproduced": false,
+  "created_at_unix": 1782240748.514153,
+  "diagnostic_verdict": "FINITE_CONTINUATION_CHAIN_HEALTH_CHECK_NOT_CONVERGED_POSTERIOR",
+  "emcee_log_prob_shape": [
+    25440
+  ],
+  "emcee_sample_shape": [
+    25440,
+    53
+  ],
+  "executed_notebook_path": "/tmp/wgd2038_Multiband_Image_Modeling_tau_core_mcmc_diag120_cont_fastell_backend_executed.ipynb",
+  "executed_notebook_sha256": "96e079395bcdbc9a5580c9e63443d96a593003d4e7a9ebf94c78802a96ee07fc",
+  "finite_logp": true,
+  "finite_samples": true,
+  "first_five_parameters": [
+    "gamma_lens0",
+    "gamma1_lens1",
+    "gamma2_lens1",
+    "R_sersic_source_light0",
+    "n_sersic_source_light0"
+  ],
+  "fit_output_types": [
+    "emcee"
+  ],
+  "interpretation": "Successful continuation plumbing and finite-chain diagnostic only; not a posterior convergence claim.",
+  "job_name": "tau_core_mcmc_diag120_cont_pemd_fastell_backend",
+  "lens_result_count": 2,
+  "logp_max": -13714275.908221805,
+  "logp_median": -18998083.464272298,
+  "logp_min": -422951629.71700764,
+  "output_path": "/tmp/paper7_tdc_sources/WGD2038-4008/lenstronomy_modeling/temp/tau_core_mcmc_diag120_cont_pemd_fastell_backend_out.txt",
+  "output_sha256": "f8a5f5d053cdab5b5b7da1ae205e8cf33e37bb24543b36cd7aad31647c369fd2",
+  "param_count": 53,
+  "previous_job_name": "tau_core_mcmc_diag120_pemd_fastell_backend",
+  "real_data_T2_sampling_authorized": false,
+  "schema": "paper7 WGD2038 fastell-backed MCMC diag120 continuation payload summary v1",
+  "split_half_abs_mean_shift_sigma_quantiles": {
+    "p100": 1.4115196604209383,
+    "p50": 0.8172018177720481,
+    "p90": 1.2607046389650298,
+    "p95": 1.28556313370569,
+    "p99": 1.3598135585653162
+  },
+  "uses_previous_chain_endpoint_start": true
+}
