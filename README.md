@@ -49,13 +49,16 @@ the parent theory uniquely predicts the lensing operator.
 ## Relation to Later Photon-Lensing MAR Work
 
 Paper 18 adds a separate photon-lensing Morphological Alignment Residual (MAR)
-protocol with a source-side template `T_tau = B_env A_f M_bf`.  That later
-protocol complements this observer-gated time-delay lensing gate by giving a
-non-circular morphology-template route for convergence/shear residual searches.
-It does not change this paper's status: Paper 7 remains a T2 feasibility and
+protocol with a source-side template `T_tau = B_env A_f M_bf`.  Its v2 package
+also adds out-of-sample scale validation, physical shear mocks, and a toy
+Null-Matter Link diagnostic.  That later protocol complements this
+observer-gated time-delay lensing gate by giving a non-circular
+morphology-template route for convergence/shear residual searches.  It does
+not change this paper's status: Paper 7 remains a T2 feasibility and
 falsification protocol, not a real-data lensing detection or Tau Core proof.
-Any future MAR signal must also pass Paper 17-style shared-parent versus
-orientation controls before it can strengthen the lensing branch.
+Any future MAR/shear/null-matter signal must also pass Paper 17-style
+shared-parent versus orientation controls before it can strengthen the lensing
+branch.
 
 ## Main Files
 
