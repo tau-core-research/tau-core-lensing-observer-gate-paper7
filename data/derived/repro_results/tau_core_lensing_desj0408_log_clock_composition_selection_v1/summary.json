@@ -1,0 +1,46 @@
+{
+  "schema": "paper7 DES J0408 log clock composition selection v1",
+  "target": "DES J0408-5354 quasar host at z=2.375",
+  "input_scope": "the previously materialized rank-one scalar class plus a declared parent composition axiom; no delay data, residual, or time endpoint",
+  "conditional_axioms": [
+    "positive dimensionless load x=q/q_*",
+    "independent common loads compose multiplicatively: x12=x1*x2",
+    "clock coordinate is continuous and additive: Theta(xy)=Theta(x)+Theta(y)",
+    "normalization Theta(1)=0 and dTheta/d(log x) at x=1 equals 1"
+  ],
+  "functional_equation_result": "Theta(x)=log(x) is the unique continuous normalized solution",
+  "finite_candidate_audit": [
+    {
+      "name": "linear",
+      "maximum_additivity_error_under_multiplication": 2.0,
+      "passes_frozen_tolerance": false
+    },
+    {
+      "name": "logarithmic",
+      "maximum_additivity_error_under_multiplication": 2.220446049250313e-16,
+      "passes_frozen_tolerance": true
+    },
+    {
+      "name": "square_root",
+      "maximum_additivity_error_under_multiplication": 0.30322537284120554,
+      "passes_frozen_tolerance": false
+    },
+    {
+      "name": "quadratic",
+      "maximum_additivity_error_under_multiplication": 24.0,
+      "passes_frozen_tolerance": false
+    }
+  ],
+  "passing_candidates": [
+    "logarithmic"
+  ],
+  "logarithmic_shape_conditionally_selected": true,
+  "measured_source_trace_proved_to_obey_parent_multiplicative_composition": false,
+  "absolute_reference_scale_q_star_selected": false,
+  "physical_theta_M_identified": false,
+  "a_O_identified": false,
+  "h_tau_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "LOG_CLOCK_SHAPE_UNIQUE_CONDITIONAL_ON_MULTIPLICATIVE_BODY_COMPOSITION",
+  "claim_boundary": "The functional equation selects the logarithmic shape only if the physical body scalar obeys the declared multiplicative composition law. The DES J0408 image data do not prove that premise or select q_*, so Theta_M, a_O, h_tau, and observer-time distortion remain open."
+}

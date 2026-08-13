@@ -1,0 +1,518 @@
+{
+  "schema": "paper7 DES J0408 CRR-A kinematic-conditioned rank audit v1",
+  "freeze_policy": {
+    "uses_observed_delay_values_for_conditioning": false,
+    "uses_independent_stellar_kinematics": true,
+    "profiles_one_positive_velocity_scale_per_sample": true,
+    "uses_velocity_shape_after_scale_profile": true,
+    "external_convergence_role": "common_delay_scale_nuisance_not_expected_to_reduce_two-delay_shape_rank",
+    "fits_or_classifies_time_quantum_other_channel_origin": false
+  },
+  "source_counts": {
+    "models": 24,
+    "delay_samples": 240000,
+    "velocity_dispersion_files": 480,
+    "velocity_apertures": 4
+  },
+  "raw_covariance_whitened_span": {
+    "singular_values": [
+      4.62287175437954,
+      0.14308286565596956
+    ],
+    "relative_singular_values": [
+      1.0,
+      0.030951078303311803
+    ],
+    "exact_rank": 2,
+    "rank_at_1pct": 2,
+    "rank_at_5pct": 1,
+    "rank_at_10pct": 1
+  },
+  "kinematic_conditioned_covariance_whitened_span": {
+    "singular_values": [
+      4.622352100829034,
+      0.1431105972368863
+    ],
+    "relative_singular_values": [
+      1.0,
+      0.030960557334266885
+    ],
+    "exact_rank": 2,
+    "rank_at_1pct": 2,
+    "rank_at_5pct": 1,
+    "rank_at_10pct": 1
+  },
+  "effective_sample_size": {
+    "minimum": 9999.236724913488,
+    "median": 9999.343590020928,
+    "maximum": 9999.419221446164
+  },
+  "rows": [
+    {
+      "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.377525352063,
+      "median_profiled_kinematic_chi2": 0.12821776531894946,
+      "median_profiled_velocity_scale": 0.8655683789163593,
+      "raw_delay_mean_days": [
+        -114.91313755862478,
+        -135.54826217606276
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -114.91143613359598,
+        -135.54627058601457
+      ],
+      "mean_shift_days": [
+        0.0017014250287985533,
+        0.001991590048191938
+      ]
+    },
+    {
+      "model_id": "0408_run1006_0_1_1_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.31772870344,
+      "median_profiled_kinematic_chi2": 0.13691209316794534,
+      "median_profiled_velocity_scale": 0.8522742147157023,
+      "raw_delay_mean_days": [
+        -116.84434584034288,
+        -136.83057408548632
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -116.84242037807554,
+        -136.82828226817236
+      ],
+      "mean_shift_days": [
+        0.0019254622673372523,
+        0.0022918173139601095
+      ]
+    },
+    {
+      "model_id": "0408_run1013_1_0_0_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.27133734254,
+      "median_profiled_kinematic_chi2": 0.1217155317986513,
+      "median_profiled_velocity_scale": 0.8964391682575599,
+      "raw_delay_mean_days": [
+        -111.2327415364136,
+        -132.12011565255182
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -111.23208209477968,
+        -132.1193048032989
+      ],
+      "mean_shift_days": [
+        0.0006594416339140707,
+        0.0008108492529288469
+      ]
+    },
+    {
+      "model_id": "0408_run1014_1_0_1_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.236724913488,
+      "median_profiled_kinematic_chi2": 0.12224724198687614,
+      "median_profiled_velocity_scale": 0.8941555707161596,
+      "raw_delay_mean_days": [
+        -110.5710453505758,
+        -130.97574356718005
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -110.57014164030397,
+        -130.97466833281104
+      ],
+      "mean_shift_days": [
+        0.0009037102718281176,
+        0.0010752343690114685
+      ]
+    },
+    {
+      "model_id": "0408_run902_0_0_1_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.351828266117,
+      "median_profiled_kinematic_chi2": 0.13434280196563791,
+      "median_profiled_velocity_scale": 0.8574910238338904,
+      "raw_delay_mean_days": [
+        -115.65207883188003,
+        -136.43667769868875
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -115.6505782450286,
+        -136.43482686366897
+      ],
+      "mean_shift_days": [
+        0.0015005868514350595,
+        0.0018508350197805612
+      ]
+    },
+    {
+      "model_id": "0408_run903_0_0_0_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.390240873438,
+      "median_profiled_kinematic_chi2": 0.12872562752455266,
+      "median_profiled_velocity_scale": 0.8657709474304469,
+      "raw_delay_mean_days": [
+        -118.0640989079792,
+        -137.66305174473732
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -118.06273988081497,
+        -137.66144462553112
+      ],
+      "mean_shift_days": [
+        0.0013590271642272,
+        0.001607119206198604
+      ]
+    },
+    {
+      "model_id": "0408_run904_0_0_1_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.34309296825,
+      "median_profiled_kinematic_chi2": 0.13595142640093588,
+      "median_profiled_velocity_scale": 0.8575631226884257,
+      "raw_delay_mean_days": [
+        -117.00128055568628,
+        -137.10103911789557
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -116.99987388676035,
+        -137.09940380123996
+      ],
+      "mean_shift_days": [
+        0.001406668925923782,
+        0.0016353166556086762
+      ]
+    },
+    {
+      "model_id": "0408_run905_0_1_0_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.374460419771,
+      "median_profiled_kinematic_chi2": 0.12788733865480045,
+      "median_profiled_velocity_scale": 0.8693533427018266,
+      "raw_delay_mean_days": [
+        -114.31207002783357,
+        -134.37010186880363
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -114.31043140026877,
+        -134.36816483790548
+      ],
+      "mean_shift_days": [
+        0.001638627564801709,
+        0.0019370308981478956
+      ]
+    },
+    {
+      "model_id": "0408_run907_0_1_0_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.237707263017,
+      "median_profiled_kinematic_chi2": 0.14887524740382424,
+      "median_profiled_velocity_scale": 0.8389678672154266,
+      "raw_delay_mean_days": [
+        -118.53369767107607,
+        -138.8241848894639
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -118.53249499509516,
+        -138.8227695821688
+      ],
+      "mean_shift_days": [
+        0.001202675980906065,
+        0.0014153072951046397
+      ]
+    },
+    {
+      "model_id": "0408_run908_0_1_1_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.269253951232,
+      "median_profiled_kinematic_chi2": 0.1467527955381679,
+      "median_profiled_velocity_scale": 0.8454888269452219,
+      "raw_delay_mean_days": [
+        -117.4270505762047,
+        -137.1438297035597
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -117.42502671201105,
+        -137.14151125357685
+      ],
+      "mean_shift_days": [
+        0.0020238641936600743,
+        0.002318449982851689
+      ]
+    },
+    {
+      "model_id": "0408_run909_0_2_0_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.364949272956,
+      "median_profiled_kinematic_chi2": 0.12853926663606352,
+      "median_profiled_velocity_scale": 0.8620608586625955,
+      "raw_delay_mean_days": [
+        -116.22562600121161,
+        -136.01563647395506
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -116.2236513333429,
+        -136.01328054969574
+      ],
+      "mean_shift_days": [
+        0.0019746678687084795,
+        0.0023559242593194085
+      ]
+    },
+    {
+      "model_id": "0408_run910_0_2_1_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.373545548164,
+      "median_profiled_kinematic_chi2": 0.12768827623055656,
+      "median_profiled_velocity_scale": 0.8632234580570741,
+      "raw_delay_mean_days": [
+        -116.13710264725594,
+        -135.76368002349838
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -116.13532916736207,
+        -135.7615941955378
+      ],
+      "mean_shift_days": [
+        0.0017734798938704444,
+        0.002085827960570441
+      ]
+    },
+    {
+      "model_id": "0408_run911_0_2_0_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.419221446164,
+      "median_profiled_kinematic_chi2": 0.12139720985936006,
+      "median_profiled_velocity_scale": 0.877802731944572,
+      "raw_delay_mean_days": [
+        -115.50799018927533,
+        -135.2911228207595
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -115.50620770289764,
+        -135.28898547234354
+      ],
+      "mean_shift_days": [
+        0.001782486377692294,
+        0.0021373484159710188
+      ]
+    },
+    {
+      "model_id": "0408_run912_0_2_1_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.344087073605,
+      "median_profiled_kinematic_chi2": 0.13326092058793576,
+      "median_profiled_velocity_scale": 0.8591376015927807,
+      "raw_delay_mean_days": [
+        -117.15854203602336,
+        -136.92458876762745
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -117.15676399422289,
+        -136.92248089010218
+      ],
+      "mean_shift_days": [
+        0.001778041800477581,
+        0.0021078775252760806
+      ]
+    },
+    {
+      "model_id": "0408_run915_1_0_0_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.3642506736,
+      "median_profiled_kinematic_chi2": 0.11632009062937015,
+      "median_profiled_velocity_scale": 0.9025442022829125,
+      "raw_delay_mean_days": [
+        -116.34497665104782,
+        -137.0316473990071
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -116.34439801911995,
+        -137.0308873907645
+      ],
+      "mean_shift_days": [
+        0.0005786319278655583,
+        0.0007600082426222343
+      ]
+    },
+    {
+      "model_id": "0408_run916_1_0_1_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.414728302974,
+      "median_profiled_kinematic_chi2": 0.12063466388828145,
+      "median_profiled_velocity_scale": 0.903811000370039,
+      "raw_delay_mean_days": [
+        -117.3334929042959,
+        -137.58215497126622
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -117.33270193593087,
+        -137.58116863246488
+      ],
+      "mean_shift_days": [
+        0.000790968365024014,
+        0.0009863388013400254
+      ]
+    },
+    {
+      "model_id": "0408_run917_1_1_0_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.307032337,
+      "median_profiled_kinematic_chi2": 0.1277338395173051,
+      "median_profiled_velocity_scale": 0.8905637859336814,
+      "raw_delay_mean_days": [
+        -113.48213941913916,
+        -133.81005950175057
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -113.48186060939129,
+        -133.80970208019787
+      ],
+      "mean_shift_days": [
+        0.00027880974786853585,
+        0.00035742155270668263
+      ]
+    },
+    {
+      "model_id": "0408_run918_1_1_1_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.243240675492,
+      "median_profiled_kinematic_chi2": 0.13168075127155265,
+      "median_profiled_velocity_scale": 0.8845761755666091,
+      "raw_delay_mean_days": [
+        -112.74499891479802,
+        -132.79365156595597
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -112.74485075422393,
+        -132.79338441062993
+      ],
+      "mean_shift_days": [
+        0.00014816057408495453,
+        0.00026715532604271175
+      ]
+    },
+    {
+      "model_id": "0408_run919_1_1_0_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.3301075296,
+      "median_profiled_kinematic_chi2": 0.128770463783432,
+      "median_profiled_velocity_scale": 0.8857751615661549,
+      "raw_delay_mean_days": [
+        -116.18635200760015,
+        -136.8468962357445
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -116.1864590408688,
+        -136.8469356093218
+      ],
+      "mean_shift_days": [
+        -0.00010703326864813789,
+        -3.937357729455471e-05
+      ]
+    },
+    {
+      "model_id": "0408_run920_1_1_1_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.402063344569,
+      "median_profiled_kinematic_chi2": 0.13950572460335023,
+      "median_profiled_velocity_scale": 0.8937119457969618,
+      "raw_delay_mean_days": [
+        -117.13739722133093,
+        -137.22063354759968
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -117.13705873016583,
+        -137.2201908868605
+      ],
+      "mean_shift_days": [
+        0.00033849116509543364,
+        0.0004426607391678772
+      ]
+    },
+    {
+      "model_id": "0408_run921_1_2_0_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.341227135632,
+      "median_profiled_kinematic_chi2": 0.12023203611716037,
+      "median_profiled_velocity_scale": 0.8963474402968102,
+      "raw_delay_mean_days": [
+        -114.46339646088809,
+        -135.07993530786194
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -114.4634209883168,
+        -135.0799397845505
+      ],
+      "mean_shift_days": [
+        -2.452742870673319e-05,
+        -4.476688559407194e-06
+      ]
+    },
+    {
+      "model_id": "0408_run922_1_2_1_0_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.263433362683,
+      "median_profiled_kinematic_chi2": 0.12796496700958593,
+      "median_profiled_velocity_scale": 0.8848150376833837,
+      "raw_delay_mean_days": [
+        -115.30476485974067,
+        -135.96670852903068
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -115.30457055055854,
+        -135.96639871617515
+      ],
+      "mean_shift_days": [
+        0.0001943091821345888,
+        0.00030981285553366433
+      ]
+    },
+    {
+      "model_id": "0408_run923_1_2_0_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.316043047389,
+      "median_profiled_kinematic_chi2": 0.12919851032322605,
+      "median_profiled_velocity_scale": 0.8869050279388724,
+      "raw_delay_mean_days": [
+        -116.01229150311316,
+        -136.82536609816597
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -116.01190835411157,
+        -136.8248295271724
+      ],
+      "mean_shift_days": [
+        0.000383149001592642,
+        0.0005365709935745144
+      ]
+    },
+    {
+      "model_id": "0408_run924_1_2_1_1_0_1_1_0",
+      "sample_count": 10000,
+      "effective_sample_size": 9999.34701805753,
+      "median_profiled_kinematic_chi2": 0.12215350020621735,
+      "median_profiled_velocity_scale": 0.8928705538780106,
+      "raw_delay_mean_days": [
+        -116.34233721861847,
+        -137.01689823543006
+      ],
+      "kinematic_conditioned_delay_mean_days": [
+        -116.34172742255643,
+        -137.01607574236925
+      ],
+      "mean_shift_days": [
+        0.0006097960620365939,
+        0.0008224930608093928
+      ]
+    }
+  ],
+  "rank_repair": {
+    "exact_rank_before": 2,
+    "exact_rank_after": 2,
+    "rank_at_5pct_before": 1,
+    "rank_at_5pct_after": 1,
+    "exact_delay_nuisance_rank_reduced": false,
+    "practical_5pct_rank_reduced": false
+  },
+  "verdict": "CRR_A_KINEMATIC_CONDITIONING_DOES_NOT_REPAIR_DELAY_RANK",
+  "claim_boundary": "This conditions the standard delay nuisance family on independent kinematic shape. It neither detects a generic channel effect nor attributes one to time, quantum, or another origin."
+}

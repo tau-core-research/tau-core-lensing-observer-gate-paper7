@@ -1,0 +1,32 @@
+{
+  "schema": "Paper 7 RXJ1131 relational-cone development-role audit v1",
+  "target": "RXJ1131-1231",
+  "source_manifest": "data/external/rxj1131_nirspec_2026_source_manifest.json",
+  "new_information_since_prior_paper7_probe": [
+    "public JWST NIRSpec raw data from GO-1794",
+    "published nuclear narrow-line flux-ratio terminal",
+    "public lensqso-specfit spectral-modeling code"
+  ],
+  "terminal_coordinate_count": 6,
+  "terminal_is_non_clock": true,
+  "terminal_is_path_sensitive_amplitude": true,
+  "terminal_measurement_uses_same_cube_lens_model": true,
+  "terminal_values_opened_before_tau_predictor_freeze": true,
+  "historical_hst_lens_and_environment_inputs_predate_terminal": true,
+  "complete_physical_causal_support_available": false,
+  "full_terminal_covariance_materialized": false,
+  "standard_substructure_completion_required": true,
+  "development_use_allowed": true,
+  "confirmatory_blind_use_allowed": false,
+  "forbidden_operations": [
+    "choose predictor sign from the published SIII residual",
+    "fit cone weights to the published SIII ratios",
+    "call the smooth-model anomaly a Tau excess",
+    "reopen observer time on RXJ1131 alone"
+  ],
+  "allowed_construction": "Build one predictor using only pre-2026 HST lens, astrometry, redshift, and environment products; treat the published SIII vector only as a development endpoint after the complete formula, sign, nuisance projection, and covariance policy are frozen.",
+  "required_external_validation": "Apply the unchanged predictor to a second lens whose non-clock terminal remains sealed during predictor construction.",
+  "upstream_route_verdict": "NO_CURRENT_ROUTE_SATISFIES_COMPLETE_CONE_AND_BLIND_NONCLOCK_TEST",
+  "verdict": "RXJ1131_SELECTED_AS_DEVELOPMENT_TARGET_NOT_BLIND_VALIDATION",
+  "claim_boundary": "The new source materially improves endpoint availability. It does not repair complete-cone incompleteness or retrospective terminal opening and therefore cannot confirm Tau Core."
+}

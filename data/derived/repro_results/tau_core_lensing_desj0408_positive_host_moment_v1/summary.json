@@ -1,0 +1,151 @@
+{
+  "schema": "paper7 DES J0408 positive host moment v1",
+  "target": "DES J0408-5354 quasar host at z=2.375",
+  "input_scope": "lens/image posterior band 0 only; no delay data",
+  "solver": "SLSQP convex quadratic image fit with nonnegative total host brightness on a frozen 41x41 source grid",
+  "model_count": 5,
+  "models": [
+    {
+      "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+      "solver_success": true,
+      "solver_message": "Optimization terminated successfully",
+      "solver_iterations": 356,
+      "minimum_source_brightness": -3.4998052157118007e-15,
+      "fit_chi2_over_zero_model_chi2": 0.21786247042044588,
+      "host_flux_grid_units": 3226.621910606011,
+      "centroid_arcsec": [
+        0.2259843687923131,
+        -2.3445188536640074
+      ],
+      "second_moment_tensor_arcsec2": [
+        [
+          0.012429634045560094,
+          0.0016740439295703368
+        ],
+        [
+          0.0016740439295703368,
+          0.009351580217943635
+        ]
+      ],
+      "moment_trace_arcsec2": 0.02178121426350373,
+      "moment_ellipticity": 0.2088027949966595,
+      "moment_major_axis_angle_rad_mod_pi": -2.727895337437435
+    },
+    {
+      "model_id": "0408_run909_0_2_0_0_0_1_1_0",
+      "solver_success": true,
+      "solver_message": "Optimization terminated successfully",
+      "solver_iterations": 258,
+      "minimum_source_brightness": -9.420525081800938e-17,
+      "fit_chi2_over_zero_model_chi2": 0.21889827964996525,
+      "host_flux_grid_units": 1811.1730412498123,
+      "centroid_arcsec": [
+        0.2682374002521033,
+        -2.3716278508445816
+      ],
+      "second_moment_tensor_arcsec2": [
+        [
+          0.01980939976823703,
+          -0.0014247202858329376
+        ],
+        [
+          -0.0014247202858329376,
+          0.006578057411716595
+        ]
+      ],
+      "moment_trace_arcsec2": 0.026387457179953624,
+      "moment_ellipticity": 0.5129212021681304,
+      "moment_major_axis_angle_rad_mod_pi": 3.0355347536463864
+    },
+    {
+      "model_id": "0408_run902_0_0_1_0_0_1_1_0",
+      "solver_success": true,
+      "solver_message": "Optimization terminated successfully",
+      "solver_iterations": 374,
+      "minimum_source_brightness": -3.737494799838508e-15,
+      "fit_chi2_over_zero_model_chi2": 0.21743161229690305,
+      "host_flux_grid_units": 4992.098434035179,
+      "centroid_arcsec": [
+        0.25163514598010245,
+        -2.4450386760043856
+      ],
+      "second_moment_tensor_arcsec2": [
+        [
+          0.01128471538689129,
+          0.0011923223674189377
+        ],
+        [
+          0.0011923223674189377,
+          0.00912921955736871
+        ]
+      ],
+      "moment_trace_arcsec2": 0.020413934944259998,
+      "moment_ellipticity": 0.1574635477115606,
+      "moment_major_axis_angle_rad_mod_pi": -2.723679085573753
+    },
+    {
+      "model_id": "0408_run905_0_1_0_0_0_1_1_0",
+      "solver_success": true,
+      "solver_message": "Optimization terminated successfully",
+      "solver_iterations": 302,
+      "minimum_source_brightness": -4.0336986545729126e-15,
+      "fit_chi2_over_zero_model_chi2": 0.21703051089211478,
+      "host_flux_grid_units": 1898.5443328409594,
+      "centroid_arcsec": [
+        0.2047109261112522,
+        -2.3269702385091233
+      ],
+      "second_moment_tensor_arcsec2": [
+        [
+          0.015596198133128996,
+          0.003010535366034093
+        ],
+        [
+          0.003010535366034093,
+          0.01330128008777925
+        ]
+      ],
+      "moment_trace_arcsec2": 0.028897478220908247,
+      "moment_ellipticity": 0.22298128910051337,
+      "moment_major_axis_angle_rad_mod_pi": -2.5382693026435796
+    },
+    {
+      "model_id": "0408_run1006_0_1_1_0_0_1_1_0",
+      "solver_success": true,
+      "solver_message": "Optimization terminated successfully",
+      "solver_iterations": 307,
+      "minimum_source_brightness": -2.1044289961589863e-14,
+      "fit_chi2_over_zero_model_chi2": 0.21894748821899804,
+      "host_flux_grid_units": 2416.6854624953767,
+      "centroid_arcsec": [
+        0.27149377064812824,
+        -2.471340143931066
+      ],
+      "second_moment_tensor_arcsec2": [
+        [
+          0.020300034403637764,
+          0.001973257674177771
+        ],
+        [
+          0.001973257674177771,
+          0.008865169227265471
+        ]
+      ],
+      "moment_trace_arcsec2": 0.029165203630903233,
+      "moment_ellipticity": 0.4147661856348519,
+      "moment_major_axis_angle_rad_mod_pi": -2.97542778136921
+    }
+  ],
+  "trace_coefficient_of_variation": 0.15953611652506425,
+  "ellipticity_coefficient_of_variation": 0.5026307801741188,
+  "axial_angle_rms_rad": 0.24567111348212248,
+  "stability_rule": "all solvers succeed; minimum brightness >=-1e-8; trace and ellipticity CV <0.25; axial-angle RMS <0.25 rad",
+  "positive_common_host_moment_promoted": false,
+  "stable_scalar_trace_materialized": true,
+  "mean_moment_trace_arcsec2": 0.025329057647905762,
+  "sfh_02_relative_morphology_materialized": false,
+  "theta_M_identified": false,
+  "time_score_authorized": false,
+  "verdict": "DESJ0408_POSITIVE_HOST_MOMENT_NOT_MODEL_STABLE",
+  "claim_boundary": "Positivity-constrained image-only source moment; not Theta_M, a body clock, observer-time covector, time distortion, or Tau detection."
+}

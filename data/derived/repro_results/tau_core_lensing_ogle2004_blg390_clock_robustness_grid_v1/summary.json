@@ -1,0 +1,129 @@
+{
+  "schema": "Paper 7 OGLE-2004-BLG-390 clock robustness grid v1",
+  "event": "2004-BLG-390",
+  "frozen_grid": {
+    "harmonic_orders": [
+      4,
+      6,
+      8
+    ],
+    "window_half_widths_tE": [
+      4,
+      8,
+      16
+    ],
+    "cell_count": 9
+  },
+  "cells": [
+    {
+      "harmonic_order": 4,
+      "window_half_width_tE": 4,
+      "data_points": 133,
+      "degrees_of_freedom": 102,
+      "finite_tangent_null_chi2": 412.29043315465765,
+      "finite_tangent_null_reduced_chi2": 4.042063070143702,
+      "conditional_epsilon": -0.010376441413550128,
+      "conditional_delta_chi2": 101.81154676161128,
+      "passes_local_precheck": true
+    },
+    {
+      "harmonic_order": 4,
+      "window_half_width_tE": 8,
+      "data_points": 169,
+      "degrees_of_freedom": 138,
+      "finite_tangent_null_chi2": 516.1696441241053,
+      "finite_tangent_null_reduced_chi2": 3.7403597400297484,
+      "conditional_epsilon": -0.011245107507266308,
+      "conditional_delta_chi2": 79.81295789257348,
+      "passes_local_precheck": true
+    },
+    {
+      "harmonic_order": 4,
+      "window_half_width_tE": 16,
+      "data_points": 322,
+      "degrees_of_freedom": 291,
+      "finite_tangent_null_chi2": 1328.4394350331916,
+      "finite_tangent_null_reduced_chi2": 4.565083969186225,
+      "conditional_epsilon": 0.03028771466915931,
+      "conditional_delta_chi2": 30.29214190554444,
+      "passes_local_precheck": true
+    },
+    {
+      "harmonic_order": 6,
+      "window_half_width_tE": 4,
+      "data_points": 133,
+      "degrees_of_freedom": 90,
+      "finite_tangent_null_chi2": 356.245443304721,
+      "finite_tangent_null_reduced_chi2": 3.958282703385789,
+      "conditional_epsilon": -0.011437056191552152,
+      "conditional_delta_chi2": 134.58462865863154,
+      "passes_local_precheck": true
+    },
+    {
+      "harmonic_order": 6,
+      "window_half_width_tE": 8,
+      "data_points": 169,
+      "degrees_of_freedom": 126,
+      "finite_tangent_null_chi2": 464.63212011510274,
+      "finite_tangent_null_reduced_chi2": 3.6875565088500215,
+      "conditional_epsilon": 0.03155049654980029,
+      "conditional_delta_chi2": 109.79120553715995,
+      "passes_local_precheck": true
+    },
+    {
+      "harmonic_order": 6,
+      "window_half_width_tE": 16,
+      "data_points": 322,
+      "degrees_of_freedom": 279,
+      "finite_tangent_null_chi2": 1262.8663488235356,
+      "finite_tangent_null_reduced_chi2": 4.526402683955325,
+      "conditional_epsilon": -0.011381235292499996,
+      "conditional_delta_chi2": 114.93414294806053,
+      "passes_local_precheck": true
+    },
+    {
+      "harmonic_order": 8,
+      "window_half_width_tE": 4,
+      "data_points": 133,
+      "degrees_of_freedom": 78,
+      "finite_tangent_null_chi2": 266.9349783132653,
+      "finite_tangent_null_reduced_chi2": 3.422243311708529,
+      "conditional_epsilon": -0.029018518504502468,
+      "conditional_delta_chi2": 81.66395049861842,
+      "passes_local_precheck": true
+    },
+    {
+      "harmonic_order": 8,
+      "window_half_width_tE": 8,
+      "data_points": 169,
+      "degrees_of_freedom": 114,
+      "finite_tangent_null_chi2": 402.98196638723937,
+      "finite_tangent_null_reduced_chi2": 3.534929529712626,
+      "conditional_epsilon": -0.03023799874186964,
+      "conditional_delta_chi2": 122.17105701478283,
+      "passes_local_precheck": true
+    },
+    {
+      "harmonic_order": 8,
+      "window_half_width_tE": 16,
+      "data_points": 322,
+      "degrees_of_freedom": 267,
+      "finite_tangent_null_chi2": 1201.9557848185932,
+      "finite_tangent_null_reduced_chi2": 4.501707059245668,
+      "conditional_epsilon": 0.030457592175099593,
+      "conditional_delta_chi2": 87.03181372694303,
+      "passes_local_precheck": true
+    }
+  ],
+  "local_precheck_pass_fraction": 1.0,
+  "passing_sign_stable": false,
+  "epsilon_median_among_passing": -0.011245107507266308,
+  "epsilon_range_among_passing": [
+    -0.03023799874186964,
+    0.03155049654980029
+  ],
+  "robustness_gate_passed": false,
+  "verdict": "BLG390_CLOCK_CANDIDATE_NOT_ROBUST_ACROSS_FROZEN_GRID",
+  "claim_boundary": "Grid robustness cannot solve source/blend ownership and does not turn the finite tangent into an exact physical source model.",
+  "next_finite_action": "Only if this grid passes, vary residual block length under the central finite-tangent null. Otherwise close BLG-390 without further calibration."
+}

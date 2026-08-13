@@ -27,6 +27,36 @@ GOOGLE_DRIVE_FOLDER = "https://drive.google.com/drive/folders/1CHfFN1O9mbTdnWpOa
 
 ACQUISITION_ATTEMPTS = [
     {
+        "route": "Google Drive folder recheck with authenticated connector",
+        "target": GOOGLE_DRIVE_FOLDER,
+        "method": "Google Drive API connector plus public HTTP and gdown recheck on 2026-07-10",
+        "result": "not_found",
+        "evidence": (
+            "the authenticated Drive API and public HTTP endpoint both returned 404; "
+            "the folder is deleted, moved, or not shared with the connected account"
+        ),
+    },
+    {
+        "route": "Git and Git-LFS recovery audit",
+        "target": "https://github.com/TDCOSMO/WGD2038-4008",
+        "method": "full ref, single-commit, tree, ignore-policy, and unreachable-object inspection",
+        "result": "not_recoverable_from_git",
+        "evidence": (
+            "the repository has one commit; model_posteriors contains only README and "
+            ".gitattributes; lenstronomy_modeling/temp is ignored; no alternate refs contain payloads"
+        ),
+    },
+    {
+        "route": "corresponding-author data request",
+        "target": "Anowar J. Shajib, corresponding/submitting author of arXiv:2202.11101",
+        "method": "reviewable email draft prepared with exact 36-output or compact-export request",
+        "result": "draft_created_not_sent",
+        "evidence": (
+            "Gmail draft r-5009331864412003597 requests restored folder access, the "
+            "published joblib outputs, or a compact image-order/parity/Fermat/nuisance table"
+        ),
+    },
+    {
         "route": "Google Drive folder declared by TDCOSMO/WGD2038-4008 README",
         "target": GOOGLE_DRIVE_FOLDER,
         "method": "gdown folder download and direct unauthenticated browser/API checks",
@@ -277,8 +307,9 @@ def build_summary() -> dict[str, Any]:
                 "and T2 perturbation test."
             ),
             "next_finite_action": (
-                "Obtain access to the WGD2038 Google Drive payload or reconstruct the "
-                "notebook's joblib/temp outputs from reproducible model products, then "
+                "After user review, send the prepared corresponding-author data request. "
+                "In parallel, reconstruct the notebook's joblib/temp outputs from "
+                "reproducible model products, then "
                 "extract image labels, parity/order, dphi_AB/dphi_AC/dphi_AD, Ddt "
                 "contributions, and model-sample IDs into a frozen audit table."
             ),
@@ -315,7 +346,7 @@ def write_outputs(summary: dict[str, Any]) -> None:
         "path",
     ]
     with OUT_TABLE.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(summary["files"])
 

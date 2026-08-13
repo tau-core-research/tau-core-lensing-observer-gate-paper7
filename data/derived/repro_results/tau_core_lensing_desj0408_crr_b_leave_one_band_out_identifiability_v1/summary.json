@@ -1,0 +1,127 @@
+{
+  "schema": "paper7 DES J0408 CRR-B leave-one-band-out identifiability audit v1",
+  "source": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/DESJ0408 Multiband Image Modeling.ipynb",
+  "source_checks": {
+    "three_band_model_declared": true,
+    "bands_compute_switch_present": true,
+    "per_band_source_model_loop_present": true,
+    "cross_band_source_shape_links_present": true,
+    "source_amplitudes_are_linear_nuisance": true,
+    "per_band_linear_prior_present": true,
+    "independent_cross_band_sed_transport_present": false,
+    "heldout_band_absolute_flux_predictable_without_heldout_data": false
+  },
+  "conditional_no_go": {
+    "statement": "Without an independently frozen cross-band spectral/SED transport, two training bands do not determine the absolute held-out-band flux because held-out linear amplitudes remain free.",
+    "status": "PROVED_FROM_MODEL_PARAMETERIZATION",
+    "forbidden_claim": "absolute heldout flux mismatch is a generic channel effect"
+  },
+  "repaired_test": {
+    "name": "geometry_and_normalized_profile_holdout_with_linear_amplitude_profiled",
+    "principle": "Fit nonlinear lens/source geometry on two bands only; in the held-out band profile declared linear amplitudes and calibration modes, then test the remaining normalized spatial residual.",
+    "generic_channel_origin_labels_used": false,
+    "requires_new_sed_law": false,
+    "folds": [
+      {
+        "fold_id": "LOBO-F814W",
+        "train_bands": [
+          "F475X",
+          "F160W"
+        ],
+        "heldout_band": "F814W",
+        "bands_compute_during_geometry_fit": [
+          false,
+          true,
+          true
+        ],
+        "forbidden_during_geometry_fit": [
+          "heldout image pixels",
+          "heldout point-source fluxes",
+          "heldout PSF residual optimization",
+          "full-three-band known_solution initialization"
+        ],
+        "allowed_heldout_evaluation_nuisance": [
+          "linear component amplitudes",
+          "one background offset",
+          "predeclared PSF-error modes"
+        ],
+        "test_observables": [
+          "normalized arc/profile shape residual",
+          "image-wise centroid residual",
+          "parity-signed profile residual"
+        ],
+        "absolute_flux_channel_row_allowed": false
+      },
+      {
+        "fold_id": "LOBO-F475X",
+        "train_bands": [
+          "F814W",
+          "F160W"
+        ],
+        "heldout_band": "F475X",
+        "bands_compute_during_geometry_fit": [
+          true,
+          false,
+          true
+        ],
+        "forbidden_during_geometry_fit": [
+          "heldout image pixels",
+          "heldout point-source fluxes",
+          "heldout PSF residual optimization",
+          "full-three-band known_solution initialization"
+        ],
+        "allowed_heldout_evaluation_nuisance": [
+          "linear component amplitudes",
+          "one background offset",
+          "predeclared PSF-error modes"
+        ],
+        "test_observables": [
+          "normalized arc/profile shape residual",
+          "image-wise centroid residual",
+          "parity-signed profile residual"
+        ],
+        "absolute_flux_channel_row_allowed": false
+      },
+      {
+        "fold_id": "LOBO-F160W",
+        "train_bands": [
+          "F814W",
+          "F475X"
+        ],
+        "heldout_band": "F160W",
+        "bands_compute_during_geometry_fit": [
+          true,
+          true,
+          false
+        ],
+        "forbidden_during_geometry_fit": [
+          "heldout image pixels",
+          "heldout point-source fluxes",
+          "heldout PSF residual optimization",
+          "full-three-band known_solution initialization"
+        ],
+        "allowed_heldout_evaluation_nuisance": [
+          "linear component amplitudes",
+          "one background offset",
+          "predeclared PSF-error modes"
+        ],
+        "test_observables": [
+          "normalized arc/profile shape residual",
+          "image-wise centroid residual",
+          "parity-signed profile residual"
+        ],
+        "absolute_flux_channel_row_allowed": false
+      }
+    ]
+  },
+  "preflight": {
+    "technical_band_switch_available": true,
+    "absolute_flux_test_identifiable": false,
+    "normalized_geometry_profile_test_conditionally_identifiable": true,
+    "two_band_refits_executed": false,
+    "heldout_residuals_opened": false
+  },
+  "next_finite_action": "Create three notebook-derived two-band jobs with bands_compute set by fold, no full-three-band initialization, bounded PSO geometry fit, and held-out linear-amplitude-only evaluation.",
+  "verdict": "CRR_B_ABSOLUTE_FLUX_NO_GO_NORMALIZED_PROFILE_HOLDOUT_DEFINED",
+  "claim_boundary": "This audit defines a leakage-free generic-channel test but does not execute the refits or detect a channel effect."
+}

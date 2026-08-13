@@ -1,0 +1,38 @@
+{
+  "schema": "paper7 DES J0408 LOS path transport geometry v1",
+  "target": "DES J0408-5354",
+  "model_count": 12,
+  "observed_los_object_count": 198,
+  "path_count": 4,
+  "transport_row_count": 9504,
+  "lens_center_icrs_deg": [
+    62.090417,
+    -53.899889
+  ],
+  "median_path_separation_spread_arcsec": 2.980949273518057,
+  "maximum_path_separation_spread_arcsec": 4.189628717551898,
+  "minimum_ray_object_separation_arcsec": 4.276217588640097,
+  "published_flexion_path_rescaling_count": 8736,
+  "objects_above_explicit_modeling_threshold_on_any_path": [
+    "488065185",
+    "488066144",
+    "488066768",
+    "488068102"
+  ],
+  "above_threshold_object_count": 4,
+  "above_threshold_count_range_per_model_path": [
+    3,
+    4
+  ],
+  "all_above_threshold_objects_already_explicitly_modeled": true,
+  "path_dependent_threshold_membership_present": true,
+  "redshift_dependent_four_path_geometry_materialized": true,
+  "path_discrimination_nonzero": true,
+  "published_leading_order_flexion_transport_materialized": true,
+  "complete_physical_environment_transport_materialized": false,
+  "complete_physical_light_cone_morphology_materialized": false,
+  "tau_specific_information_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "REDSHIFT_DEPENDENT_FOUR_PATH_LOS_GEOMETRY_MATERIALIZED__LEADING_FLEXION_TRANSPORT_MATERIALIZED__COMPLETENESS_OPEN",
+  "claim_boundary": "The exact standard multi-plane rays are intersected with the published spectroscopic sky/redshift morphology. Within the published flexion-shift approximation, rescaling by the exact path separation cubed gives the leading non-tidal transport. All objects crossing the explicit-model threshold are the four perturbers already included in the lens posterior. This is not a complete environmental mass transport, Tau covector, h_tau, or time distortion."
+}

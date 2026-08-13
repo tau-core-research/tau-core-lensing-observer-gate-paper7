@@ -1,0 +1,17 @@
+{
+  "schema": "paper7 WGD2038 warm-dust numerical-effort stability audit v1",
+  "reduced_artifact": "data/derived/repro_results/tau_core_lensing_wgd2038_warm_dust_prior_predictive_n64_v1/summary.json",
+  "publication_numerics_artifact": "data/derived/repro_results/tau_core_lensing_wgd2038_warm_dust_publication_numerics_n8_v1/summary.json",
+  "paired_seed_start": 20384100,
+  "paired_realizations": 8,
+  "reduced_pso_iterations": 10,
+  "publication_pso_iterations": 80,
+  "publication_fitting_sequence_used": true,
+  "maximum_absolute_ratio_difference": 0.0,
+  "all_paired_ratio_rows_exactly_equal": true,
+  "reduced_n64_flux_terminal_numerically_supported": true,
+  "general_optimizer_equivalence_proved": false,
+  "tau_or_observer_time_scoring_allowed": false,
+  "verdict": "PAIRED_N8_FLUX_RATIOS_EXACTLY_STABLE_TO_PUBLICATION_NUMERICAL_EFFORT",
+  "claim_boundary": "The eight paired seeds support the reduced numerical effort for this flux terminal. They do not prove global optimizer equivalence, posterior convergence, OIII completion, or a Tau/observer-time result."
+}

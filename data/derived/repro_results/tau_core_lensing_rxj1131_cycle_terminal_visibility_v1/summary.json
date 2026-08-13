@@ -1,0 +1,26 @@
+{
+  "schema": "Paper 7 RXJ1131 cycle-terminal visibility audit v1",
+  "target": "RXJ1131-1231",
+  "pair_labels": [
+    "A_B",
+    "A_C",
+    "A_D",
+    "B_C",
+    "B_D",
+    "C_D"
+  ],
+  "pair_space_dimension": 6,
+  "cut_space_rank": 3,
+  "cycle_space_rank": 3,
+  "cut_cycle_projector_overlap_norm": 3.44847471796713e-16,
+  "flux_ratio_factorization": "y_ij=log(F_i/F_j)=ell_i-ell_j=(B ell)_ij",
+  "synthetic_exact_terminal_cycle_norm": 2.9275225451776116e-16,
+  "nonexact_cycle_boundary_norm": 3.825842074281555e-16,
+  "nonexact_cycle_exact_terminal_pairing": 1.1102230246251565e-16,
+  "nonexact_cycle_directly_visible_in_flux_ratios": false,
+  "terminal_values_used": false,
+  "theorem": "For four image fluxes let B be the six-by-four pair-incidence matrix. Log flux ratios lie in the exact cut space im(B). The non-exact pair-cycle space is ker(B^T), and finite-dimensional Hodge decomposition gives R^6=im(B) direct-sum ker(B^T). Hence every cycle vector is orthogonal to every flux-ratio terminal. A path holonomy is testable here only after a separately derived terminal map converts it into endpoint flux changes; those changes then appear as an exact cut vector and do not by themselves identify their non-exact origin.",
+  "verdict": "RXJ1131_NONEXACT_CYCLE_SECTOR_IS_DIRECTLY_INVISIBLE_TO_SCALAR_FLUX_RATIOS",
+  "next_finite_action": "Do not construct a cycle score from the opened RXJ1131 ratios. Either derive a source-owned holonomy-to-flux terminal map before using endpoint data, select a terminal intrinsically sensitive to path phase or loop transport, or move to a multi-lens shared-coefficient test with physically constrained nuisances.",
+  "claim_boundary": "This is a terminal-factorization no-go, not a proof that physical path holonomy is absent. It shows only that scalar endpoint flux ratios cannot directly distinguish the cycle sector."
+}

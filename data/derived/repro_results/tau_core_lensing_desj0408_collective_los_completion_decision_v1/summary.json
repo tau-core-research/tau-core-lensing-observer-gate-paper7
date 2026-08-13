@@ -1,0 +1,42 @@
+{
+  "schema": "paper7 DES J0408 collective LOS completion decision v1",
+  "source": {
+    "arxiv": "2003.12117",
+    "section": "external convergence inference and conclusion",
+    "method": "weighted galaxy counts matched to ray-traced Millennium Simulation lines of sight"
+  },
+  "explicit_multiplane_perturbers": [
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+  ],
+  "subthreshold_population_role": "collective external convergence distribution, not 178 independently summed untruncated halos",
+  "reported_kappa_ext_median_interval": [
+    -0.05,
+    -0.04
+  ],
+  "reported_kappa_ext_approximate_width": 0.03,
+  "reported_group_removal_median_change_upper_bound": 0.01,
+  "h0_relation": "H0=H0_model*(1-kappa_ext)",
+  "implied_h0_multiplicative_factor_interval_at_reported_median": [
+    1.04,
+    1.05
+  ],
+  "mass_sheet_transform": {
+    "kappa_lambda": "lambda*kappa+(1-lambda)",
+    "beta_lambda": "lambda*beta",
+    "relative_image_mapping_invariant_after_source_rescaling": true,
+    "time_delays_scale_with_lambda": true
+  },
+  "spectroscopic_completeness_fraction": 0.68,
+  "local_point_mass_arc_completion_result": "EXPLORATORY_F814W_ARC_TEMPLATE_ALIGNMENT_NULL_OR_NEGATIVE",
+  "local_point_mass_fixed_amplitude_sse_reduction": -0.00010132117995869903,
+  "individual_truncated_halo_completion_identified_from_current_payload": false,
+  "new_f814w_spatial_template_authorized_from_kappa_ext": false,
+  "kappa_ext_time_delay_nuisance_required": true,
+  "tau_specific_information_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "COLLECTIVE_LOS_COMPLETION_IS_KAPPA_EXT_NUISANCE__NO_NEW_F814W_TEMPLATE__TIME_DELAY_SCALE_ONLY",
+  "claim_boundary": "The published collective LOS completion is a standard external-convergence distribution. Under the mass-sheet degeneracy it cannot be identified as a new spatial arc template from the same imaging data after source rescaling. It must enter any later time-delay analysis as a standard nuisance prior. This supplies neither a Tau-specific residual nor observer-time distortion."
+}

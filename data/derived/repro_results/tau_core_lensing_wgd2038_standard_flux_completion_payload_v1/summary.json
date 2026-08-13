@@ -1,0 +1,59 @@
+{
+  "schema": "paper7 WGD2038 standard flux-completion payload audit v1",
+  "audit_date": "2026-07-27",
+  "sources": {
+    "lenslikelihood": {
+      "repository": "https://github.com/dangilman/lenslikelihood",
+      "commit": "d01be7e4277881066beafa699eb53eaf5f6d7c69",
+      "role": "published multi-lens dark-substructure hyperparameter likelihood",
+      "wgd2038_measurement_present": true,
+      "wgd2038_flux_posterior_samples_in_repository": false,
+      "external_precomputed_likelihood_link_live_at_audit": false,
+      "preserves_object_level_flux_predictions": false
+    },
+    "samana": {
+      "repository": "https://github.com/dangilman/samana",
+      "commit": "fc0f595730197a8869f5d12f37acbd0788f2659a",
+      "role": "forward-model framework and target-specific smooth lens model",
+      "wgd2038_data_class_present": true,
+      "epl_m1_m3_m4_shear_model_present": true,
+      "baseline_notebook_present": true,
+      "baseline_notebook_runs_pso_only": true,
+      "baseline_notebook_mcmc_disabled": true,
+      "source_frozen_production_configuration_present": true,
+      "production_configuration_archive_sha256": "48ea376853847a863a2a6b3447ddbf5a2aa86ef0bd9d1cf142b6411a7e65e360",
+      "production_configuration_terminal": "JWST warm-dust flux ratios",
+      "production_configuration_is_oiii_specific": false,
+      "production_configuration_uses_measured_fluxes": true,
+      "wgd2038_posterior_chain_present": false,
+      "substructure_posterior_predictive_ensemble_present": false
+    }
+  },
+  "checks": {
+    "oiii_terminal_was_materialized": true,
+    "public_target_specific_smooth_model_code_exists": true,
+    "source_frozen_warm_dust_production_config_exists": true,
+    "warm_dust_config_is_not_oiii_completion": true,
+    "public_target_specific_posterior_chain_is_absent": true,
+    "public_target_specific_substructure_predictive_is_absent": true,
+    "aggregate_likelihood_does_not_restore_object_predictions": true,
+    "standard_posterior_predictive_probability_not_identifiable": true,
+    "tau_scoring_remains_forbidden": true
+  },
+  "passed": 9,
+  "total": 9,
+  "status": "PASS",
+  "smooth_model_component_tension_sigma": 2.2360679774997916,
+  "standard_nuisance_model_family_materialized": true,
+  "source_frozen_warm_dust_forward_configuration_materialized": true,
+  "oiii_specific_forward_configuration_materialized": false,
+  "standard_nuisance_posterior_predictive_materialized": false,
+  "standard_completion_reproducible_from_public_payload": false,
+  "standard_model_explains_or_fails_oiii_decidable": false,
+  "tau_specific_coordinate_materialized": false,
+  "confirmatory_tau_score_allowed": false,
+  "time_distortion_detection_claim_allowed": false,
+  "verdict": "STANDARD_WGD2038_FLUX_MODEL_FAMILY_IS_PUBLIC__TARGET_POSTERIOR_PREDICTIVE_IS_NOT__OIII_TENSION_REMAINS_UNCLASSIFIED_AND_TAU_SCORING_FORBIDDEN",
+  "claim_boundary": "The public sources establish standard smooth multipoles and dark substructure as concrete completion mechanisms and now supply an exact WGD2038 warm-dust production configuration. They do not expose its accepted simulations, and the configuration is not an OIII-specific completion. Consequently the 2.24-sigma diagonal OIII component cannot yet be assigned either to standard structure or to a Tau-specific readout. Re-fitting the opened OIII ratios would be exploratory, not an independent test.",
+  "next_finite_action": "Freeze the samana/pyHalo priors from their published population analysis before looking at the WGD2038 residual, then generate and release a target-specific accepted-simulation ensemble. Score only a predeclared joint delay-plus-flux statistic against that ensemble."
+}

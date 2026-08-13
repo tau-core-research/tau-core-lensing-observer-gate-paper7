@@ -1,0 +1,50 @@
+{
+  "schema": "Paper 7 RXJ1131 path-local nonlinear no-go v1",
+  "target": "RXJ1131-1231",
+  "source_descriptor": "data/derived/repro_results/tau_core_lensing_rxj1131_dimensionless_path_descriptor_v1/summary.json",
+  "pair_labels": [
+    "A_B",
+    "A_C",
+    "A_D",
+    "B_C",
+    "B_D",
+    "C_D"
+  ],
+  "incidence_shape": [
+    6,
+    4
+  ],
+  "incidence_rank": 3,
+  "linear_descriptor_rank": 3,
+  "linear_span_equals_full_pair_difference_space": true,
+  "quadratic_monomial_count": 10,
+  "quadratic_monomials": [
+    "rho_main*rho_main",
+    "rho_main*shear_radial_contraction",
+    "rho_main*gradient_radial_contraction",
+    "rho_main*satellite_relative_load",
+    "shear_radial_contraction*shear_radial_contraction",
+    "shear_radial_contraction*gradient_radial_contraction",
+    "shear_radial_contraction*satellite_relative_load",
+    "gradient_radial_contraction*gradient_radial_contraction",
+    "gradient_radial_contraction*satellite_relative_load",
+    "satellite_relative_load*satellite_relative_load"
+  ],
+  "quadratic_pair_rank": 3,
+  "nuisance_orthogonal_quadratic_rank": 0,
+  "maximum_nuisance_orthogonal_quadratic_entry": 1.3322676295501878e-15,
+  "arbitrary_nonlinear_witness": {
+    "formula": "exp(rho)+sin(shear)-gradient*satellite",
+    "nuisance_orthogonal_norm": 2.3905729454191703e-15
+  },
+  "path_local_nonlinear_scalar_can_escape": false,
+  "terminal_values_used": false,
+  "theorem": "Let B be the oriented incidence matrix of all six pairs of four paths. Then rank(B)=3. The frozen standard descriptor P=B D also has rank 3, hence col(P)=im(B). For every path-local scalar f, its pair contrast is B f(D), which belongs to im(B)=col(P). Therefore (I-Pi_col(P)) B f(D)=0 for every linear, polynomial, or nonlinear path-local f. A nonlinear scalarization cannot create nuisance-orthogonal information in this single quad.",
+  "escape_class": [
+    "a genuinely pair- or path-interior relation that is not the difference of endpoint-local scalar values",
+    "an independently constrained nuisance design whose physical rank is proved below the full three-dimensional cut space",
+    "a frozen cross-system law tested jointly on multiple lenses rather than coefficients selected within one quad"
+  ],
+  "verdict": "RXJ1131_ALL_PATH_LOCAL_NONLINEAR_PAIR_SCALARS_ARE_NUISANCE__NONLOCAL_OR_CROSS_SYSTEM_STRUCTURE_REQUIRED",
+  "claim_boundary": "The theorem concerns endpoint-local scalar functions followed by pair differencing in one four-image system. It does not exclude path-interior tensors, non-exact pair relations, holonomy, a physically lower-rank nuisance model, or a frozen multi-system law."
+}

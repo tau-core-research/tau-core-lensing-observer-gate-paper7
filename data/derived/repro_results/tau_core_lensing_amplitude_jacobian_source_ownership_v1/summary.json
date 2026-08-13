@@ -1,0 +1,71 @@
+{
+  "schema": "Paper 7 Tau amplitude/Jacobian source-ownership audit v1",
+  "positive_body_amplitude": {
+    "object": "A_B=2 sqrt(rho_B)",
+    "type": "normalized Hilbert-Schmidt positive-cone representative",
+    "unitary_orbit_norm_change": 0.0,
+    "supplies_optical_real_gain_alpha_i": false,
+    "reason": "unitary conjugation preserves its norm; PBAL/RMSR does not type this object as a path-wise R_+ transfer character",
+    "physical_selection_status": "PBAL/PSFR remains conditional in the current Tau source"
+  },
+  "current_holonomy_jacobian_cross_jet": {
+    "source_packet": "support-separated PJR-X0",
+    "mixed_hessian": [
+      [
+        0.0
+      ]
+    ],
+    "mixed_hessian_norm": 0.0,
+    "neighborhood_wide_structural_zero": true,
+    "holonomy_to_jacobian_cross_derivative_nonzero": false
+  },
+  "admissible_counterfamily": {
+    "local_hessian": "H_epsilon=[[1,epsilon],[epsilon,1]]",
+    "members": {
+      "-0.4": {
+        "eigenvalues": [
+          0.6,
+          1.4
+        ],
+        "positive_definite": true,
+        "mixed_derivative": -0.4,
+        "pure_jacobian_curvature": 1.0,
+        "pure_holonomy_curvature": 1.0
+      },
+      "0.0": {
+        "eigenvalues": [
+          1.0,
+          1.0
+        ],
+        "positive_definite": true,
+        "mixed_derivative": 0.0,
+        "pure_jacobian_curvature": 1.0,
+        "pure_holonomy_curvature": 1.0
+      },
+      "0.4": {
+        "eigenvalues": [
+          0.6,
+          1.4
+        ],
+        "positive_definite": true,
+        "mixed_derivative": 0.4,
+        "pure_jacobian_curvature": 1.0,
+        "pure_holonomy_curvature": 1.0
+      }
+    },
+    "same_pure_axis_restrictions": true,
+    "zero_and_both_signs_positive_definite": true,
+    "coupling_selected_by_pure_source_data": false
+  },
+  "conditional_minimal_completions": {
+    "real_gain": "one source-owned path-wise positive R_+ amplitude character alpha_i, distinct from normalized body amplitude",
+    "geometric_conversion": "one common primitive Gram row coupling the holonomy/contact sector to the lens-Jacobian response; its mixed derivative must pass the existing strict contraction bound"
+  },
+  "theorem": "The existing conditional positive-body amplitude is norm-fixed and unitary-orbit invariant, so it does not supply the real path gain alpha_i required by flux. In the current PJR-X0 source neighborhood, primitive-row support separation makes the holonomy/body-response mixed Hessian and all its source derivatives identically zero. Positive completions with mixed coefficient epsilon of either sign and epsilon=0 preserve the same pure-axis Hessians for |epsilon|<1. Therefore current Tau source laws neither generate nor select a nonzero real-gain sector or holonomy-to-Jacobian cross derivative.",
+  "terminal_values_used": false,
+  "real_gain_source_owned": false,
+  "holonomy_jacobian_cross_derivative_source_owned": false,
+  "verdict": "CURRENT_TAU_SOURCE_OWNS_NEITHER_OPTICAL_REAL_GAIN_NOR_HOLONOMY_JACOBIAN_CROSS_JET",
+  "next_finite_action": "Do not add a fitted gain or cross coefficient. Either adopt and justify one enriched common Gram row as a conditional completion, or demote scalar flux ratios from the direct holonomy route and move to a terminal with intrinsic coherent phase sensitivity.",
+  "claim_boundary": "This is a current-source ownership no-go, not a universal impossibility theorem. A physically enriched post-body parent may contain either missing object, but it must source it before terminal data are used."
+}

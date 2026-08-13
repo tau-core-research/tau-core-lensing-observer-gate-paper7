@@ -1,0 +1,76 @@
+{
+  "schema": "paper7 DES J0408 kappa-marginalized delay-rank audit v1",
+  "delay_output_basis": [
+    "dt_AB_days",
+    "dt_AD_days"
+  ],
+  "delay_output_dimension": 2,
+  "public_model_count": 24,
+  "family_delay_centers_days": {
+    "powerlaw": [
+      -115.51655645078938,
+      -135.8339142864824
+    ],
+    "composite": [
+      -115.83350645979068,
+      -135.97999142479554
+    ]
+  },
+  "kappa_ext_histograms": {
+    "powerlaw": {
+      "file": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/kappahist_0408_measured_5innermask_nobeta_removehandpicked_zgap-1.0_-1.0_powerlaw_120_gal_120_gamma_120_oneoverr_45_gal_45_oneoverr_22.5_med_increments2_2_2_2_2_shearwithoutprior.cat",
+      "support_bin_count": 2000,
+      "mean": -0.03183906338656052,
+      "q16": -0.06371375218641818,
+      "median": -0.0395315293824797,
+      "q84": -0.0022668575772882885,
+      "semi_68_width": 0.030723447304564947
+    },
+    "composite": {
+      "file": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/kappahist_0408_measured_5innermask_nobeta_removehandpicked_zgap-1.0_-1.0_composite_120_gal_120_gamma_120_oneoverr_45_gal_45_oneoverr_22.5_med_increments2_2_2_2_2_shearwithoutprior.cat",
+      "support_bin_count": 2000,
+      "mean": -0.04307672854339646,
+      "q16": -0.07056579099968793,
+      "median": -0.04923436912127934,
+      "q84": -0.017740741594520156,
+      "semi_68_width": 0.026412524702583887
+    }
+  },
+  "mass_sheet_delay_rule": "Delta_t(kappa_ext)=(1-kappa_ext)*Delta_t_model",
+  "covariance_whitened_model_singular_values": [
+    4.62287175437954,
+    0.14308286565596956
+  ],
+  "dominant_model_direction": [
+    -0.9887240970661084,
+    -0.1497486556894881
+  ],
+  "weak_model_direction": [
+    0.1497486556894881,
+    -0.9887240970661084
+  ],
+  "kappa_ext_tangent_sigma_basis": [
+    55.05819354942372,
+    10.615828645775009
+  ],
+  "normalized_kappa_ext_direction": [
+    0.9819146703907758,
+    0.1893240081748056
+  ],
+  "absolute_cosine_dominant_model_vs_kappa": 0.9991937115920082,
+  "principal_angle_degrees": 2.3009756516778475,
+  "rank_dominant_model_plus_kappa": 2,
+  "remaining_dimension_after_dominant_model_plus_kappa": 0,
+  "strict_full_model_nuisance_rank_before_kappa": 2,
+  "strict_full_model_nuisance_rank_after_kappa": 2,
+  "representative_kappa_semi_68_width": 0.028567986003574415,
+  "kappa_projection_on_weak_direction_sigma_per_unit_kappa": -2.251235123684576,
+  "kappa_projection_on_weak_direction_at_reported_width_sigma": 0.06431325350417608,
+  "practical_5pct_weak_direction_survives_geometrically": true,
+  "practical_weak_direction_is_kappa_free": false,
+  "delay_only_tau_score_authorized": false,
+  "tau_specific_information_materialized": false,
+  "time_distortion_detection_claim_allowed": false,
+  "verdict": "KAPPA_EXT_DOES_NOT_RESCUE_STRICT_DELAY_RANK__PRACTICAL_WEAK_DIRECTION_SURVIVES_BUT_IS_CONTAMINATED",
+  "claim_boundary": "The source-frozen external-convergence tangent is linearly independent of the dominant covariance-whitened model direction, so their strict joint nuisance span fills the two-delay output. At a declared 5% truncation the near-parallel weak direction survives geometrically, but it is not kappa-free and requires probabilistic marginalization. This is a design no-go, not evidence against observer-time physics."
+}

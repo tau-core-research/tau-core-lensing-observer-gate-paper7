@@ -1,0 +1,36 @@
+{
+  "schema": "Paper 7 KMT-2016-BLG-1194 conditional clock rate v1",
+  "event": "KMT-2016-BLG-1194",
+  "data_points_after_quality_filter": 2359,
+  "frozen_rrc_period_days": 0.28348449,
+  "harmonics_per_site": 8,
+  "site_specific_linear_model": "source flux, blend flux, slow linear calibration, and amplified RRc Fourier coefficients",
+  "profiled_no_clock_parameters": {
+    "t0_hjd_minus_2450000": 7601.461622639875,
+    "tE_days": 32.88431384466408,
+    "u0": 0.5483473904165586,
+    "frequency_correction_cycles_per_1000d": -0.018077224329487794,
+    "quadratic_drift_cycles_per_1000d2": 0.052809335502015435
+  },
+  "null_chi2": 64902.59700565461,
+  "null_degrees_of_freedom": 2297,
+  "null_reduced_chi2": 28.25537527455577,
+  "null_site_chi2": [
+    35145.15648890948,
+    13858.195627331439,
+    15899.244889413692
+  ],
+  "localized_rate_definition": "d(cycle)/dt gains epsilon*exp(-0.5*((t-t0)/tE)^2)/period",
+  "epsilon_grid": {
+    "minimum": -0.002,
+    "maximum": 0.002,
+    "points": 401,
+    "maximum_asymptotic_phase_step_cycles": 0.5815397581354426
+  },
+  "best_epsilon": 1.0000000000000026e-05,
+  "best_delta_chi2": 1.3161254532024032,
+  "passes_local_clock_identifiability_precheck": false,
+  "verdict": "KMT1194_CONDITIONAL_CLOCK_NULL",
+  "claim_boundary": "The scan conditions on the enriched observed no-clock geometry. Its large reduced chi-square shows remaining source-shape or photometric misspecification. A nonzero result would require mock calibration; a zero result closes this local clock direction without falsifying common-mode observer dependence in general.",
+  "next_finite_action": "If the optimum is zero, preserve KMT-2016-BLG-1194 as an ownership-certified negative control and stop this event. If it is nonzero, calibrate the unchanged statistic with site-wise parametric and block-residual unit-clock mocks."
+}

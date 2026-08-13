@@ -1,0 +1,313 @@
+{
+  "schema": "paper7 DES J0408 full24 MD1 F1 rank audit v1",
+  "purpose": "Test whether two public path-delay outputs retain any direction outside the source-frozen no-T2 model-ensemble nuisance span.",
+  "freeze_policy": {
+    "nuisance_span_frozen_before_observed_vector_projection": true,
+    "uses_observed_delays_to_select_models_or_basis": false,
+    "fits_or_samples_t2_or_tau_amplitude": false,
+    "model_inclusion_rule": "all 24 public DES J0408 time-delay posterior files",
+    "output_basis": [
+      "dt_AB_days",
+      "dt_AD_days"
+    ],
+    "rank_relative_tolerances": [
+      1e-08,
+      0.01,
+      0.05,
+      0.1
+    ]
+  },
+  "source_manifest": {
+    "repository": "https://github.com/ajshajib/DESJ0408_time_delay_cosmography",
+    "posterior_file_count": 24,
+    "total_samples": 240000,
+    "families": {
+      "powerlaw": 16,
+      "composite": 8
+    }
+  },
+  "full24_nuisance_span": {
+    "singular_values_days": [
+      13.118483589717387,
+      1.355330161492957
+    ],
+    "relative_singular_values": [
+      1.0,
+      0.10331454487280073
+    ],
+    "rank_by_relative_tolerance": {
+      "1e-08": 2,
+      "0.01": 2,
+      "0.05": 2,
+      "0.1": 2
+    },
+    "strict_rank": 2,
+    "output_dimension": 2,
+    "orthogonal_complement_dimension": 0,
+    "nuisance_projector": [
+      [
+        0.9999999999999999,
+        6.364488372902731e-18
+      ],
+      [
+        6.364488372902731e-18,
+        1.0
+      ]
+    ],
+    "residual_projector": [
+      [
+        1.1102230246251565e-16,
+        -6.364488372902731e-18
+      ],
+      [
+        -6.364488372902731e-18,
+        0.0
+      ]
+    ]
+  },
+  "observed_covariance_whitened_nuisance_span": {
+    "singular_values_days": [
+      4.62287175437968,
+      0.14308286565601108
+    ],
+    "relative_singular_values": [
+      1.0,
+      0.030951078303319852
+    ],
+    "rank_by_relative_tolerance": {
+      "1e-08": 2,
+      "0.01": 2,
+      "0.05": 1,
+      "0.1": 1
+    },
+    "strict_rank": 2,
+    "output_dimension": 2,
+    "orthogonal_complement_dimension": 0,
+    "nuisance_projector": [
+      [
+        1.0,
+        2.3624487395261947e-18
+      ],
+      [
+        2.3624487395261947e-18,
+        1.0000000000000002
+      ]
+    ],
+    "residual_projector": [
+      [
+        0.0,
+        -2.3624487395261947e-18
+      ],
+      [
+        -2.3624487395261947e-18,
+        -2.220446049250313e-16
+      ]
+    ]
+  },
+  "family_controls": {
+    "powerlaw": {
+      "singular_values_days": [
+        10.577632055402733,
+        1.193717763772893
+      ],
+      "relative_singular_values": [
+        1.0,
+        0.11285302395853128
+      ],
+      "rank_by_relative_tolerance": {
+        "1e-08": 2,
+        "0.01": 2,
+        "0.05": 2,
+        "0.1": 2
+      },
+      "strict_rank": 2,
+      "output_dimension": 2,
+      "orthogonal_complement_dimension": 0,
+      "nuisance_projector": [
+        [
+          1.0,
+          -2.2325174219773686e-17
+        ],
+        [
+          -2.2325174219773686e-17,
+          1.0
+        ]
+      ],
+      "residual_projector": [
+        [
+          0.0,
+          2.2325174219773686e-17
+        ],
+        [
+          2.2325174219773686e-17,
+          0.0
+        ]
+      ]
+    },
+    "composite": {
+      "singular_values_days": [
+        7.726316426097637,
+        0.5241433196687502
+      ],
+      "relative_singular_values": [
+        1.0,
+        0.06783870744645148
+      ],
+      "rank_by_relative_tolerance": {
+        "1e-08": 2,
+        "0.01": 2,
+        "0.05": 2,
+        "0.1": 1
+      },
+      "strict_rank": 2,
+      "output_dimension": 2,
+      "orthogonal_complement_dimension": 0,
+      "nuisance_projector": [
+        [
+          0.9999999999999999,
+          -2.4024745713546508e-17
+        ],
+        [
+          -2.4024745713546508e-17,
+          0.9999999999999999
+        ]
+      ],
+      "residual_projector": [
+        [
+          1.1102230246251565e-16,
+          2.4024745713546508e-17
+        ],
+        [
+          2.4024745713546508e-17,
+          1.1102230246251565e-16
+        ]
+      ]
+    }
+  },
+  "leave_one_model_out_control": {
+    "all_ranks": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "minimum_rank": 2,
+    "maximum_rank": 2,
+    "all_full_output_rank": true
+  },
+  "posterior_bootstrap_control": {
+    "seed": 20260710,
+    "replicates": 2000,
+    "second_to_first_singular_ratio_q01_q50_q99": [
+      0.10273803917563053,
+      0.10331601255377665,
+      0.10388328184820284
+    ],
+    "fraction_rank2_at_5pct": 1.0
+  },
+  "observed_projection_after_freeze": {
+    "observed_delays_days": [
+      -112.1,
+      -155.5
+    ],
+    "nuisance_center_days": [
+      -115.62220645378972,
+      -135.88260666592012
+    ],
+    "observed_minus_nuisance_center_days": [
+      3.522206453789721,
+      -19.61739333407988
+    ],
+    "residualized_vector_days": [
+      5.15898142029478e-16,
+      -2.241704202210764e-17
+    ],
+    "residualized_norm_sigma_units": 2.456720243891752e-16
+  },
+  "covariance_whitened_practical_sensitivity": {
+    "0.01": {
+      "relative_tolerance": 0.01,
+      "retained_nuisance_rank": 2,
+      "remaining_dimension": 0,
+      "residualized_observed_vector_sigma_units": [
+        3.620709855850514e-18,
+        3.363451312566565e-16
+      ],
+      "residualized_observed_norm_sigma_units": 3.3636461891809863e-16,
+      "weak_direction_sigma_basis": []
+    },
+    "0.05": {
+      "relative_tolerance": 0.05,
+      "retained_nuisance_rank": 1,
+      "remaining_dimension": 1,
+      "residualized_observed_vector_sigma_units": [
+        0.2645297896766055,
+        -1.7465731244187577
+      ],
+      "residualized_observed_norm_sigma_units": 1.7664919157947625,
+      "weak_direction_sigma_basis": [
+        [
+          0.14974865568948334,
+          -0.9887240970661091
+        ]
+      ]
+    },
+    "0.1": {
+      "relative_tolerance": 0.1,
+      "retained_nuisance_rank": 1,
+      "remaining_dimension": 1,
+      "residualized_observed_vector_sigma_units": [
+        0.2645297896766055,
+        -1.7465731244187577
+      ],
+      "residualized_observed_norm_sigma_units": 1.7664919157947625,
+      "weak_direction_sigma_basis": [
+        [
+          0.14974865568948334,
+          -0.9887240970661091
+        ]
+      ]
+    }
+  },
+  "rank_verdict": {
+    "raw_path_output_dimension": 2,
+    "empirical_no_t2_nuisance_rank": 2,
+    "covariance_whitened_no_t2_nuisance_rank": 2,
+    "remaining_delay_only_f1_dimension": 0,
+    "nuisance_residualized_f1_row_constructed": false,
+    "delay_only_f1_locally_identifiable_in_this_design": false,
+    "practical_weak_direction_present_at_5pct": true,
+    "practical_weak_direction_is_detection": false
+  },
+  "verdict": "DESJ0408_DELAY_ONLY_STRUCTURAL_F1_NO_GO_WITH_PRACTICAL_WEAK_DIRECTION",
+  "interpretation": "The public no-T2 model ensemble structurally spans both measured delay coordinates, so exact delay-only residualization leaves no independent F1 output dimension. After covariance whitening the second nuisance singular value is weak, leaving one sensitivity direction at a declared 5% truncation; that thresholded direction is a follow-up target, not a detection.",
+  "required_rank_repair": [
+    "add a third path-sensitive observable not contained in the two-delay nuisance span, such as image-wise polarization, chromatic profile, or independently modeled flux-ratio response",
+    "or add independent source/lens constraints that reduce the effective nuisance rank below two before testing the delays",
+    "then freeze and replicate the repaired design on an independent lens"
+  ],
+  "claim_boundary": {
+    "allowed": "The full public DES J0408 delay-only design has zero nuisance-orthogonal output dimension under the declared empirical no-T2 model-family span.",
+    "forbidden": "This does not prove absence of observer-path physics, physical time distortion, or Tau Core F1."
+  }
+}

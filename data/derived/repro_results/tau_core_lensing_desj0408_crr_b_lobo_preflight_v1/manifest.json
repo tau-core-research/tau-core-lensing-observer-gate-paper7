@@ -1,0 +1,49 @@
+{
+  "schema": "paper7 DES J0408 CRR-B LOBO preflight notebook manifest v1",
+  "source_notebook": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/DESJ0408 Multiband Image Modeling.ipynb",
+  "folds": [
+    {
+      "heldout_band": "F814W",
+      "bands_compute": [
+        false,
+        true,
+        true
+      ],
+      "notebook": "data/derived/repro_results/tau_core_lensing_desj0408_crr_b_lobo_preflight_v1/desj0408_crr_b_lobo_f814w_preflight.ipynb",
+      "full_three_band_initialization_allowed": false,
+      "heldout_psf_optimization_allowed": false,
+      "bounded_pso_particles": 4,
+      "bounded_pso_iterations": 1
+    },
+    {
+      "heldout_band": "F475X",
+      "bands_compute": [
+        true,
+        false,
+        true
+      ],
+      "notebook": "data/derived/repro_results/tau_core_lensing_desj0408_crr_b_lobo_preflight_v1/desj0408_crr_b_lobo_f475x_preflight.ipynb",
+      "full_three_band_initialization_allowed": false,
+      "heldout_psf_optimization_allowed": false,
+      "bounded_pso_particles": 4,
+      "bounded_pso_iterations": 1
+    },
+    {
+      "heldout_band": "F160W",
+      "bands_compute": [
+        true,
+        true,
+        false
+      ],
+      "notebook": "data/derived/repro_results/tau_core_lensing_desj0408_crr_b_lobo_preflight_v1/desj0408_crr_b_lobo_f160w_preflight.ipynb",
+      "full_three_band_initialization_allowed": false,
+      "heldout_psf_optimization_allowed": false,
+      "bounded_pso_particles": 4,
+      "bounded_pso_iterations": 1
+    }
+  ],
+  "preflight_only": true,
+  "heldout_pixels_opened_by_builder": false,
+  "channel_effect_test_authorized": false,
+  "verdict": "CRR_B_THREE_LEAKAGE_GUARDED_PREFLIGHT_NOTEBOOKS_BUILT"
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "paper7 WGD2038 warm-dust likelihood reweighting audit v1",
+  "input_artifact": "data/derived/repro_results/tau_core_lensing_wgd2038_warm_dust_prior_predictive_n64_v1/summary.json",
+  "input_realizations": 64,
+  "observed_ratio_vector": [
+    1.209,
+    0.939,
+    0.43
+  ],
+  "measurement_covariance": [
+    [
+      0.0013163769158846795,
+      0.00012240530553126578,
+      9.1145427724005e-05
+    ],
+    [
+      0.00012240530553126578,
+      0.0008747728497371431,
+      5.562121299135247e-05
+    ],
+    [
+      9.1145427724005e-05,
+      5.562121299135247e-05,
+      0.00020187066122068058
+    ]
+  ],
+  "chi_square_min_median_max": [
+    0.18667068852716745,
+    34.56096623216395,
+    287.14728389965205
+  ],
+  "effective_sample_size": 5.506974394659651,
+  "effective_sample_fraction": 0.08604647491655705,
+  "maximum_normalized_weight": 0.32091973841989246,
+  "samples_above_one_percent_weight": 11,
+  "weighted_ratio_mean": [
+    1.2161859224838028,
+    0.9335669736464645,
+    0.4327095239671407
+  ],
+  "weighted_ratio_covariance": [
+    [
+      0.0007768854568859833,
+      0.00012395290424194216,
+      -5.8216041204415334e-05
+    ],
+    [
+      0.00012395290424194216,
+      0.0008382468432842048,
+      0.00017872305393085904
+    ],
+    [
+      -5.8216041204415334e-05,
+      0.00017872305393085904,
+      0.00014624814902957598
+    ]
+  ],
+  "weighted_covariance_rank": 3,
+  "predeclared_minimum_effective_samples": 20.0,
+  "stable_conditioned_inference_allowed": false,
+  "tau_or_observer_time_scoring_allowed": false,
+  "verdict": "LIKELIHOOD_CONDITIONED_REGION_NONEMPTY__EFFECTIVE_SAMPLE_SIZE_TOO_LOW_FOR_STABLE_INFERENCE",
+  "claim_boundary": "The published Gaussian flux likelihood can be evaluated on the bounded prior batch with ESS=5.51. Passing the coarse ESS threshold materializes only a weighted warm-dust diagnostic, not a posterior-predictive distribution or an OIII completion, and authorizes no Tau/time score.",
+  "next_finite_action": "Use the weighted warm-dust covariance only as a standard amplitude-terminal nuisance diagnostic; do not enlarge this ensemble again without a new endpoint requirement."
+}

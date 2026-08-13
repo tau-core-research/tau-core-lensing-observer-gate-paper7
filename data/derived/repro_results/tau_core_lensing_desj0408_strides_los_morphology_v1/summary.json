@@ -1,0 +1,52 @@
+{
+  "schema": "paper7 DES J0408 STRIDES LOS morphology v1",
+  "source": {
+    "title": "STRIDES: Spectroscopic and photometric characterization of the environment and effects of mass along the line of sight to DES J0408-5354 and WGD 2038-4008",
+    "arxiv": "2003.12117",
+    "url": "https://export.arxiv.org/e-print/2003.12117",
+    "source_archive_sha256": "9b28b2525cc4c8a3a7c4d6f33af01df7353cce65962c6d50a2f8dd6ddc81d4f6",
+    "tables_tex_sha256": "81ac791fb2a2becb516358cd5e2d27fb8e30a6bc1934d5d6923159383f8b6e28",
+    "acquisition": "checksum-verified cache"
+  },
+  "target": "DES J0408-5354",
+  "reported_spectroscopic_galaxy_count": 199,
+  "materialized_spectroscopic_galaxy_row_count": 198,
+  "reported_vs_materialized_row_count_discrepancy": 1,
+  "identified_group_count": 10,
+  "reported_spectroscopic_completeness": {
+    "fraction": 0.68,
+    "selection": "18 <= i < 23 and 5 arcsec <= radius < 3 arcmin"
+  },
+  "redshift_range": [
+    0.04355,
+    1.59303
+  ],
+  "median_redshift": 0.599905,
+  "maximum_separation_arcsec": 222.4,
+  "galaxies_with_auger_log10_flexion_above_minus4": 4,
+  "galaxies_with_materialized_auger_flexion": 182,
+  "group_redshifts": [
+    0.272,
+    0.307,
+    0.428,
+    0.57,
+    0.599,
+    0.751,
+    0.768,
+    0.799,
+    0.918,
+    1.252
+  ],
+  "machine_readable_outputs": [
+    "data/derived/repro_results/tau_core_lensing_desj0408_strides_los_morphology_v1/desj0408_spectroscopic_galaxies.csv",
+    "data/derived/repro_results/tau_core_lensing_desj0408_strides_los_morphology_v1/desj0408_groups.csv"
+  ],
+  "observed_los_morphology_materialized": true,
+  "complete_observed_spectroscopic_cone": false,
+  "complete_physical_light_cone_morphology_materialized": false,
+  "path_specific_transport_assigned": false,
+  "tau_specific_information_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "PUBLISHED_LOS_GALAXY_AND_GROUP_MORPHOLOGY_MATERIALIZED__PATH_TRANSPORT_AND_COMPLETENESS_OPEN",
+  "claim_boundary": "The artifact is a checksum-verified machine-readable extraction of the published DES J0408 spectroscopic environment. The paper reports 199 galaxies, while its released table contains 198 materializable DES J0408 rows; the discrepancy is retained. The reported sample is 68% complete under its stated selection and does not include the full photometric population, diffuse matter, or parent morphology. It is a source-side cone descriptor, not h_tau or evidence for observer-time distortion."
+}

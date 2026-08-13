@@ -1,0 +1,97 @@
+{
+  "schema": "paper7 DES J0408 A/B correlated unit-stretch null v1",
+  "source_audit": "data/derived/repro_results/tau_core_lensing_desj0408_ab_relative_clock_rate_v1/summary.json",
+  "null_hypothesis": "relative_clock_rate_B_over_A=1",
+  "random_seed": 2038040802,
+  "mock_count_per_scenario": 64,
+  "scenario_count": 4,
+  "total_mock_count": 256,
+  "estimated_residual_amplitudes_mag": {
+    "common_source": 0.0019766082806227546,
+    "image_B_extrinsic": 0.012028546238065343
+  },
+  "correlation_grid_days": {
+    "common_source": [
+      10.0,
+      20.0
+    ],
+    "image_B_extrinsic": [
+      30.0,
+      60.0
+    ]
+  },
+  "frozen_estimator": {
+    "source_spline_smoothing_factor_times_n": 1.0,
+    "microlensing_polynomial_degree": 1,
+    "delay_search_days": [
+      100.0,
+      122.0
+    ],
+    "stretch_search": [
+      0.9,
+      1.1
+    ]
+  },
+  "observed": {
+    "relative_clock_rate_B_over_A": 1.0594277168973072,
+    "delta_chi_square": 6.078322385369603
+  },
+  "scenario_results": [
+    {
+      "source_residual_timescale_days": 10.0,
+      "extrinsic_timescale_days": 30.0,
+      "mock_count": 64,
+      "rate_p_value": 0.35384615384615387,
+      "improvement_p_value": 0.5384615384615384,
+      "rate_quantiles_2p5_50_97p5": [
+        0.9000000000784929,
+        1.005245305764903,
+        1.0921426795814695
+      ]
+    },
+    {
+      "source_residual_timescale_days": 10.0,
+      "extrinsic_timescale_days": 60.0,
+      "mock_count": 64,
+      "rate_p_value": 0.23076923076923078,
+      "improvement_p_value": 0.47692307692307695,
+      "rate_quantiles_2p5_50_97p5": [
+        0.9071642849257948,
+        0.9967693031612351,
+        1.0946801035481064
+      ]
+    },
+    {
+      "source_residual_timescale_days": 20.0,
+      "extrinsic_timescale_days": 30.0,
+      "mock_count": 64,
+      "rate_p_value": 0.3230769230769231,
+      "improvement_p_value": 0.6153846153846154,
+      "rate_quantiles_2p5_50_97p5": [
+        0.9000000006165891,
+        0.9863146013699626,
+        1.0828464493866714
+      ]
+    },
+    {
+      "source_residual_timescale_days": 20.0,
+      "extrinsic_timescale_days": 60.0,
+      "mock_count": 64,
+      "rate_p_value": 0.3230769230769231,
+      "improvement_p_value": 0.5384615384615384,
+      "rate_quantiles_2p5_50_97p5": [
+        0.9000000001900169,
+        0.9841252475462952,
+        1.06242827721843
+      ]
+    }
+  ],
+  "pooled_rate_p_value": 0.29961089494163423,
+  "pooled_improvement_p_value": 0.5369649805447471,
+  "every_declared_scenario_rejects_unit_stretch": false,
+  "path_dependent_clock_rate_supported": false,
+  "tau_time_distortion_claim_allowed": false,
+  "verdict": "OBSERVED_STRETCH_NOT_ROBUST_AGAINST_CORRELATED_NULL_GRID",
+  "claim_boundary": "The correlated Gaussian residual grid is a finite conservative calibration, not a unique physical microlensing model. A positive result would still require independent-lens replication and source-frozen path prediction.",
+  "next_finite_action": "Freeze the estimator as a null result and transfer it unchanged to one independent public high-cadence COSMOGRAIL lens."
+}

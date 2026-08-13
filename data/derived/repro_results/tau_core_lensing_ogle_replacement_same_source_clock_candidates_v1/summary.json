@@ -1,0 +1,45 @@
+{
+  "schema": "Paper 7 OGLE replacement same-source clock candidates v1",
+  "frozen_transfer_rule": "Same 8-harmonic even/odd finite-source tangent and conditional localized epsilon scan used to close OGLE-2004-BLG-081.",
+  "excluded_before_fit": {
+    "2004-BLG-101": "Wyrzykowski et al. (2006) Table 3 assigns periodic variability to the blend, not the lensed source."
+  },
+  "events": [
+    {
+      "event": "2002-BLG-103",
+      "period_days": 0.82756,
+      "phase_zero_hjd": 2452124.72705,
+      "t0_hjd": 2452456.915,
+      "tE_days": 74.904,
+      "u0": 0.051,
+      "ews_blend_fraction": 0.891,
+      "data_points": 307,
+      "finite_tangent_null_chi2": 874.26796713236,
+      "finite_tangent_null_reduced_chi2": 3.4693173298903175,
+      "conditional_clock_epsilon": 0.0,
+      "conditional_clock_delta_chi2": 0.0,
+      "passes_local_clock_identifiability_precheck": false
+    },
+    {
+      "event": "2004-BLG-390",
+      "period_days": 0.34825,
+      "phase_zero_hjd": 2452128.5835,
+      "t0_hjd": 2453212.567,
+      "tE_days": 28.873,
+      "u0": 0.412,
+      "ews_blend_fraction": 1.0,
+      "data_points": 394,
+      "finite_tangent_null_chi2": 1410.4423920649008,
+      "finite_tangent_null_reduced_chi2": 4.16059702674012,
+      "conditional_clock_epsilon": 0.03081776173987906,
+      "conditional_clock_delta_chi2": 64.4310653285288,
+      "passes_local_clock_identifiability_precheck": true
+    }
+  ],
+  "survivors": [
+    "2004-BLG-390"
+  ],
+  "verdict": "REPLACEMENT_LOCAL_CLOCK_CANDIDATE_EXISTS",
+  "claim_boundary": "A survivor is only eligible for null calibration. The historical paper did not uniquely fit source ownership for these events, and the finite tangent is not an exact binary-source model.",
+  "next_finite_action": "Calibrate only surviving events under their own finite-tangent null; if none survive, close the current public OGLE sample."
+}

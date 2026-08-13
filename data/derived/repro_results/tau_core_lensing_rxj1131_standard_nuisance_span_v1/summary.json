@@ -1,0 +1,50 @@
+{
+  "schema": "Paper 7 RXJ1131 standard nuisance-span audit v1",
+  "target": "RXJ1131-1231",
+  "source_descriptor": "data/derived/repro_results/tau_core_lensing_rxj1131_dimensionless_path_descriptor_v1/summary.json",
+  "pair_labels": [
+    "A_B",
+    "A_C",
+    "A_D",
+    "B_C",
+    "B_D",
+    "C_D"
+  ],
+  "component_names": [
+    "rho_main",
+    "shear_radial_contraction",
+    "gradient_radial_contraction",
+    "satellite_relative_load"
+  ],
+  "standard_nuisance_ownership": {
+    "rho_main": "main-lens Einstein-scale radial coordinate",
+    "shear_radial_contraction": "standard external shear",
+    "gradient_radial_contraction": "standard convergence gradient",
+    "satellite_relative_load": "standard satellite lens contribution"
+  },
+  "descriptor_matrix_shape": [
+    6,
+    4
+  ],
+  "descriptor_rank": 3,
+  "standard_nuisance_rank": 3,
+  "nuisance_orthogonal_descriptor_rank": 0,
+  "maximum_nuisance_orthogonal_entry": 6.661338147750939e-16,
+  "arbitrary_linear_weight_witness": {
+    "weights": [
+      0.7,
+      -0.4,
+      0.2,
+      1.1
+    ],
+    "nuisance_orthogonal_norm": 5.149419331070734e-16
+  },
+  "linear_tau_direction_survives": false,
+  "terminal_values_used": false,
+  "nonlinear_extension_tested": false,
+  "complete_object_level_cone_used": false,
+  "theorem": "Let P be the six-by-four matrix of frozen pair contrasts. Since every column of P is constructed from a declared standard lens-model coordinate, a complete conservative nuisance design N contains col(P). Therefore (I-Pi_col(N))P=0, and every linear scalar P w is also annihilated. No linear weighting of this descriptor is identifiable as extra Tau content.",
+  "verdict": "RXJ1131_CURRENT_LINEAR_PATH_DESCRIPTOR_IS_STANDARD_NUISANCE__NO_TAU_DIRECTION_SURVIVES",
+  "next_finite_action": "Seek one independently source-derived relational coordinate not factorizing through these four standard columns. The finite candidates are an object-level path-resolved cone invariant or a predeclared nonlinear cross-relation forced by the body law; do not select it using the opened 2026 terminal.",
+  "claim_boundary": "This exact linear-span no-go does not exclude nonlinear Tau content, a richer full-cone descriptor, or observer-dependent readout physics. It excludes only extra-content claims for linear combinations of the current four standard coordinates."
+}

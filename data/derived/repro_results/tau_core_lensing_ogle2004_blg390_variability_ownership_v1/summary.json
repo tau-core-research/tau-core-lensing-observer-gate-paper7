@@ -1,0 +1,36 @@
+{
+  "schema": "Paper 7 OGLE-2004-BLG-390 variability ownership v1",
+  "event": "2004-BLG-390",
+  "ews_blend_fraction": 1.0,
+  "equal_complexity_models": {
+    "variable_lensed_source": {
+      "ownership": "source",
+      "chi2": 1570.824992495698,
+      "bic": 1708.2810634095506,
+      "parameter_count": 23,
+      "t0_hjd": 2453212.4828553447,
+      "tE_days": 29.38020781084732,
+      "u0": 0.3878568377934958
+    },
+    "variable_unlensed_blend": {
+      "ownership": "blend",
+      "chi2": 1575.791556823626,
+      "bic": 1713.2476277374785,
+      "parameter_count": 23,
+      "t0_hjd": 2453212.4691354786,
+      "tE_days": 28.605944200548638,
+      "u0": 0.41228072436968854
+    }
+  },
+  "delta_bic_source_over_blend": 4.966564327927927,
+  "source_ownership_strongly_preferred": false,
+  "finite_tangent_source_model": {
+    "chi2": 1410.4423915262141,
+    "bic": 1739.1416915376005,
+    "parameter_count": 55
+  },
+  "source_ownership_proved": false,
+  "verdict": "SOURCE_VARIABILITY_OWNERSHIP_UNRESOLVED",
+  "claim_boundary": "BIC preference and EWS f_bl=1 support source ownership but do not prove it. A mixed variable-source plus variable-blend model and independent color/astrometric information are unavailable.",
+  "next_finite_action": "Run frozen robustness checks over harmonic order, event window and block length. Promote only if the local epsilon remains nonzero with stable sign and source ownership remains preferred."
+}

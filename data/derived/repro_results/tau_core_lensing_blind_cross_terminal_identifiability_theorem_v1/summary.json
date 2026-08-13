@@ -1,0 +1,47 @@
+{
+  "schema": "Paper 7 blind cross-terminal identifiability theorem v1",
+  "formal_objects": {
+    "X": "source-side observer-cone data",
+    "N": "predeclared standard nuisance design",
+    "Y": "held-out non-clock terminal",
+    "P_theta": "relational predictor f_theta(X)",
+    "Q_N": "I minus the orthogonal projector onto col(N)"
+  },
+  "theorem": "If theta is selected after opening Y and the evaluated predictor menu has output rank m, any m-dimensional terminal vector can be interpolated exactly; the in-sample association is therefore not independent evidence. If theta and the sign are frozen without Y, only Q_N P_theta is identifiable beyond standard nuisances. A nonzero held-out association can then falsify the conditional-null Y independent of P_theta given N.",
+  "exact_counterexample": {
+    "output_dimension": 4,
+    "design_rank": 4,
+    "adaptive_coefficients": [
+      1.3333333333333333,
+      -0.5666666666666667,
+      -0.6333333333333333,
+      1.0333333333333332
+    ],
+    "maximum_interpolation_error": 2.220446049250313e-16
+  },
+  "frozen_predictor_check": {
+    "nuisance_rank": 2,
+    "testable_prediction": [
+      0.10000000000000006,
+      -0.25,
+      0.19999999999999996,
+      -0.05000000000000007
+    ],
+    "testable_prediction_norm": 0.3391164991562634,
+    "novel_direction_exists": true
+  },
+  "necessary_conditions": [
+    "theta and predictor sign are measurable from X and training data only",
+    "Y and its residual remain unopened until the predictor is frozen",
+    "Q_N P_theta is nonzero on the validation sample",
+    "the terminal covariance and test statistic are predeclared",
+    "standard nuisance completion is included in N before Tau attribution"
+  ],
+  "not_proved": [
+    "that nature realizes a nonzero Tau relational cone law",
+    "that any current lens has complete physical causal-support data",
+    "that a successful non-clock association originates in observer time"
+  ],
+  "verdict": "BLIND_CROSS_TERMINAL_PROTOCOL_IS_MATHEMATICALLY_NECESSARY",
+  "claim_boundary": "This is an identifiability theorem plus a finite exact counterexample. It proves the necessity of source freezing and terminal blindness, not the existence of a physical Tau signal."
+}

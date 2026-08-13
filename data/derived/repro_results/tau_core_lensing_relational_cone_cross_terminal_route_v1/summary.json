@@ -1,0 +1,71 @@
+{
+  "schema": "Paper 7 relational-cone cross-terminal route audit v1",
+  "upstream_clock_verdict": "SIMPLE_SCALAR_OBSERVER_CLOCK_BRANCH_NOT_SUPPORTED",
+  "requirements": [
+    "source_frozen_relational_predictor",
+    "path_resolved_cone_structure",
+    "complete_causal_support",
+    "non_clock_terminal",
+    "terminal_held_out_before_predictor_selection",
+    "standard_completion_first"
+  ],
+  "routes": [
+    {
+      "route": "DES_J0408_local_cubic_to_F814W_arc",
+      "source_frozen_relational_predictor": true,
+      "path_resolved_cone_structure": true,
+      "complete_causal_support": false,
+      "non_clock_terminal": true,
+      "terminal_held_out_before_predictor_selection": false,
+      "standard_completion_first": true,
+      "result": "EXPLORATORY_F814W_ARC_TEMPLATE_ALIGNMENT_NULL_OR_NEGATIVE",
+      "predictor_status": "LOCAL_CUBIC_SUBTHRESHOLD_RESPONSE_SURVIVES_AFFINE_PROJECTION__STANDARD_FLEXION_COMPLETION_ONLY",
+      "confirmatory": false,
+      "passed_requirements": [
+        "source_frozen_relational_predictor",
+        "path_resolved_cone_structure",
+        "non_clock_terminal",
+        "standard_completion_first"
+      ],
+      "failed_requirements": [
+        "complete_causal_support",
+        "terminal_held_out_before_predictor_selection"
+      ],
+      "route_admissible_for_time_reopening": false
+    },
+    {
+      "route": "WGD2038_relational_cone_to_OIII_amplitude",
+      "source_frozen_relational_predictor": false,
+      "path_resolved_cone_structure": false,
+      "complete_causal_support": false,
+      "non_clock_terminal": true,
+      "terminal_held_out_before_predictor_selection": true,
+      "standard_completion_first": true,
+      "result": "OIII_VECTOR_COMPATIBLE_WITH_COARSE_SOURCE_FROZEN_STANDARD_PRIOR_PREDICTIVE_MOMENTS__NO_TAU_EXCESS",
+      "tau_specific_excess": false,
+      "confirmatory": false,
+      "passed_requirements": [
+        "non_clock_terminal",
+        "terminal_held_out_before_predictor_selection",
+        "standard_completion_first"
+      ],
+      "failed_requirements": [
+        "source_frozen_relational_predictor",
+        "path_resolved_cone_structure",
+        "complete_causal_support"
+      ],
+      "route_admissible_for_time_reopening": false
+    }
+  ],
+  "admissible_routes": [],
+  "verdict": "NO_CURRENT_ROUTE_SATISFIES_COMPLETE_CONE_AND_BLIND_NONCLOCK_TEST",
+  "finite_route_decision": "Do not reopen the clock branch. Freeze one relational cone predictor on a new lens system using imaging, redshift, environment, and lens-model information only; reserve a predeclared non-clock terminal and its covariance until the predictor and sign are frozen.",
+  "selected_terminal_class": "A path-sensitive amplitude or extended-source morphology observable not used in constructing the lens/cone predictor.",
+  "rejection_rules": [
+    "no predictor coefficient may be selected from the held-out residual",
+    "no incomplete cone may be labeled complete causal support",
+    "no standard flux or morphology nuisance may be relabeled as Tau",
+    "no clock score may be opened before cross-terminal validation"
+  ],
+  "claim_boundary": "This audit selects an empirical protocol. It neither constructs the full parent morphology nor proves a Tau-specific cone law."
+}

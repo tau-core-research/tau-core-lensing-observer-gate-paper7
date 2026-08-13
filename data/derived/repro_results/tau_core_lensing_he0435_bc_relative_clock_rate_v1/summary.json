@@ -1,0 +1,44 @@
+{
+  "schema": "paper7 HE0435 B/C relative clock-rate transfer v1",
+  "source": {
+    "light_curve_url": "https://www.epfl.ch/labs/lastro/wp-content/uploads/2019/08/HE0435_Bonvin2016.rdb_.txt",
+    "light_curve_sha256": "00308d9e79fb514cb5b021f80044a2307ef8b0a6eeb5e195cd67c10ca494c79e",
+    "official_mock_url": "https://www.epfl.ch/labs/lastro/wp-content/uploads/2019/08/HE0435_PyCSmocks.tar.gz",
+    "official_mock_sha256": "fc245fae7489660608b25986384cdba68dea4308f1e7842ec34474c8fa51ce63",
+    "publication": "Bonvin et al. 2016, arXiv:1607.01790"
+  },
+  "transfer_policy": "DES-frozen smoothing factor N, linear extrinsic trend, 0.005 mag noise floor, and [0.9,1.1] stretch range; only the externally published target delay fixes the target-specific +/-3 d window",
+  "image_pair": "B/C",
+  "epoch_count": 884,
+  "published_delay_BC_days": 7.8,
+  "observed_fit": {
+    "delay_center_days": -7.8,
+    "delay_bounds_days": [
+      -10.8,
+      -4.8
+    ],
+    "shift_only_delay_days": -6.230550500862137,
+    "shift_stretch_delay_days": -6.341802182349975,
+    "relative_clock_rate_C_over_B": 1.0008982572542062,
+    "delta_chi_square_one_extra_parameter": 327.73158300359137
+  },
+  "official_unit_stretch_mock_count": 128,
+  "official_mock_null": {
+    "rate_quantiles_2p5_50_97p5": [
+      0.9994006617928218,
+      1.0020009997613033,
+      1.0050885671482308
+    ],
+    "improvement_quantiles_2p5_50_97p5": [
+      3.1237103284206156,
+      295.7915612495235,
+      866.8538346188813
+    ],
+    "empirical_two_sided_rate_p_value": 0.7906976744186046,
+    "empirical_improvement_p_value": 0.4496124031007752
+  },
+  "path_dependent_clock_rate_supported": false,
+  "tau_time_distortion_claim_allowed": false,
+  "verdict": "HE0435_BC_CLOCK_RATE_COMPATIBLE_WITH_OFFICIAL_UNIT_STRETCH_MOCKS",
+  "claim_boundary": "Independent-lens transfer of a frozen exploratory estimator. Even a positive result is not Tau-specific without source/path prediction, all-pair consistency, and external replication."
+}

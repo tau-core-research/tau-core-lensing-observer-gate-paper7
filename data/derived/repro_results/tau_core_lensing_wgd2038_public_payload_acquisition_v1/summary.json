@@ -1,6 +1,27 @@
 {
   "acquisition_attempts": [
     {
+      "evidence": "the authenticated Drive API and public HTTP endpoint both returned 404; the folder is deleted, moved, or not shared with the connected account",
+      "method": "Google Drive API connector plus public HTTP and gdown recheck on 2026-07-10",
+      "result": "not_found",
+      "route": "Google Drive folder recheck with authenticated connector",
+      "target": "https://drive.google.com/drive/folders/1CHfFN1O9mbTdnWpOabOcA4Ztu2AWi2Ko"
+    },
+    {
+      "evidence": "the repository has one commit; model_posteriors contains only README and .gitattributes; lenstronomy_modeling/temp is ignored; no alternate refs contain payloads",
+      "method": "full ref, single-commit, tree, ignore-policy, and unreachable-object inspection",
+      "result": "not_recoverable_from_git",
+      "route": "Git and Git-LFS recovery audit",
+      "target": "https://github.com/TDCOSMO/WGD2038-4008"
+    },
+    {
+      "evidence": "Gmail draft r-5009331864412003597 requests restored folder access, the published joblib outputs, or a compact image-order/parity/Fermat/nuisance table",
+      "method": "reviewable email draft prepared with exact 36-output or compact-export request",
+      "result": "draft_created_not_sent",
+      "route": "corresponding-author data request",
+      "target": "Anowar J. Shajib, corresponding/submitting author of arXiv:2202.11101"
+    },
+    {
       "evidence": "folder contents could not be retrieved; direct folder URL returned 404 from current environment",
       "method": "gdown folder download and direct unauthenticated browser/API checks",
       "result": "failed",
@@ -62,7 +83,7 @@
       "Treating the notebook hook as a materialized image-wise Fermat posterior."
     ]
   },
-  "content_hash": "beaa4d43e9885c1c88d770f3882b20bce54fd58b07e9ed66791ce837afe6d01f",
+  "content_hash": "ed8b72aeafa923bf77e6fc914d1a6b77ed8e6f324c6871f50903e5d497f5ee41",
   "counts": {
     "expected_files": 9,
     "expected_joblib_targets_from_fermat_notebook": 36,
@@ -83,7 +104,7 @@
   },
   "files": [
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/WGD2038-4008_const_processed.pkl",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/WGD2038-4008_const_processed.pkl",
       "present": true,
       "relative_path": "tdcosmo2025_wgd2038/WGD2038-4008_const_processed.pkl",
       "role": "processed WGD2038 Ddt/kappa/nuisance support",
@@ -93,7 +114,7 @@
       "t2_status": "support_only"
     },
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/desj2038_pl_nokext_nokin_dt_weight.csv",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/desj2038_pl_nokext_nokin_dt_weight.csv",
       "present": true,
       "relative_path": "tdcosmo2025_wgd2038/desj2038_pl_nokext_nokin_dt_weight.csv",
       "role": "compressed Ddt posterior with weights",
@@ -103,7 +124,7 @@
       "t2_status": "support_only_no_image_wise_fermat_or_parity"
     },
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/kappahist_2038_measured_3innermask_nobeta_removehandpicked_zgap-1.0_-1.0_fiducial_120_gal_120_oneoverr_22.5_med_increments2_2_emptymsk.cat",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/tdcosmo2025_wgd2038/kappahist_2038_measured_3innermask_nobeta_removehandpicked_zgap-1.0_-1.0_fiducial_120_gal_120_oneoverr_22.5_med_increments2_2_emptymsk.cat",
       "present": true,
       "relative_path": "tdcosmo2025_wgd2038/kappahist_2038_measured_3innermask_nobeta_removehandpicked_zgap-1.0_-1.0_fiducial_120_gal_120_oneoverr_22.5_med_increments2_2_emptymsk.cat",
       "role": "external-convergence/environment support",
@@ -113,7 +134,7 @@
       "t2_status": "support_only"
     },
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_metadata/README.md",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_metadata/README.md",
       "present": true,
       "relative_path": "wgd2038_repo_metadata/README.md",
       "role": "target repository metadata and Google Drive pointer",
@@ -123,7 +144,7 @@
       "t2_status": "provenance_support"
     },
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Fermat potentials and lens model comparisons.ipynb",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Fermat potentials and lens model comparisons.ipynb",
       "present": true,
       "relative_path": "wgd2038_repo_notebooks/Fermat potentials and lens model comparisons.ipynb",
       "role": "Fermat-potential design-vector notebook hook",
@@ -133,7 +154,7 @@
       "t2_status": "requires_missing_model_posterior_joblib_payload"
     },
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Check models and MCMC chain convergence.ipynb",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/wgd2038_repo_notebooks/Check models and MCMC chain convergence.ipynb",
       "present": true,
       "relative_path": "wgd2038_repo_notebooks/Check models and MCMC chain convergence.ipynb",
       "role": "model-chain/convergence notebook hook",
@@ -143,7 +164,7 @@
       "t2_status": "requires_missing_model_posterior_joblib_payload"
     },
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_ddt.tex",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_ddt.tex",
       "present": true,
       "relative_path": "arxiv_2406_02683_source_tables/tab_2038_ddt.tex",
       "role": "published WGD2038 Ddt constraints by model family",
@@ -153,7 +174,7 @@
       "t2_status": "published_summary_only_no_image_wise_fermat_or_parity"
     },
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_ddtmodel_nokext_nokin.tex",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_ddtmodel_nokext_nokin.tex",
       "present": true,
       "relative_path": "arxiv_2406_02683_source_tables/tab_2038_ddtmodel_nokext_nokin.tex",
       "role": "published WGD2038 Ddt constraints without kext or kinematics",
@@ -163,7 +184,7 @@
       "t2_status": "published_summary_only_no_image_wise_fermat_or_parity"
     },
     {
-      "path": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_lcdm_h0.tex",
+      "path": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload/arxiv_2406_02683_source_tables/tab_2038_lcdm_h0.tex",
       "present": true,
       "relative_path": "arxiv_2406_02683_source_tables/tab_2038_lcdm_h0.tex",
       "role": "published WGD2038 flat LCDM H0 and Ddt constraints",
@@ -357,13 +378,13 @@
       "model_id": "2038_run214_1_1_2_0_0_shortened"
     }
   ],
-  "payload_root": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload",
+  "payload_root": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/data/external/wgd2038_public_payload",
   "purpose": "Record the locally acquired public WGD2038 support payload and preserve the remaining model-posterior/joblib blocker without promoting it to a real-data T2 result.",
   "schema": "paper7 WGD2038 public payload acquisition manifest v1",
   "verdict": {
     "WGD2038_public_support_payload_acquired": true,
     "claim_level": "source_backed_partial_payload_acquisition_not_real_data_detection",
-    "next_finite_action": "Obtain access to the WGD2038 Google Drive payload or reconstruct the notebook's joblib/temp outputs from reproducible model products, then extract image labels, parity/order, dphi_AB/dphi_AC/dphi_AD, Ddt contributions, and model-sample IDs into a frozen audit table.",
+    "next_finite_action": "After user review, send the prepared corresponding-author data request. In parallel, reconstruct the notebook's joblib/temp outputs from reproducible model products, then extract image labels, parity/order, dphi_AB/dphi_AC/dphi_AD, Ddt contributions, and model-sample IDs into a frozen audit table.",
     "real_data_T2_sampling_authorized": false,
     "remaining_blocker": "The public support files are present locally, but the target-specific model-posterior/joblib payload that drives the Fermat notebook is not publicly retrievable from the checked routes. Therefore Paper 7 still lacks the per-sample image/model table needed for a no-T2 reproduction and T2 perturbation test."
   }

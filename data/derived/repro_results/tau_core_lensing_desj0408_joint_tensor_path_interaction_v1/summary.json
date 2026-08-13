@@ -1,0 +1,479 @@
+{
+  "schema": "paper7 DES J0408 joint tensor-path interaction audit v1",
+  "target": "DES J0408-5354 quasar host at z=2.375",
+  "input_scope": "five matched image-only positive host tensors and lens models; no delay data, residual, or time endpoint",
+  "interaction_definition": "c_mi=tr(R_mi Q_m R_mi^T)/(tr(Q_m) tr(R_mi R_mi^T)/2)-1",
+  "interpretation": "c_mi is zero for an isotropic source and removes the stable scalar source size; nonzero values require source anisotropy aligned with the local path operator",
+  "exact_decomposition": "c_mi=e_Q_m e_R_mi cos(2 Delta_phi_mi), where e_Q is source anisotropy, e_R is anisotropy of R_mi^T R_mi, and the final factor is their normalized traceless-tensor inner product",
+  "maximum_decomposition_error": 4.336808689942018e-19,
+  "model_count": 5,
+  "path_count": 4,
+  "all_joint_transports_finite": true,
+  "models": [
+    {
+      "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+      "source_anisotropy_vector": [
+        0.14131690687116552,
+        0.1537144724181277
+      ],
+      "source_anisotropy_amplitude": 0.2088027949966595,
+      "path_interactions": [
+        0.09786159625778135,
+        0.0011719541232551034,
+        -0.08404525970598375,
+        0.08918277605288893
+      ],
+      "path_decomposition": [
+        {
+          "path_index": 0,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": 0.09786159625778135,
+          "path_anisotropy_amplitude": 0.6636444595157579,
+          "relative_axis_alignment_cosine": 0.7062208165353582,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 1,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": 0.0011719541232551034,
+          "path_anisotropy_amplitude": 0.9256255257306831,
+          "relative_axis_alignment_cosine": 0.006063717794790856,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 2,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": -0.08404525970598375,
+          "path_anisotropy_amplitude": 0.4443011652742582,
+          "relative_axis_alignment_cosine": -0.9059400584030702,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 3,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": 0.08918277605288893,
+          "path_anisotropy_amplitude": 0.8073631942779875,
+          "relative_axis_alignment_cosine": 0.5290244348935288,
+          "decomposition_error": 0.0
+        }
+      ],
+      "all_path_transports_finite": true
+    },
+    {
+      "model_id": "0408_run909_0_2_0_0_0_1_1_0",
+      "source_anisotropy_vector": [
+        0.5014254411210262,
+        -0.10798465923539523
+      ],
+      "source_anisotropy_amplitude": 0.5129212021681304,
+      "path_interactions": [
+        -0.08151641797129094,
+        -0.40791495257593346,
+        -0.20208074448001279,
+        0.4202829870586262
+      ],
+      "path_decomposition": [
+        {
+          "path_index": 0,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": -0.08151641797129094,
+          "path_anisotropy_amplitude": 0.6677632542800217,
+          "relative_axis_alignment_cosine": -0.23799723908100806,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 1,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": -0.40791495257593346,
+          "path_anisotropy_amplitude": 0.9358738891664073,
+          "relative_axis_alignment_cosine": -0.8497704856204203,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 2,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": -0.20208074448001279,
+          "path_anisotropy_amplitude": 0.4608428569163936,
+          "relative_axis_alignment_cosine": -0.8549120163313247,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 3,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": 0.4202829870586262,
+          "path_anisotropy_amplitude": 0.8199584665227249,
+          "relative_axis_alignment_cosine": 0.9993078619669061,
+          "decomposition_error": 0.0
+        }
+      ],
+      "all_path_transports_finite": true
+    },
+    {
+      "model_id": "0408_run902_0_0_1_0_0_1_1_0",
+      "source_anisotropy_vector": [
+        0.10558943365931832,
+        0.1168145554176164
+      ],
+      "source_anisotropy_amplitude": 0.1574635477115607,
+      "path_interactions": [
+        0.07433159895022423,
+        0.00236726000548515,
+        -0.06265306718127839,
+        0.06666143414986858
+      ],
+      "path_decomposition": [
+        {
+          "path_index": 0,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": 0.07433159895022423,
+          "path_anisotropy_amplitude": 0.6538804075305582,
+          "relative_axis_alignment_cosine": 0.7219300481396662,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 1,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": 0.00236726000548515,
+          "path_anisotropy_amplitude": 0.9265245091084634,
+          "relative_axis_alignment_cosine": 0.016225908279597898,
+          "decomposition_error": 4.336808689942018e-19
+        },
+        {
+          "path_index": 2,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": -0.06265306718127839,
+          "path_anisotropy_amplitude": 0.44118034052927346,
+          "relative_axis_alignment_cosine": -0.901874594435079,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 3,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": 0.06666143414986858,
+          "path_anisotropy_amplitude": 0.8149487588398957,
+          "relative_axis_alignment_cosine": 0.519474600925614,
+          "decomposition_error": 0.0
+        }
+      ],
+      "all_path_transports_finite": true
+    },
+    {
+      "model_id": "0408_run905_0_1_0_0_0_1_1_0",
+      "source_anisotropy_vector": [
+        0.07941585863673392,
+        0.20835972904070743
+      ],
+      "source_anisotropy_amplitude": 0.22298128910051337,
+      "path_interactions": [
+        0.13812851573121754,
+        0.08103382800470404,
+        -0.06335417555526335,
+        0.03432018322914754
+      ],
+      "path_decomposition": [
+        {
+          "path_index": 0,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": 0.13812851573121754,
+          "path_anisotropy_amplitude": 0.6703489828468225,
+          "relative_axis_alignment_cosine": 0.9240893572155015,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 1,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": 0.08103382800470404,
+          "path_anisotropy_amplitude": 0.9313456638606881,
+          "relative_axis_alignment_cosine": 0.3901997946300907,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 2,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": -0.06335417555526335,
+          "path_anisotropy_amplitude": 0.4413010820814621,
+          "relative_axis_alignment_cosine": -0.6438309194333169,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 3,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": 0.03432018322914754,
+          "path_anisotropy_amplitude": 0.8144944796853573,
+          "relative_axis_alignment_cosine": 0.18897007295803053,
+          "decomposition_error": 0.0
+        }
+      ],
+      "all_path_transports_finite": true
+    },
+    {
+      "model_id": "0408_run1006_0_1_1_0_0_1_1_0",
+      "source_anisotropy_vector": [
+        0.39207218715442105,
+        0.1353158852686303
+      ],
+      "source_anisotropy_amplitude": 0.41476618563485196,
+      "path_interactions": [
+        0.08718800685798267,
+        -0.17778354204742708,
+        -0.18309593643716549,
+        0.2979201832963334
+      ],
+      "path_decomposition": [
+        {
+          "path_index": 0,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": 0.08718800685798267,
+          "path_anisotropy_amplitude": 0.6567668144641566,
+          "relative_axis_alignment_cosine": 0.32006796352804523,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 1,
+          "parity": "positive",
+          "morse_index": 0,
+          "interaction": -0.17778354204742708,
+          "path_anisotropy_amplitude": 0.9306013428001672,
+          "relative_axis_alignment_cosine": -0.4606006398949027,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 2,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": -0.18309593643716549,
+          "path_anisotropy_amplitude": 0.4416715518352135,
+          "relative_axis_alignment_cosine": -0.999484206551598,
+          "decomposition_error": 0.0
+        },
+        {
+          "path_index": 3,
+          "parity": "negative",
+          "morse_index": 1,
+          "interaction": 0.2979201832963334,
+          "path_anisotropy_amplitude": 0.8256602781775987,
+          "relative_axis_alignment_cosine": 0.8699518023686732,
+          "decomposition_error": 0.0
+        }
+      ],
+      "all_path_transports_finite": true
+    }
+  ],
+  "paths": [
+    {
+      "path_index": 0,
+      "values": [
+        0.09786159625778135,
+        -0.08151641797129094,
+        0.07433159895022423,
+        0.13812851573121754,
+        0.08718800685798267
+      ],
+      "mean": 0.06319865996518297,
+      "sample_standard_deviation": 0.08434732852095989,
+      "range": 0.21964493370250848,
+      "signs": [
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "sign_stable": false
+    },
+    {
+      "path_index": 1,
+      "values": [
+        0.0011719541232551034,
+        -0.40791495257593346,
+        0.00236726000548515,
+        0.08103382800470404,
+        -0.17778354204742708
+      ],
+      "mean": -0.10022509049798325,
+      "sample_standard_deviation": 0.1964368290372297,
+      "range": 0.4889487805806375,
+      "signs": [
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "sign_stable": false
+    },
+    {
+      "path_index": 2,
+      "values": [
+        -0.08404525970598375,
+        -0.20208074448001279,
+        -0.06265306718127839,
+        -0.06335417555526335,
+        -0.18309593643716549
+      ],
+      "mean": -0.11904583667194076,
+      "sample_standard_deviation": 0.06801462554359532,
+      "range": 0.1394276772987344,
+      "signs": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "sign_stable": true
+    },
+    {
+      "path_index": 3,
+      "values": [
+        0.08918277605288893,
+        0.4202829870586262,
+        0.06666143414986858,
+        0.03432018322914754,
+        0.2979201832963334
+      ],
+      "mean": 0.18167351275737292,
+      "sample_standard_deviation": 0.16877728517377924,
+      "range": 0.3859628038294787,
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sign_stable": true
+    }
+  ],
+  "path_pairs": [
+    {
+      "first_path": 0,
+      "second_path": 1,
+      "differences": [
+        -0.09668964213452624,
+        -0.3263985346046425,
+        -0.07196433894473908,
+        -0.05709468772651349,
+        -0.26497154890540975
+      ],
+      "mean_difference": -0.1634237504631662,
+      "sign_stable": true
+    },
+    {
+      "first_path": 0,
+      "second_path": 2,
+      "differences": [
+        -0.1819068559637651,
+        -0.12056432650872184,
+        -0.13698466613150262,
+        -0.20148269128648089,
+        -0.27028394329514815
+      ],
+      "mean_difference": -0.18224449663712372,
+      "sign_stable": true
+    },
+    {
+      "first_path": 0,
+      "second_path": 3,
+      "differences": [
+        -0.008678820204892412,
+        0.5017994050299172,
+        -0.00767016480035565,
+        -0.10380833250207,
+        0.21073217643835074
+      ],
+      "mean_difference": 0.11847485279218997,
+      "sign_stable": false
+    },
+    {
+      "first_path": 1,
+      "second_path": 2,
+      "differences": [
+        -0.08521721382923886,
+        0.20583420809592068,
+        -0.06502032718676354,
+        -0.1443880035599674,
+        -0.005312394389738406
+      ],
+      "mean_difference": -0.018820746173957504,
+      "sign_stable": false
+    },
+    {
+      "first_path": 1,
+      "second_path": 3,
+      "differences": [
+        0.08801082192963383,
+        0.8281979396345597,
+        0.06429417414438343,
+        -0.046713644775556507,
+        0.4757037253437605
+      ],
+      "mean_difference": 0.2818986032553562,
+      "sign_stable": false
+    },
+    {
+      "first_path": 2,
+      "second_path": 3,
+      "differences": [
+        0.1732280357588727,
+        0.622363731538639,
+        0.12931450133114697,
+        0.09767435878441089,
+        0.4810161197334989
+      ],
+      "mean_difference": 0.3007193494293137,
+      "sign_stable": true
+    }
+  ],
+  "sign_stable_paths": [
+    2,
+    3
+  ],
+  "sign_stable_path_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "same_parity_morse_class_opposite_sign_paths": [
+    [
+      2,
+      3
+    ]
+  ],
+  "parity_morse_only_explanation_excluded_on_target": true,
+  "ordinal_tensor_path_interaction_materialized": true,
+  "amplitude_stable_tensor_path_interaction_materialized": false,
+  "sfh_02_relative_morphology_materialized": false,
+  "sfh_03_body_conditioned_path_pullback_materialized": false,
+  "theta_M_identified": false,
+  "h_tau_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "JOINT_TENSOR_PATH_ORDINAL_STRUCTURE_FOUND__AMPLITUDE_UNSTABLE",
+  "claim_boundary": "A sign-stable or ordered image-only tensor/path interaction is a source-forward morphology control. It does not promote the model-unstable tensor, identify Theta_M, construct h_tau, use time delays, or establish observer-time distortion."
+}

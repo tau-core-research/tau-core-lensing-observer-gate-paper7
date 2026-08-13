@@ -1,7 +1,10 @@
 import json
+import math
 import subprocess
 import zipfile
 from pathlib import Path
+
+import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -921,6 +924,165 @@ def test_derived_tables_exist():
     ]
     missing = [str(path.relative_to(ROOT)) for path in required if not path.exists()]
     assert missing == []
+
+
+def test_wgd2038_mass_family_completion_closes_delay_only_candidate():
+    result = load_result("tau_core_lensing_wgd2038_mass_family_delay_rank_v1")
+    assert result["all_mean_median_mode_variants_strict_rank_three"] is True
+    assert result["median_mass_family_nuisance_rank"] == 3
+    assert result["remaining_dimension_after_mass_family_resolution"] == 0
+    assert result["prior_two_summary_candidate_absorbed_fraction"] == 1.0
+    assert result["published_family_level_delay_space_saturated"] is True
+    assert result["independent_delay_shape_candidate_survives"] is False
+    assert result["confirmatory_tau_score_allowed"] is False
+    assert result["time_distortion_detection_claim_allowed"] is False
+
+
+def test_wgd2038_later_integrated_kinematics_is_not_a_fourth_terminal():
+    result = load_result(
+        "tau_core_lensing_wgd2038_kinematic_holdout_independence_v1"
+    )
+    assert result["measurement_level_independent_observation"] is True
+    assert result["terminal_type_independent_of_prior_kinematics"] is False
+    assert result["published_delay_vectors_already_conditioned_on_gmos_kinematics"] is True
+    assert result["can_append_xshooter_as_naive_fourth_coordinate"] is False
+    assert abs(result["xshooter_minus_primary_gmos_sigma"] - 0.13349824784699543) < 1e-12
+    assert result["independent_tau_or_time_coordinate_materialized"] is False
+    assert result["confirmatory_tau_score_allowed"] is False
+
+
+def test_wgd2038_oiii_is_distinct_but_not_tau_identified():
+    result = load_result("tau_core_lensing_wgd2038_oiii_distinct_terminal_v1")
+    assert result["excluded_from_tdcosmo_ix_lens_constraints"] is True
+    assert result["distinct_from_time_delay_terminal"] is True
+    assert result["distinct_from_integrated_stellar_kinematic_terminal"] is True
+    assert result["distinct_fourth_terminal_type_materialized"] is True
+    assert result["largest_component"] == "B_over_A"
+    assert abs(result["largest_absolute_component_sigma"] - math.sqrt(5.0)) < 1e-12
+    assert result["joint_delay_flux_model_ensemble_materialized"] is False
+    assert result["tau_specific_coordinate_materialized"] is False
+    assert result["confirmatory_tau_score_allowed"] is False
+
+
+def test_wgd2038_standard_flux_completion_is_not_publicly_scoreable():
+    result = load_result(
+        "tau_core_lensing_wgd2038_standard_flux_completion_payload_v1"
+    )
+    assert result["status"] == "PASS"
+    assert result["standard_nuisance_model_family_materialized"] is True
+    assert result["source_frozen_warm_dust_forward_configuration_materialized"] is True
+    assert result["oiii_specific_forward_configuration_materialized"] is False
+    assert result["standard_nuisance_posterior_predictive_materialized"] is False
+    assert result["standard_completion_reproducible_from_public_payload"] is False
+    assert result["standard_model_explains_or_fails_oiii_decidable"] is False
+    assert result["tau_specific_coordinate_materialized"] is False
+    assert result["confirmatory_tau_score_allowed"] is False
+    assert result["time_distortion_detection_claim_allowed"] is False
+
+
+def test_wgd2038_cross_amplitude_terminals_are_compatible_but_not_identical():
+    result = load_result(
+        "tau_core_lensing_wgd2038_cross_amplitude_stability_v1"
+    )
+    assert result["same_lens_geometry"] is True
+    assert result["same_physical_source_region"] is False
+    assert result["source_size_dependent_transfer_expected"] is True
+    assert abs(result["mahalanobis_squared"] - 5.324428560803165) < 1e-12
+    assert abs(
+        result["gaussian_chi_square_survival_probability"] - 0.1495250898282812
+    ) < 1e-12
+    assert result["strong_cross_terminal_incompatibility_detected"] is False
+    assert result["shared_tau_or_time_coordinate_identified"] is False
+    assert result["confirmatory_tau_score_allowed"] is False
+
+
+def test_wgd2038_prior_predictive_runtime_path_is_smoke_only():
+    result = load_result(
+        "tau_core_lensing_wgd2038_warm_dust_prior_predictive_smoke_v1"
+    )
+    assert result["n_realizations"] == 2
+    assert result["flux_conditioning_used"] is False
+    assert result["image_data_reconstruction_used"] is False
+    assert len(result["predicted_flux_ratios"]) == 2
+    assert result["one_sample_writer_bug_encountered"] is True
+    assert result["scientific_scoring_allowed"] is False
+
+
+def test_wgd2038_n64_prior_predictive_is_full_rank_but_unconditioned():
+    result = load_result(
+        "tau_core_lensing_wgd2038_warm_dust_prior_predictive_n64_v1"
+    )
+    covariance = np.asarray(result["predicted_ratio_covariance"], dtype=float)
+    assert result["n_realizations"] == 64
+    assert result["predeclared_scope"] == "coarse prior-predictive distribution diagnostic"
+    assert np.linalg.matrix_rank(covariance) == 3
+    assert result["binomial_worst_case_standard_error"] == 0.0625
+    assert result["flux_conditioning_used"] is False
+    assert result["scientific_scoring_allowed"] is False
+    assert result["verdict"] == (
+        "BOUNDED_UNCONDITIONED_PRIOR_PREDICTIVE_ENSEMBLE__NO_SCIENTIFIC_SCORING"
+    )
+
+
+def test_wgd2038_n256_likelihood_reweighting_meets_frozen_coarse_ess():
+    result = load_result(
+        "tau_core_lensing_wgd2038_warm_dust_likelihood_reweighting_n256_v1"
+    )
+    assert result["input_realizations"] == 256
+    assert result["effective_sample_size"] >= 20
+    assert result["maximum_normalized_weight"] < 0.11
+    assert result["weighted_covariance_rank"] == 3
+    assert result["stable_conditioned_inference_allowed"] is True
+    assert result["tau_or_observer_time_scoring_allowed"] is False
+
+
+def test_wgd2038_reduced_numerics_match_paired_publication_effort():
+    result = load_result(
+        "tau_core_lensing_wgd2038_warm_dust_numerical_effort_stability_v1"
+    )
+    assert result["paired_realizations"] == 8
+    assert result["reduced_pso_iterations"] == 10
+    assert result["publication_pso_iterations"] == 80
+    assert result["all_paired_ratio_rows_exactly_equal"] is True
+    assert result["maximum_absolute_ratio_difference"] == 0
+    assert result["general_optimizer_equivalence_proved"] is False
+    assert result["tau_or_observer_time_scoring_allowed"] is False
+
+
+def test_wgd2038_oiii_source_kernel_is_source_frozen_but_n64_ess_is_low():
+    result = load_result(
+        "tau_core_lensing_wgd2038_oiii_source_kernel_completion_v1"
+    )
+    assert result["source_freeze"]["fwhm_pc_prior"] == [20.0, 50.0]
+    assert result["source_freeze"]["selected_without_using_wgd2038_flux_residual"] is True
+    assert result["prior_realizations"] == 64
+    assert result["likelihood_effective_sample_size"] < 2
+    assert result["coarse_conditioned_diagnostic_materialized"] is False
+    assert result["tau_or_observer_time_scoring_allowed"] is False
+
+
+def test_wgd2038_oiii_surrogate_transport_is_rejected():
+    result = load_result(
+        "tau_core_lensing_wgd2038_oiii_source_kernel_surrogate_v1"
+    )
+    assert result["surrogate_transport_to_n256_authorized"] is False
+    assert all(
+        model["transport_eligible"] is False
+        for model in result["models"].values()
+    )
+    assert result["tau_or_observer_time_scoring_allowed"] is False
+
+
+def test_wgd2038_oiii_is_coarsely_standard_prior_predictive_compatible():
+    result = load_result(
+        "tau_core_lensing_wgd2038_oiii_prior_predictive_compatibility_v1"
+    )
+    assert result["prediction_realizations"] == 64
+    assert result["predictive_covariance_rank"] == 3
+    assert result["gaussian_moment_survival_probability"] > 0.39
+    assert result["strong_standard_prior_predictive_incompatibility_detected"] is False
+    assert result["tau_specific_excess_materialized"] is False
+    assert result["observer_time_scoring_allowed"] is False
 
 
 def test_arxiv_source_package_exists_and_is_source_only():

@@ -1,0 +1,267 @@
+{
+  "schema": "paper7 DES J0408 tensor-path ordinal holdout v1",
+  "target": "DES J0408-5354 quasar host at z=2.375",
+  "freeze_rule": "The five inequalities were discovered on the top-five imaging-evidence models and frozen before opening the remaining eligible SPEMD models.",
+  "input_scope": "remaining image-only SPEMD model posteriors; no delay data, residual, or time endpoint",
+  "discovery_model_ids": [
+    "0408_run1001_0_0_0_0_0_1_1_0",
+    "0408_run1006_0_1_1_0_0_1_1_0",
+    "0408_run902_0_0_1_0_0_1_1_0",
+    "0408_run905_0_1_0_0_0_1_1_0",
+    "0408_run909_0_2_0_0_0_1_1_0"
+  ],
+  "holdout_model_ids": [
+    "0408_run910_0_2_1_0_0_1_1_0",
+    "0408_run903_0_0_0_1_0_1_1_0",
+    "0408_run908_0_1_1_1_0_1_1_0",
+    "0408_run912_0_2_1_1_0_1_1_0",
+    "0408_run911_0_2_0_1_0_1_1_0",
+    "0408_run904_0_0_1_1_0_1_1_0",
+    "0408_run907_0_1_0_1_0_1_1_0"
+  ],
+  "holdout_model_count": 7,
+  "all_holdout_positive_solvers_valid": true,
+  "frozen_signature": [
+    "path_2_negative",
+    "path_3_positive",
+    "path_1_below_path_0",
+    "path_2_below_path_0",
+    "path_3_above_path_2"
+  ],
+  "signature_pass_counts": {
+    "path_2_negative": 7,
+    "path_3_positive": 7,
+    "path_1_below_path_0": 7,
+    "path_2_below_path_0": 7,
+    "path_3_above_path_2": 7
+  },
+  "full_signature_pass_count": 7,
+  "exact_ordinal_signature_replication": true,
+  "rows": [
+    {
+      "model_id": "0408_run910_0_2_1_0_0_1_1_0",
+      "solver_success": true,
+      "minimum_source_brightness": -5.605818995283765e-15,
+      "second_moment_tensor_arcsec2": [
+        [
+          0.017389947389404248,
+          0.000881870772836662
+        ],
+        [
+          0.000881870772836662,
+          0.006203318039187235
+        ]
+      ],
+      "moment_trace_arcsec2": 0.023593265428591484,
+      "moment_area_character_arcsec2": 0.010348800813680043,
+      "path_interactions": [
+        0.0437376993411851,
+        -0.2702672645863662,
+        -0.22200041808114312,
+        0.3745772582169322
+      ],
+      "frozen_signature_tests": {
+        "path_2_negative": true,
+        "path_3_positive": true,
+        "path_1_below_path_0": true,
+        "path_2_below_path_0": true,
+        "path_3_above_path_2": true
+      },
+      "full_signature_pass": true
+    },
+    {
+      "model_id": "0408_run903_0_0_0_1_0_1_1_0",
+      "solver_success": true,
+      "minimum_source_brightness": -1.1763046891499341e-14,
+      "second_moment_tensor_arcsec2": [
+        [
+          0.01053444685695305,
+          0.0007977883060706737
+        ],
+        [
+          0.0007977883060706737,
+          0.006783910165208652
+        ]
+      ],
+      "moment_trace_arcsec2": 0.017318357022161703,
+      "moment_area_character_arcsec2": 0.008415953596380567,
+      "path_interactions": [
+        0.060285350445318686,
+        -0.08350112075205474,
+        -0.1080277894542242,
+        0.16310061116860064
+      ],
+      "frozen_signature_tests": {
+        "path_2_negative": true,
+        "path_3_positive": true,
+        "path_1_below_path_0": true,
+        "path_2_below_path_0": true,
+        "path_3_above_path_2": true
+      },
+      "full_signature_pass": true
+    },
+    {
+      "model_id": "0408_run908_0_1_1_1_0_1_1_0",
+      "solver_success": true,
+      "minimum_source_brightness": -5.95821675116313e-15,
+      "second_moment_tensor_arcsec2": [
+        [
+          0.027493880326240887,
+          0.002058356140070433
+        ],
+        [
+          0.002058356140070433,
+          0.015083930276690366
+        ]
+      ],
+      "moment_trace_arcsec2": 0.042577810602931254,
+      "moment_area_character_arcsec2": 0.020260279955551477,
+      "path_interactions": [
+        0.06256791491023028,
+        -0.1289124608711285,
+        -0.14054368996862743,
+        0.22830626275641364
+      ],
+      "frozen_signature_tests": {
+        "path_2_negative": true,
+        "path_3_positive": true,
+        "path_1_below_path_0": true,
+        "path_2_below_path_0": true,
+        "path_3_above_path_2": true
+      },
+      "full_signature_pass": true
+    },
+    {
+      "model_id": "0408_run912_0_2_1_1_0_1_1_0",
+      "solver_success": true,
+      "minimum_source_brightness": 7.197089215495368e-16,
+      "second_moment_tensor_arcsec2": [
+        [
+          0.021035615130954425,
+          0.0004982195541159697
+        ],
+        [
+          0.0004982195541159697,
+          0.007236402380268636
+        ]
+      ],
+      "moment_trace_arcsec2": 0.02827201751122306,
+      "moment_area_character_arcsec2": 0.012327771602359856,
+      "path_interactions": [
+        0.02620708321824594,
+        -0.29876466314588157,
+        -0.2174636452625882,
+        0.39482996750939847
+      ],
+      "frozen_signature_tests": {
+        "path_2_negative": true,
+        "path_3_positive": true,
+        "path_1_below_path_0": true,
+        "path_2_below_path_0": true,
+        "path_3_above_path_2": true
+      },
+      "full_signature_pass": true
+    },
+    {
+      "model_id": "0408_run911_0_2_0_1_0_1_1_0",
+      "solver_success": true,
+      "minimum_source_brightness": 2.5929657313390775e-18,
+      "second_moment_tensor_arcsec2": [
+        [
+          0.013631932742331149,
+          -0.0007728769148737093
+        ],
+        [
+          -0.0007728769148737093,
+          0.004974040410816981
+        ]
+      ],
+      "moment_trace_arcsec2": 0.01860597315314813,
+      "moment_area_character_arcsec2": 0.00819807572619024,
+      "path_interactions": [
+        -0.06046647185423193,
+        -0.3631801125790137,
+        -0.18577346305948572,
+        0.38611812578839944
+      ],
+      "frozen_signature_tests": {
+        "path_2_negative": true,
+        "path_3_positive": true,
+        "path_1_below_path_0": true,
+        "path_2_below_path_0": true,
+        "path_3_above_path_2": true
+      },
+      "full_signature_pass": true
+    },
+    {
+      "model_id": "0408_run904_0_0_1_1_0_1_1_0",
+      "solver_success": true,
+      "minimum_source_brightness": -5.311091254630257e-15,
+      "second_moment_tensor_arcsec2": [
+        [
+          0.02776002702267858,
+          -0.0021983194377532137
+        ],
+        [
+          -0.0021983194377532137,
+          0.011855630752237643
+        ]
+      ],
+      "moment_trace_arcsec2": 0.03961565777491623,
+      "moment_area_character_arcsec2": 0.018007776700709403,
+      "path_interactions": [
+        -0.0721067670815645,
+        -0.34115091872604175,
+        -0.14238619673901198,
+        0.34297291763870774
+      ],
+      "frozen_signature_tests": {
+        "path_2_negative": true,
+        "path_3_positive": true,
+        "path_1_below_path_0": true,
+        "path_2_below_path_0": true,
+        "path_3_above_path_2": true
+      },
+      "full_signature_pass": true
+    },
+    {
+      "model_id": "0408_run907_0_1_0_1_0_1_1_0",
+      "solver_success": true,
+      "minimum_source_brightness": -1.0939515003446043e-14,
+      "second_moment_tensor_arcsec2": [
+        [
+          0.01805294628311936,
+          0.0013708410087770286
+        ],
+        [
+          0.0013708410087770286,
+          0.011108699284410033
+        ]
+      ],
+      "moment_trace_arcsec2": 0.029161645567529395,
+      "moment_area_character_arcsec2": 0.014094876600574978,
+      "path_interactions": [
+        0.05986730029327125,
+        -0.10046618883354375,
+        -0.11177110646318733,
+        0.18161031864264054
+      ],
+      "frozen_signature_tests": {
+        "path_2_negative": true,
+        "path_3_positive": true,
+        "path_1_below_path_0": true,
+        "path_2_below_path_0": true,
+        "path_3_above_path_2": true
+      },
+      "full_signature_pass": true
+    }
+  ],
+  "independent_target_replication": false,
+  "sfh_02_relative_morphology_materialized": false,
+  "sfh_03_body_conditioned_path_pullback_materialized": false,
+  "theta_M_identified": false,
+  "h_tau_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "ORDINAL_SIGNATURE_REPLICATED_ON_INTERNAL_MODEL_HOLDOUT",
+  "claim_boundary": "A lower-ranked within-target model holdout tests model-family robustness only. Even exact replication is not a second-target validation, complete morphology handoff, body clock, h_tau, observer-time distortion, or Tau detection."
+}

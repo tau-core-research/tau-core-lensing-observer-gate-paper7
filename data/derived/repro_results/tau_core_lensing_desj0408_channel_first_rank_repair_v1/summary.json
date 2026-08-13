@@ -1,0 +1,173 @@
+{
+  "schema": "paper7 DES J0408 channel-first rank-repair atlas v1",
+  "inference_order": [
+    "generic_channel_effect",
+    "independent_replication",
+    "time_quantum_other_origin_classification"
+  ],
+  "source_manifest": {
+    "repository": "https://github.com/ajshajib/DESJ0408_time_delay_cosmography",
+    "delay_posterior_count": 24,
+    "velocity_dispersion_product_count": 480,
+    "external_convergence_product_count": 2,
+    "imaging": [
+      {
+        "band": "F160W",
+        "data_path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/data_f160w.hdf5",
+        "data_sha256": "45d70754643f366afcfc5e831812b96e2af26ee64586547cf136bb2554a568c4",
+        "data_fields": {
+          "background_rms": [],
+          "dec_at_xy_0": [],
+          "exposure_map": [
+            120,
+            120
+          ],
+          "image_data": [
+            120,
+            120
+          ],
+          "ra_at_xy_0": [],
+          "transform_pix2angle": [
+            2,
+            2
+          ]
+        },
+        "psf_path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/psf_f160w.hdf5",
+        "psf_sha256": "bcc9f50427dbcfc9bcf66d2576e6d3a2522e326d8d297926d9dc52be718b7f1d",
+        "psf_fields": {
+          "kernel_point_source": [
+            61,
+            61
+          ],
+          "psf_error_map": [
+            61,
+            61
+          ]
+        }
+      },
+      {
+        "band": "F475X",
+        "data_path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/data_f475x.hdf5",
+        "data_sha256": "58b91faf24d112a7721768a1eea68fdea78b04efe9041d3c65dc920f833ec7eb",
+        "data_fields": {
+          "background_rms": [],
+          "dec_at_xy_0": [],
+          "exposure_map": [
+            180,
+            180
+          ],
+          "image_data": [
+            180,
+            180
+          ],
+          "ra_at_xy_0": [],
+          "transform_pix2angle": [
+            2,
+            2
+          ]
+        },
+        "psf_path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/psf_f475x.hdf5",
+        "psf_sha256": "e3bf39a5e2b78ed97838d57a1c65aa269f7155773d83e5bb62c9ea4386f8eb98",
+        "psf_fields": {
+          "kernel_point_source": [
+            61,
+            61
+          ],
+          "psf_error_map": [
+            61,
+            61
+          ]
+        }
+      },
+      {
+        "band": "F814W",
+        "data_path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/data_f814w.hdf5",
+        "data_sha256": "e62bb52664290688376f6761af0d8fde24cbaf3f7caa00b2e69b6f60b993cea4",
+        "data_fields": {
+          "background_rms": [],
+          "dec_at_xy_0": [],
+          "exposure_map": [
+            180,
+            180
+          ],
+          "image_data": [
+            180,
+            180
+          ],
+          "ra_at_xy_0": [],
+          "transform_pix2angle": [
+            2,
+            2
+          ]
+        },
+        "psf_path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/psf_f814w.hdf5",
+        "psf_sha256": "8c1523ab5811fcf7afbc14b97310b128229e30983cfd3b414804580216837123",
+        "psf_fields": {
+          "kernel_point_source": [
+            61,
+            61
+          ],
+          "psf_error_map": [
+            61,
+            61
+          ]
+        }
+      }
+    ]
+  },
+  "routes": [
+    {
+      "route_id": "CRR-A",
+      "name": "kinematics_environment_nuisance_reduction",
+      "role": "reduce_nuisance_rank",
+      "source_support": {
+        "velocity_dispersion_file_count": 480,
+        "external_convergence_file_count": 2
+      },
+      "independent_of_delay_measurement": true,
+      "adds_new_channel_observable": false,
+      "current_readiness": "SOURCE_PRESENT_LINKAGE_AND_CONDITIONAL_RANK_AUDIT_OPEN",
+      "promotion_gate": "show that source-frozen kinematic/environment conditioning lowers covariance-whitened delay nuisance rank below two without observed-delay selection"
+    },
+    {
+      "route_id": "CRR-B",
+      "name": "leave_one_band_out_multiband_prediction",
+      "role": "expand_observable_codomain",
+      "source_support": {
+        "hst_band_count": 3,
+        "bands": [
+          "F160W",
+          "F475X",
+          "F814W"
+        ],
+        "image_and_psf_products_complete": true
+      },
+      "independent_of_delay_measurement": true,
+      "adds_new_channel_observable": true,
+      "current_readiness": "RAW_PRODUCTS_PRESENT_TWO_BAND_REFIT_NOT_RUN",
+      "promotion_gate": "fit geometry/source on two bands, predict the third without refitting, then survive PSF/extinction/microlensing/calibration residualization"
+    },
+    {
+      "route_id": "CRR-C",
+      "name": "in_sample_astrometry_or_model_parity",
+      "role": "forbidden_false_rank_repair",
+      "source_support": {
+        "delay_file_count": 24
+      },
+      "independent_of_delay_measurement": false,
+      "adds_new_channel_observable": false,
+      "current_readiness": "FORBIDDEN_AS_INDEPENDENT_ROW",
+      "promotion_gate": "none; model-derived or in-fit quantities remain nuisance/model coordinates"
+    }
+  ],
+  "priority": [
+    "CRR-A",
+    "CRR-B"
+  ],
+  "next_finite_action": "Run CRR-A first as a finite conditional-rank audit; if exact or declared practical nuisance rank stays two, execute a two-band fit / third-band prediction for CRR-B.",
+  "verdict": "DESJ0408_CHANNEL_FIRST_RANK_REPAIR_ROUTES_SOURCE_BACKED",
+  "claim_boundary": {
+    "allowed": "Two source-backed routes can test a generic channel component without assuming time or quantum origin.",
+    "forbidden": "No generic channel effect or origin class is detected by this atlas."
+  }
+}

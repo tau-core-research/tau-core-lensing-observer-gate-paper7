@@ -1,0 +1,9 @@
+field_id,symbol,source_owner,required_shape,endpoint_blind_requirement,current_status
+SFH_01_BODY_CLOCK,Theta_M,stabilized_morphological_body,one source-frozen scalar per evaluated body/path section,must not use measured time-delay residuals,rank_one_common_scalar_class_materialized_but_clock_law_nonunique
+SFH_02_RELATIVE_MORPHOLOGY,U_BF_Phi_M,paper8_morphology_forward_readout,three relative coordinates in one frozen common frame,must be frozen from morphology/source data before delay opening,paper8_bridge_mapping_required
+SFH_03_PATH_PULLBACK,R_gamma_i,observer_source_path_geometry,one declared pullback for every lens image path,"image order, parity and path rule fixed before delay scoring",formula_required
+SFH_04_TIME_COVECTOR,a_O,body_descriptor_descent,quotient-basic one-form or discrete path cochain,derived from Theta_M and U_BF_Phi_M without fitted delay direction,numeric_source_forward_map_missing
+SFH_05_TAU_PREDICTOR,h_tau,equal_endpoint_path_contrast,one contrast per independent image path against a frozen reference,h_tau fixed before observed delays enter the analysis,blocked_by_SFH_01_to_SFH_04
+SFH_06_NUISANCE_JACOBIAN,J_GR,paper7_no_T2_model_ensemble,complete independently constrained standard-model tangent matrix,basis frozen without using h_tau fit improvement,delay_only_rank_two_DES_available_extended_joint_space_missing
+SFH_07_RANK_REPAIR,Y_aux,held_out_image_or_path_sensitive_readout,at least one observable outside the two-delay nuisance span,predeclared before Tau projection,required_by_DES_delay_only_no_go
+SFH_08_HOLDOUT,H_holdout,independent_lens_or_frozen_band,one untouched replication endpoint,"all maps, units and decision thresholds frozen upstream",WGD2038_posterior_payload_blocked_LOBO_negative_control_available

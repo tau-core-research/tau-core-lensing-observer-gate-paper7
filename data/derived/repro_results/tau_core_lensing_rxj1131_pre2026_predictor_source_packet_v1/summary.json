@@ -1,0 +1,132 @@
+{
+  "schema": "Paper 7 RXJ1131 pre-2026 predictor-source packet v1",
+  "target": "RXJ1131-1231",
+  "source_manifest": "data/external/rxj1131_pre2026_predictor_source_manifest.json",
+  "source_arxiv_ids": [
+    "astro-ph/0602309",
+    "1208.6010",
+    "1503.02074",
+    "1710.09908"
+  ],
+  "image_labels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "lens_centered_image_geometry": {
+    "A": {
+      "dx_arcsec": 2.016,
+      "dy_arcsec": -0.61,
+      "radius_arcsec": 2.106265890147775,
+      "polar_angle_rad": -0.29382150130254947
+    },
+    "B": {
+      "dx_arcsec": 2.048,
+      "dy_arcsec": 0.578,
+      "radius_arcsec": 2.1280009398494166,
+      "polar_angle_rad": 0.27507219796770704
+    },
+    "C": {
+      "dx_arcsec": 1.4260000000000002,
+      "dy_arcsec": -1.73,
+      "radius_arcsec": 2.2419580727569373,
+      "polar_angle_rad": -0.8814263599648928
+    },
+    "D": {
+      "dx_arcsec": -1.096,
+      "dy_arcsec": 0.274,
+      "radius_arcsec": 1.1297309414192391,
+      "polar_angle_rad": 2.896613990462929
+    }
+  },
+  "pairwise_image_separations_arcsec": {
+    "A_B": 1.1884308982856344,
+    "A_C": 1.2658988901172163,
+    "A_D": 3.235119781399137,
+    "B_C": 2.3903447450106436,
+    "B_D": 3.158663008299556,
+    "C_D": 3.2212575184235117
+  },
+  "satellite_relation": {
+    "dx_from_lens_arcsec": 0.08600000000000008,
+    "dy_from_lens_arcsec": 0.529,
+    "separation_from_lens_arcsec": 0.5359449598606185,
+    "einstein_radius_arcsec": {
+      "value": 0.2,
+      "sigma": 0.01
+    }
+  },
+  "body_and_environment_inputs": {
+    "lens_model": {
+      "main_einstein_radius_arcsec": {
+        "value": 1.64,
+        "minus": 0.02,
+        "plus": 0.01
+      },
+      "main_axis_ratio": {
+        "value": 0.763,
+        "minus": 0.008,
+        "plus": 0.005
+      },
+      "main_mass_position_angle_deg": {
+        "value": 115.8,
+        "sigma": 0.5
+      },
+      "radial_slope": {
+        "value": 1.95,
+        "minus": 0.04,
+        "plus": 0.05
+      },
+      "satellite_einstein_radius_arcsec": {
+        "value": 0.2,
+        "sigma": 0.01
+      },
+      "external_shear": {
+        "value": 0.089,
+        "sigma": 0.006,
+        "position_angle_deg": 92.0,
+        "position_angle_minus_deg": 2.0,
+        "position_angle_plus_deg": 1.0
+      },
+      "convergence_gradient_per_arcsec": {
+        "value": 0.0051,
+        "minus": 0.0003,
+        "plus": 0.0004,
+        "position_angle_deg": 87.0,
+        "position_angle_sigma_deg": 2.0
+      }
+    },
+    "line_of_sight": {
+      "relative_galaxy_count_45arcsec": {
+        "value": 1.4,
+        "sigma": 0.05,
+        "magnitude_interval_f814w": [
+          18.5,
+          24.5
+        ]
+      },
+      "foreground_cluster": {
+        "redshift": 0.1,
+        "angular_separation_arcsec": 158.0,
+        "direction": "northeast",
+        "xray_temperature_kev": 1.2,
+        "xray_luminosity_2_10kev_erg_s": 1.7e+42,
+        "beta_model_core_radius_arcsec": 4.2
+      },
+      "complete_object_level_cone_catalog_materialized_here": false
+    },
+    "redshifts": {
+      "lens": 0.295,
+      "source": 0.658
+    }
+  },
+  "terminal_embargo_present": true,
+  "forbidden_terminal_value_tokens_found": [],
+  "coordinate_free_geometry_materialized": true,
+  "complete_physical_causal_support_materialized": false,
+  "predictor_formula_selected": false,
+  "verdict": "RXJ1131_PRE2026_SOURCE_PACKET_MATERIALIZED__OBJECT_LEVEL_CONE_INCOMPLETE",
+  "next_finite_action": "Construct one dimensionless path-relational descriptor from the lens-centered image geometry, satellite relation, shear/gradient axes, and LOS summaries without opening any terminal residual.",
+  "claim_boundary": "This packet freezes predictor-side observables and invariants. It is not a full cone, a Tau law, a fitted flux predictor, or observer-time evidence."
+}

@@ -1,0 +1,136 @@
+{
+  "schema": "paper7 WGD2038 warm-dust bounded prior-predictive batch v1",
+  "seed": 20384008,
+  "n_realizations": 2,
+  "predeclared_scope": "technical smoke only",
+  "flux_acceptance_tolerance": "infinity",
+  "flux_conditioning_used": false,
+  "image_data_reconstruction_used": false,
+  "predicted_magnifications": [
+    [
+      3.57971,
+      4.4037,
+      3.66783,
+      1.79045
+    ],
+    [
+      2.91236,
+      3.36501,
+      2.22965,
+      1.0812
+    ]
+  ],
+  "predicted_flux_ratios": [
+    [
+      1.2301834506147145,
+      1.0246165192152437,
+      0.5001662145816281
+    ],
+    [
+      1.1554237800271943,
+      0.7655818648793418,
+      0.371245313079427
+    ]
+  ],
+  "predicted_ratio_mean": [
+    1.1928036153209542,
+    0.8950991920472927,
+    0.43570576383052756
+  ],
+  "predicted_ratio_covariance": [
+    [
+      0.0027945041731772665,
+      0.009682672714452093,
+      0.004819042064075348
+    ],
+    [
+      0.009682672714452093,
+      0.03354947607346009,
+      0.016697490578647764
+    ],
+    [
+      0.004819042064075348,
+      0.016697490578647764,
+      0.008310299422070126
+    ]
+  ],
+  "predicted_ratio_quantile_levels": [
+    0.05,
+    0.16,
+    0.5,
+    0.84,
+    0.95
+  ],
+  "predicted_ratio_quantiles": [
+    [
+      1.1591617635565703,
+      0.7785335975961368,
+      0.377691358154537
+    ],
+    [
+      1.1673853273211976,
+      0.807027409573086,
+      0.39187265731977916
+    ],
+    [
+      1.1928036153209542,
+      0.8950991920472927,
+      0.43570576383052756
+    ],
+    [
+      1.2182219033207111,
+      0.9831709745214994,
+      0.47953887034127596
+    ],
+    [
+      1.2264454670853384,
+      1.0116647864984485,
+      0.4937201695065181
+    ]
+  ],
+  "sampled_parameter_rows": [
+    [
+      -1.1160298,
+      5.9260062,
+      1.0423406,
+      -1.8900229,
+      13.21585,
+      1.1808988,
+      1.0,
+      0.0932192,
+      1.0,
+      0.0020738,
+      20384008.0
+    ],
+    [
+      0.081598,
+      5.9628251,
+      1.0519134,
+      -1.9487268,
+      13.3662231,
+      8.2932134,
+      1.0,
+      0.1577986,
+      1.0,
+      0.0013343,
+      20384009.0
+    ]
+  ],
+  "exact_environment": {
+    "samana_commit": "d57329d47baf26c52ed48c1068e6697d86370bf9",
+    "pyhalo_commit": "64ea7a235a474e6b90dca016f1bb2141503d3b3f",
+    "lenstronomy_commit": "370d932c8ded11da8b1e3c772266a87ead143136",
+    "additional_runtime_dependencies": [
+      "tqdm",
+      "colossus",
+      "mcfit",
+      "cobyqa"
+    ]
+  },
+  "one_sample_writer_bug_encountered": true,
+  "one_sample_writer_bug_resolution": "Use the minimal two-realization smoke because the exact samana commit indexes a one-row parameter array as two-dimensional.",
+  "binomial_worst_case_standard_error": 0.35355339059327373,
+  "minimum_samples_for_tail_probability_claim": "not established; this unconditioned batch is not a tail-probability endpoint",
+  "scientific_scoring_allowed": false,
+  "verdict": "TECHNICAL_PRIOR_PREDICTIVE_PATH_EXECUTED__ENSEMBLE_NOT_YET_MATERIALIZED"
+}

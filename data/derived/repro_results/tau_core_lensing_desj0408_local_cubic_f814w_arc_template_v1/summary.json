@@ -1,0 +1,43 @@
+{
+  "schema": "paper7 DES J0408 local cubic F814W arc template v1",
+  "fold": "LOBO-F814W already opened",
+  "subthreshold_galaxy_count": 178,
+  "quasar_exclusion_radius_arcsec": 0.16,
+  "active_arc_pixel_count": 20912,
+  "template_rms": 4.494706183051025e-05,
+  "residual_rms": 0.03543856983345785,
+  "template_residual_cosine": -0.03930925402595058,
+  "profiled_template_amplitude": -30.99343287783412,
+  "fractional_unweighted_sse_reduction": 0.001545217452073084,
+  "fixed_amplitude_fractional_unweighted_sse_reduction": -0.00010132117995869903,
+  "quasar_exclusion_radius_stress": {
+    "0.12": {
+      "active_pixel_count": 21000,
+      "template_residual_cosine": -0.04000878513454381,
+      "fixed_amplitude_fractional_sse_reduction": -0.00014672747408287098
+    },
+    "0.16": {
+      "active_pixel_count": 20912,
+      "template_residual_cosine": -0.03930925402595058,
+      "fixed_amplitude_fractional_sse_reduction": -0.00010132117995869903
+    },
+    "0.20": {
+      "active_pixel_count": 20796,
+      "template_residual_cosine": -0.03861238663821023,
+      "fixed_amplitude_fractional_sse_reduction": -7.915332473464058e-05
+    },
+    "0.24": {
+      "active_pixel_count": 20658,
+      "template_residual_cosine": -0.044990244114191676,
+      "fixed_amplitude_fractional_sse_reduction": -8.552746430561878e-05
+    }
+  },
+  "source_forward_template_materialized": true,
+  "endpoint_was_previously_opened": true,
+  "confirmatory_evidence_allowed": false,
+  "exploratory_alignment_positive": false,
+  "tau_specific_information_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "EXPLORATORY_F814W_ARC_TEMPLATE_ALIGNMENT_NULL_OR_NEGATIVE",
+  "claim_boundary": "The LOS template is source-derived, but the F814W endpoint was opened by the earlier generic residual analysis. The score is unweighted and exploratory; it cannot validate the standard LOS completion or Tau Core. A new band/system with frozen covariance is required for confirmation."
+}

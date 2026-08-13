@@ -1,0 +1,38 @@
+{
+  "schema": "paper7 DES J0408 CRR-B F814W heldout score v1",
+  "status": "NEGATIVE_RESULT_PRESERVED",
+  "freeze": "data/derived/repro_results/tau_core_lensing_desj0408_crr_b_f814w_holdout_freeze_v1/summary.json",
+  "fold": "LOBO-F814W",
+  "primary_with_frozen_psf_uncertainty": {
+    "log_likelihood": -8138.039753596626,
+    "chi2": 16276.079507193252,
+    "n_active_pixels": 21115,
+    "n_profiled_linear_parameters": 40,
+    "degrees_of_freedom": 21075,
+    "reduced_chi2": 0.772293215050688,
+    "masked_residual_rms": 0.0970224262629782,
+    "masked_data_rms": 0.21983911097049713,
+    "linear_parameters_finite": true,
+    "model_error_map_finite": true
+  },
+  "psf_uncertainty_omission_stress": {
+    "log_likelihood": -61105.1828262554,
+    "chi2": 122210.3656525108,
+    "n_active_pixels": 21115,
+    "n_profiled_linear_parameters": 40,
+    "degrees_of_freedom": 21075,
+    "reduced_chi2": 5.798831110439421,
+    "masked_residual_rms": 0.07235882928825181,
+    "masked_data_rms": 0.21983911097049713,
+    "linear_parameters_finite": true,
+    "model_error_map_finite": true
+  },
+  "primary_excess_residual_energy_above_unit_noise_expectation": false,
+  "population_null_calibrated": false,
+  "other_lobo_folds_scored": false,
+  "independent_lens_replication": false,
+  "interpretation": "The first frozen heldout fold has no excess whitened spatial residual energy. It therefore does not supply a generic channel-effect candidate. This single negative fold neither identifies a channel origin nor excludes channel effects in other observables, folds, or lens systems.",
+  "channel_effect_candidate": false,
+  "time_or_quantum_attribution_allowed": false,
+  "verdict": "CRR_B_F814W_NO_EXCESS_CHANNEL_RESIDUAL_FIRST_FOLD_NEGATIVE"
+}

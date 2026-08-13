@@ -1,0 +1,65 @@
+{
+  "schema": "paper7 WGD2038 warm-dust likelihood reweighting audit v1",
+  "input_artifact": "data/derived/repro_results/tau_core_lensing_wgd2038_warm_dust_prior_predictive_n256_v1/summary.json",
+  "input_realizations": 256,
+  "observed_ratio_vector": [
+    1.209,
+    0.939,
+    0.43
+  ],
+  "measurement_covariance": [
+    [
+      0.0013163769158846795,
+      0.00012240530553126578,
+      9.1145427724005e-05
+    ],
+    [
+      0.00012240530553126578,
+      0.0008747728497371431,
+      5.562121299135247e-05
+    ],
+    [
+      9.1145427724005e-05,
+      5.562121299135247e-05,
+      0.00020187066122068058
+    ]
+  ],
+  "chi_square_min_median_max": [
+    0.18667068852716745,
+    40.74961167654102,
+    1472.8328831436045
+  ],
+  "effective_sample_size": 20.53507470643402,
+  "effective_sample_fraction": 0.08021513557200789,
+  "maximum_normalized_weight": 0.1062804612187696,
+  "samples_above_one_percent_weight": 26,
+  "weighted_ratio_mean": [
+    1.2117216840309708,
+    0.9315444874331584,
+    0.4318181555337255
+  ],
+  "weighted_ratio_covariance": [
+    [
+      0.0008591053555498005,
+      0.00012974944489676287,
+      3.295285544716589e-05
+    ],
+    [
+      0.00012974944489676287,
+      0.0007554864064161176,
+      0.0002147629505878658
+    ],
+    [
+      3.295285544716589e-05,
+      0.0002147629505878658,
+      0.00017632507168960357
+    ]
+  ],
+  "weighted_covariance_rank": 3,
+  "predeclared_minimum_effective_samples": 20.0,
+  "stable_conditioned_inference_allowed": true,
+  "tau_or_observer_time_scoring_allowed": false,
+  "verdict": "LIKELIHOOD_REWEIGHTED_COARSE_DIAGNOSTIC_MATERIALIZED",
+  "claim_boundary": "The published Gaussian flux likelihood can be evaluated on the bounded prior batch with ESS=20.54. Passing the coarse ESS threshold materializes only a weighted warm-dust diagnostic, not a posterior-predictive distribution or an OIII completion, and authorizes no Tau/time score.",
+  "next_finite_action": "Use the weighted warm-dust covariance only as a standard amplitude-terminal nuisance diagnostic; do not enlarge this ensemble again without a new endpoint requirement."
+}

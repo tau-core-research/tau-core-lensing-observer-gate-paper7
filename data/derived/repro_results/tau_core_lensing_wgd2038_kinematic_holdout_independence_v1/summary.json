@@ -1,0 +1,52 @@
+{
+  "schema": "paper7 WGD2038 kinematic-holdout independence audit v1",
+  "sources": [
+    {
+      "id": "TDCOSMO_IX",
+      "url": "https://arxiv.org/abs/2202.11101",
+      "used_for": "GMOS-S 296+/-19 km/s aperture dispersion and explicit statement that it was used in the frozen lens predictions"
+    },
+    {
+      "id": "MELO_2021",
+      "url": "https://arxiv.org/abs/2110.01575",
+      "used_for": "later X-Shooter 299+/-12 km/s dispersion and the reported GMOS-S 303+/-24 km/s crosscheck"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "GMOS_S_PRIMARY",
+      "value_km_s": 296.0,
+      "sigma_km_s": 19.0,
+      "used_in_frozen_tdcosmo_ix_delay_predictions": true
+    },
+    {
+      "id": "GMOS_S_SECONDARY",
+      "value_km_s": 303.0,
+      "sigma_km_s": 24.0,
+      "used_in_frozen_tdcosmo_ix_delay_predictions": true
+    },
+    {
+      "id": "VLT_XSHOOTER_HOLDOUT",
+      "value_km_s": 299.0,
+      "sigma_km_s": 12.0,
+      "used_in_frozen_tdcosmo_ix_delay_predictions": false
+    }
+  ],
+  "weighted_common_dispersion_km_s": 298.8807223855523,
+  "weighted_common_dispersion_sigma_km_s": 9.345125647765927,
+  "common_value_chi2": 0.05254561575435159,
+  "common_value_degrees_of_freedom": 2,
+  "xshooter_minus_primary_gmos_sigma": 0.13349824784699543,
+  "measurement_level_independent_observation": true,
+  "terminal_type_independent_of_prior_kinematics": false,
+  "same_aperture_averaged_velocity_dispersion_terminal": true,
+  "published_delay_vectors_already_conditioned_on_gmos_kinematics": true,
+  "joint_delay_kinematic_covariance_publicly_materialized": false,
+  "can_append_xshooter_as_naive_fourth_coordinate": false,
+  "mass_family_delay_rank_before_kinematic_holdout": 3,
+  "independent_tau_or_time_coordinate_materialized": false,
+  "confirmatory_tau_score_allowed": false,
+  "verdict": "XSHOOTER_CONFIRMS_FROZEN_WGD_KINEMATIC_TERMINAL__DOES_NOT_SUPPLY_AN_INDEPENDENT_FOURTH_READOUT",
+  "claim_boundary": "The later X-Shooter spectrum is an independent observation but not an independent terminal type: it refines the same integrated stellar-dispersion functional already used to condition the published delay predictions. Its 0.13-sigma agreement with the primary GMOS-S value supplies a standard consistency check, not an extra delay-orthogonal Tau coordinate. Appending it without an unconditioned model ensemble and joint covariance would double count.",
+  "next_finite_action": "Require spatially resolved kinematic shape, a genuinely distinct lensing observable, or a shared cross-lens relation. Do not append another integrated dispersion measurement to conditioned delays."
+}

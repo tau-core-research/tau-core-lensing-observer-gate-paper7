@@ -1,0 +1,70 @@
+{
+  "schema": "Paper 7 observer-clock empirical branch consolidation v1",
+  "tested_hypothesis_class": "A directly identifiable scalar clock-rate deformation that is either constant between resolved image paths or localized by the standard scalar microlensing strength of one periodic source.",
+  "tests": [
+    {
+      "geometry": "differential_multiple_image",
+      "target": "DES J0408 A/B",
+      "result": "calibrated_null",
+      "rate_p_value": 0.29961089494163423,
+      "improvement_p_value": 0.5369649805447471
+    },
+    {
+      "geometry": "differential_multiple_image",
+      "target": "HE 0435 B/C",
+      "result": "independent_calibrated_null",
+      "rate_p_value": 0.7906976744186046,
+      "improvement_p_value": 0.4496124031007752
+    },
+    {
+      "geometry": "same_source_local_microlensing",
+      "target": "OGLE-2004-BLG-081",
+      "result": "shape_conditioned_null",
+      "epsilon": 0.0,
+      "delta_chi2": 0.0
+    },
+    {
+      "geometry": "same_source_local_microlensing",
+      "target": "OGLE-2002-BLG-103",
+      "result": "shape_conditioned_null",
+      "epsilon": 0.0,
+      "delta_chi2": 0.0
+    },
+    {
+      "geometry": "same_source_local_microlensing",
+      "target": "OGLE-2004-BLG-390",
+      "result": "sign_unstable_candidate_rejected",
+      "epsilon_range": [
+        -0.03023799874186964,
+        0.03155049654980029
+      ],
+      "sign_stable": false
+    },
+    {
+      "geometry": "same_source_local_microlensing",
+      "target": "KMT-2016-BLG-1194",
+      "result": "independent_source_template_null",
+      "epsilon": 0.0,
+      "site_error_rescaled_delta_chi2": 0.0
+    }
+  ],
+  "independent_measurement_geometries": 2,
+  "test_targets": 6,
+  "positive_robust_targets": [],
+  "verdict": "SIMPLE_SCALAR_OBSERVER_CLOCK_BRANCH_NOT_SUPPORTED",
+  "conditional_no_go": "Within the frozen estimators, public data, nuisance families, and tested amplitudes, no robust directly identifiable scalar observer-clock deformation survives.",
+  "not_excluded": [
+    "a common-mode factor that cancels from every tested comparison",
+    "a non-scalar or tensorial observer-source response",
+    "a response controlled by complete causal-support morphology rather than magnification alone",
+    "a terminal effect below the sensitivity of these data",
+    "a different physical readout not reducible to clock rate"
+  ],
+  "forbidden_next_moves": [
+    "refit a closed event with another event-specific waveform",
+    "relax source ownership after seeing a residual",
+    "identify any remaining lensing residual directly with Tau time"
+  ],
+  "next_finite_action": "Replace the scalar magnification-localized clock ansatz by one source-frozen relational predictor derived from complete observer-source causal-support morphology, then test it on a held-out non-clock terminal before reopening time.",
+  "claim_boundary": "This is a conditional empirical no-go for a narrow model class, not a falsification of Tau Core, observer dependence, channel complexity, or the existence of time as a terminal readout."
+}

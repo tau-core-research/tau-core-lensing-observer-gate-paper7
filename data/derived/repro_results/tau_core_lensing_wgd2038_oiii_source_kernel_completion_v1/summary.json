@@ -1,0 +1,75 @@
+{
+  "schema": "paper7 WGD2038 OIII source-kernel completion audit v1",
+  "oiii_input_artifact": "data/derived/repro_results/tau_core_lensing_wgd2038_oiii_prior_predictive_n64_v1/summary.json",
+  "paired_warm_dust_artifact": "data/derived/repro_results/tau_core_lensing_wgd2038_warm_dust_prior_predictive_n64_v1/summary.json",
+  "source_freeze": {
+    "profile": "circular Gaussian",
+    "fwhm_pc_prior": [
+      20.0,
+      50.0
+    ],
+    "selection_source": "Nierenberg et al. 2020 Section 6.1: independently drawn 20-50 pc Gaussian FWHM",
+    "selected_without_using_wgd2038_flux_residual": true
+  },
+  "observed_oiii_ratios": [
+    1.16,
+    0.92,
+    0.46
+  ],
+  "observed_diagonal_sigma": [
+    0.02,
+    0.02,
+    0.01
+  ],
+  "prior_realizations": 64,
+  "prior_ratio_mean": [
+    1.2078239207625578,
+    0.978716356629011,
+    0.4533218108499837
+  ],
+  "prior_ratio_covariance_rank": 3,
+  "likelihood_effective_sample_size": 1.153033973829939,
+  "likelihood_effective_sample_fraction": 0.0180161558410928,
+  "maximum_normalized_weight": 0.9307511908707586,
+  "weighted_ratio_mean": [
+    1.156466508241538,
+    0.923361409068295,
+    0.4519264225663109
+  ],
+  "weighted_ratio_covariance": [
+    [
+      0.0008952001488021523,
+      0.0003784365679926342,
+      6.496680696426183e-06
+    ],
+    [
+      0.0003784365679926342,
+      0.000910782789604543,
+      0.0001777454796094601
+    ],
+    [
+      6.4966806964261756e-06,
+      0.0001777454796094601,
+      8.276747591600084e-05
+    ]
+  ],
+  "weighted_covariance_rank": 3,
+  "paired_source_kernel_maximum_absolute_ratio_shift": 0.09984904206718626,
+  "paired_source_kernel_rms_ratio_shift": [
+    0.013741873464202867,
+    0.007846642051509319,
+    0.0034324651464106514
+  ],
+  "paired_source_kernel_mean_ratio_shift": [
+    -0.0007454623558224328,
+    -0.0008212866571215664,
+    -0.00046178078546422856
+  ],
+  "minimum_effective_samples_for_coarse_conditioning": 20.0,
+  "coarse_conditioned_diagnostic_materialized": false,
+  "full_oiii_measurement_covariance_materialized": false,
+  "joint_delay_oiii_ensemble_materialized": false,
+  "tau_or_observer_time_scoring_allowed": false,
+  "verdict": "SOURCE_FROZEN_OIII_FORWARD_KERNEL_MATERIALIZED__N64_DIAGONAL_LIKELIHOOD_ESS_INSUFFICIENT",
+  "claim_boundary": "The 20-50 pc Gaussian OIII source kernel is source-frozen and the standard forward family is executable. Diagonal likelihood weighting is not a substitute for the unpublished full OIII ratio covariance or a joint delay-flux ensemble, and it authorizes no Tau or observer-time inference."
+}

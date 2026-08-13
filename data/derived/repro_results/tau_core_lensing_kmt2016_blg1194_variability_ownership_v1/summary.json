@@ -1,0 +1,130 @@
+{
+  "schema": "Paper 7 KMT-2016-BLG-1194 variability ownership v1",
+  "event": "KMT-2016-BLG-1194",
+  "models": "Equal-complexity point-lens plus Fourier RRc models. In the source-owned model the periodic basis is multiplied by the microlensing amplification; in the blend-owned model it is not.",
+  "frozen_lens_parameters": {
+    "t0_hjd_minus_2450000": 7601.62287,
+    "tE_days": 46.28,
+    "u0": 0.356
+  },
+  "frozen_rrc_ephemeris": {
+    "period_days": 0.28348449,
+    "maximum_epoch_hjd_minus_2450000": 7000.12282
+  },
+  "quality_filter": "0.005 < mag_error < 0.2, 14 < I < 22, 0 < FWHM < 10",
+  "cells": [
+    {
+      "harmonic_order": 4,
+      "site": "KMTA19_I.pysis",
+      "points": 605,
+      "blend_owned_chi2": 37658.985377208344,
+      "source_owned_chi2": 36413.165632595104,
+      "delta_chi2_source_over_blend": 1245.81974461324,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 4,
+      "site": "KMTC19_I.pysis",
+      "points": 925,
+      "blend_owned_chi2": 16351.438444343767,
+      "source_owned_chi2": 14787.59273177828,
+      "delta_chi2_source_over_blend": 1563.8457125654859,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 4,
+      "site": "KMTS19_I.pysis",
+      "points": 829,
+      "blend_owned_chi2": 17471.024154559604,
+      "source_owned_chi2": 17149.010519475465,
+      "delta_chi2_source_over_blend": 322.0136350841385,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 6,
+      "site": "KMTA19_I.pysis",
+      "points": 605,
+      "blend_owned_chi2": 37350.427553952526,
+      "source_owned_chi2": 36116.777648999516,
+      "delta_chi2_source_over_blend": 1233.6499049530103,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 6,
+      "site": "KMTC19_I.pysis",
+      "points": 925,
+      "blend_owned_chi2": 16011.033724028415,
+      "source_owned_chi2": 14643.473637637366,
+      "delta_chi2_source_over_blend": 1367.5600863910495,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 6,
+      "site": "KMTS19_I.pysis",
+      "points": 829,
+      "blend_owned_chi2": 17322.260503254787,
+      "source_owned_chi2": 17022.85182769806,
+      "delta_chi2_source_over_blend": 299.40867555672594,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 8,
+      "site": "KMTA19_I.pysis",
+      "points": 605,
+      "blend_owned_chi2": 37108.64886353392,
+      "source_owned_chi2": 35724.740851182265,
+      "delta_chi2_source_over_blend": 1383.9080123516542,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 8,
+      "site": "KMTC19_I.pysis",
+      "points": 925,
+      "blend_owned_chi2": 15956.78568914588,
+      "source_owned_chi2": 14466.739825416178,
+      "delta_chi2_source_over_blend": 1490.0458637297015,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 8,
+      "site": "KMTS19_I.pysis",
+      "points": 829,
+      "blend_owned_chi2": 17128.10662151673,
+      "source_owned_chi2": 16805.885497942225,
+      "delta_chi2_source_over_blend": 322.2211235745053,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 10,
+      "site": "KMTA19_I.pysis",
+      "points": 605,
+      "blend_owned_chi2": 36931.19900215218,
+      "source_owned_chi2": 35559.39484114155,
+      "delta_chi2_source_over_blend": 1371.8041610106302,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 10,
+      "site": "KMTC19_I.pysis",
+      "points": 925,
+      "blend_owned_chi2": 15927.58872636287,
+      "source_owned_chi2": 14455.54055767259,
+      "delta_chi2_source_over_blend": 1472.0481686902804,
+      "source_preferred": true
+    },
+    {
+      "harmonic_order": 10,
+      "site": "KMTS19_I.pysis",
+      "points": 829,
+      "blend_owned_chi2": 17079.572339826682,
+      "source_owned_chi2": 16786.61879928891,
+      "delta_chi2_source_over_blend": 292.9535405377719,
+      "source_preferred": true
+    }
+  ],
+  "source_preferred_cells": 12,
+  "total_cells": 12,
+  "verdict": "SOURCE_OWNERSHIP_SUPPORTED_ACROSS_SITES_AND_SHAPE_ORDERS",
+  "claim_boundary": "This supports assignment of the periodic RRc variability to the microlensed source under the frozen point-lens family. The large absolute chi-square indicates remaining photometric or shape misspecification, so this is not a clock anomaly or Tau signal.",
+  "next_finite_action": "Freeze an enriched no-clock RRc plus microlensing null with site-specific calibration and slow standard residual structure; then test one event-localized phase-rate coefficient conditionally."
+}

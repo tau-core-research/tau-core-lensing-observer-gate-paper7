@@ -1,0 +1,88 @@
+{
+  "schema": "paper7 DES J0408 moment-area character audit v1",
+  "target": "DES J0408-5354 quasar host at z=2.375",
+  "input_scope": "twelve image-only positivity-constrained source moments; no delay data, residual, or time endpoint",
+  "model_count": 12,
+  "rows": [
+    {
+      "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+      "trace_arcsec2": 0.02178121426350373,
+      "area_character_arcsec2": 0.010650553824971133
+    },
+    {
+      "model_id": "0408_run909_0_2_0_0_0_1_1_0",
+      "trace_arcsec2": 0.026387457179953624,
+      "area_character_arcsec2": 0.011325967555765148
+    },
+    {
+      "model_id": "0408_run902_0_0_1_0_0_1_1_0",
+      "trace_arcsec2": 0.020413934944259998,
+      "area_character_arcsec2": 0.010079633514245448
+    },
+    {
+      "model_id": "0408_run905_0_1_0_0_0_1_1_0",
+      "trace_arcsec2": 0.028897478220908247,
+      "area_character_arcsec2": 0.01408495922901826
+    },
+    {
+      "model_id": "0408_run1006_0_1_1_0_0_1_1_0",
+      "trace_arcsec2": 0.029165203630903233,
+      "area_character_arcsec2": 0.013269118073890912
+    },
+    {
+      "model_id": "0408_run910_0_2_1_0_0_1_1_0",
+      "trace_arcsec2": 0.023593265428591484,
+      "area_character_arcsec2": 0.010348800813680043
+    },
+    {
+      "model_id": "0408_run903_0_0_0_1_0_1_1_0",
+      "trace_arcsec2": 0.017318357022161703,
+      "area_character_arcsec2": 0.008415953596380567
+    },
+    {
+      "model_id": "0408_run908_0_1_1_1_0_1_1_0",
+      "trace_arcsec2": 0.042577810602931254,
+      "area_character_arcsec2": 0.020260279955551477
+    },
+    {
+      "model_id": "0408_run912_0_2_1_1_0_1_1_0",
+      "trace_arcsec2": 0.02827201751122306,
+      "area_character_arcsec2": 0.012327771602359856
+    },
+    {
+      "model_id": "0408_run911_0_2_0_1_0_1_1_0",
+      "trace_arcsec2": 0.01860597315314813,
+      "area_character_arcsec2": 0.00819807572619024
+    },
+    {
+      "model_id": "0408_run904_0_0_1_1_0_1_1_0",
+      "trace_arcsec2": 0.03961565777491623,
+      "area_character_arcsec2": 0.018007776700709403
+    },
+    {
+      "model_id": "0408_run907_0_1_0_1_0_1_1_0",
+      "trace_arcsec2": 0.029161645567529395,
+      "area_character_arcsec2": 0.014094876600574978
+    }
+  ],
+  "mean_area_character_arcsec2": 0.012588647266111455,
+  "area_character_coefficient_of_variation": 0.2900063988982673,
+  "trace_coefficient_of_variation": 0.285942302720333,
+  "expanded_model_family_stability_threshold": 0.25,
+  "area_character_stable_on_expanded_model_family": false,
+  "trace_stable_on_expanded_model_family": false,
+  "area_character_more_stable_than_trace": false,
+  "exact_character_law": "m(Q)=sqrt(det Q); m(A Q A^T)/m(Q)=abs(det A); m(A2 A1 action)=abs(det A2) abs(det A1) m(Q)",
+  "sequential_deformation_character_error": 1.1102230246251565e-16,
+  "trace_not_multiplicative_under_natural_additive_moment_composition": true,
+  "trace_multiplicativity_counterexample_error": 2.0,
+  "moment_area_positive_character_materialized": true,
+  "parent_common_load_identified_with_moment_area_character": false,
+  "absolute_reference_area_selected": false,
+  "physical_theta_M_identified": false,
+  "a_O_identified": false,
+  "h_tau_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "MOMENT_AREA_CHARACTER_EXACT__EXPANDED_FAMILY_AMPLITUDE_UNSTABLE",
+  "claim_boundary": "The determinant-area is a mathematically natural positive character of sequential linear body deformations. Neither it nor the trace passes the frozen stability threshold on the expanded twelve-model family. The data do not identify a stable parent common load or select its reference area, so no physical clock follows."
+}

@@ -1,0 +1,223 @@
+{
+  "schema": "paper7 DES J0408 source morphology triangle v1",
+  "target": "DES J0408-5354",
+  "input_scope": "public lens/image posterior files only; no time-delay files, observed delays, delay residuals, or T2 score",
+  "selection_rule": "maximum imaging log evidence among exactly runtime-reconstructible SPEMD models carrying the declared three-component Sersic source topology",
+  "component_roles": [
+    "lensed quasar-host source",
+    "additional inner-arc source",
+    "additional outer-arc source"
+  ],
+  "source_component_redshifts": [
+    2.375,
+    2.228,
+    2.375
+  ],
+  "single_source_plane": false,
+  "relative_morphology_coordinates": {
+    "host_to_inner_arc_arcsec": 0.6918064112799391,
+    "host_to_outer_arc_arcsec": 0.8866249923348714,
+    "inner_to_outer_arc_arcsec": 0.8979815650034426
+  },
+  "oriented_edge_vectors_arcsec_in_source_frame": {
+    "host_to_inner_arc": [
+      -0.5581903183036785,
+      0.4086804121071457
+    ],
+    "host_to_outer_arc": [
+      0.218562910625007,
+      0.8592637145439903
+    ],
+    "inner_to_outer_arc": [
+      0.7767532289286856,
+      0.45058330243684463
+    ]
+  },
+  "edge_closure_rule": "host_to_inner_arc + inner_to_outer_arc = host_to_outer_arc",
+  "selected_model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+  "selected_model_imaging_log_evidence": -25087.1684558,
+  "eligible_model_count": 12,
+  "top_five_edge_coefficient_of_variation": [
+    0.01564463312547963,
+    0.06635080279706507,
+    0.048160415571117964
+  ],
+  "top_five_maximum_coefficient_of_variation": 0.06635080279706507,
+  "stability_rule": "all three top-five edge coefficients of variation < 0.10",
+  "observer_field_geometry_calibrator_materialized": true,
+  "source_frozen_relative_morphology_materialized": false,
+  "sfh_02_relative_morphology_materialized": false,
+  "theta_M_identified": false,
+  "path_pullback_identified": false,
+  "a_O_identified": false,
+  "time_score_authorized": false,
+  "verdict": "DESJ0408_MULTISOURCE_TRIANGLE_NOT_SINGLE_BODY",
+  "claim_boundary": "Delay-blind multisource observer-field geometry. It is not a single morphological-body descriptor, body clock, path pullback, observer-time covector, time distortion, or Tau detection.",
+  "sensitivity": [
+    {
+      "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+      "imaging_log_evidence": -25087.1684558,
+      "source_component_indices": [
+        0,
+        6,
+        8
+      ],
+      "source_component_centers_arcsec": [
+        [
+          0.23488884098845353,
+          -2.3045182715727157
+        ],
+        [
+          -0.323301477315225,
+          -1.89583785946557
+        ],
+        [
+          0.4534517516134605,
+          -1.4452545570287254
+        ]
+      ],
+      "source_component_redshifts": [
+        2.375,
+        2.228,
+        2.375
+      ],
+      "triangle_edges_arcsec": [
+        0.6918064112799391,
+        0.8866249923348714,
+        0.8979815650034426
+      ]
+    },
+    {
+      "model_id": "0408_run909_0_2_0_0_0_1_1_0",
+      "imaging_log_evidence": -25215.4534651,
+      "source_component_indices": [
+        0,
+        6,
+        8
+      ],
+      "source_component_centers_arcsec": [
+        [
+          0.25301879839815233,
+          -2.3386298136572576
+        ],
+        [
+          -0.309302353320207,
+          -1.92490135276487
+        ],
+        [
+          0.4673030999668114,
+          -1.4839039748117984
+        ]
+      ],
+      "source_component_redshifts": [
+        2.375,
+        2.228,
+        2.375
+      ],
+      "triangle_edges_arcsec": [
+        0.6981234253498775,
+        0.8811776333344158,
+        0.8930815849834882
+      ]
+    },
+    {
+      "model_id": "0408_run902_0_0_1_0_0_1_1_0",
+      "imaging_log_evidence": -25231.7743215,
+      "source_component_indices": [
+        0,
+        6,
+        8
+      ],
+      "source_component_centers_arcsec": [
+        [
+          0.25582079748982056,
+          -2.411818748999979
+        ],
+        [
+          -0.312888603370713,
+          -1.99219645674104
+        ],
+        [
+          0.4954035525333338,
+          -1.4466515625874574
+        ]
+      ],
+      "source_component_redshifts": [
+        2.375,
+        2.228,
+        2.228
+      ],
+      "triangle_edges_arcsec": [
+        0.7067625137114968,
+        0.9944584426921537,
+        0.9751694421140644
+      ]
+    },
+    {
+      "model_id": "0408_run905_0_1_0_0_0_1_1_0",
+      "imaging_log_evidence": -25317.2328131,
+      "source_component_indices": [
+        0,
+        6,
+        8
+      ],
+      "source_component_centers_arcsec": [
+        [
+          0.24683702808307406,
+          -2.2351730954952953
+        ],
+        [
+          -0.302556980947623,
+          -1.83431691205326
+        ],
+        [
+          0.46771278836406177,
+          -1.3895343396928606
+        ]
+      ],
+      "source_component_redshifts": [
+        2.375,
+        2.228,
+        2.375
+      ],
+      "triangle_edges_arcsec": [
+        0.6800878303296833,
+        0.8740085850807154,
+        0.8894644760702982
+      ]
+    },
+    {
+      "model_id": "0408_run1006_0_1_1_0_0_1_1_0",
+      "imaging_log_evidence": -25420.6224642,
+      "source_component_indices": [
+        0,
+        6,
+        8
+      ],
+      "source_component_centers_arcsec": [
+        [
+          0.24436847602772044,
+          -2.45603648821457
+        ],
+        [
+          -0.32295200946851,
+          -2.03718183620508
+        ],
+        [
+          0.4872494050170606,
+          -1.4960137569821643
+        ]
+      ],
+      "source_component_redshifts": [
+        2.375,
+        2.228,
+        2.228
+      ],
+      "triangle_edges_arcsec": [
+        0.7051891609870854,
+        0.9902700592008491,
+        0.974314744835692
+      ]
+    }
+  ]
+}

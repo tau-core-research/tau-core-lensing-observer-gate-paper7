@@ -1,0 +1,59 @@
+{
+  "schema": "paper7 WGD2038 published-summary nuisance-rank audit v1",
+  "output_basis": [
+    "AB",
+    "AC",
+    "AD"
+  ],
+  "output_dimension": 3,
+  "source_freeze": {
+    "model_predictions_frozen_before_observed_delays": true,
+    "common_scale_role": "H0/kappa_ext/internal-MST shared scale",
+    "software_difference_role": "GLEE-vs-lenstronomy combined-model shape",
+    "uses_observed_delays_to_select_nuisance_basis": false
+  },
+  "published_model_vectors_days": {
+    "glee": [
+      -4.4,
+      -9.4,
+      -23.0
+    ],
+    "lenstronomy": [
+      -5.0,
+      -10.0,
+      -24.2
+    ],
+    "common_scale": [
+      -4.7,
+      -9.7,
+      -23.6
+    ],
+    "software_difference": [
+      -0.5999999999999996,
+      -0.5999999999999996,
+      -1.1999999999999993
+    ]
+  },
+  "covariance_whitened_nuisance_singular_values": [
+    4.060506396882465,
+    0.10113167457686174
+  ],
+  "published_summary_nuisance_rank": 2,
+  "remaining_published_summary_dimension": 1,
+  "candidate_whitened_unit_direction": [
+    0.14789173117887344,
+    -0.871039504779169,
+    0.4684209826245783
+  ],
+  "observed_projection_on_candidate_sigma": -2.7029714773313565,
+  "observed_residualized_norm_sigma": 2.702971477331357,
+  "candidate_direction_materialized_before_endpoint_projection": true,
+  "posterior_level_nuisance_span_materialized": false,
+  "model_family_resolved_vectors_materialized": false,
+  "published_summary_exploratory_score_allowed": true,
+  "confirmatory_tau_score_allowed": false,
+  "tau_specific_information_materialized": false,
+  "time_distortion_detection_claim_allowed": false,
+  "verdict": "WGD2038_PUBLISHED_SUMMARY_LEAVES_ONE_DELAY_SHAPE_DIRECTION__OBSERVED_PROJECTION_EXPLORATORY_ONLY",
+  "claim_boundary": "The two pre-observation combined model summaries span a rank-two standard subspace in the three-delay output and leave one covariance-whitened direction. The observed projection is a published-summary diagnostic only: absent posterior samples and mass-family-resolved delay vectors, the complete nuisance span is unknown and no Tau/time attribution is allowed."
+}

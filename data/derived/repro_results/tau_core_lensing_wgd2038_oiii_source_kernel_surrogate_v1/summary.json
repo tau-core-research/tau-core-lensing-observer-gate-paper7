@@ -1,0 +1,50 @@
+{
+  "schema": "paper7 WGD2038 OIII source-kernel surrogate audit v1",
+  "paired_realizations": 64,
+  "feature_count": 13,
+  "cross_validation": "fixed shuffled 8-fold",
+  "models": {
+    "ridge": {
+      "cross_validated_rmse": [
+        0.020245929759814138,
+        0.01472412099984615,
+        0.006050516841991418
+      ],
+      "zero_shift_baseline_rmse": [
+        0.013741873464202867,
+        0.007846642051509319,
+        0.0034324651464106514
+      ],
+      "rmse_to_zero_baseline_ratio": [
+        1.4733020073685095,
+        1.8764868976040439,
+        1.762732200884393
+      ],
+      "largest_shift_decile_recall": 0.0,
+      "transport_eligible": false
+    },
+    "random_forest": {
+      "cross_validated_rmse": [
+        0.014128785016568834,
+        0.00803004035238017,
+        0.003516271311605221
+      ],
+      "zero_shift_baseline_rmse": [
+        0.013741873464202867,
+        0.007846642051509319,
+        0.0034324651464106514
+      ],
+      "rmse_to_zero_baseline_ratio": [
+        1.0281556625720547,
+        1.0233728389375905,
+        1.0244157366848157
+      ],
+      "largest_shift_decile_recall": 0.0,
+      "transport_eligible": false
+    }
+  },
+  "surrogate_transport_to_n256_authorized": false,
+  "tau_or_observer_time_scoring_allowed": false,
+  "verdict": "SOURCE_KERNEL_SHIFT_SURROGATE_FAILS_FROZEN_TRANSFER_GATE",
+  "claim_boundary": "The surrogate may be used only if it improves every coordinate RMSE by at least 20% over the zero-shift baseline and recovers at least half of the largest-shift decile. Failure blocks synthetic OIII enlargement; it is not evidence for or against Tau Core."
+}

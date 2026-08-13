@@ -1,0 +1,167 @@
+{
+  "schema": "paper7 WGD2038 mass-family delay-rank audit v1",
+  "output_basis": [
+    "AB",
+    "AC",
+    "AD"
+  ],
+  "output_dimension": 3,
+  "source_identity": {
+    "paper": "TDCOSMO IX",
+    "arxiv": "https://arxiv.org/abs/2202.11101",
+    "source_figure": "Figure 22b/c (f22b.pdf and f22c.pdf)",
+    "arxiv_eprint_url": "https://arxiv.org/e-print/2202.11101",
+    "arxiv_source_archive_sha256": "c59caeae51cb0748ba3062123464808c7e669e048bff68bc4fac76dd0daf1384",
+    "digitization_method": "600-dpi render of vector PDFs; green/purple curve segmentation; linear tick-coordinate calibration per delay panel; curve-area mean, median, and mode extracted independently",
+    "digitized_payload_sha256": "bbd32bb43d43488e4e2f5ba67699ffd7116d4ab351c8da9eb7e252a4a7304b70"
+  },
+  "source_freeze": {
+    "mass_family_distributions_published_before_observed_delays": true,
+    "uses_observed_delays_to_define_family_vectors": false,
+    "uses_observed_covariance_only_as_output_metric": true
+  },
+  "digitization_sensitivity_audits": {
+    "mean": {
+      "model_order": [
+        "powerlaw_lenstronomy",
+        "powerlaw_glee",
+        "composite_lenstronomy",
+        "composite_glee"
+      ],
+      "vectors_days": [
+        [
+          -4.9687,
+          -9.9442,
+          -24.1212
+        ],
+        [
+          -4.793,
+          -9.9565,
+          -24.8424
+        ],
+        [
+          -3.7171,
+          -7.5419,
+          -18.8898
+        ],
+        [
+          -4.1949,
+          -8.8928,
+          -21.7473
+        ]
+      ],
+      "barycenter_days": [
+        -4.418425,
+        -9.08385,
+        -22.400174999999997
+      ],
+      "covariance_whitened_singular_values": [
+        3.9204277792773534,
+        0.07479465541843715,
+        0.04717788051473908
+      ],
+      "strict_rank": 3,
+      "remaining_dimension": 0,
+      "smallest_to_largest_singular_ratio": 0.012033860377204886
+    },
+    "median": {
+      "model_order": [
+        "powerlaw_lenstronomy",
+        "powerlaw_glee",
+        "composite_lenstronomy",
+        "composite_glee"
+      ],
+      "vectors_days": [
+        [
+          -4.99,
+          -9.9975,
+          -24.2577
+        ],
+        [
+          -4.8333,
+          -10.0449,
+          -25.0756
+        ],
+        [
+          -3.7232,
+          -7.5602,
+          -18.9234
+        ],
+        [
+          -4.2166,
+          -8.9381,
+          -21.865
+        ]
+      ],
+      "barycenter_days": [
+        -4.440775,
+        -9.135175,
+        -22.530424999999997
+      ],
+      "covariance_whitened_singular_values": [
+        3.9467096540784485,
+        0.07459509352378581,
+        0.04622584392910502
+      ],
+      "strict_rank": 3,
+      "remaining_dimension": 0,
+      "smallest_to_largest_singular_ratio": 0.011712501800413968
+    },
+    "mode": {
+      "model_order": [
+        "powerlaw_lenstronomy",
+        "powerlaw_glee",
+        "composite_lenstronomy",
+        "composite_glee"
+      ],
+      "vectors_days": [
+        [
+          -5.004,
+          -10.1115,
+          -24.4646
+        ],
+        [
+          -4.8902,
+          -10.1712,
+          -25.4318
+        ],
+        [
+          -3.7526,
+          -7.6361,
+          -19.0546
+        ],
+        [
+          -4.2242,
+          -8.9571,
+          -21.9404
+        ]
+      ],
+      "barycenter_days": [
+        -4.46775,
+        -9.218975,
+        -22.722849999999998
+      ],
+      "covariance_whitened_singular_values": [
+        3.9853206934100847,
+        0.07590039472990898,
+        0.04162404475407484
+      ],
+      "strict_rank": 3,
+      "remaining_dimension": 0,
+      "smallest_to_largest_singular_ratio": 0.010444340106155612
+    }
+  },
+  "all_mean_median_mode_variants_strict_rank_three": true,
+  "median_mass_family_nuisance_rank": 3,
+  "remaining_dimension_after_mass_family_resolution": 0,
+  "prior_two_summary_candidate_absorbed_fraction": 1.0,
+  "prior_observed_candidate_projection_sigma": -2.7029714773313542,
+  "posterior_level_nuisance_span_materialized": false,
+  "published_family_level_delay_space_saturated": true,
+  "independent_delay_shape_candidate_survives": false,
+  "confirmatory_tau_score_allowed": false,
+  "time_distortion_detection_claim_allowed": false,
+  "verdict": "WGD2038_MASS_FAMILY_RESOLUTION_SATURATES_THREE_DELAY_SPACE__PRIOR_2P70_SIGMA_DIRECTION_NOT_IDENTIFIABLE",
+  "claim_boundary": "The earlier 2.703-sigma coordinate existed only after reducing the pre-observation standard model family to two combined summary vectors. Resolving power-law/composite and GLEE/lenstronomy predictions gives strict rank three under mean, median, and mode digitizations. Therefore no nonzero delay-only direction remains outside the published family-level standard span. This is a finite identifiability no-go, not evidence against a Tau channel or observer-time effect; an additional independent observable or a cross-system shared constraint is required.",
+  "next_finite_action": "Do not continue WGD2038 delay-only scoring. Test a predeclared joint delay-plus-independent-observable coordinate, or require a shared cross-lens effect whose parameters cannot vary freely per lens."
+}

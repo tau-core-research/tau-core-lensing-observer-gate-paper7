@@ -1,0 +1,128 @@
+{
+  "schema": "paper7 DES J0408 local cubic LOS transport v1",
+  "model_count": 12,
+  "subthreshold_object_count": 178,
+  "excluded_explicit_perturbers": [
+    "488065185",
+    "488066144",
+    "488066768",
+    "488068102"
+  ],
+  "local_completion": "published point-mass flexion strength, exact angular field, best common affine vector field removed",
+  "affine_nuisance_dimension": 6,
+  "median_post_affine_residual_norm_arcsec": 0.00023286885509945718,
+  "post_affine_residual_norm_range_arcsec": [
+    0.00023265457399662342,
+    0.00023433924778692034
+  ],
+  "median_post_affine_residual_fraction": 0.0012476403905948205,
+  "median_maximum_path_residual_arcsec": 0.00017246759992709532,
+  "conservative_flexion_threshold_arcsec": 0.0001,
+  "models_with_maximum_path_residual_above_threshold": 12,
+  "local_non_tidal_transport_nonzero_after_affine_projection": true,
+  "standard_affine_compression_sufficient_for_frozen_catalog": false,
+  "profile_scope": "effective point-mass far-perturber completion calibrated from published Auger flexion magnitudes",
+  "complete_physical_light_cone_materialized": false,
+  "tau_specific_information_materialized": false,
+  "time_score_authorized": false,
+  "models": [
+    {
+      "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18666754129540167,
+      "post_affine_residual_norm_arcsec": 0.0002330338858556555,
+      "post_affine_residual_fraction": 0.0012483899677388423,
+      "maximum_path_residual_arcsec": 0.0001725820565561078
+    },
+    {
+      "model_id": "0408_run909_0_2_0_0_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.186632584795008,
+      "post_affine_residual_norm_arcsec": 0.00023286106257314649,
+      "post_affine_residual_fraction": 0.0012476977845477229,
+      "maximum_path_residual_arcsec": 0.0001724729778010302
+    },
+    {
+      "model_id": "0408_run902_0_0_1_0_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18666224872621295,
+      "post_affine_residual_norm_arcsec": 0.00023287664762576784,
+      "post_affine_residual_fraction": 0.0012475829966419182,
+      "maximum_path_residual_arcsec": 0.00017246222205316044
+    },
+    {
+      "model_id": "0408_run905_0_1_0_0_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18665543680824595,
+      "post_affine_residual_norm_arcsec": 0.0002340578456627747,
+      "post_affine_residual_fraction": 0.0012539567540335082,
+      "maximum_path_residual_arcsec": 0.0001733011954635006
+    },
+    {
+      "model_id": "0408_run1006_0_1_1_0_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18666911896458943,
+      "post_affine_residual_norm_arcsec": 0.00023269443179560508,
+      "post_affine_residual_fraction": 0.0012465609367329072,
+      "maximum_path_residual_arcsec": 0.00017235493868102359
+    },
+    {
+      "model_id": "0408_run910_0_2_1_0_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18661876482479547,
+      "post_affine_residual_norm_arcsec": 0.00023280623694513214,
+      "post_affine_residual_fraction": 0.0012474963981446302,
+      "maximum_path_residual_arcsec": 0.00017242628686653976
+    },
+    {
+      "model_id": "0408_run903_0_0_0_1_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18666828161674268,
+      "post_affine_residual_norm_arcsec": 0.00023294794059688654,
+      "post_affine_residual_fraction": 0.0012479245996122833,
+      "maximum_path_residual_arcsec": 0.0001725195688652505
+    },
+    {
+      "model_id": "0408_run908_0_1_1_1_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18664921377647314,
+      "post_affine_residual_norm_arcsec": 0.00023433924778692034,
+      "post_affine_residual_fraction": 0.00125550621428044,
+      "maximum_path_residual_arcsec": 0.00017348391332645293
+    },
+    {
+      "model_id": "0408_run912_0_2_1_1_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18664921111447394,
+      "post_affine_residual_norm_arcsec": 0.00023274188593214968,
+      "post_affine_residual_fraction": 0.0012469481362522696,
+      "maximum_path_residual_arcsec": 0.00017239031646180088
+    },
+    {
+      "model_id": "0408_run911_0_2_0_1_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18665749521818062,
+      "post_affine_residual_norm_arcsec": 0.0002329255633071291,
+      "post_affine_residual_fraction": 0.0012478768293492128,
+      "maximum_path_residual_arcsec": 0.0001725015195241921
+    },
+    {
+      "model_id": "0408_run904_0_0_1_1_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18667437840370305,
+      "post_affine_residual_norm_arcsec": 0.00023265457399662342,
+      "post_affine_residual_fraction": 0.0012463123005208747,
+      "maximum_path_residual_arcsec": 0.00017230506724008214
+    },
+    {
+      "model_id": "0408_run907_0_1_0_1_0_1_1_0",
+      "affine_design_rank": 3,
+      "total_effective_deflection_norm_arcsec": 0.18667794368870477,
+      "post_affine_residual_norm_arcsec": 0.00023275881137925747,
+      "post_affine_residual_fraction": 0.001246846878533197,
+      "maximum_path_residual_arcsec": 0.00017236812636301426
+    }
+  ],
+  "verdict": "LOCAL_CUBIC_SUBTHRESHOLD_RESPONSE_SURVIVES_AFFINE_PROJECTION__STANDARD_FLEXION_COMPLETION_ONLY",
+  "claim_boundary": "The construction uses the point-mass far-perturber approximation underlying the published flexion diagnostic and removes a full six-parameter affine vector field. A surviving residual is a standard conditional higher-order LOS prediction. Missing objects, extended halos, diffuse matter, endpoint data, Tau h_tau and observer-time distortion are not supplied."
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "Paper 7 OGLE-2004-BLG-390 finite-tangent clock null v1",
+  "event": "2004-BLG-390",
+  "observed_finite_tangent_null_chi2": 1410.4423920649008,
+  "observed_epsilon": 0.03081776173987906,
+  "observed_delta_chi2": 64.4310653285288,
+  "mock_count_per_family": 64,
+  "total_mock_light_curves": 128,
+  "conditional_on_frozen_finite_tangent_geometry": true,
+  "families": [
+    {
+      "null_family": "parametric",
+      "mock_count": 64,
+      "empirical_improvement_p": 0.015384615384615385,
+      "empirical_two_sided_rate_p": 0.015384615384615385,
+      "median_mock_delta_chi2": 0.0,
+      "median_abs_mock_epsilon": 0.0
+    },
+    {
+      "null_family": "block_residual",
+      "mock_count": 64,
+      "empirical_improvement_p": 0.015384615384615385,
+      "empirical_two_sided_rate_p": 0.015384615384615385,
+      "median_mock_delta_chi2": 0.0,
+      "median_abs_mock_epsilon": 0.0
+    }
+  ],
+  "survives_conditional_statistical_null": true,
+  "source_variability_ownership_proved": false,
+  "verdict": "BLG390_CONDITIONAL_CLOCK_CANDIDATE_SURVIVES",
+  "claim_boundary": "Survival authorizes an ownership and robustness audit only. The 2006 paper did not uniquely fit whether the periodic variability belongs to the lensed source, and the finite tangent remains a surrogate rather than an exact finite-source model.",
+  "next_finite_action": "Test source-versus-blend ownership from magnification-dependent periodic amplitude, then perturb harmonic order, block length, and event window without changing the clock law."
+}

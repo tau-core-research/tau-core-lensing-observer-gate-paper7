@@ -1,0 +1,53 @@
+{
+  "schema": "paper7 DES J0408 unlensed control support audit v1",
+  "target": {
+    "redshift": 2.375,
+    "log10_mass_bh": 8.41,
+    "log10_lbol": 47.04,
+    "mass_uncertainty_dex": 0.27,
+    "source_references": [
+      "Shajib et al. 2020, MNRAS 494, 6072",
+      "Scholtz et al. 2022, MNRAS 517, 3377"
+    ]
+  },
+  "unlensed_catalog": {
+    "name": "SDSS Stripe 82 MacLeod et al. DRW r-band catalog",
+    "object_count": 9258,
+    "db_sha256": "28e74c84be7489dc68059c8e0079f07edc642079ac34de786ca4d07a3e0b4030",
+    "drw_sha256": "83c738d8ef39d468d217632add4982261f3f99559c24fc361a01a304090935dd"
+  },
+  "quality_rule": "edge=0, Plike-Pnoise>2, Plike-Pinf>0.05, valid fitted tau",
+  "matching_results": [
+    {
+      "label": "strict",
+      "redshift_half_width": 0.15,
+      "log10_mass_half_width": 0.3,
+      "log10_lbol_half_width": 0.3,
+      "matched_control_count": 2,
+      "median_rest_frame_tau_days": 179.21633488567173
+    },
+    {
+      "label": "moderate",
+      "redshift_half_width": 0.25,
+      "log10_mass_half_width": 0.4,
+      "log10_lbol_half_width": 0.4,
+      "matched_control_count": 6,
+      "median_rest_frame_tau_days": 104.5170761455874
+    },
+    {
+      "label": "broad_diagnostic",
+      "redshift_half_width": 0.35,
+      "log10_mass_half_width": 0.5,
+      "log10_lbol_half_width": 0.5,
+      "matched_control_count": 40,
+      "median_rest_frame_tau_days": 202.31900701979436
+    }
+  ],
+  "strict_pair_matching_ready": false,
+  "broad_window_authorized_for_detection": false,
+  "common_mode_clock_test_executed": false,
+  "differential_image_clock_null_reinterpreted_as_control_only": true,
+  "verdict": "STRICT_MATCHED_CONTROL_UNDERPOWERED__POPULATION_REGRESSION_REQUIRED",
+  "claim_boundary": "Support audit only. The broad window cannot be used as a detection sample because redshift, mass, luminosity and rest-frame wavelength affect quasar variability timescales.",
+  "next_finite_action": "Fit a source-frozen population relation for rest-frame log tau from the full quality-controlled Stripe 82 sample, then evaluate a reconstructed lensed-source tau against its posterior predictive distribution without widening match windows."
+}

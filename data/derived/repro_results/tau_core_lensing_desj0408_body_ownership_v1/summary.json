@@ -1,0 +1,42 @@
+{
+  "schema": "paper7 DES J0408 body ownership audit v1",
+  "target": "DES J0408-5354",
+  "ontology_rule": "A single-body descriptor must be intrinsic to one source owner on one source support and frozen before observer-path transport. Multiple lensed paths are downstream readouts of that body and cannot be counted as additional body coordinates.",
+  "audited_objects": {
+    "multisource_triangle": {
+      "source_component_count": 3,
+      "source_plane_count": 2,
+      "common_body_owner": false,
+      "role": "observer_field_geometry_calibrator"
+    },
+    "parametric_quasar_host": {
+      "single_source_owner": true,
+      "full_vector_model_stable": false,
+      "role": "unpromoted_intrinsic_body_candidate"
+    },
+    "positive_host_moment": {
+      "single_source_owner": true,
+      "stable_scalar_only": true,
+      "full_tensor_model_stable": false,
+      "role": "partial_intrinsic_body_descriptor"
+    },
+    "four_image_path_pullbacks": {
+      "path_count": 4,
+      "body_coordinates": false,
+      "role": "downstream_standard_lens_transport"
+    }
+  },
+  "single_source_frozen_body_descriptor_materialized": false,
+  "sfh_02_relative_morphology_materialized": false,
+  "sfh_03_body_conditioned_path_pullback_materialized": false,
+  "forbidden_repairs": [
+    "merge different source redshift planes into one body",
+    "count multiple lensed images as independent body coordinates",
+    "select one preferred unstable host model",
+    "promote a stable scalar into an unmeasured morphology vector"
+  ],
+  "minimal_resolving_input": "One uncertainty-propagated, same-source-plane intrinsic source reconstruction with at least three stable relative morphology coordinates; only after that freeze may the four path pullbacks act on the descriptor.",
+  "time_score_authorized": false,
+  "verdict": "DESJ0408_CURRENT_OBJECTS_CANNOT_FORM_ONE_BODY_DESCRIPTOR",
+  "claim_boundary": "Finite ownership/no-go audit of the current public DES J0408 objects. It does not prove that no single-body descriptor exists; it forbids constructing one by combining current multisource or downstream path objects."
+}

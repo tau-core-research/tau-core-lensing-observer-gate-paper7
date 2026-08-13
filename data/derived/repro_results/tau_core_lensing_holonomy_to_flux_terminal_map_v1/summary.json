@@ -1,0 +1,33 @@
+{
+  "schema": "Paper 7 minimal holonomy-to-flux terminal map v1",
+  "minimal_transport": {
+    "amplitude": "A_i=sqrt(mu_i)*exp(alpha_i+i*phi_i)*A_source",
+    "isolated_intensity": "F_i=|A_i|^2=mu_i*exp(2*alpha_i)*|A_source|^2",
+    "pure_u1_case": "alpha_i=0 implies dF_i/dphi_i=0"
+  },
+  "pure_u1_isolated_path": {
+    "intensity_variation_over_phase": 4.440892098500626e-15,
+    "phase_visible": false
+  },
+  "coherent_two_path_control": {
+    "terminal": "F=|A_1 exp(i phi_1)+A_2 exp(i phi_2)|^2",
+    "intensity_variation_over_relative_phase": 7.371901249472099,
+    "relative_phase_visible": true
+  },
+  "nonunitary_control": {
+    "terminal": "F=mu*exp(2 alpha(phi))*|A_source|^2",
+    "intensity_variation": 3.0421577315369563,
+    "amplitude_sector_visible": true
+  },
+  "geometric_conversion_route": {
+    "formula": "phi_hol -> delta J_lens(phi_hol) -> delta mu(phi_hol) -> delta F",
+    "status": "requires a separately source-derived holonomy-to-Jacobian connector; scalar flux does not identify that origin"
+  },
+  "theorem": "For one resolved path with scalar U(1) transport U_i=exp(i phi_i) and an intensity terminal F_i=|sqrt(mu_i) U_i A_s|^2, unitarity gives U_i^*U_i=1 and F_i=mu_i|A_s|^2. Pure phase holonomy is therefore exactly flux-blind. Phase becomes intensity-visible only through coherent superposition of at least two amplitudes. Without coherence, flux modification requires a nonunitary real gain alpha_i or a separately derived conversion of holonomy into the geometric magnification Jacobian.",
+  "rxj1131_consequence": "Resolved scalar narrow-line image flux ratios cannot directly measure a pure U(1) path holonomy. Promoting a phase holonomy to their explanation requires evidence for coherent branch interference, a sourced nonunitary amplitude law, or a sourced holonomy-to-magnification connector.",
+  "terminal_values_used": false,
+  "pure_u1_holonomy_to_isolated_flux_map_nontrivial": false,
+  "verdict": "PURE_U1_HOLONOMY_IS_FLUX_BLIND__AMPLITUDE_INTERFERENCE_OR_GEOMETRIC_CONVERSION_REQUIRED",
+  "next_finite_action": "Audit the enriched Tau body for a source-owned real amplitude sector or holonomy-to-lens-Jacobian cross derivative. If neither exists, remove RXJ1131 scalar flux ratios as a direct holonomy endpoint and retain them only for cross-system amplitude tests.",
+  "claim_boundary": "The theorem excludes direct pure-phase effects on isolated intensity. It does not exclude wave-optics interference, nonunitary transport, absorption, geometric magnification changes, or other amplitude-sector physics."
+}

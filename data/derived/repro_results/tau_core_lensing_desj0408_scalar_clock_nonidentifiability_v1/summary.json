@@ -1,0 +1,51 @@
+{
+  "schema": "paper7 DES J0408 scalar clock nonidentifiability v1",
+  "target": "DES J0408-5354 quasar host at z=2.375",
+  "input_scope": "stable image-only source moment trace; no delay data, residual, time endpoint, or fitted clock normalization",
+  "observed_scalar": {
+    "symbol": "q_s=tr(Q_s)",
+    "value_arcsec2": 0.025329057647905762,
+    "model_family_coefficient_of_variation": 0.15953611652506425,
+    "rotation_and_path_label_invariant": true,
+    "compatible_with_rank_one_common_representation": true
+  },
+  "reference_scale_used_only_for_counterfamily_arcsec2": 0.025329057647905762,
+  "candidate_clock_family": [
+    {
+      "name": "linear",
+      "definition": "Theta(q)=q/q_*",
+      "value_at_q": 1.0,
+      "derivative_at_q_per_arcsec2": 39.480347587375846
+    },
+    {
+      "name": "logarithmic",
+      "definition": "Theta(q)=log(q/q_*)",
+      "value_at_q": 0.0,
+      "derivative_at_q_per_arcsec2": 39.480347587375846
+    },
+    {
+      "name": "square_root",
+      "definition": "Theta(q)=sqrt(q/q_*)",
+      "value_at_q": 1.0,
+      "derivative_at_q_per_arcsec2": 19.740173793687923
+    },
+    {
+      "name": "quadratic",
+      "definition": "Theta(q)=(q/q_*)^2",
+      "value_at_q": 1.0,
+      "derivative_at_q_per_arcsec2": 78.96069517475169
+    }
+  ],
+  "all_candidates_monotone_rank_one": true,
+  "all_candidates_have_same_local_null_as_dq": true,
+  "candidate_clock_covectors_are_nonunique": true,
+  "sfh_01_representation_compatible_scalar_class_materialized": true,
+  "theta_M_identified": false,
+  "clock_scale_selected_by_source_law": false,
+  "clock_function_selected_by_source_law": false,
+  "a_O_identified": false,
+  "h_tau_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "RANK_ONE_COMMON_SCALAR_CLASS_FOUND__PHYSICAL_BODY_CLOCK_NONIDENTIFIABLE",
+  "claim_boundary": "The stable scalar can occupy the representation type required by the common rank-one body coordinate. Symmetry, rank, and null-space data do not select its calibration or functional form, so it is not Theta_M, a descended observer covector, h_tau, or time distortion."
+}

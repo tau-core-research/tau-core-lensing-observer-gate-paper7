@@ -1,0 +1,48 @@
+{
+  "schema": "paper7 DES J0408 A/B unit-stretch null calibration v1",
+  "source_audit": "data/derived/repro_results/tau_core_lensing_desj0408_ab_relative_clock_rate_v1/summary.json",
+  "null_hypothesis": "relative_clock_rate_B_over_A=1",
+  "mock_count": 128,
+  "random_seed": 2038040801,
+  "frozen_estimator": {
+    "source_spline_smoothing_factor_times_n": 1.0,
+    "microlensing_polynomial_degree": 1,
+    "delay_search_days": [
+      100.0,
+      122.0
+    ],
+    "stretch_search": [
+      0.9,
+      1.1
+    ]
+  },
+  "mock_construction": "unit-stretch fitted source spline plus fitted linear extrinsic trend, observed WFI epochs, observed heteroscedastic errors, and the audit's fixed 0.005 mag noise floor",
+  "observed": {
+    "relative_clock_rate_B_over_A": 1.0594277168973072,
+    "delta_chi_square": 6.078322385369603
+  },
+  "null_distribution": {
+    "relative_clock_rate_quantiles_2p5_50_97p5": [
+      0.9101410021849891,
+      0.9942634981545582,
+      1.0388151142114839
+    ],
+    "delta_chi_square_quantiles_2p5_50_97p5": [
+      0.0061319074549933475,
+      1.8418153134655633,
+      22.151661427785193
+    ],
+    "delay_quantiles_2p5_50_97p5_days": [
+      109.3661201758898,
+      113.2564952427391,
+      116.18565916320122
+    ]
+  },
+  "empirical_two_sided_rate_p_value": 0.12403100775193798,
+  "empirical_improvement_p_value": 0.2248062015503876,
+  "unit_stretch_rejected_under_parametric_mock": false,
+  "tau_time_distortion_claim_allowed": false,
+  "verdict": "OBSERVED_STRETCH_NOT_UNUSUAL_UNDER_UNIT_STRETCH_PARAMETRIC_MOCK",
+  "claim_boundary": "This calibrates estimator bias and finite sampling only under the same spline-plus-linear-extrinsic model. It does not cover correlated microlensing, source-model misspecification, the full analysis grid, or independent-lens replication.",
+  "next_finite_action": "Add correlated extrinsic/source residual mocks before opening an independent high-cadence lens with the estimator unchanged."
+}

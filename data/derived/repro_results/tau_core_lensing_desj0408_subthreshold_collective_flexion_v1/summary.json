@@ -1,0 +1,28 @@
+{
+  "schema": "paper7 DES J0408 subthreshold collective flexion v1",
+  "excluded_explicit_perturbers": [
+    "488065185",
+    "488066144",
+    "488066768",
+    "488068102"
+  ],
+  "model_path_count": 48,
+  "subthreshold_member_count_per_model_path": [
+    178
+  ],
+  "median_scalar_amplitude_sum_arcsec": 0.0003416773800636846,
+  "median_spin1_coherence": 0.5056088115726044,
+  "median_spin3_coherence": 0.5391227122932865,
+  "minimum_spin3_coherence": 0.4507786130912367,
+  "median_within_model_spin1_path_spread_arcsec": 6.1050639778197e-05,
+  "median_within_model_spin3_path_spread_arcsec": 4.282150678994461e-05,
+  "collective_oriented_subthreshold_structure_nonzero": true,
+  "path_dependent_collective_structure_nonzero": true,
+  "not_representable_by_scalar_convergence_alone": true,
+  "not_representable_by_spin0_spin2_tidal_summary": true,
+  "standard_higher_order_lensing_information": true,
+  "tau_specific_information_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "COLLECTIVE_SUBTHRESHOLD_SPIN1_SPIN3_STRUCTURE_MATERIALIZED__STANDARD_HIGHER_ORDER_LENSING_ONLY",
+  "claim_boundary": "The source-frozen sum excludes G3-G6 and retains the angular spin-1 and spin-3 moments of published path-rescaled flexion magnitudes. Nonzero odd-spin content proves information loss under a scalar or spin-0/spin-2-only compression, but is standard higher-order lensing structure, not Tau or observer-time evidence."
+}

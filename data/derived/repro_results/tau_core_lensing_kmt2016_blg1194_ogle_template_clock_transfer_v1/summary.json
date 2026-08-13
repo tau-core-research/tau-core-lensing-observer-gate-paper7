@@ -1,0 +1,27 @@
+{
+  "schema": "Paper 7 KMT-2016-BLG-1194 OGLE-template clock transfer v1",
+  "event": "KMT-2016-BLG-1194",
+  "template_source": "OGLE-BLG-RRLYR-29501 long-baseline I-band photometry",
+  "template_sha256": "e52acfa7392b4719ac6f5f6479ec0ca6bdef634c4a0344bb02e8d212547d110a",
+  "template_points": 867,
+  "template_harmonics": 8,
+  "template_chi2": 38887.55606947087,
+  "kmt_points": 2359,
+  "site_specific_kmt_parameters": "source flux, blend flux, slow linear calibration, and one amplitude for the fixed OGLE waveform",
+  "profiled_no_clock_parameters": {
+    "t0_hjd_minus_2450000": 7601.462797225345,
+    "tE_days": 32.978075329522966,
+    "u0": 0.5523515407289542,
+    "frequency_correction_cycles_per_1000d": -0.005347355827818553,
+    "quadratic_drift_cycles_per_1000d2": 0.01711880470065442
+  },
+  "null_chi2": 67504.75300838982,
+  "null_reduced_chi2": 28.823549533898298,
+  "best_epsilon": 0.0,
+  "best_raw_delta_chi2": 0.0,
+  "best_site_error_rescaled_delta_chi2": 0.0,
+  "passes_local_clock_identifiability_precheck": false,
+  "verdict": "INDEPENDENT_OGLE_TEMPLATE_CLOCK_NULL",
+  "claim_boundary": "The source waveform was frozen independently of KMT lensing. Site-wise error rescaling prevents underestimated pySIS errors from creating formal significance. The result remains conditional on a point-lens transfer and is not a Tau-specific test by itself.",
+  "next_finite_action": "If null, close KMT-2016-BLG-1194 without further waveform enrichment. If nonzero, require sign stability against harmonic order and site leave-one-out before mocks."
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "paper7 DES J0408 local cubic astrometric endpoint v1",
+  "predicted_median_maximum_path_residual_arcsec": 0.00017246759992709532,
+  "predicted_median_maximum_path_residual_mas": 0.17246759992709532,
+  "published_model_coordinate_rms_arcsec": 0.0013350390337132064,
+  "published_model_coordinate_rms_mas": 1.3350390337132063,
+  "prediction_to_model_coordinate_rms_ratio": 0.1291854362096089,
+  "hst_pixel_scales_arcsec": {
+    "F814W": 0.04,
+    "F160W": 0.08
+  },
+  "prediction_to_f814w_pixel_ratio": 0.004311689998177383,
+  "prediction_to_f160w_pixel_ratio": 0.0021558449990886916,
+  "public_positions_are_model_fitted_not_independent_holdout": true,
+  "independent_sub_mas_astrometric_covariance_materialized": false,
+  "direct_astrometric_endpoint_authorized": false,
+  "extended_arc_endpoint_preferred": true,
+  "tau_specific_information_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "DIRECT_POINT_ASTROMETRY_UNDERPOWERED_AND_NOT_INDEPENDENT__REDIRECT_TO_EXTENDED_ARC_ENDPOINT",
+  "claim_boundary": "The predicted 0.17 mas scale is compared only with public model position dispersion and detector pixel scales. Subpixel centroiding can outperform a pixel, so this is not an impossibility theorem. However, the public image positions are fit inputs/outputs and no independent sub-mas covariance is materialized; direct scoring would be circular. No Tau or time inference is authorized."
+}

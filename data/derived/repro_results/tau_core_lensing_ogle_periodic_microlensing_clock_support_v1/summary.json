@@ -1,0 +1,141 @@
+{
+  "schema": "Paper 7 OGLE periodic microlensing clock support audit v1",
+  "question": "Can the same periodic source provide unlensed-baseline versus microlensed-interval clock information?",
+  "selection_rule": {
+    "event_window": "absolute(t-t0) <= tE",
+    "control_window": "absolute(t-t0) >= 2*tE",
+    "minimum_event_points": 30,
+    "minimum_control_points": 100,
+    "minimum_occupied_phase_bins_of_12": 8,
+    "minimum_cycles_within_two_tE": 5
+  },
+  "events": [
+    {
+      "event": "2004-BLG-081",
+      "source": "OGLE180540.47-273427.5",
+      "period_days": 3.96628,
+      "t0_hjd": 2453106.248,
+      "einstein_radius_crossing_days": 103.63,
+      "total_points": 364,
+      "event_points_within_one_tE": 120,
+      "control_points_outside_two_tE": 207,
+      "event_phase_bins_occupied_of_12": 12,
+      "cycles_within_two_tE": 52.25551398287564,
+      "clock_audit_ready": true,
+      "archive_sha256": "a98857bf7f2f4d7fca6ea554822557fe31111771ee01ed89af328abfe701184f"
+    },
+    {
+      "event": "2004-BLG-101",
+      "source": "OGLE175907.77-305519.1",
+      "period_days": 0.86193,
+      "t0_hjd": 2453094.958,
+      "einstein_radius_crossing_days": 19.031,
+      "total_points": 398,
+      "event_points_within_one_tE": 62,
+      "control_points_outside_two_tE": 322,
+      "event_phase_bins_occupied_of_12": 12,
+      "cycles_within_two_tE": 44.15903843699604,
+      "clock_audit_ready": true,
+      "archive_sha256": "76a24fa17853fc88437437aaae8dc9b80fe6683cdd187078213cd1a6919e79a7"
+    },
+    {
+      "event": "2002-BLG-103",
+      "source": "OGLE175239.94-322613.3",
+      "period_days": 0.82756,
+      "t0_hjd": 2452456.915,
+      "einstein_radius_crossing_days": 74.904,
+      "total_points": 307,
+      "event_points_within_one_tE": 43,
+      "control_points_outside_two_tE": 257,
+      "event_phase_bins_occupied_of_12": 12,
+      "cycles_within_two_tE": 181.02373241819325,
+      "clock_audit_ready": true,
+      "archive_sha256": "f1a2b2461aab1e7b61f020c81f8f69722e98d628a90d0a8639987354bc6d957a"
+    },
+    {
+      "event": "2004-BLG-390",
+      "source": "OGLE175828.21-304717.4",
+      "period_days": 0.34825,
+      "t0_hjd": 2453212.567,
+      "einstein_radius_crossing_days": 28.873,
+      "total_points": 394,
+      "event_points_within_one_tE": 37,
+      "control_points_outside_two_tE": 328,
+      "event_phase_bins_occupied_of_12": 10,
+      "cycles_within_two_tE": 165.81765972720748,
+      "clock_audit_ready": true,
+      "archive_sha256": "05e4f627586a544795bf39fb3a2ac96b4ccbd8a1032670e7c20730f97dafb886"
+    },
+    {
+      "event": "2003-BLG-139",
+      "source": "OGLE181322.09-294846.4",
+      "period_days": 53.2198,
+      "t0_hjd": 2452807.892,
+      "einstein_radius_crossing_days": 59.629,
+      "total_points": 192,
+      "event_points_within_one_tE": 33,
+      "control_points_outside_two_tE": 145,
+      "event_phase_bins_occupied_of_12": 11,
+      "cycles_within_two_tE": 2.2408577258839752,
+      "clock_audit_ready": false,
+      "archive_sha256": "a3501ee74c3cbfc15c8b94020dfbceaba12d2ae42180f7dda0e486c4d4c77ccc"
+    },
+    {
+      "event": "2003-BLG-428",
+      "source": "OGLE174448.21-335605.4",
+      "period_days": 0.3638,
+      "t0_hjd": 2452914.434,
+      "einstein_radius_crossing_days": 40.355,
+      "total_points": 365,
+      "event_points_within_one_tE": 12,
+      "control_points_outside_two_tE": 337,
+      "event_phase_bins_occupied_of_12": 9,
+      "cycles_within_two_tE": 221.8526663001649,
+      "clock_audit_ready": false,
+      "archive_sha256": "475c627e84164a84b45e26fc96a7ba3881831de571acaf5354f47a7aa1ec4090"
+    },
+    {
+      "event": "2003-BLG-452",
+      "source": "OGLE175554.26-301826.7",
+      "period_days": 4.026575,
+      "t0_hjd": 2452933.931,
+      "einstein_radius_crossing_days": 68.902,
+      "total_points": 377,
+      "event_points_within_one_tE": 21,
+      "control_points_outside_two_tE": 315,
+      "event_phase_bins_occupied_of_12": 8,
+      "cycles_within_two_tE": 34.22362677958314,
+      "clock_audit_ready": false,
+      "archive_sha256": "feb91c2598fd494a5c5b49e590c779750788af79a5ff717aeedbcf6586574d76"
+    },
+    {
+      "event": "2002-BLG-093",
+      "source": "OGLE180950.21-260542.7",
+      "period_days": 0.6261,
+      "t0_hjd": 2452396.079,
+      "einstein_radius_crossing_days": 12.754,
+      "total_points": 287,
+      "event_points_within_one_tE": 7,
+      "control_points_outside_two_tE": 278,
+      "event_phase_bins_occupied_of_12": 6,
+      "cycles_within_two_tE": 40.74109567161795,
+      "clock_audit_ready": false,
+      "archive_sha256": "37d06c14d6a600537f992aedc03dbf2272b0d38170a317dd90ace3409e8f002b"
+    }
+  ],
+  "ready_events": [
+    "2004-BLG-081",
+    "2004-BLG-101",
+    "2002-BLG-103",
+    "2004-BLG-390"
+  ],
+  "preferred_event": "2004-BLG-081",
+  "clock_rate_test_executed": false,
+  "verdict": "PUBLIC_SAME_SOURCE_CLOCK_AUDIT_SUPPORT_EXISTS",
+  "claim_boundary": "This audit selects data support only. Periodic variability can belong to the source or a blend, and magnification changes photometric precision. Neither a phase anomaly nor a Tau Core clock effect has been measured here.",
+  "next_finite_action": "Freeze the periodic waveform and ephemeris outside the lensing window; jointly fit standard microlensing magnification under a zero-clock-stretch null; then test one localized phase-rate coefficient with source/blend and cadence controls.",
+  "references": [
+    "Wyrzykowski et al. 2006, Acta Astronomica 56, 145",
+    "OGLE-III Early Warning System public event archives"
+  ]
+}

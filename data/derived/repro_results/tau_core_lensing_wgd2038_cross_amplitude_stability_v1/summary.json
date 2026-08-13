@@ -1,0 +1,77 @@
+{
+  "schema": "paper7 WGD2038 cross-amplitude terminal stability audit v1",
+  "sources": {
+    "oiii": {
+      "title": "Nierenberg et al. 2020 narrow-line lensing",
+      "url": "https://arxiv.org/abs/1908.06344",
+      "source_scale_pc": "narrow-line region; not identified with warm dust"
+    },
+    "warm_dust": {
+      "title": "JWST Lensed Quasar Dark Matter Survey III",
+      "url": "https://arxiv.org/abs/2511.07765",
+      "source_scale_prior_pc": [
+        1.0,
+        10.0
+      ],
+      "public_payload": "dangilman/samana launch_scripts.zip at commit fc0f595730197a8869f5d12f37acbd0788f2659a"
+    }
+  },
+  "ratio_basis": [
+    "B_over_A",
+    "C_over_A",
+    "D_over_A"
+  ],
+  "oiii_ratios": [
+    1.16,
+    0.92,
+    0.46
+  ],
+  "warm_dust_ratios": [
+    1.209,
+    0.939,
+    0.43
+  ],
+  "warm_dust_covariance": [
+    [
+      0.0013163769158846795,
+      0.00012240530553126578,
+      9.1145427724005e-05
+    ],
+    [
+      0.00012240530553126578,
+      0.0008747728497371431,
+      5.562121299135247e-05
+    ],
+    [
+      9.1145427724005e-05,
+      5.562121299135247e-05,
+      0.00020187066122068058
+    ]
+  ],
+  "warm_dust_minus_oiii": [
+    0.049000000000000155,
+    0.018999999999999906,
+    -0.030000000000000027
+  ],
+  "component_standardized_differences": [
+    1.1827412602683742,
+    0.5321538375260964,
+    -1.7266757978067186
+  ],
+  "mahalanobis_squared": 5.324428560803166,
+  "mahalanobis_distance": 2.3074723315357795,
+  "gaussian_chi_square_degrees_of_freedom": 3,
+  "gaussian_chi_square_survival_probability": 0.14952508982828097,
+  "covariance_assumption": "The published OIII diagonal errors and public JWST covariance are combined as independent measurement covariances. Unknown OIII off-diagonal covariance is not represented.",
+  "same_lens_geometry": true,
+  "same_terminal_family": "relative path-amplitude ratios",
+  "same_physical_source_region": false,
+  "source_size_dependent_transfer_expected": true,
+  "strong_cross_terminal_incompatibility_detected": false,
+  "shared_tau_or_time_coordinate_identified": false,
+  "confirmatory_tau_score_allowed": false,
+  "time_distortion_detection_claim_allowed": false,
+  "verdict": "WGD2038_OIII_AND_WARM_DUST_AMPLITUDE_TERMINALS_ARE_STATISTICALLY_COMPATIBLE_AT_CURRENT_PRECISION__SOURCE_SCALE_DEPENDENT_SHIFT_REMAINS__NO_TAU_ATTRIBUTION",
+  "claim_boundary": "The two source regions provide distinct measurements through the same lens geometry. Their three-ratio difference has chi-square 5.324 for three dimensions (p about 0.150) under the available measurement covariance, so no strong incompatibility is detected. The comparison does not isolate lens morphology, dark substructure, source-size transfer, variability, or a Tau channel.",
+  "next_finite_action": "Use the source-frozen samana configuration to materialize the warm-dust accepted-simulation distribution, then compare both amplitude terminals only through a model that explicitly carries their different source-size kernels."
+}

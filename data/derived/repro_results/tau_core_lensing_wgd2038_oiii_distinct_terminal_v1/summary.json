@@ -1,0 +1,69 @@
+{
+  "schema": "paper7 WGD2038 OIII distinct-terminal audit v1",
+  "source": {
+    "title": "Double dark matter vision: twice the number of compact-source lenses with narrow-line lensing and the WFC3 grism",
+    "journal_url": "https://academic.oup.com/mnras/article/492/4/5314/5686725",
+    "source_table": "Table 2, WGD 2038-4008 rows",
+    "source_role": "published OIII ratios and smooth position-only macro-model ratios"
+  },
+  "ratio_basis": [
+    "B_over_A",
+    "C_over_A",
+    "D_over_A"
+  ],
+  "rows": [
+    {
+      "ratio": "B_over_A",
+      "observed_oiii_ratio": 1.16,
+      "observed_sigma": 0.02,
+      "position_only_smooth_model_ratio": 1.21,
+      "smooth_model_sigma": 0.01,
+      "observed_minus_model": -0.050000000000000044,
+      "diagonal_standardized_residual_sigma": -2.2360679774997916
+    },
+    {
+      "ratio": "C_over_A",
+      "observed_oiii_ratio": 0.92,
+      "observed_sigma": 0.02,
+      "position_only_smooth_model_ratio": 0.99,
+      "smooth_model_sigma": 0.1,
+      "observed_minus_model": -0.06999999999999995,
+      "diagonal_standardized_residual_sigma": -0.6864064729836435
+    },
+    {
+      "ratio": "D_over_A",
+      "observed_oiii_ratio": 0.46,
+      "observed_sigma": 0.01,
+      "position_only_smooth_model_ratio": 0.46,
+      "smooth_model_sigma": 0.07,
+      "observed_minus_model": 0.0,
+      "diagonal_standardized_residual_sigma": 0.0
+    }
+  ],
+  "diagonal_combined_chi2": 5.471153846153854,
+  "diagonal_degrees_of_freedom": 3,
+  "largest_absolute_component_sigma": 2.2360679774997916,
+  "largest_component": "B_over_A",
+  "pre_observed_delay_publication": true,
+  "excluded_from_tdcosmo_ix_lens_constraints": true,
+  "distinct_from_time_delay_terminal": true,
+  "distinct_from_integrated_stellar_kinematic_terminal": true,
+  "measurement_covariance_materialized": false,
+  "joint_delay_flux_model_ensemble_materialized": false,
+  "standard_flux_specific_nuisances_fully_marginalized": false,
+  "standard_flux_specific_nuisances": [
+    "low-mass subhalos and line-of-sight halos",
+    "higher-order main-deflector multipoles",
+    "finite narrow-line source size",
+    "macro-model and astrometric uncertainty"
+  ],
+  "delay_output_rank_before_oiii": 3,
+  "prior_integrated_kinematic_candidate_was_distinct_terminal": false,
+  "distinct_fourth_terminal_type_materialized": true,
+  "tau_specific_coordinate_materialized": false,
+  "confirmatory_tau_score_allowed": false,
+  "time_distortion_detection_claim_allowed": false,
+  "verdict": "WGD2038_OIII_MATERIALIZES_A_DISTINCT_AMPLITUDE_TERMINAL__B_OVER_A_HAS_2P24_SIGMA_SMOOTH_MODEL_TENSION__STANDARD_SUBSTRUCTURE_COMPLETION_REQUIRED",
+  "claim_boundary": "Unlike the later integrated velocity-dispersion measurement, the OIII ratios are a genuinely distinct terminal and were excluded from the TDCOSMO IX delay-model constraints. The B/A ratio differs from the position-only smooth macro-model by about 2.24 diagonal sigma. This is not Tau or observer-time evidence: the published table does not supply the full ratio covariance or a joint delay-flux ensemble, and standard substructure, multipoles, and finite-source effects have not been marginalized.",
+  "next_finite_action": "Import or reconstruct a source-frozen standard flux-ratio ensemble including substructure and multipoles, then test whether any joint delay-plus-OIII coordinate survives. Do not fit a Tau template to the current three ratios."
+}

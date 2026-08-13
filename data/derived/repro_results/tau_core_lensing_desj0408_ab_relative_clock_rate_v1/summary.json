@@ -1,0 +1,191 @@
+{
+  "schema": "paper7 DES J0408 A/B relative clock-rate audit v1",
+  "source": {
+    "url": "https://www.epfl.ch/labs/lastro/wp-content/uploads/2019/08/DESJ0408_Courbin2017.rdb_-1.txt",
+    "sha256": "18ab7cef9bb014c4fc9a7613c24fd1bb7ead9ae7cd24fecd05b97ba8d06a051d",
+    "publication": "Courbin et al. 2017, arXiv:1706.09424"
+  },
+  "data_scope": {
+    "telescope": "WFI only",
+    "image_pair": "A/B",
+    "epoch_count": 96,
+    "mhjd_range": [
+      57663.28341,
+      57851.99009
+    ],
+    "published_AB_delay_days": -112.1,
+    "published_AB_delay_uncertainty_days": 2.1
+  },
+  "model": "B(t)=offset+slow_polynomial(t)+A_spline(pivot+(t-delay-pivot)/stretch)",
+  "central_exploratory_fit": {
+    "smoothing_factor_times_n": 1.0,
+    "microlensing_polynomial_degree": 1,
+    "shift_only_delay_days": 113.54982160200146,
+    "shift_only_chi_square": 122.15060005239172,
+    "shift_stretch_delay_days": 114.83611918082029,
+    "relative_clock_rate_B_over_A": 1.0594277168973072,
+    "shift_stretch_chi_square": 116.07227766702212,
+    "delta_chi_square_one_extra_parameter": 6.078322385369603,
+    "stretch_at_search_boundary": false
+  },
+  "declared_robustness_grid": {
+    "source_spline_smoothing_factors_times_n": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "microlensing_polynomial_degrees": [
+      0,
+      1,
+      2
+    ],
+    "rows": [
+      {
+        "smoothing_factor_times_n": 0.5,
+        "microlensing_polynomial_degree": 0,
+        "shift_only_delay_days": 115.83889285657243,
+        "shift_only_chi_square": 191.40497937134322,
+        "shift_stretch_delay_days": 118.86899021644632,
+        "relative_clock_rate_B_over_A": 1.0732791136793618,
+        "shift_stretch_chi_square": 170.77406072142978,
+        "delta_chi_square_one_extra_parameter": 20.63091864991344,
+        "stretch_at_search_boundary": false
+      },
+      {
+        "smoothing_factor_times_n": 0.5,
+        "microlensing_polynomial_degree": 1,
+        "shift_only_delay_days": 112.07157643055797,
+        "shift_only_chi_square": 141.25265839562377,
+        "shift_stretch_delay_days": 115.13803799534621,
+        "relative_clock_rate_B_over_A": 1.099999866259627,
+        "shift_stretch_chi_square": 127.81958464394754,
+        "delta_chi_square_one_extra_parameter": 13.433073751676233,
+        "stretch_at_search_boundary": true
+      },
+      {
+        "smoothing_factor_times_n": 0.5,
+        "microlensing_polynomial_degree": 2,
+        "shift_only_delay_days": 112.09380287494771,
+        "shift_only_chi_square": 119.2347283189394,
+        "shift_stretch_delay_days": 110.94893791979426,
+        "relative_clock_rate_B_over_A": 0.98485047093091,
+        "shift_stretch_chi_square": 118.32923865370871,
+        "delta_chi_square_one_extra_parameter": 0.9054896652306894,
+        "stretch_at_search_boundary": false
+      },
+      {
+        "smoothing_factor_times_n": 1.0,
+        "microlensing_polynomial_degree": 0,
+        "shift_only_delay_days": 115.02271839648908,
+        "shift_only_chi_square": 153.20812150208178,
+        "shift_stretch_delay_days": 118.35501617208483,
+        "relative_clock_rate_B_over_A": 1.0610923623760482,
+        "shift_stretch_chi_square": 144.43462502294298,
+        "delta_chi_square_one_extra_parameter": 8.7734964791388,
+        "stretch_at_search_boundary": false
+      },
+      {
+        "smoothing_factor_times_n": 1.0,
+        "microlensing_polynomial_degree": 1,
+        "shift_only_delay_days": 113.54982160200146,
+        "shift_only_chi_square": 122.15060005239172,
+        "shift_stretch_delay_days": 114.83611918082029,
+        "relative_clock_rate_B_over_A": 1.0594277168973072,
+        "shift_stretch_chi_square": 116.07227766702212,
+        "delta_chi_square_one_extra_parameter": 6.078322385369603,
+        "stretch_at_search_boundary": false
+      },
+      {
+        "smoothing_factor_times_n": 1.0,
+        "microlensing_polynomial_degree": 2,
+        "shift_only_delay_days": 111.28835143041579,
+        "shift_only_chi_square": 103.26690358353234,
+        "shift_stretch_delay_days": 109.81690606666045,
+        "relative_clock_rate_B_over_A": 0.976568097998193,
+        "shift_stretch_chi_square": 102.21935698089747,
+        "delta_chi_square_one_extra_parameter": 1.047546602634867,
+        "stretch_at_search_boundary": false
+      },
+      {
+        "smoothing_factor_times_n": 2.0,
+        "microlensing_polynomial_degree": 0,
+        "shift_only_delay_days": 114.79832868449944,
+        "shift_only_chi_square": 86.37061692170408,
+        "shift_stretch_delay_days": 115.85934011245917,
+        "relative_clock_rate_B_over_A": 1.017870881758291,
+        "shift_stretch_chi_square": 85.45041462956826,
+        "delta_chi_square_one_extra_parameter": 0.9202022921358264,
+        "stretch_at_search_boundary": false
+      },
+      {
+        "smoothing_factor_times_n": 2.0,
+        "microlensing_polynomial_degree": 1,
+        "shift_only_delay_days": 112.55728572191408,
+        "shift_only_chi_square": 57.41500170284732,
+        "shift_stretch_delay_days": 114.58706466546838,
+        "relative_clock_rate_B_over_A": 1.039473819620202,
+        "shift_stretch_chi_square": 55.03928718400719,
+        "delta_chi_square_one_extra_parameter": 2.3757145188401267,
+        "stretch_at_search_boundary": false
+      },
+      {
+        "smoothing_factor_times_n": 2.0,
+        "microlensing_polynomial_degree": 2,
+        "shift_only_delay_days": 112.33406628196686,
+        "shift_only_chi_square": 49.691189656176135,
+        "shift_stretch_delay_days": 110.73859235731312,
+        "relative_clock_rate_B_over_A": 0.969587218416774,
+        "shift_stretch_chi_square": 48.84943297748238,
+        "delta_chi_square_one_extra_parameter": 0.8417566786937556,
+        "stretch_at_search_boundary": false
+      },
+      {
+        "smoothing_factor_times_n": 4.0,
+        "microlensing_polynomial_degree": 0,
+        "shift_only_delay_days": 115.13069688071265,
+        "shift_only_chi_square": 112.7398213217166,
+        "shift_stretch_delay_days": 109.79939704270201,
+        "relative_clock_rate_B_over_A": 0.900000000679159,
+        "shift_stretch_chi_square": 93.99693787645705,
+        "delta_chi_square_one_extra_parameter": 18.74288344525955,
+        "stretch_at_search_boundary": true
+      },
+      {
+        "smoothing_factor_times_n": 4.0,
+        "microlensing_polynomial_degree": 1,
+        "shift_only_delay_days": 115.85073372920547,
+        "shift_only_chi_square": 105.84040185552988,
+        "shift_stretch_delay_days": 111.55249944889066,
+        "relative_clock_rate_B_over_A": 0.9000000000100737,
+        "shift_stretch_chi_square": 88.52492414034572,
+        "delta_chi_square_one_extra_parameter": 17.31547771518416,
+        "stretch_at_search_boundary": true
+      },
+      {
+        "smoothing_factor_times_n": 4.0,
+        "microlensing_polynomial_degree": 2,
+        "shift_only_delay_days": 116.93340527814097,
+        "shift_only_chi_square": 99.58032740202506,
+        "shift_stretch_delay_days": 112.67459951568509,
+        "relative_clock_rate_B_over_A": 0.9000000001432049,
+        "shift_stretch_chi_square": 81.6118321452402,
+        "delta_chi_square_one_extra_parameter": 17.968495256784863,
+        "stretch_at_search_boundary": true
+      }
+    ]
+  },
+  "relative_clock_rate_range": [
+    0.9000000000100737,
+    1.099999866259627
+  ],
+  "delta_chi_square_range": [
+    0.8417566786937556,
+    20.63091864991344
+  ],
+  "path_dependent_clock_rate_stable": false,
+  "tau_time_distortion_claim_allowed": false,
+  "verdict": "DESJ0408_AB_STRETCH_CANDIDATE_NOT_ROBUST_TO_SOURCE_AND_MICROLENSING_MODEL",
+  "claim_boundary": "Exploratory endpoint-opened relative time-scale test. The central fit is not a significance claim because source smoothing and microlensing flexibility are not independently frozen and the D image is not informative enough for a four-path replication.",
+  "next_finite_action": "Calibrate the identical frozen shift-versus-stretch estimator on publication-grade mock light curves with known unit stretch, then apply it unchanged to at least one additional high-cadence lens."
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "paper7 DES J0408 host brightness moment preflight v1",
+  "target": "DES J0408-5354 quasar host at z=2.375",
+  "selected_imaging_model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+  "input_scope": "lens/image posterior only; no delay data",
+  "linear_parameter_counts": [
+    41,
+    41,
+    66
+  ],
+  "grid_side": 241,
+  "grid_half_width_arcsec": 0.8,
+  "positive_integrated_brightness": 118064.20436014689,
+  "negative_integrated_brightness_absolute": 193214.0106554263,
+  "negative_to_positive_ratio": 1.6365164336011615,
+  "minimum_brightness": -109588.60231014376,
+  "maximum_brightness": 384.73153833829633,
+  "positivity_rule": "negative-to-positive integrated brightness ratio <0.05",
+  "direct_nonparametric_moment_authorized": false,
+  "sfh_02_relative_morphology_materialized": false,
+  "theta_M_identified": false,
+  "time_score_authorized": false,
+  "verdict": "DESJ0408_SIGNED_HOST_RECONSTRUCTION_BLOCKS_DIRECT_MOMENT",
+  "claim_boundary": "Image-only reconstruction preflight. Clipping negative brightness is not authorized as a physical source descriptor."
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "Paper 7 RXJ1131 dimensionless path descriptor v1",
+  "target": "RXJ1131-1231",
+  "source_packet": "data/derived/repro_results/tau_core_lensing_rxj1131_pre2026_predictor_source_packet_v1/summary.json",
+  "construction": {
+    "path_descriptor": "d_i=(r_i/theta_E, gamma*cos(2(phi_i-phi_gamma)), theta_E*grad(kappa)*cos(phi_i-phi_grad), b_sat/|r_i-r_sat|)",
+    "pair_descriptor": "Delta_ij=d_i-d_j",
+    "angle_convention": "Published astronomical position angles are converted from north-through-east to atan2(dDec,dRA*cosDec)."
+  },
+  "component_names": [
+    "rho_main",
+    "shear_radial_contraction",
+    "gradient_radial_contraction",
+    "satellite_relative_load"
+  ],
+  "path_descriptors": {
+    "A": {
+      "rho_main": 1.284308469602302,
+      "shear_radial_contraction": 0.07733169490704293,
+      "gradient_radial_contraction": 0.007867807854440016,
+      "satellite_relative_load": 0.08924462845572285
+    },
+    "B": {
+      "rho_main": 1.2975615486886687,
+      "shear_radial_contraction": 0.07243737692945874,
+      "gradient_radial_contraction": 0.008157425524141502,
+      "satellite_relative_load": 0.10190502370973367
+    },
+    "C": {
+      "rho_main": 1.367047605339596,
+      "shear_radial_contraction": -0.010852570594482094,
+      "gradient_radial_contraction": 0.004974861874568866,
+      "satellite_relative_load": 0.07614597712095834
+    },
+    "D": {
+      "rho_main": 0.6888603301336824,
+      "shear_radial_contraction": 0.08125968331780484,
+      "gradient_radial_contraction": -0.007996984499225295,
+      "satellite_relative_load": 0.16539949524939382
+    }
+  },
+  "pairwise_path_contrasts": {
+    "A_B": {
+      "rho_main": -0.013253079086366748,
+      "shear_radial_contraction": 0.004894317977584189,
+      "gradient_radial_contraction": -0.00028961766970148593,
+      "satellite_relative_load": -0.012660395254010817
+    },
+    "A_C": {
+      "rho_main": -0.08273913573729397,
+      "shear_radial_contraction": 0.08818426550152503,
+      "gradient_radial_contraction": 0.0028929459798711504,
+      "satellite_relative_load": 0.01309865133476451
+    },
+    "A_D": {
+      "rho_main": 0.5954481394686195,
+      "shear_radial_contraction": -0.003927988410761904,
+      "gradient_radial_contraction": 0.01586479235366531,
+      "satellite_relative_load": -0.07615486679367096
+    },
+    "B_C": {
+      "rho_main": -0.06948605665092722,
+      "shear_radial_contraction": 0.08328994752394084,
+      "gradient_radial_contraction": 0.0031825636495726364,
+      "satellite_relative_load": 0.025759046588775328
+    },
+    "B_D": {
+      "rho_main": 0.6087012185549863,
+      "shear_radial_contraction": -0.008822306388346093,
+      "gradient_radial_contraction": 0.016154410023366796,
+      "satellite_relative_load": -0.06349447153966015
+    },
+    "C_D": {
+      "rho_main": 0.6781872752059135,
+      "shear_radial_contraction": -0.09211225391228693,
+      "gradient_radial_contraction": 0.012971846373794161,
+      "satellite_relative_load": -0.08925351812843547
+    }
+  },
+  "centered_path_matrix_rank": 3,
+  "all_components_dimensionless": true,
+  "all_values_finite": true,
+  "terminal_values_used": false,
+  "fitted_weights_used": false,
+  "scalar_predictor_selected": false,
+  "predictor_sign_selected": false,
+  "complete_object_level_cone_used": false,
+  "vector_descriptor_materialized": true,
+  "verdict": "RXJ1131_DIMENSIONLESS_VECTOR_PATH_DESCRIPTOR_MATERIALIZED__SCALAR_LAW_AND_COMPLETE_CONE_OPEN",
+  "next_finite_action": "Place the six frozen pair contrasts against a declared standard lens-model nuisance design and test whether any source-fixed component survives nuisance projection. Do not open or fit the 2026 terminal values during that construction.",
+  "claim_boundary": "This is a terminal-blind coordinate construction from pre-2026 inputs. It is not a Tau scalar law, a complete light cone, a flux prediction, or evidence for observer-time distortion."
+}

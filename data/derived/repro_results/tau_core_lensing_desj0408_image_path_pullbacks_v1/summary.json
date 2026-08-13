@@ -1,0 +1,245 @@
+{
+  "schema": "paper7 DES J0408 image path pullbacks v1",
+  "target": "DES J0408-5354",
+  "source_morphology_artifact": "data/derived/repro_results/tau_core_lensing_desj0408_source_morphology_triangle_v1/summary.json",
+  "selected_imaging_model_id": "0408_run1001_0_0_0_0_0_1_1_0",
+  "input_scope": "public lens/image posterior only; no time-delay file, observed delay, delay residual, or T2 score",
+  "operator_definition": "R_gamma_i = inverse[D_theta beta(theta_i)] acting on each frozen oriented source-morphology edge",
+  "path_count": 4,
+  "parity_counts": {
+    "positive": 2,
+    "negative": 2
+  },
+  "all_pullbacks_finite_and_conditioned": true,
+  "local_lens_transport_materialized": true,
+  "sfh_03_path_pullback_materialized": false,
+  "theta_M_identified": false,
+  "a_O_identified": false,
+  "h_tau_materialized": false,
+  "time_score_authorized": false,
+  "legacy_lens_model_list": [
+    "SPEMD",
+    "SHEAR_GAMMA_PSI",
+    "SIS",
+    "SIS",
+    "SIS",
+    "SIS",
+    "SIS",
+    "SIS"
+  ],
+  "runtime_lens_model_list": [
+    "SPEMD",
+    "SHEAR_GAMMA_PSI",
+    "SIS",
+    "SIS",
+    "SIS",
+    "SIS",
+    "SIS",
+    "SIS"
+  ],
+  "legacy_aliases": {},
+  "paths": [
+    {
+      "path_index": 0,
+      "image_position_arcsec": [
+        1.94625303424754,
+        -1.57203936548249
+      ],
+      "ray_shot_source_position_arcsec": [
+        0.2348707503952613,
+        -2.304503371500475
+      ],
+      "source_from_image_jacobian": [
+        [
+          0.5374189820651623,
+          -0.19172414766899237
+        ],
+        [
+          -0.20696435676370584,
+          0.5143741493563994
+        ]
+      ],
+      "image_from_source_local_pullback": [
+        [
+          2.1726068084888395,
+          0.8098019488315296
+        ],
+        [
+          0.8741733447957271,
+          2.2699432716571195
+        ]
+      ],
+      "jacobian_determinant": 0.23675436684936718,
+      "signed_magnification": 4.2237869286535314,
+      "condition_number": 2.2239804543557664,
+      "morse_index_from_symmetric_jacobian": 0,
+      "parity": "positive",
+      "mapped_oriented_edges_arcsec": {
+        "host_to_inner_arc": [
+          -0.881777891805485,
+          0.43972625413655597
+        ],
+        "host_to_outer_arc": [
+          1.1706846983049704,
+          2.1415417580375866
+        ],
+        "inner_to_outer_arc": [
+          2.052462590110456,
+          1.7018155039010305
+        ]
+      }
+    },
+    {
+      "path_index": 1,
+      "image_position_arcsec": [
+        -1.81264803820551,
+        0.274715999543086
+      ],
+      "ray_shot_source_position_arcsec": [
+        0.23491912597364906,
+        -2.3045248786362706
+      ],
+      "source_from_image_jacobian": [
+        [
+          0.5911808881032812,
+          -0.16828161086834825
+        ],
+        [
+          -0.18425190262405522,
+          0.1966145529431742
+        ]
+      ],
+      "image_from_source_local_pullback": [
+        [
+          2.306909270190012,
+          1.9744744338782587
+        ],
+        [
+          2.1618563623641305,
+          6.936417730577609
+        ]
+      ],
+      "jacobian_determinant": 0.08522855904384127,
+      "signed_magnification": 11.73315624737482,
+      "condition_number": 5.088314690066952,
+      "morse_index_from_symmetric_jacobian": 0,
+      "parity": "positive",
+      "mapped_oriented_edges_arcsec": {
+        "host_to_inner_arc": [
+          -0.48076539449267935,
+          1.6280507656449028
+        ],
+        "host_to_outer_arc": [
+          2.2007990409669147,
+          6.432713683716406
+        ],
+        "inner_to_outer_arc": [
+          2.6815644354595944,
+          4.804662918071503
+        ]
+      }
+    },
+    {
+      "path_index": 2,
+      "image_position_arcsec": [
+        -1.92965897660894,
+        -0.944925819007304
+      ],
+      "ray_shot_source_position_arcsec": [
+        0.23491297768904196,
+        -2.304507385339452
+      ],
+      "source_from_image_jacobian": [
+        [
+          0.6393059475963128,
+          0.24666264586414854
+        ],
+        [
+          0.23319817188394154,
+          -0.3763926220988765
+        ]
+      ],
+      "image_from_source_local_pullback": [
+        [
+          1.2624214511782,
+          0.827306905238625
+        ],
+        [
+          0.7821470381650916,
+          -2.144233161667492
+        ]
+      ],
+      "jacobian_determinant": -0.2981513200267586,
+      "signed_magnification": -3.3540015852026133,
+      "condition_number": 1.6121636983770549,
+      "morse_index_from_symmetric_jacobian": 1,
+      "parity": "negative",
+      "mapped_oriented_edges_arcsec": {
+        "host_to_inner_arc": [
+          -0.3665673046945425,
+          -1.3128929963577305
+        ],
+        "host_to_outer_arc": [
+          0.9867933112681865,
+          -1.6715134181447229
+        ],
+        "inner_to_outer_arc": [
+          1.3533606159627292,
+          -0.35862042178699244
+        ]
+      }
+    },
+    {
+      "path_index": 3,
+      "image_position_arcsec": [
+        0.10585560910593,
+        1.38673209789384
+      ],
+      "ray_shot_source_position_arcsec": [
+        0.2348865924569039,
+        -2.3045590128578888
+      ],
+      "source_from_image_jacobian": [
+        [
+          -0.2623138506695497,
+          0.11040850733667895
+        ],
+        [
+          0.12583774022800753,
+          0.8291243308301546
+        ]
+      ],
+      "image_from_source_local_pullback": [
+        [
+          -3.583320653237944,
+          0.47716496781197354
+        ],
+        [
+          0.5438472334593455,
+          1.133671517989888
+        ]
+      ],
+      "jacobian_determinant": -0.2313843529690666,
+      "signed_magnification": -4.3218134120490355,
+      "condition_number": 3.063042924055164,
+      "morse_index_from_symmetric_jacobian": 1,
+      "parity": "negative",
+      "mapped_oriented_edges_arcsec": {
+        "host_to_inner_arc": [
+          2.1951828717035236,
+          0.15973908281299382
+        ],
+        "host_to_outer_arc": [
+          -0.3731704489820064,
+          1.0929876339009474
+        ],
+        "inner_to_outer_arc": [
+          -2.56835332068553,
+          0.9332485510879537
+        ]
+      }
+    }
+  ],
+  "verdict": "DESJ0408_FOUR_LOCAL_LENS_TRANSPORTS_FROZEN__BODY_PULLBACK_BLOCKED",
+  "claim_boundary": "Local linear 4D lens transport only. Its current morphology triangle crosses source planes, so it is not yet an SFH_03 body pullback, body clock, time covector, time distortion, or Tau detection."
+}

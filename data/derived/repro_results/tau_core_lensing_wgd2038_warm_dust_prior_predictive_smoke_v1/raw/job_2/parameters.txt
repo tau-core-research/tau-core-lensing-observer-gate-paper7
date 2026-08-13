@@ -1,0 +1,3 @@
+log10_sigma_sub log_mc LOS_normalization shmf_log_slope log_m_host source_size_pc bic summary_statistic logL_image_data source_plane_sol seed
+-1.1160298 5.9260062 1.0423406 -1.8900229 13.21585 1.1808988 1.0 0.0932192 1.0 0.0020738 20384008.0
+0.081598 5.9628251 1.0519134 -1.9487268 13.3662231 8.2932134 1.0 0.1577986 1.0 0.0013343 20384009.0

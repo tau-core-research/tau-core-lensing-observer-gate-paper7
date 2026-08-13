@@ -1,0 +1,124 @@
+{
+  "schema": "paper7 DES J0408 CRR-B F814W heldout score freeze v1",
+  "status": "PREFLIGHT_NOT_ENDPOINT",
+  "fold": "LOBO-F814W",
+  "training_bands": [
+    "F475X",
+    "F160W"
+  ],
+  "heldout_band": "F814W",
+  "geometry_source": {
+    "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/temp/tau_core_crr_b_lobo_f814w_preflight_out.txt",
+    "sha256": "806a71d323bc5cca82af863d0ecc0baf86e06655b93cceb33be6bac35a716f0e",
+    "bytes": 6259882
+  },
+  "frozen_inputs": {
+    "heldout_data": {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/data_f814w.hdf5",
+      "sha256": "e62bb52664290688376f6761af0d8fde24cbaf3f7caa00b2e69b6f60b993cea4",
+      "datasets": {
+        "background_rms": {
+          "shape": [],
+          "dtype": "float64"
+        },
+        "dec_at_xy_0": {
+          "shape": [],
+          "dtype": "float64"
+        },
+        "exposure_map": {
+          "shape": [
+            180,
+            180
+          ],
+          "dtype": ">f4"
+        },
+        "image_data": {
+          "shape": [
+            180,
+            180
+          ],
+          "dtype": "float32"
+        },
+        "ra_at_xy_0": {
+          "shape": [],
+          "dtype": "float64"
+        },
+        "transform_pix2angle": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    "heldout_psf": {
+      "path": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/data/psf_f814w.hdf5",
+      "sha256": "8c1523ab5811fcf7afbc14b97310b128229e30983cfd3b414804580216837123",
+      "datasets": {
+        "kernel_point_source": {
+          "shape": [
+            61,
+            61
+          ],
+          "dtype": "float64"
+        },
+        "psf_error_map": {
+          "shape": [
+            61,
+            61
+          ],
+          "dtype": "float64"
+        }
+      }
+    },
+    "heldout_mask": {
+      "source": "geometry preflight image_likelihood_mask_list[0]",
+      "sha256_array_bytes": "7d2450d396f0cebaad494524d31b0b149b98055956d2e13c4e87f60539dbeac1",
+      "shape": [
+        180,
+        180
+      ],
+      "active_pixels": 21115
+    }
+  },
+  "allowed_heldout_nuisance": [
+    "linear amplitudes of the frozen lens-light, source-light, and point-source templates",
+    "one constant additive background mode"
+  ],
+  "forbidden_after_opening": [
+    "nonlinear lens or source geometry refit",
+    "heldout-dependent model-family choice",
+    "PSF kernel optimization against heldout residuals",
+    "mask, threshold, sign, or spatial-window retuning",
+    "time, quantum, or other-readout attribution"
+  ],
+  "psf_uncertainty_rule": {
+    "kernel": "public fixed F814W kernel_point_source",
+    "uncertainty": "public psf_error_map propagated as a frozen covariance contribution",
+    "free_psf_modes": 0
+  },
+  "primary_statistic": {
+    "name": "profiled_whitened_spatial_residual_energy",
+    "definition": "Q = r_profiled^T C_frozen^{-1} r_profiled / nu",
+    "residual": "heldout pixels minus frozen-geometry templates after allowed linear profiling",
+    "covariance": "declared image noise plus propagated public PSF-error covariance",
+    "mask": "preflight image_likelihood_mask_list[0], frozen by array hash"
+  },
+  "diagnostics_not_detection_tests": [
+    "normalized residual radial profile",
+    "quadrant residual coherence",
+    "image-centroid residual",
+    "parity-signed residual after image-role mapping is independently frozen"
+  ],
+  "required_controls_before_channel_candidate": [
+    "same score on all three LOBO folds",
+    "null calibration by noise realizations or posterior predictive simulations",
+    "wrong-band and PSF-stress controls",
+    "replication on an independent lens system"
+  ],
+  "heldout_image_values_read_by_freeze": false,
+  "heldout_score_computed": false,
+  "channel_effect_claim_allowed": false,
+  "verdict": "CRR_B_F814W_HOLDOUT_SCORE_FROZEN_EVALUATION_NOT_YET_RUN"
+}

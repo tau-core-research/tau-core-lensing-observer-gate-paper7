@@ -1,0 +1,62 @@
+{
+  "schema": "paper7 DES J0408 scalar body-path coupling audit v1",
+  "target": "DES J0408-5354 quasar host at z=2.375",
+  "input_scope": "image-only stable scalar host moment and frozen local lens Jacobians; no delay data, residual, or time endpoint",
+  "source_scalar": {
+    "definition": "q_s = tr(Q_s)",
+    "mean_moment_trace_arcsec2": 0.025329057647905762,
+    "model_family_coefficient_of_variation": 0.15953611652506425,
+    "materialized": true
+  },
+  "transport_law": "Q_s^iso=(q_s/2)I; Q_i=R_i Q_s^iso R_i^T; tr(Q_i)=q_s tr(R_i R_i^T)/2",
+  "rows": [
+    {
+      "path_index": 0,
+      "parity": "positive",
+      "signed_magnification": 4.2237869286535314,
+      "scalar_shape_stretch": 5.64641051695809,
+      "predicted_isotropic_image_trace_arcsec2": 0.14301825748777286,
+      "source_normalized_image_trace": 5.646410516958091,
+      "factorization_error": 2.7755575615628914e-17
+    },
+    {
+      "path_index": 1,
+      "parity": "positive",
+      "signed_magnification": 11.73315624737482,
+      "scalar_shape_stretch": 31.00394676774659,
+      "predicted_isotropic_image_trace_arcsec2": 0.7853007549928548,
+      "source_normalized_image_trace": 31.003946767746584,
+      "factorization_error": 1.1102230246251565e-16
+    },
+    {
+      "path_index": 2,
+      "parity": "negative",
+      "signed_magnification": -3.3540015852026133,
+      "scalar_shape_stretch": 3.743817238377689,
+      "predicted_isotropic_image_trace_arcsec2": 0.09482736265409183,
+      "source_normalized_image_trace": 3.743817238377689,
+      "factorization_error": 0.0
+    },
+    {
+      "path_index": 3,
+      "parity": "negative",
+      "signed_magnification": -4.3218134120490355,
+      "scalar_shape_stretch": 7.324427117235743,
+      "predicted_isotropic_image_trace_arcsec2": 0.18552083669034838,
+      "source_normalized_image_trace": 7.324427117235745,
+      "factorization_error": 2.7755575615628914e-17
+    }
+  ],
+  "maximum_factorization_error": 1.1102230246251565e-16,
+  "exact_scalar_body_path_factorization": true,
+  "source_information_survives_normalized_path_contrast": false,
+  "independent_body_path_interaction_materialized": false,
+  "partial_single_body_scalar_descriptor_materialized": true,
+  "sfh_02_relative_morphology_materialized": false,
+  "sfh_03_body_conditioned_path_pullback_materialized": false,
+  "theta_M_identified": false,
+  "h_tau_materialized": false,
+  "time_score_authorized": false,
+  "verdict": "SCALAR_TRANSPORT_EXACTLY_FACTORIZES__NO_NEW_BODY_PATH_INFORMATION",
+  "claim_boundary": "The stable host-size scalar produces finite path-conditioned image sizes, but after source normalization the result is exactly the standard local lens-Jacobian stretch. This is a useful scalar control and partial body descriptor, not a complete SFH_02/SFH_03 handoff, body clock, h_tau, observer-time distortion, or Tau signal."
+}
