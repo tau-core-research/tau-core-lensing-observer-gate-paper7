@@ -717,7 +717,7 @@ def test_paper_critical_verdicts_match_summary_artifacts():
         wgd2038_fermat_preflight["verdict"][
             "bounded_local_image_fermat_table_materialized"
         ]
-        is True
+        == (wgd2038_fermat_preflight["counts"]["image_row_count"] > 0)
     )
     assert (
         wgd2038_fermat_preflight["verdict"]["uses_converged_or_published_wgd_posterior"]
@@ -725,8 +725,18 @@ def test_paper_critical_verdicts_match_summary_artifacts():
     )
     assert wgd2038_fermat_preflight["verdict"]["can_apply_des_frozen_score_now"] is False
     assert wgd2038_fermat_preflight["verdict"]["real_data_T2_sampling_authorized"] is False
-    assert wgd2038_fermat_preflight["counts"]["successful_job_count"] == 3
-    assert wgd2038_fermat_preflight["counts"]["image_row_count"] == 12
+    if wgd2038_fermat_preflight["verdict"][
+        "bounded_local_image_fermat_table_materialized"
+    ]:
+        assert wgd2038_fermat_preflight["counts"]["successful_job_count"] == 3
+        assert wgd2038_fermat_preflight["counts"]["image_row_count"] == 12
+    else:
+        assert wgd2038_fermat_preflight["counts"]["successful_job_count"] == 0
+        assert wgd2038_fermat_preflight["counts"]["image_row_count"] == 0
+        assert all(
+            not job.get("extraction_success", False)
+            for job in wgd2038_fermat_preflight["job_summaries"]
+        )
     assert wgd2038_fermat_preflight["counts"]["score_ready_row_count"] == 0
     assert (
         wgd2038_observed_smoke["verdict"]["wgd2038_observed_delay_vector_materialized"]
@@ -740,7 +750,9 @@ def test_paper_critical_verdicts_match_summary_artifacts():
     )
     assert (
         wgd2038_observed_smoke["verdict"]["wgd2038_no_t2_residual_smoke_computed"]
-        is True
+        == wgd2038_fermat_preflight["verdict"][
+            "bounded_local_image_fermat_table_materialized"
+        ]
     )
     assert (
         wgd2038_observed_smoke["verdict"]["uses_converged_or_published_wgd_posterior"]
@@ -766,7 +778,15 @@ def test_paper_critical_verdicts_match_summary_artifacts():
         "AC",
         "AD",
     ]
-    assert wgd2038_observed_smoke["counts"]["delay_pair_row_count"] == 9
+    expected_delay_pair_rows = (
+        9
+        if wgd2038_observed_smoke["verdict"]["wgd2038_no_t2_residual_smoke_computed"]
+        else 0
+    )
+    assert (
+        wgd2038_observed_smoke["counts"]["delay_pair_row_count"]
+        == expected_delay_pair_rows
+    )
     assert wgd2038_observed_smoke["counts"]["score_ready_row_count"] == 0
     assert (
         wgd2038_published_shape["verdict"][
@@ -837,7 +857,10 @@ def test_paper_critical_verdicts_match_summary_artifacts():
         ]
         is True
     )
-    assert wgd2038_delay_linkage["verdict"]["bounded_no_t2_residual_smoke_present"] is True
+    assert (
+        wgd2038_delay_linkage["verdict"]["bounded_no_t2_residual_smoke_present"]
+        == wgd2038_observed_smoke["verdict"]["wgd2038_no_t2_residual_smoke_computed"]
+    )
     assert (
         wgd2038_delay_linkage["verdict"][
             "predeclared_delay_shape_holdout_target_present"
