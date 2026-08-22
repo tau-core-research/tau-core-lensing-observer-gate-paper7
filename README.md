@@ -46,6 +46,17 @@ the screen interaction has been derived from an action;
 the parent theory uniquely predicts the lensing operator.
 ```
 
+## Source-Transport Boundary
+
+The T2 operator is a terminal discriminator, not a reconstructed parent
+connection. The current Tau Core source audit permits smooth non-scalar
+optical transport only conditionally through either an independently sourced
+full body connection or Kato transport `[dP_O,P_O]` of a varying,
+constant-rank, source-owned access projector. Scalar `U(1)` phase/clock
+holonomy does not determine normalized non-scalar optical orientation, and
+direct full-rank access has zero Kato generator. No lensing endpoint or fitted
+T2 amplitude is used to select the missing source arrows.
+
 ## Relation to Later Photon-Lensing MAR Work
 
 Paper 18 adds a separate photon-lensing Morphological Alignment Residual (MAR)
