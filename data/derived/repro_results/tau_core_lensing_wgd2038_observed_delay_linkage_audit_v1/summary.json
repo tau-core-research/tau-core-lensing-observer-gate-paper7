@@ -22,14 +22,14 @@
     },
     "fermat_preflight_counts": {
       "candidate_job_count": 3,
-      "image_row_count": 12,
+      "image_row_count": 0,
       "score_ready_row_count": 0,
-      "successful_job_count": 3
+      "successful_job_count": 0
     },
     "observed_delay_smoke_counts": {
-      "delay_pair_row_count": 9,
+      "delay_pair_row_count": 0,
       "score_ready_row_count": 0,
-      "successful_local_fermat_job_count": 3
+      "successful_local_fermat_job_count": 0
     },
     "partial_materialization_counts": {
       "expected_joblib_present_count": 0,
@@ -39,9 +39,9 @@
       "score_ready_model_rows": 0
     },
     "shape_target_values": {
-      "best_scalar_scale": 1.1015098079922812,
+      "best_scalar_scale": 1.1015098079922807,
       "covariance_metric_norm_sigma_units": 3.237831613447079,
-      "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+      "implied_h0_if_pure_scale_from_h0_70": 63.54913909263217,
       "normalized_shape_rmse_sigma_units": 2.28949269020861,
       "observed_delay_days": {
         "AB": -12.4,
@@ -49,19 +49,19 @@
         "AD": -33.3
       },
       "scaled_published_model_delay_days": {
-        "AB": -5.507549039961406,
-        "AC": -11.015098079922812,
-        "AD": -26.656537353413203
+        "AB": -5.507549039961404,
+        "AC": -11.015098079922808,
+        "AD": -26.656537353413192
       },
       "target_euclidean_unit_direction": {
-        "AB": -0.618203476848736,
-        "AC": 0.5126033575028923,
-        "AD": -0.595871008766911
+        "AB": -0.6182034768487359,
+        "AC": 0.5126033575028919,
+        "AD": -0.5958710087669118
       },
       "target_residual_days": {
-        "AB": -6.892450960038595,
-        "AC": 5.715098079922812,
-        "AD": -6.643462646586794
+        "AB": -6.892450960038596,
+        "AC": 5.715098079922808,
+        "AD": -6.643462646586805
       }
     }
   },
@@ -94,7 +94,7 @@
     },
     {
       "component": "local_bounded_fermat_parity_table",
-      "detail": "12 image rows across 3 bounded local jobs contain image coordinates, Fermat potentials, and Morse/parity labels.",
+      "detail": "0 image rows across 0 bounded local jobs contain image coordinates, Fermat potentials, and Morse/parity labels.",
       "row_id": "WGD_DELAY_LINKAGE_004",
       "score_blocker": false,
       "source": "local bounded WGD diagnostic outputs",
@@ -119,7 +119,7 @@
   ],
   "schema": "paper7 WGD2038 observed-delay linkage audit v1",
   "verdict": {
-    "bounded_no_t2_residual_smoke_present": true,
+    "bounded_no_t2_residual_smoke_present": false,
     "can_apply_des_frozen_score_now": false,
     "can_compute_wgd_no_t2_residual_vector_now": true,
     "claim_level": "source_backed_delay_vector_plus_local_smoke_not_time_shift_evidence",

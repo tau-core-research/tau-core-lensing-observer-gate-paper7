@@ -37,12 +37,12 @@
       "fits_or_samples_t2": false,
       "observed_delay_days": -12.4,
       "posterior_level_score": false,
-      "scaled_published_model_delay_days": -5.507549039961406,
+      "scaled_published_model_delay_days": -5.507549039961404,
       "source_claim_level": "published_model_level_delay_shape_crosscheck_not_T2_evidence",
       "source_model_id": "lenstronomy_combined_h0_70_flat_lcdm",
-      "target_euclidean_unit_component": -0.618203476848736,
+      "target_euclidean_unit_component": -0.6182034768487359,
       "target_id": "wgd2038_published_model_delay_shape_target_v1",
-      "target_residual_days": -6.892450960038595
+      "target_residual_days": -6.892450960038596
     },
     {
       "basis": "publication_A_centered_Delta_t_AX_days",
@@ -51,12 +51,12 @@
       "fits_or_samples_t2": false,
       "observed_delay_days": -5.3,
       "posterior_level_score": false,
-      "scaled_published_model_delay_days": -11.015098079922812,
+      "scaled_published_model_delay_days": -11.015098079922808,
       "source_claim_level": "published_model_level_delay_shape_crosscheck_not_T2_evidence",
       "source_model_id": "lenstronomy_combined_h0_70_flat_lcdm",
-      "target_euclidean_unit_component": 0.5126033575028923,
+      "target_euclidean_unit_component": 0.5126033575028919,
       "target_id": "wgd2038_published_model_delay_shape_target_v1",
-      "target_residual_days": 5.715098079922812
+      "target_residual_days": 5.715098079922808
     },
     {
       "basis": "publication_A_centered_Delta_t_AX_days",
@@ -65,12 +65,12 @@
       "fits_or_samples_t2": false,
       "observed_delay_days": -33.3,
       "posterior_level_score": false,
-      "scaled_published_model_delay_days": -26.656537353413203,
+      "scaled_published_model_delay_days": -26.656537353413192,
       "source_claim_level": "published_model_level_delay_shape_crosscheck_not_T2_evidence",
       "source_model_id": "lenstronomy_combined_h0_70_flat_lcdm",
-      "target_euclidean_unit_component": -0.595871008766911,
+      "target_euclidean_unit_component": -0.5958710087669118,
       "target_id": "wgd2038_published_model_delay_shape_target_v1",
-      "target_residual_days": -6.643462646586794
+      "target_residual_days": -6.643462646586805
     }
   ],
   "schema": "paper7 WGD2038 delay-shape holdout target v1",
@@ -98,9 +98,9 @@
     "target_id": "wgd2038_published_model_delay_shape_target_v1"
   },
   "target_values": {
-    "best_scalar_scale": 1.1015098079922812,
+    "best_scalar_scale": 1.1015098079922807,
     "covariance_metric_norm_sigma_units": 3.237831613447079,
-    "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+    "implied_h0_if_pure_scale_from_h0_70": 63.54913909263217,
     "normalized_shape_rmse_sigma_units": 2.28949269020861,
     "observed_delay_days": {
       "AB": -12.4,
@@ -108,19 +108,19 @@
       "AD": -33.3
     },
     "scaled_published_model_delay_days": {
-      "AB": -5.507549039961406,
-      "AC": -11.015098079922812,
-      "AD": -26.656537353413203
+      "AB": -5.507549039961404,
+      "AC": -11.015098079922808,
+      "AD": -26.656537353413192
     },
     "target_euclidean_unit_direction": {
-      "AB": -0.618203476848736,
-      "AC": 0.5126033575028923,
-      "AD": -0.595871008766911
+      "AB": -0.6182034768487359,
+      "AC": 0.5126033575028919,
+      "AD": -0.5958710087669118
     },
     "target_residual_days": {
-      "AB": -6.892450960038595,
-      "AC": 5.715098079922812,
-      "AD": -6.643462646586794
+      "AB": -6.892450960038596,
+      "AC": 5.715098079922808,
+      "AD": -6.643462646586805
     }
   },
   "verdict": {

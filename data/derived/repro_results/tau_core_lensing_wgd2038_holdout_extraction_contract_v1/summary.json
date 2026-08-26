@@ -68,6 +68,7 @@
       "posterior_joblib_outputs_reproduced": false
     },
     "wgd2038_public_payload_criteria": {
+      "arxiv_2406_02683_source_tables_acquired": true,
       "ddt_weight_csv_present": true,
       "fermat_notebook_present": true,
       "google_drive_payload_acquired": false,

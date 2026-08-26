@@ -33,8 +33,8 @@
     ]
   },
   "observed": {
-    "relative_clock_rate_B_over_A": 1.0594277168973072,
-    "delta_chi_square": 6.078322385369603
+    "relative_clock_rate_B_over_A": 1.0594291128243862,
+    "delta_chi_square": 6.078322394573263
   },
   "scenario_results": [
     {
@@ -44,9 +44,9 @@
       "rate_p_value": 0.35384615384615387,
       "improvement_p_value": 0.5384615384615384,
       "rate_quantiles_2p5_50_97p5": [
-        0.9000000000784929,
-        1.005245305764903,
-        1.0921426795814695
+        0.9000000002835915,
+        1.00524485549353,
+        1.0921442583499028
       ]
     },
     {
@@ -56,37 +56,37 @@
       "rate_p_value": 0.23076923076923078,
       "improvement_p_value": 0.47692307692307695,
       "rate_quantiles_2p5_50_97p5": [
-        0.9071642849257948,
-        0.9967693031612351,
-        1.0946801035481064
+        0.9071659398643143,
+        0.9967686879958486,
+        1.0946790031334916
       ]
     },
     {
       "source_residual_timescale_days": 20.0,
       "extrinsic_timescale_days": 30.0,
       "mock_count": 64,
-      "rate_p_value": 0.3230769230769231,
+      "rate_p_value": 0.3384615384615385,
       "improvement_p_value": 0.6153846153846154,
       "rate_quantiles_2p5_50_97p5": [
-        0.9000000006165891,
-        0.9863146013699626,
-        1.0828464493866714
+        0.9000000001260272,
+        0.9863134755837086,
+        1.0828460888492948
       ]
     },
     {
       "source_residual_timescale_days": 20.0,
       "extrinsic_timescale_days": 60.0,
       "mock_count": 64,
-      "rate_p_value": 0.3230769230769231,
+      "rate_p_value": 0.3384615384615385,
       "improvement_p_value": 0.5384615384615384,
       "rate_quantiles_2p5_50_97p5": [
-        0.9000000001900169,
-        0.9841252475462952,
-        1.06242827721843
+        0.900000000140843,
+        0.980174090366154,
+        1.0624277800334065
       ]
     }
   ],
-  "pooled_rate_p_value": 0.29961089494163423,
+  "pooled_rate_p_value": 0.30739299610894943,
   "pooled_improvement_p_value": 0.5369649805447471,
   "every_declared_scenario_rejects_unit_stretch": false,
   "path_dependent_clock_rate_supported": false,

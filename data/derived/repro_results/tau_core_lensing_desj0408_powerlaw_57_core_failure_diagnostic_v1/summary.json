@@ -3,7 +3,7 @@
   "purpose": "Classify 57-parameter core mismatches as strict passes, outlier-dominated failures, or broad distribution-level failures.",
   "source": {
     "source_id": "DESJ0408_time_delay_cosmography",
-    "helper_python": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python",
+    "helper_python": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python",
     "sample_limit": 1024
   },
   "aggregate": {

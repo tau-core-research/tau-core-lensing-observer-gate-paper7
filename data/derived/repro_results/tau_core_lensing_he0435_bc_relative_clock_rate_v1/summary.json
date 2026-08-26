@@ -18,24 +18,24 @@
       -4.8
     ],
     "shift_only_delay_days": -6.230550500862137,
-    "shift_stretch_delay_days": -6.341802182349975,
-    "relative_clock_rate_C_over_B": 1.0008982572542062,
-    "delta_chi_square_one_extra_parameter": 327.73158300359137
+    "shift_stretch_delay_days": -6.341679991182914,
+    "relative_clock_rate_C_over_B": 1.0008982104169388,
+    "delta_chi_square_one_extra_parameter": 327.7315768026019
   },
   "official_unit_stretch_mock_count": 128,
   "official_mock_null": {
     "rate_quantiles_2p5_50_97p5": [
-      0.9994006617928218,
-      1.0020009997613033,
-      1.0050885671482308
+      0.9996327407913479,
+      1.0019529832783793,
+      1.0050748927653212
     ],
     "improvement_quantiles_2p5_50_97p5": [
-      3.1237103284206156,
-      295.7915612495235,
-      866.8538346188813
+      3.3702914721719983,
+      303.70695697326573,
+      866.8540009560872
     ],
     "empirical_two_sided_rate_p_value": 0.7906976744186046,
-    "empirical_improvement_p_value": 0.4496124031007752
+    "empirical_improvement_p_value": 0.46511627906976744
   },
   "path_dependent_clock_rate_supported": false,
   "tau_time_distortion_claim_allowed": false,

@@ -26,7 +26,7 @@
         -0.08151641797129094
       ],
       "negative_parity_interaction_multiset": [
-        -0.20208074448001279,
+        -0.2020807444800129,
         0.4202829870586262
       ],
       "negative_parity_sign_split": true
@@ -34,12 +34,12 @@
     {
       "model_id": "0408_run902_0_0_1_0_0_1_1_0",
       "positive_parity_interaction_multiset": [
-        0.00236726000548515,
+        0.002367260005485372,
         0.07433159895022423
       ],
       "negative_parity_interaction_multiset": [
-        -0.06265306718127839,
-        0.06666143414986858
+        -0.0626530671812785,
+        0.0666614341498688
       ],
       "negative_parity_sign_split": true
     },
@@ -74,7 +74,7 @@
         0.0437376993411851
       ],
       "negative_parity_interaction_multiset": [
-        -0.22200041808114312,
+        -0.22200041808114335,
         0.3745772582169322
       ],
       "negative_parity_sign_split": true
@@ -94,8 +94,8 @@
     {
       "model_id": "0408_run908_0_1_1_1_0_1_1_0",
       "positive_parity_interaction_multiset": [
-        -0.1289124608711285,
-        0.06256791491023028
+        -0.12891246087112873,
+        0.06256791491022984
       ],
       "negative_parity_interaction_multiset": [
         -0.14054368996862743,
@@ -146,7 +146,7 @@
         0.05986730029327125
       ],
       "negative_parity_interaction_multiset": [
-        -0.11177110646318733,
+        -0.11177110646318744,
         0.18161031864264054
       ],
       "negative_parity_sign_split": true

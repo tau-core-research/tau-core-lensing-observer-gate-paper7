@@ -14,8 +14,8 @@
       "u0": 0.051,
       "ews_blend_fraction": 0.891,
       "data_points": 307,
-      "finite_tangent_null_chi2": 874.26796713236,
-      "finite_tangent_null_reduced_chi2": 3.4693173298903175,
+      "finite_tangent_null_chi2": 874.2679669294098,
+      "finite_tangent_null_reduced_chi2": 3.4693173290849595,
       "conditional_clock_epsilon": 0.0,
       "conditional_clock_delta_chi2": 0.0,
       "passes_local_clock_identifiability_precheck": false
@@ -29,10 +29,10 @@
       "u0": 0.412,
       "ews_blend_fraction": 1.0,
       "data_points": 394,
-      "finite_tangent_null_chi2": 1410.4423920649008,
-      "finite_tangent_null_reduced_chi2": 4.16059702674012,
-      "conditional_clock_epsilon": 0.03081776173987906,
-      "conditional_clock_delta_chi2": 64.4310653285288,
+      "finite_tangent_null_chi2": 1410.4423915262141,
+      "finite_tangent_null_reduced_chi2": 4.160597025151074,
+      "conditional_clock_epsilon": 0.030816546584289266,
+      "conditional_clock_delta_chi2": 64.27826351824046,
       "passes_local_clock_identifiability_precheck": true
     }
   ],

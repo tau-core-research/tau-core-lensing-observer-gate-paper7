@@ -3,7 +3,7 @@
   "purpose": "Test whether the occurrence-aware old-to-modern parameter alignment reproduces public DES J0408 time-delay tables across all compatible power-law posterior files.",
   "source": {
     "source_id": "DESJ0408_time_delay_cosmography",
-    "helper_python": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python",
+    "helper_python": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python",
     "model_family": "powerlaw"
   },
   "aggregate": {

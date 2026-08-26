@@ -13,8 +13,8 @@
       "mock_count": 64,
       "empirical_improvement_p": 1.0,
       "empirical_two_sided_rate_p": 1.0,
-      "median_mock_delta_chi2": 0.19265643072228045,
-      "median_abs_mock_epsilon": 1.2704779193277113e-05
+      "median_mock_delta_chi2": 0.19265345792462085,
+      "median_abs_mock_epsilon": 1.2704730936610579e-05
     },
     {
       "null_family": "block_residual",

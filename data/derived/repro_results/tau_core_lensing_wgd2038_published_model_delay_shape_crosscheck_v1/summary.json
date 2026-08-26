@@ -1,10 +1,10 @@
 {
   "best_scalar_shape_match": {
-    "best_scalar_scale": 1.1015098079922812,
+    "best_scalar_scale": 1.1015098079922807,
     "chi2_after_best_scalar_against_observed_covariance": 10.483553557037315,
     "chi2_unscaled_against_observed_covariance": 10.661710757005167,
     "degrees_of_freedom_after_scalar": 2,
-    "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+    "implied_h0_if_pure_scale_from_h0_70": 63.54913909263217,
     "model_id": "lenstronomy_combined_h0_70_flat_lcdm",
     "normalized_shape_rmse_sigma_units": 2.28949269020861,
     "published_model_prediction_days_at_h0_70": {
@@ -13,14 +13,14 @@
       "AD": -24.2
     },
     "scaled_model_delay_days": {
-      "AB": -5.507549039961406,
-      "AC": -11.015098079922812,
-      "AD": -26.656537353413203
+      "AB": -5.507549039961404,
+      "AC": -11.015098079922808,
+      "AD": -26.656537353413192
     },
     "shape_residual_observed_minus_scaled_model_days": {
-      "AB": -6.892450960038595,
-      "AC": 5.715098079922812,
-      "AD": -6.643462646586794
+      "AB": -6.892450960038596,
+      "AC": 5.715098079922808,
+      "AD": -6.643462646586805
     }
   },
   "claim_boundary": [
@@ -54,12 +54,12 @@
   "model_summaries": [
     {
       "best_scalar_scale": 1.146971698560331,
-      "chi2_after_best_scalar_against_observed_covariance": 10.902459309109476,
+      "chi2_after_best_scalar_against_observed_covariance": 10.902459309109474,
       "chi2_unscaled_against_observed_covariance": 11.24003100282854,
       "degrees_of_freedom_after_scalar": 2,
       "implied_h0_if_pure_scale_from_h0_70": 61.03027658647846,
       "model_id": "glee_combined_h0_70_flat_lcdm",
-      "normalized_shape_rmse_sigma_units": 2.3347868542020573,
+      "normalized_shape_rmse_sigma_units": 2.334786854202057,
       "published_model_prediction_days_at_h0_70": {
         "AB": -4.4,
         "AC": -9.4,
@@ -77,11 +77,11 @@
       }
     },
     {
-      "best_scalar_scale": 1.1015098079922812,
+      "best_scalar_scale": 1.1015098079922807,
       "chi2_after_best_scalar_against_observed_covariance": 10.483553557037315,
       "chi2_unscaled_against_observed_covariance": 10.661710757005167,
       "degrees_of_freedom_after_scalar": 2,
-      "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+      "implied_h0_if_pure_scale_from_h0_70": 63.54913909263217,
       "model_id": "lenstronomy_combined_h0_70_flat_lcdm",
       "normalized_shape_rmse_sigma_units": 2.28949269020861,
       "published_model_prediction_days_at_h0_70": {
@@ -90,14 +90,14 @@
         "AD": -24.2
       },
       "scaled_model_delay_days": {
-        "AB": -5.507549039961406,
-        "AC": -11.015098079922812,
-        "AD": -26.656537353413203
+        "AB": -5.507549039961404,
+        "AC": -11.015098079922808,
+        "AD": -26.656537353413192
       },
       "shape_residual_observed_minus_scaled_model_days": {
-        "AB": -6.892450960038595,
-        "AC": 5.715098079922812,
-        "AD": -6.643462646586794
+        "AB": -6.892450960038596,
+        "AC": 5.715098079922808,
+        "AD": -6.643462646586805
       }
     }
   ],
@@ -159,39 +159,39 @@
       "uses_missing_posterior_payload": false
     },
     {
-      "best_scalar_scale": 1.1015098079922812,
+      "best_scalar_scale": 1.1015098079922807,
       "delay_pair": "AB",
       "fits_or_samples_t2": false,
-      "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+      "implied_h0_if_pure_scale_from_h0_70": 63.54913909263217,
       "model_id": "lenstronomy_combined_h0_70_flat_lcdm",
       "observed_delay_days": -12.4,
       "published_model_prediction_days_at_h0_70": -5.0,
-      "scaled_model_delay_days": -5.507549039961406,
-      "shape_residual_observed_minus_scaled_model_days": -6.892450960038595,
+      "scaled_model_delay_days": -5.507549039961404,
+      "shape_residual_observed_minus_scaled_model_days": -6.892450960038596,
       "uses_missing_posterior_payload": false
     },
     {
-      "best_scalar_scale": 1.1015098079922812,
+      "best_scalar_scale": 1.1015098079922807,
       "delay_pair": "AC",
       "fits_or_samples_t2": false,
-      "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+      "implied_h0_if_pure_scale_from_h0_70": 63.54913909263217,
       "model_id": "lenstronomy_combined_h0_70_flat_lcdm",
       "observed_delay_days": -5.3,
       "published_model_prediction_days_at_h0_70": -10.0,
-      "scaled_model_delay_days": -11.015098079922812,
-      "shape_residual_observed_minus_scaled_model_days": 5.715098079922812,
+      "scaled_model_delay_days": -11.015098079922808,
+      "shape_residual_observed_minus_scaled_model_days": 5.715098079922808,
       "uses_missing_posterior_payload": false
     },
     {
-      "best_scalar_scale": 1.1015098079922812,
+      "best_scalar_scale": 1.1015098079922807,
       "delay_pair": "AD",
       "fits_or_samples_t2": false,
-      "implied_h0_if_pure_scale_from_h0_70": 63.549139092632146,
+      "implied_h0_if_pure_scale_from_h0_70": 63.54913909263217,
       "model_id": "lenstronomy_combined_h0_70_flat_lcdm",
       "observed_delay_days": -33.3,
       "published_model_prediction_days_at_h0_70": -24.2,
-      "scaled_model_delay_days": -26.656537353413203,
-      "shape_residual_observed_minus_scaled_model_days": -6.643462646586794,
+      "scaled_model_delay_days": -26.656537353413192,
+      "shape_residual_observed_minus_scaled_model_days": -6.643462646586805,
       "uses_missing_posterior_payload": false
     }
   ],

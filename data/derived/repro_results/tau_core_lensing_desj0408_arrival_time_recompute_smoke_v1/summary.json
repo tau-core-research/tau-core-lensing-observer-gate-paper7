@@ -4,7 +4,7 @@
   "source": {
     "source_id": "DESJ0408_time_delay_cosmography",
     "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
-    "helper_python": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python"
+    "helper_python": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python"
   },
   "result": {
     "model_id": "0408_run1001_0_0_0_0_0_1_1_0",
@@ -175,7 +175,7 @@
     "published_finite": true,
     "matches_public_time_delay_table_under_current_reader": false,
     "helper_available": true,
-    "helper_stderr_tail": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/lib/python3.9/site-packages/lenstronomy/LensModel/MultiPlane/multi_plane.py:81: UserWarning: Cosmology is provided. Make sure your cosmological model is consistent with the cosmology_model argument.\n  warnings.warn(\n"
+    "helper_stderr_tail": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/lib/python3.9/site-packages/lenstronomy/LensModel/MultiPlane/multi_plane.py:81: UserWarning: Cosmology is provided. Make sure your cosmological model is consistent with the cosmology_model argument.\n  warnings.warn(\n"
   },
   "criteria": {
     "lenstronomy_helper_available": true,

@@ -56,13 +56,13 @@
         -22.400174999999997
       ],
       "covariance_whitened_singular_values": [
-        3.9204277792773534,
-        0.07479465541843715,
-        0.04717788051473908
+        3.9204277792773485,
+        0.0747946554184372,
+        0.04717788051473907
       ],
       "strict_rank": 3,
       "remaining_dimension": 0,
-      "smallest_to_largest_singular_ratio": 0.012033860377204886
+      "smallest_to_largest_singular_ratio": 0.012033860377204896
     },
     "median": {
       "model_order": [
@@ -99,13 +99,13 @@
         -22.530424999999997
       ],
       "covariance_whitened_singular_values": [
-        3.9467096540784485,
-        0.07459509352378581,
-        0.04622584392910502
+        3.9467096540784445,
+        0.07459509352378599,
+        0.046225843929105004
       ],
       "strict_rank": 3,
       "remaining_dimension": 0,
-      "smallest_to_largest_singular_ratio": 0.011712501800413968
+      "smallest_to_largest_singular_ratio": 0.011712501800413977
     },
     "mode": {
       "model_order": [
@@ -142,13 +142,13 @@
         -22.722849999999998
       ],
       "covariance_whitened_singular_values": [
-        3.9853206934100847,
-        0.07590039472990898,
-        0.04162404475407484
+        3.985320693410079,
+        0.07590039472990863,
+        0.04162404475407486
       ],
       "strict_rank": 3,
       "remaining_dimension": 0,
-      "smallest_to_largest_singular_ratio": 0.010444340106155612
+      "smallest_to_largest_singular_ratio": 0.010444340106155631
     }
   },
   "all_mean_median_mode_variants_strict_rank_three": true,

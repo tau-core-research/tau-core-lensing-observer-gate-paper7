@@ -39,7 +39,7 @@
   "mass_sheet_delay_rule": "Delta_t(kappa_ext)=(1-kappa_ext)*Delta_t_model",
   "covariance_whitened_model_singular_values": [
     4.62287175437954,
-    0.14308286565596956
+    0.1430828656559696
   ],
   "dominant_model_direction": [
     -0.9887240970661084,
@@ -64,8 +64,8 @@
   "strict_full_model_nuisance_rank_before_kappa": 2,
   "strict_full_model_nuisance_rank_after_kappa": 2,
   "representative_kappa_semi_68_width": 0.028567986003574415,
-  "kappa_projection_on_weak_direction_sigma_per_unit_kappa": -2.251235123684576,
-  "kappa_projection_on_weak_direction_at_reported_width_sigma": 0.06431325350417608,
+  "kappa_projection_on_weak_direction_sigma_per_unit_kappa": -2.2512351236845767,
+  "kappa_projection_on_weak_direction_at_reported_width_sigma": 0.0643132535041761,
   "practical_5pct_weak_direction_survives_geometrically": true,
   "practical_weak_direction_is_kappa_free": false,
   "delay_only_tau_score_authorized": false,

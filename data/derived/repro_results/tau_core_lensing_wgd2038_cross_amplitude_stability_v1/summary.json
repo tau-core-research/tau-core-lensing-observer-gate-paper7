@@ -58,10 +58,10 @@
     0.5321538375260964,
     -1.7266757978067186
   ],
-  "mahalanobis_squared": 5.324428560803166,
-  "mahalanobis_distance": 2.3074723315357795,
+  "mahalanobis_squared": 5.324428560803165,
+  "mahalanobis_distance": 2.307472331535779,
   "gaussian_chi_square_degrees_of_freedom": 3,
-  "gaussian_chi_square_survival_probability": 0.14952508982828097,
+  "gaussian_chi_square_survival_probability": 0.1495250898282812,
   "covariance_assumption": "The published OIII diagonal errors and public JWST covariance are combined as independent measurement covariances. Unknown OIII off-diagonal covariance is not represented.",
   "same_lens_geometry": true,
   "same_terminal_family": "relative path-amplitude ratios",

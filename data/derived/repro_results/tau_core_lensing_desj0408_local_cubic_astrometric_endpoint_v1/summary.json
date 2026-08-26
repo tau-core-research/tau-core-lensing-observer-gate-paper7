@@ -1,16 +1,16 @@
 {
   "schema": "paper7 DES J0408 local cubic astrometric endpoint v1",
-  "predicted_median_maximum_path_residual_arcsec": 0.00017246759992709532,
-  "predicted_median_maximum_path_residual_mas": 0.17246759992709532,
+  "predicted_median_maximum_path_residual_arcsec": 0.00017246759992710857,
+  "predicted_median_maximum_path_residual_mas": 0.17246759992710858,
   "published_model_coordinate_rms_arcsec": 0.0013350390337132064,
   "published_model_coordinate_rms_mas": 1.3350390337132063,
-  "prediction_to_model_coordinate_rms_ratio": 0.1291854362096089,
+  "prediction_to_model_coordinate_rms_ratio": 0.1291854362096188,
   "hst_pixel_scales_arcsec": {
     "F814W": 0.04,
     "F160W": 0.08
   },
-  "prediction_to_f814w_pixel_ratio": 0.004311689998177383,
-  "prediction_to_f160w_pixel_ratio": 0.0021558449990886916,
+  "prediction_to_f814w_pixel_ratio": 0.004311689998177715,
+  "prediction_to_f160w_pixel_ratio": 0.0021558449990888573,
   "public_positions_are_model_fitted_not_independent_holdout": true,
   "independent_sub_mas_astrometric_covariance_materialized": false,
   "direct_astrometric_endpoint_authorized": false,

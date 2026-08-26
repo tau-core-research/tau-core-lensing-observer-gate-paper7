@@ -35,18 +35,18 @@
     ]
   },
   "covariance_whitened_nuisance_singular_values": [
-    4.060506396882465,
-    0.10113167457686174
+    4.0605063968824595,
+    0.1011316745768617
   ],
   "published_summary_nuisance_rank": 2,
   "remaining_published_summary_dimension": 1,
   "candidate_whitened_unit_direction": [
-    0.14789173117887344,
-    -0.871039504779169,
-    0.4684209826245783
+    0.1478917311788734,
+    -0.8710395047791692,
+    0.46842098262457843
   ],
-  "observed_projection_on_candidate_sigma": -2.7029714773313565,
-  "observed_residualized_norm_sigma": 2.702971477331357,
+  "observed_projection_on_candidate_sigma": -2.7029714773313542,
+  "observed_residualized_norm_sigma": 2.702971477331354,
   "candidate_direction_materialized_before_endpoint_projection": true,
   "posterior_level_nuisance_span_materialized": false,
   "model_family_resolved_vectors_materialized": false,

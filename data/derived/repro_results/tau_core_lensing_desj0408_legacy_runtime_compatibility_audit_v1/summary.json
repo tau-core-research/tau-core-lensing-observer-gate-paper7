@@ -4,7 +4,7 @@
   "source": {
     "source_id": "DESJ0408_time_delay_cosmography",
     "notebook_file": "data/external/source_candidate_repos/DESJ0408_time_delay_cosmography/notebooks/Distance posterior from combining lensing, kinematics, and external convergence.ipynb",
-    "helper_python": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python"
+    "helper_python": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python"
   },
   "public_runtime_evidence": {
     "notebook_mentions_lenstronomy_0_9_2": true,

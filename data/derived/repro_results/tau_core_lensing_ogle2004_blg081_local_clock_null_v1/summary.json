@@ -9,45 +9,45 @@
       "ownership": "source",
       "null_family": "parametric",
       "mock_count": 64,
-      "observed_delta_chi2": 9874.974791804016,
-      "observed_epsilon": 0.0050867729077526905,
+      "observed_delta_chi2": 15656.974656571932,
+      "observed_epsilon": -0.023465002146564374,
       "empirical_improvement_p": 0.015384615384615385,
       "empirical_two_sided_rate_p": 0.015384615384615385,
-      "median_mock_delta_chi2": 0.4841048000529611,
-      "median_abs_mock_epsilon": 2.0785085348086622e-05
+      "median_mock_delta_chi2": 0.46174130960463344,
+      "median_abs_mock_epsilon": 2.0219752522648698e-05
     },
     {
       "ownership": "source",
       "null_family": "block_residual",
       "mock_count": 64,
-      "observed_delta_chi2": 9874.974791804016,
-      "observed_epsilon": 0.0050867729077526905,
+      "observed_delta_chi2": 15656.974656571932,
+      "observed_epsilon": -0.023465002146564374,
       "empirical_improvement_p": 0.015384615384615385,
       "empirical_two_sided_rate_p": 0.015384615384615385,
-      "median_mock_delta_chi2": 170.68426585378984,
-      "median_abs_mock_epsilon": 0.00034165823106363573
+      "median_mock_delta_chi2": 215.37226822208686,
+      "median_abs_mock_epsilon": 0.00035897156707759243
     },
     {
       "ownership": "blend",
       "null_family": "parametric",
       "mock_count": 64,
-      "observed_delta_chi2": 9722.465351044943,
-      "observed_epsilon": 0.0055186598967101146,
+      "observed_delta_chi2": 10173.364210552703,
+      "observed_epsilon": -0.023649515744633923,
       "empirical_improvement_p": 0.015384615384615385,
       "empirical_two_sided_rate_p": 0.015384615384615385,
-      "median_mock_delta_chi2": 0.38245755750151034,
-      "median_abs_mock_epsilon": 2.0279283358218772e-05
+      "median_mock_delta_chi2": 0.37916538902871366,
+      "median_abs_mock_epsilon": 1.9993478305103914e-05
     },
     {
       "ownership": "blend",
       "null_family": "block_residual",
       "mock_count": 64,
-      "observed_delta_chi2": 9722.465351044943,
-      "observed_epsilon": 0.0055186598967101146,
+      "observed_delta_chi2": 10173.364210552703,
+      "observed_epsilon": -0.023649515744633923,
       "empirical_improvement_p": 0.015384615384615385,
-      "empirical_two_sided_rate_p": 0.046153846153846156,
-      "median_mock_delta_chi2": 154.44396759983647,
-      "median_abs_mock_epsilon": 0.0003395593581854404
+      "empirical_two_sided_rate_p": 0.015384615384615385,
+      "median_mock_delta_chi2": 154.435581356498,
+      "median_abs_mock_epsilon": 0.0003395221549221335
     }
   ],
   "robust_against_calibrated_statistical_nulls": true,

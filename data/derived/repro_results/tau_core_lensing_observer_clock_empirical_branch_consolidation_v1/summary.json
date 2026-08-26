@@ -6,7 +6,7 @@
       "geometry": "differential_multiple_image",
       "target": "DES J0408 A/B",
       "result": "calibrated_null",
-      "rate_p_value": 0.29961089494163423,
+      "rate_p_value": 0.30739299610894943,
       "improvement_p_value": 0.5369649805447471
     },
     {
@@ -14,7 +14,7 @@
       "target": "HE 0435 B/C",
       "result": "independent_calibrated_null",
       "rate_p_value": 0.7906976744186046,
-      "improvement_p_value": 0.4496124031007752
+      "improvement_p_value": 0.46511627906976744
     },
     {
       "geometry": "same_source_local_microlensing",

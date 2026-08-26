@@ -1,9 +1,9 @@
 {
   "schema": "Paper 7 OGLE-2004-BLG-390 finite-tangent clock null v1",
   "event": "2004-BLG-390",
-  "observed_finite_tangent_null_chi2": 1410.4423920649008,
-  "observed_epsilon": 0.03081776173987906,
-  "observed_delta_chi2": 64.4310653285288,
+  "observed_finite_tangent_null_chi2": 1410.4423915262141,
+  "observed_epsilon": 0.030816546584289266,
+  "observed_delta_chi2": 64.27826351824046,
   "mock_count_per_family": 64,
   "total_mock_light_curves": 128,
   "conditional_on_frozen_finite_tangent_geometry": true,

@@ -1917,6 +1917,13 @@ because it is defined from the WGD2038 observed-delay vector and published
 model predictions; it is not a posterior-level score; and it is not T2
 evidence.
 
+## Full-4D Score Boundary
+
+Observer-path access and a nonzero mixed Hessian are not by themselves a Tau
+signal. The later fixed compiler scores only the complete standard excess
+`E_K = (K_HH - K_std) - C K_VV^-1 C^dagger` after a common coframe push.
+Paper 7 supplies feasibility gates, not that physical packet.
+
 ## Reproduce
 
 Create an environment with Python 3.10 or newer, then install the lightweight

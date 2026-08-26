@@ -3,7 +3,7 @@
   "purpose": "Promote the validated DES J0408 57-parameter power-law core into a compact no-T2 feature table with reproduced arrival-time differences, public observed-delay residuals, and core-relative logZ weights.",
   "source": {
     "source_id": "DESJ0408_time_delay_cosmography",
-    "helper_python": "/Users/jolcsak/Projects/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python",
+    "helper_python": "/Volumes/EXTERNAL/Research/Tau Core/tau-core-lensing-observer-gate-paper7/.venv_wgd2038_repro/bin/python",
     "observed_delays_days": [
       -112.1,
       -155.5
