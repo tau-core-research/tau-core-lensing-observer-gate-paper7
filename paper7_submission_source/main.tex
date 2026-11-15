@@ -1,11 +1,10 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-\documentclass[
-]{article}
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
 \usepackage{xcolor}
 \usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -40,7 +39,7 @@
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
 \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\small}
 % Add ',fontsize=\small' for more characters per line
 \newenvironment{Shaded}{}{}
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
@@ -107,83 +106,47 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black,
+  pdfcreator={LaTeX}}
 
-\author{}
-\date{Last revised: 18 September 2026}
+\title{Testing the Tau-Core Observer Principle with Gravitational Lensing:\\
+\large Theoretical Feasibility, Data Audit, and Missing Evidence-Grade Products}
+\author{J\'ozsef Olcs\'ak\\
+\small Independent researcher, Budapest, Hungary}
+\date{May 21, 2026\\Last revised: November 14, 2026}
 
 \begin{document}
+\maketitle
 
-\section{Testing the Tau-Core Observer Principle with Gravitational
-Lensing: Theoretical Feasibility, Data Audit, and Missing Evidence-Grade
-Products}\label{testing-the-tau-core-observer-principle-with-gravitational-lensing-theoretical-feasibility-data-audit-and-missing-evidence-grade-products}
+\begin{abstract}
+We formulate an operational feasibility and falsification protocol for testing
+the Tau-Core observer principle in strong gravitational lensing without claiming
+either a completed covariant field theory or an empirical real-data detection.
+In multiply imaged time-delay lenses, a single background source is observed
+through distinct parity, Fermat-potential, and arrival-time channels. We test
+whether an observer-gated perturbation of the image-level Fermat surface---parameterized
+by a single cross-lens amplitude \texttt{epsilon\_tau} multiplying the
+parity-weighted absolute-Fermat operator \texttt{T2\_parity\_abs\_fermat}---is
+identifiable beyond standard lens-model nuisance freedom. First, we establish a
+strict admissibility gate: a no-T2 baseline must reproduce a published
+time-delay distance ($D_{\Delta t}$) or null posterior from evidence-grade
+imaging and lens-model products before any T2 perturbation is scored. Second,
+controlled synthetic experiments across a 28-lens hierarchical ensemble (224
+position constraints) recover an injected $\epsilon_\tau = 0.05$ at
+$\hat{\epsilon}_\tau = 0.04992$, retaining identifiability across blind and
+cached nuisance stress grids. Third, static Hubble Frontier Fields morphology
+controls confirm that the pipeline does not manufacture false-positive T2
+signals when time-delay posteriors are absent. Finally, a no-contact audit of
+public products for HE0435$-$1223, RXJ1131$-$1231, WFI2033$-$4723,
+WGD2038$-$4008, and DES~J0408$-$5354 shows that key field-level validation
+products remain incomplete; any future real-data T2 score would test only the
+frozen downstream terminal law rather than universal common-ancestor recovery.
+\end{abstract}
 
-\textbf{Draft date:} 2026-05-21; \textbf{last revised:} 2026-08-22\\
-\textbf{Repository branch:}
-\texttt{codex/tau-core-lensing-observer-gate}\\
-\textbf{Status:} Paper 1-style manuscript draft; theoretical test
-criterion established; real-data proof not yet claimed
-
-\subsection{Abstract}\label{abstract}
-
-The tau-core observer principle is treated here as an operational
-working hypothesis, not as a completed covariant field theory. In
-standard lensing language, the paper studies a restricted perturbation
-of the image-level Fermat surface: an effective latent operator whose
-coefficient is shared across image systems rather than absorbed into
-arbitrary per-lens nuisance freedom. The working hypothesis is that a
-gravitational measurement is not only a property of the source-side mass
-distribution: it is also a statement about which projection channels are
-accessible to the observer. Strong gravitational lensing is a natural
-place to test this principle because a single background source can be
-observed through several images, each with its own parity, Fermat
-potential, path geometry, and measured time delay. In this paper we ask
-a deliberately limited question: is it theoretically possible to turn
-the tau-core observer principle into a falsifiable gravitational-lensing
-test, what data have we used to stress that test, and which data
-products are still missing? The proposed test observable is a shared
-amplitude, \texttt{epsilon\_tau}, multiplying the channel
-\texttt{T2\_parity\_abs\_fermat}: a parity-weighted, absolute-Fermat
-term that must be common across lenses and must remain distinguishable
-from ordinary lens-model nuisance freedom.
-
-We make three contributions. First, we define the necessary proof gate:
-a no-T2 baseline must reproduce a published time-delay distance or null
-posterior from evidence-grade image/model products before any tau-core
-perturbation is allowed. Second, we show that the proposed T2 channel is
-mathematically identifiable in controlled synthetic lensing experiments.
-In a 28-lens hierarchical run with 224 position-constraint rows, an
-injected \texttt{epsilon\_tau=0.05} is recovered as
-\texttt{epsilon\_hat=0.0499193089}; blind and cached stress tests retain
-the active T2 branch under core nuisance perturbations. Third, we close
-a static-lens control branch using HFF cluster morphology controls.
-These controls do not prove T2, but they show that the workflow does not
-automatically manufacture tau-like signals in systems without a
-time-delay posterior.
-
-The present paper does not claim that the observer principle has been
-proven in real lensing data. Instead, it establishes the theoretical
-test pathway and the current data gap. A no-contact public-product audit
-found no target with enough public image/model product depth to support
-the required no-T2 reproduction gate. HE0435-1223 public imaging can be
-ingested, but the public-only PSF/model route fails validation;
-additional probes of RXJ1131-1231, WFI2033-4723, WGD2038-4008, and DES
-J0408-5354 remain product-blocked. The result is therefore a
-feasibility-and-reproducibility paper: the lensing test is well-defined
-and stress-tested, but the evidence-grade public products needed for a
-real-data proof are still missing.
-
-Under the current foundation-level common-ancestor theorem, the lensing,
-clock and image terminals would have to factor through one source-owned
-preterminal descriptor.  The present T2 protocol tests a downstream
-observer-gated terminal only; it does not reconstruct that descriptor, prove
-equality of the stacked and ancestor kernels, or exclude a terminal-visible
-bypass.  A successful future T2 endpoint would therefore remain evidence for
-the frozen terminal law rather than proof of universal readout ancestry.
-
-\subsection{Author and AI-Assistance
-Statement}\label{author-and-ai-assistance-statement}
+\section*{Author and AI-Assistance Statement}\label{author-and-ai-assistance-statement}
 
 This manuscript is an auditable methodological draft. The originating
 author is an independent researcher and does not claim institutional
@@ -195,7 +158,7 @@ validation. The work should be evaluated by reproducibility,
 conservative claim boundaries, source traceability, and independent
 expert audit.
 
-\subsection{1. Introduction: The Tau-Core Observer
+\section{Introduction: The Tau-Core Observer
 Principle}\label{introduction-the-tau-core-observer-principle}
 
 The tau-core observer principle begins from a simple measurement
@@ -239,7 +202,7 @@ correction, the idea would be empty. The test must therefore look for a
 shared amplitude, common across lenses or image systems, attached to a
 geometrically defined channel.
 
-\subsubsection{Current optical source-transport boundary}
+\subsection{Current optical source-transport boundary}
 
 The current Tau Core source audit sharpens what such a channel may mean.
 The finite discrete root-action groupoid available in the minimal source
@@ -317,15 +280,15 @@ data-readiness study for a future proof, not a proof claim itself.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 1. Schematic of the tau-core observer principle in a multiply imaged time-delay lens. The same background source reaches the observer through several image channels, making parity, Fermat structure, and time delays observer-accessible probes rather than source-only quantities.}]{figures/fig01_observer_principle_lensing_schematic.png}}
-\caption{Figure 1. Schematic of the tau-core observer principle in a
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig01_observer_principle_lensing_schematic.png}}
+\caption{Schematic of the tau-core observer principle in a
 multiply imaged time-delay lens. The same background source reaches the
 observer through several image channels, making parity, Fermat
 structure, and time delays observer-accessible probes rather than
 source-only quantities.}
 \end{figure}
 
-\subsection{2. Toward a Physical Theory: Minimal Effective
+\section{Toward a Physical Theory: Minimal Effective
 Formulation}\label{toward-a-physical-theory-minimal-effective-formulation}
 
 The largest weakness of the present theory is also the reason this paper
@@ -340,7 +303,7 @@ complete covariant tau-core gravitational theory.
 The present paper works at Level 1. It uses Level 0 as motivation and
 treats Level 2 as an open theory-completion problem.
 
-\subsubsection{2.1 Measurement Principle}\label{measurement-principle}
+\subsection{Measurement Principle}\label{measurement-principle}
 
 The measurement principle is that an observer does not access the
 gravitational source directly. The observer accesses a finite set of
@@ -357,7 +320,7 @@ This principle is still broad. It becomes physical only after we specify
 what object carries the correction, how it transforms, how it couples to
 light or to the lensing potential, and how the GR limit is recovered.
 
-\subsubsection{2.2 Relational Observable
+\subsection{Relational Observable
 Ansatz}\label{relational-observable-ansatz}
 
 The minimal phenomenological ansatz used here is not a full field
@@ -410,7 +373,7 @@ Fermat-potential difference relative to a reference image, and
 is the bridge between the broad observer principle and the actual data
 test.
 
-\subsubsection{2.3 Tau-Core Projection
+\subsection{Tau-Core Projection
 Kernel}\label{tau-core-projection-kernel}
 
 The older tau-core/TPG construction treated the observable correction as
@@ -495,7 +458,7 @@ however, a more specific tau-core physical route: dilation covariance
 supplies the projection kernel, the Fermat offset supplies the lensing
 projection depth, and Morse parity supplies the local orientation sign.
 
-\subsubsection{2.4 Effective Action
+\subsection{Effective Action
 Template}\label{effective-action-template}
 
 A complete theory would require an action. This paper does not claim to
@@ -522,7 +485,7 @@ target: any future tau-core action that wants to explain the lensing T2
 channel must produce the same first-order effective observable, while
 also satisfying covariance, conservation, and the GR limit.
 
-\subsubsection{2.5 Arrival-Time Functional
+\subsection{Arrival-Time Functional
 Route}\label{arrival-time-functional-route}
 
 A more concrete variational route can be stated at the
@@ -619,7 +582,7 @@ arrival-time/Fermat observable. A full theory would need to propagate
 this correction consistently into image positions, magnifications, time
 delays, and posterior lens parameters.
 
-\subsubsection{2.6 Symmetry, Covariance, and Conservation
+\subsection{Symmetry, Covariance, and Conservation
 Requirements}\label{symmetry-covariance-and-conservation-requirements}
 
 A physically acceptable Level-2 theory should satisfy at least the
@@ -657,7 +620,7 @@ hierarchically constrained \\
 In the present paper, only the last two operational requirements are
 directly tested. The others are theory-completion gates.
 
-\subsubsection{2.7 Gauge Meaning}\label{gauge-meaning}
+\subsection{Gauge Meaning}\label{gauge-meaning}
 
 The gauge problem is central. Fermat potentials, image labels, and
 parity assignments are not raw detector counts; they are products of a
@@ -672,7 +635,7 @@ Until this is done, the tau-lensing model is best read as a
 gauge-controlled phenomenological perturbation, not as a fundamental
 observable.
 
-\subsubsection{2.8 What Is Still Open}\label{what-is-still-open}
+\subsection{What Is Still Open}\label{what-is-still-open}
 
 The Level-2 theory remains incomplete. In particular, this paper does
 not yet provide:
@@ -731,13 +694,13 @@ unavailable until a no-T2 reproduction is achieved.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 2. Theory-completion gap. The operational observer-gated lensing protocol is defined, while the field-theory ingredients needed for a complete physical tau-core model remain open gates.}]{figures/fig02_theory_completion_gap.png}}
-\caption{Figure 2. Theory-completion gap. The operational observer-gated
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig02_theory_completion_gap.png}}
+\caption{Theory-completion gap. The operational observer-gated
 lensing protocol is defined, while the field-theory ingredients needed
 for a complete physical tau-core model remain open gates.}
 \end{figure}
 
-\subsection{3. Bridge to Standard Lensing and Inference
+\section{Bridge to Standard Lensing and Inference
 Language}\label{bridge-to-standard-lensing-and-inference-language}
 
 The terminology used above is intentionally internal to the tau-core
@@ -801,7 +764,7 @@ replacement for standard time-delay cosmography. It defines a
 disciplined perturbation term and asks whether future evidence-grade
 lensing products can falsify it.
 
-\subsection{4. Why Lensing Is the Right Test
+\section{Why Lensing Is the Right Test
 Bed}\label{why-lensing-is-the-right-test-bed}
 
 The tau-core observer principle is an attempt to formalize a simple
@@ -829,7 +792,7 @@ proof level. We define the test criterion, test its identifiability
 synthetically, audit public product availability, document the data
 products actually used, and close a static-control branch.
 
-\subsection{5. The Observer Principle in a Lensing
+\section{The Observer Principle in a Lensing
 System}\label{the-observer-principle-in-a-lensing-system}
 
 For a time-delay lens, a standard lens model gives image positions,
@@ -874,7 +837,7 @@ A crucial constraint is that \texttt{epsilon\_tau} must be shared. If
 every lens, image, or exposure receives its own free amplitude, the term
 is not an observer principle; it is ordinary nuisance absorption.
 
-\subsection{6. Operator Origin and Model-Comparison
+\section{Operator Origin and Model-Comparison
 Requirement}\label{operator-origin-and-model-comparison-requirement}
 
 The current paper does not derive \texttt{T2\_parity\_abs\_fermat} from
@@ -961,7 +924,7 @@ scrambled \(O^{(2)}_i\) & label/parity/Fermat falsification control \\
 Only an evidence comparison against this family can answer the reviewer
 question ``why not another operator?''
 
-\subsection{7. Conditional Weak-Field Derivation
+\section{Conditional Weak-Field Derivation
 Sketch}\label{conditional-weak-field-derivation-sketch}
 
 The paper can go one step beyond naming T2 as a candidate. This section
@@ -1071,7 +1034,7 @@ problem is to derive these assumptions from a covariant action,
 reciprocity principle, or observer-construction rule rather than
 imposing them.
 
-\subsection{8. Minimal Theorem Attempt}\label{minimal-theorem-attempt}
+\section{Minimal Theorem Attempt}\label{minimal-theorem-attempt}
 
 This section states the strongest theorem-like claim currently
 available. It is not a theorem of nature; it is a conditional uniqueness
@@ -1175,7 +1138,7 @@ would also need to show how the modified stationarity condition
 propagates into image positions, magnifications, and time-delay
 posteriors without introducing uncontrolled gauge artifacts.
 
-\subsection{9. Axiom Origin and Covariant
+\section{Axiom Origin and Covariant
 Closure}\label{axiom-origin-and-covariant-closure}
 
 The conditional theorem clarifies the next physics problem: the issue is
@@ -1266,7 +1229,7 @@ disfavors T2. Or it could fail theoretically if a covariant completion
 selects a different reciprocity law, a different projection depth, or a
 different branch orientation structure.
 
-\subsection{10. Candidate Reciprocity
+\section{Candidate Reciprocity
 Principle}\label{candidate-reciprocity-principle}
 
 The most important missing physical ingredient is a reciprocity
@@ -1352,7 +1315,7 @@ R:\Omega_i\mapsto-\Omega_i,\quad
 Until that theorem exists, path-reversal evenness, Morse-orientation
 coupling, and shared amplitude are physically motivated but not derived.
 
-\subsection{11. Reciprocity Theorem To Be
+\section{Reciprocity Theorem To Be
 Proven}\label{reciprocity-theorem-to-be-proven}
 
 The central theory task can now be stated more sharply. The desired
@@ -1460,7 +1423,7 @@ Thus the real theoretical milestone is:
 The present paper reaches the right-hand side conditionally. It does not
 yet derive the boxed implication.
 
-\subsection{12. Theory Companion Summary and Open
+\section{Theory Companion Summary and Open
 Gates}\label{theory-companion-summary-and-open-gates}
 
 The preceding sections contain the theory needed inside this paper: the
@@ -1514,7 +1477,7 @@ so the candidate leading term becomes
 \]
 
 The detailed theory companion is the
-\href{../../../tau-core-theory-main/source_material/tau_core_foundations/lensing_observer_gate_theory_module_v01.md}{Tau Core theory-hub lensing module}.
+Technical Paper TD-II (\emph{Body-to-Readout Derivation}) and the companion Tau Core theory archive (\url{https://github.com/tau-core-research/tau-core-theory}).
 It tracks the longer proof route and the open theory gates:
 
 {\def\LTcaptype{none} % do not increment counter
@@ -1551,7 +1514,7 @@ This paper therefore uses the theory only to justify a falsifiable
 operator family and a data protocol. It does not claim that the parent
 theory has already forced the T2 operator uniquely.
 
-\subsection{13. Missing Geometric
+\section{Missing Geometric
 Necessity}\label{missing-geometric-necessity}
 
 The strongest remaining physics gap is not statistical. It is geometric.
@@ -1610,7 +1573,7 @@ proposed T2 phenomenology, not every possible tau-core theory. A
 positive future test would motivate a deeper geometrical derivation, but
 would not by itself complete the theory.
 
-\subsection{14. Breakthrough Roadmap}\label{breakthrough-roadmap}
+\section{Breakthrough Roadmap}\label{breakthrough-roadmap}
 
 The current manuscript is not the breakthrough. It is the scaffold that
 states what a breakthrough would have to look like. Three next results
@@ -1663,7 +1626,7 @@ Until one of these results exists, the paper should be read as a
 disciplined phenomenological and falsification framework, not as a
 completed physics theory.
 
-\subsection{15. Likelihood and Evidence
+\section{Likelihood and Evidence
 Framework}\label{likelihood-and-evidence-framework}
 
 Because the paper uses population-level language, the future real-data
@@ -1728,7 +1691,7 @@ required image/model products are not available in the public-only
 route. It does, however, define the likelihood objects that a future
 evidence-grade test must instantiate.
 
-\subsection{16. What Would Count as a Future
+\section{What Would Count as a Future
 Proof?}\label{what-would-count-as-a-future-proof}
 
 We use the word proof operationally, not metaphysically. A
@@ -1773,14 +1736,14 @@ form. It does not satisfy the first two real-data requirements.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 3. Operational proof gate. The T2 perturbation is not allowed until an evidence-grade no-T2 Ddt/null reproduction is available. Current work defines the test and validates synthetic/static controls, while the first two real-data product gates remain blocked.}]{figures/fig02_proof_gate_flow.png}}
-\caption{Figure 3. Operational proof gate. The T2 perturbation is not
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig02_proof_gate_flow.png}}
+\caption{Operational proof gate. The T2 perturbation is not
 allowed until an evidence-grade no-T2 Ddt/null reproduction is
 available. Current work defines the test and validates synthetic/static
 controls, while the first two real-data product gates remain blocked.}
 \end{figure}
 
-\subsection{17. Why Distance Posteriors Alone Are
+\section{Why Distance Posteriors Alone Are
 Insufficient}\label{why-distance-posteriors-alone-are-insufficient}
 
 Published time-delay distance products are valuable cosmography
@@ -1809,7 +1772,7 @@ but rather:
 This distinction is the main practical reason the real-data branch is
 blocked.
 
-\subsection{18. Synthetic Identifiability
+\section{Synthetic Identifiability
 Result}\label{synthetic-identifiability-result}
 
 The synthetic branch asks whether the proposed T2 channel is
@@ -1909,13 +1872,13 @@ attempted. It does not show that nature contains the T2 operator.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 4. Synthetic identifiability summary. The recovered synthetic epsilon-like values remain near the injected amplitude, while cached stress tests map where stability begins to degrade.}]{figures/fig05_synthetic_identifiability_summary.png}}
-\caption{Figure 4. Synthetic identifiability summary. The recovered
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig05_synthetic_identifiability_summary.png}}
+\caption{Synthetic identifiability summary. The recovered
 synthetic epsilon-like values remain near the injected amplitude, while
 cached stress tests map where stability begins to degrade.}
 \end{figure}
 
-\subsection{19. Public Time-Delay Product
+\section{Public Time-Delay Product
 Audit}\label{public-time-delay-product-audit}
 
 The public audit asked whether the required proof gate can be run
@@ -1934,14 +1897,14 @@ The blocker is:
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 5. Public no-contact product status for the T2 proof gate. The reviewed targets have useful public products, but not the target-specific image/model posterior and Fermat/parity mapping needed for the no-T2 reproduction gate.}]{figures/fig03_public_product_status_matrix.png}}
-\caption{Figure 5. Public no-contact product status for the T2 proof
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig03_public_product_status_matrix.png}}
+\caption{Public no-contact product status for the T2 proof
 gate. The reviewed targets have useful public products, but not the
 target-specific image/model posterior and Fermat/parity mapping needed
 for the no-T2 reproduction gate.}
 \end{figure}
 
-\subsubsection{19.1 HE0435-1223}\label{he0435-1223}
+\subsection{HE0435-1223}\label{he0435-1223}
 
 HE0435-1223 was the most developed public fallback. Public HST imaging
 can be ingested, and the reproduction stack defined Ddt tolerance, label
@@ -1974,7 +1937,7 @@ This is not a criticism of the published HE0435 analysis. It says only
 that our public-only reconstruction is not evidence-grade enough to
 support a tau-core perturbation.
 
-\subsubsection{19.2 WGD2038-4008}\label{wgd2038-4008}
+\subsection{WGD2038-4008}\label{wgd2038-4008}
 
 WGD2038-4008 became the most concrete public follow-up route after the
 TDCOSMO2025 and target-repository audit. The public support payload
@@ -2181,7 +2144,7 @@ or an equivalent bounded local physical posterior reproduction with
 convergence diagnostics, are still missing. Therefore no WGD2038 real-data
 T2 sampling is authorized.
 
-\subsubsection{19.3 Other Targets}\label{other-targets}
+\subsection{Other Targets}\label{other-targets}
 
 RXJ1131-1231 and WFI2033-4723 were found to have useful public material,
 but the available products were too compressed for the image-level T2
@@ -2412,7 +2375,7 @@ this specific observer-gated proof gate because the required image/model
 product depth was either too compressed or, in the DES J0408 case, not yet
 converted into an evidence-grade no-T2 reproduction.
 
-\subsection{20. Static-Lens Controls}\label{static-lens-controls}
+\section{Static-Lens Controls}\label{static-lens-controls}
 
 Because real time-delay proof products were unavailable, we developed a
 static control analysis to test false-positive behavior. The branch used
@@ -2496,13 +2459,13 @@ therefore cannot prove the observer principle.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Figure 6. Static-control guardrails. HFF morphology controls remain heterogeneous, pass the baseline null-injection test, and expose noise/template regimes where false positives can be manufactured.}]{figures/fig04_static_control_guardrails.png}}
-\caption{Figure 6. Static-control guardrails. HFF morphology controls
+\pandocbounded{\includegraphics[keepaspectratio]{figures/fig04_static_control_guardrails.png}}
+\caption{Static-control guardrails. HFF morphology controls
 remain heterogeneous, pass the baseline null-injection test, and expose
 noise/template regimes where false positives can be manufactured.}
 \end{figure}
 
-\subsection{21. Anticipated Reviewer
+\section{Anticipated Reviewer
 Objections}\label{anticipated-reviewer-objections}
 
 The most likely reviewer objections are valid, and the paper should be
@@ -2565,7 +2528,7 @@ define its scope. The present manuscript is best classified as a methods
 and feasibility note with a physics kernel, not as a new-physics
 detection paper.
 
-\subsection{22. Main Proposition of the
+\section{Main Proposition of the
 Paper}\label{main-proposition-of-the-paper}
 
 We can now state the paper's central theorem in operational form.
@@ -2602,7 +2565,7 @@ Therefore:
 
 This is the strongest defensible conclusion.
 
-\subsection{23. Data Used and
+\section{Data Used and
 Reproducibility}\label{data-used-and-reproducibility}
 
 The present work used three categories of material.
@@ -2675,7 +2638,7 @@ Expected:
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{24. Limitations}\label{limitations}
+\section{Limitations}\label{limitations}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2761,7 +2724,7 @@ Expected:
   requirements for a future complete theory.
 \end{enumerate}
 
-\subsection{25. Full-4D standard-excess scoring boundary}
+\section{Full-4D standard-excess scoring boundary}
 
 The observer-gated lensing operator in this paper is not the positive Schur
 correction of a physical parent Hessian.  In the later full-4D descent, a
@@ -2776,7 +2739,98 @@ declared image, clock and photon terminal, quotient exact duplicates and use
 the complete joint covariance in a held-out fixed-hypothesis score.  The
 current T2 and time-delay diagnostics do not meet this source-packet gate.
 
-\subsection{26. Conclusion}\label{conclusion}
+\section{Upstream Interface and Canonical Three-Pillar Bridge}\label{sec:upstream-three-pillar-bridge}
+
+% BEGIN OBSERVER UPDATE 20260914
+\subsection{Observer Realization: Inherited Results and Physical Boundary}
+\label{sec:observer-update-20260914}
+The current observer programme distinguishes a conditional mathematical
+construction from an occupied physical measuring system. The source order
+remains base plus one universal seed, stabilized morphological response,
+observer--source restriction, shared descriptor, and resolved terminal
+readouts. Neither a detector nor an empirical residual constructs the parent
+body backwards. Dynamics below concern downstream subsystems only.
+
+Technical Paper TD-II (\emph{Body-to-Readout Derivation}) owns the following
+results. The existing joint source action fixes static and frequency-dependent
+response together. Variation of the BRAC potential couples to the field
+square; a linear field coupling is a distinct comparator unless derived by
+expansion about an occupied background. Fixed canonical means select a unique
+coherent state in a finite positive harmonic packet only if there is no excess
+fluctuation energy. This is a free/asymptotic preparation statement, not the
+ground state of an interacting detector. For the existing coupled harmonic
+pair, the joint ground is pure but either local subsystem is mixed, with its
+covariance fixed by the complete joint Hamiltonian.
+
+These are conditional derivations and internal numerical checks. The actual
+observer--source context, physical preparation process, kinetic/energy
+calibration and stable operational resolution remain unproved. The existing
+ORA-T1 selector conditionally chooses stable quantizers when the occupied
+context, admissible partition family and positive closure barrier are supplied;
+it does not establish those physical premises. A computed ground state is not
+a preparation mechanism, and a covariance or optimal abstract measurement is
+not an implemented stable quantizer $Q_{OS}$.
+
+\paragraph{Ownership and use.}
+Technical Paper TD-II (\emph{Body-to-Readout Derivation}) carries the
+consolidated contact, state, and covariance mathematics; Foundation Papers IV,
+V, and VI retain physical-selection, clock-descent, and quantum-readout
+ownership, respectively. This paper imports only the consequences within its
+scope. No observational dataset, baseline, frozen coefficient, score, or
+empirical conclusion is revised by this update.
+
+\paragraph{Consequence for this paper.}
+Different terminal labels are not independent information sources without a
+factorization or novelty proof. A nonzero correlation is not automatically a
+standard-orthogonal Tau signal.
+% END OBSERVER UPDATE 20260914
+
+% BEGIN STATE UPDATE 20260918
+\subsection{Source Identification and Terminal Access}
+The current observer audit separates a conditional forward construction from
+physical source selection. A frozen body, occupied observer incidence,
+preparation, complete instrument, and stable resolution can determine records
+without selecting those inputs from Nature. Equal effects do not fix
+postmeasurement states, and symmetry within a chosen interaction family does
+not exclude other symmetric couplings. Different terminal labels are not
+independent information sources without a factorization or novelty proof. A
+nonzero correlation is not automatically a standard-orthogonal Tau signal.
+
+\paragraph{Dependency and claim ownership.}
+Foundation VI and Technical Paper TD-II own the finite instrument/access proof;
+Foundation IV and TD-0 retain physical source selection; Foundation V, the
+temporal synthesis, and the seed--body companion (TD-I) own the
+gradient/inertial distinction. This paper inherits only the stated
+specialization; canonical assumptions, countermodels, and calibration audits are
+recorded in
+\url{https://github.com/tau-core-research/tau-core-theory/blob/main/docs/tau_rqm_instrument_to_record_bridge_001.md}.
+No physical seed, Nature occupation, or Tau-exclusive observation is established
+by this update, and existing empirical endpoint definitions and scores are
+unchanged.
+% END STATE UPDATE 20260918
+
+% BEGIN PAIR READOUT UPDATE 20260927
+\paragraph{Imported result (CPR1).}
+\href{https://github.com/tau-core-research/tau-core-higgs-module-paper4/blob/main/paper4_full_derivation/full_derivation.pdf#nameddest=cpr1}{Paper 4, \emph{Full Derivation Ledger for the Branch A Higgs Module}}, section ``Conditional source preparation and time-resolved access, Theorem CPR1(b,c),'' v1.0 (2026-09-28), is the sole proof owner.
+Access-specific null directions must not be identified with nulls of the complete channel. The imported finite-sector example does not establish independent terminal information, photon or lensing recovery, or a Tau-specific correlation; empirical endpoints remain unchanged.
+Physical preparation, detector/clock calibration and stable $Q_{OS}$ remain assumptions; no Tau-exclusive observation follows.
+% END PAIR READOUT UPDATE 20260927
+
+\subsection{Canonical Three-Pillar Reduction (2026-11-14)}
+In the 2026-11-14 canonical reduction of the upstream Tau Core architecture
+(Theorems U1--U4, F1--F4, \texttt{COV-DIR}, and \texttt{HOMOG-K4}), the minimal
+symmetric $K_4$/Clifford algebraic lock fixes the seed projector ratio
+$r_{\mathrm{seed}} = 1/4$ and the galactic readout slope
+$\alpha_{\mathrm{OCSR}} = \frac{5\sqrt{3}}{24} \approx 0.360844$ with $k = 0$
+adjustable continuous parameters, isolating a single remaining ontic physical
+occupation postulate (\texttt{POST-OCC-NU1} / \texttt{EAS-SNPR-N1}). That
+upstream consolidation sharpens the distinction between the parameter-free
+parent algebraic kernel and downstream observer-gated lensing terminals: the
+\texttt{T2\_parity\_abs\_fermat} operator in this paper remains a falsifiable
+phenomenological test channel whose real-data evaluation is still gated on
+evidence-grade no-T2 time-delay reproduction products.
+
+\section{Conclusion}\label{conclusion}
 
 Gravitational lensing provides a natural route toward testing the
 tau-core observer principle because a single lens supplies multiple
@@ -2819,8 +2873,7 @@ evidence-grade time-delay lens product chain that permits:
 
 Only that sequence can turn the proof program into an empirical proof.
 
-\subsection{References and Source
-Anchors}\label{references-and-source-anchors}
+\section*{References and Source Anchors}\label{references-and-source-anchors}
 
 \begin{itemize}
 \tightlist
@@ -2843,82 +2896,5 @@ Anchors}\label{references-and-source-anchors}
   Local feasibility ledger: \texttt{feasibility\_ledger.md}
 \end{itemize}
 
-% BEGIN OBSERVER UPDATE 20260914
-\section{Observer realization: inherited results and physical boundary}
-\label{sec:observer-update-20260914}
-The current observer programme distinguishes a conditional mathematical
-construction from an occupied physical measuring system. The source order
-remains base plus one universal seed, stabilized morphological response,
-observer--source restriction, shared descriptor, and resolved terminal
-readouts. Neither a detector nor an empirical residual constructs the parent
-body backwards. Dynamics below concern downstream subsystems only.
-
-The canonical observer-origin derivation, Sections 22--26, owns the following
-results. The existing joint source action fixes static and frequency-dependent
-response together. Variation of the BRAC potential couples to the field
-square; a linear field coupling is a distinct comparator unless derived by
-expansion about an occupied background. Fixed canonical means select a unique
-coherent state in a finite positive harmonic packet only if there is no excess
-fluctuation energy. This is a free/asymptotic preparation statement, not the
-ground state of an interacting detector. For the existing coupled harmonic
-pair, the joint ground is pure but either local subsystem is mixed, with its
-covariance fixed by the complete joint Hamiltonian.
-
-These are conditional derivations and internal numerical checks. The actual
-observer--source context, physical preparation process, kinetic/energy
-calibration and stable operational resolution remain unproved. The existing
-ORA-T1 selector conditionally chooses stable quantizers when the occupied
-context, admissible partition family and positive closure barrier are supplied;
-it does not establish those physical premises. A computed ground state is not
-a preparation mechanism, and a covariance or optimal abstract measurement is
-not an implemented stable quantizer $Q_{OS}$.
-
-\paragraph{Ownership and use.}
-The central observer-origin note owns the new contact, state and covariance
-derivations; the body-readout technical companion carries the consolidated
-mathematics. Foundation Papers IV, V and VI retain physical-selection,
-clock-descent and quantum-readout ownership, respectively. This paper imports
-only the consequences within its scope. No observational dataset, baseline,
-frozen coefficient, score or empirical conclusion is revised by this update.
-The reproducibility supplement records the source hashes and the exact
-conditional/physical distinction.
-
-
-\paragraph{Consequence for this paper.}
-Different terminal labels are not independent information sources without a factorization or novelty proof. A nonzero correlation is not automatically a standard-orthogonal Tau signal.
-% END OBSERVER UPDATE 20260914
-
-% BEGIN STATE UPDATE 20260918
-\section{Source identification and recovery}
-The current observer audit separates a conditional forward construction from physical source selection. A frozen body, occupied observer incidence, preparation, complete instrument and stable resolution can determine records without selecting those inputs from Nature. Equal effects do not fix postmeasurement states, and symmetry within a chosen interaction family does not exclude other symmetric couplings. Different terminal labels are not independent information sources without a factorization or novelty proof. A nonzero correlation is not automatically a standard-orthogonal Tau signal.
-
-\paragraph{Dependency and claim ownership.}
-Foundation VI and the body--readout technical companion own the finite instrument/access proof; Foundation IV and TD-0 retain physical source selection; Foundation V, the temporal synthesis and seed--body companion own the gradient/inertial distinction. This paper inherits only the stated specialization. Canonical assumptions, countermodels and calibration audits are in \url{https://github.com/tau-core-research/tau-core-theory/blob/main/docs/tau_rqm_instrument_to_record_bridge_001.md}. No physical seed, Nature occupation or Tau-exclusive observation is established by this update. Existing empirical endpoint definitions and scores are unchanged.
-% END STATE UPDATE 20260918
-
-% BEGIN PAIR READOUT UPDATE 20260927
-\section{Conditional source preparation and time-resolved access}
-The common-operator scalar--Dirac completion now supports an explicit
-conditional chain from interaction vertices to pair transfer and joint
-readout. Nonzero vertices do not select occupation. Relational coherence
-can be generated from an occupied number-diagonal pair even while both
-local mean fields vanish. In a declared resonant rotating-wave and Markov
-loss model, finite-window emission retains this coherence information,
-whereas an all-time count discards it. This is standard-compatible quantum
-recovery, not a Tau-specific observational residual.
-Different terminal labels are not independent information sources without a factorization or novelty proof. A nonzero correlation is not automatically a standard-orthogonal Tau signal.
-\paragraph{Dependency ownership and limits.}
-The P4 common-source assembly owns the scalar/Yukawa benchmark and finite
-preparation calculations; Foundation VI and the body--readout companion
-inherit the joint-access mathematics. Foundation IV and TD-0 retain
-physical source selection, and Foundation V retains clock descent.
-The parent remains atemporal: the evolution above is a conditional
-downstream 4D model, not parent memory or a derived morphogenetic time.
-Physical initial occupation, a gauge-complete realization, detector
-amplification, absolute calibration and stable observer-relative $Q_{OS}$
-remain unselected. No empirical endpoint or score is changed.
-The canonical derivation and reproducible numerical sources are linked at
-\url{https://github.com/tau-core-research/tau-core-theory/blob/main/docs/tau_core_p4_nonabelian_particle_common_source_assembly_001.md}.
-% END PAIR READOUT UPDATE 20260927
 
 \end{document}
