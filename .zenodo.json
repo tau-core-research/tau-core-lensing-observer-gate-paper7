@@ -4,7 +4,8 @@
   "description": "Public reproducibility package for Paper 7, a claim-bounded observer-gated Tau-Core lensing feasibility and falsification-protocol study. The package contains manuscript source, rendered PDF, arXiv source package, derived artifacts, scripts, and tests. It is a theory-method feasibility package and does not claim a real-lensing detection, a completed Tau Core theory, or a derived parent action.",
   "creators": [
     {
-      "name": "Olcsak, Jozsef"
+      "name": "Olcsak, Jozsef",
+      "orcid": "0009-0003-7311-6522"
     }
   ],
   "license": "MIT",
